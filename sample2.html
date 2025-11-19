@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Cards</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 50px 0;
+        }
+
+        .carousel-wrapper {
+            position: relative;
+            padding-bottom: 80px;
+            overflow: hidden;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .doctor-card-container {
+            flex: 0 0 33.333%;
+            padding: 0 15px;
+        }
+
+        .doctor-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .doctor-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+
+        .doctor-image-wrapper {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .doctor-image {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            filter: grayscale(0%);
+            transition: filter 0.4s ease, transform 0.4s ease;
+        }
+
+        .doctor-card:hover .doctor-image {
+            filter: grayscale(100%);
+            transform: scale(1.05);
+        }
+
+        .doctor-name {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .doctor-specialty {
+            font-size: 16px;
+            color: #667eea;
+            font-weight: 500;
+        }
+
+        .carousel-controls {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px;
+            z-index: 10;
+        }
+
+        .carousel-btn {
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 50%;
+            border: none;
+            opacity: 0.9;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .carousel-btn:hover {
+            opacity: 1;
+            transform: scale(1.1);
+            background: #667eea;
+        }
+
+        .carousel-btn:hover svg {
+            fill: white;
+        }
+
+        .carousel-btn:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+        .carousel-btn:disabled:hover {
+            transform: none;
+            background: white;
+        }
+
+        .carousel-btn svg {
+            width: 20px;
+            height: 20px;
+            fill: #333;
+            transition: fill 0.3s ease;
+        }
+
+        /* Mobile: 1 card */
+        @media (max-width: 767px) {
+            .doctor-card-container {
+                flex: 0 0 100%;
+            }
+            .doctor-image {
+                height: 300px;
+            }
+        }
+
+        /* Tablet: 2 cards */
+        @media (min-width: 768px) and (max-width: 991px) {
+            .doctor-card-container {
+                flex: 0 0 50%;
+            }
+            .doctor-image {
+                height: 320px;
+            }
+        }
+
+        /* Desktop: 3 cards */
+        @media (min-width: 992px) {
+            .doctor-card-container {
+                flex: 0 0 33.333%;
+            }
+            .doctor-image {
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="carousel-wrapper">
+            <div class="carousel-track" id="carouselTrack">
+                <!-- Doctor 1 -->
+                <div class="doctor-card-container">
+                    <div class="doctor-card">
+                        <div class="doctor-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=500&fit=crop" alt="Dr. Andru" class="doctor-image">
+                        </div>
+                        <h3 class="doctor-name">Dr. Andru</h3>
+                        <p class="doctor-specialty">Endodontist</p>
+                    </div>
+                </div>
+
+                <!-- Doctor 2 -->
+                <div class="doctor-card-container">
+                    <div class="doctor-card">
+                        <div class="doctor-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=500&fit=crop" alt="Dr. Amily" class="doctor-image">
+                        </div>
+                        <h3 class="doctor-name">Dr. Amily</h3>
+                        <p class="doctor-specialty">Orthodontist</p>
+                    </div>
+                </div>
+
+                <!-- Doctor 3 -->
+                <div class="doctor-card-container">
+                    <div class="doctor-card">
+                        <div class="doctor-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=500&fit=crop" alt="Dr. Howard" class="doctor-image">
+                        </div>
+                        <h3 class="doctor-name">Dr. Howard</h3>
+                        <p class="doctor-specialty">Oral Pathologist</p>
+                    </div>
+                </div>
+
+                <!-- Doctor 4 -->
+                <div class="doctor-card-container">
+                    <div class="doctor-card">
+                        <div class="doctor-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&h=500&fit=crop" alt="Dr. Mike" class="doctor-image">
+                        </div>
+                        <h3 class="doctor-name">Dr. Mike</h3>
+                        <p class="doctor-specialty">Periodontist</p>
+                    </div>
+                </div>
+
+                <!-- Doctor 5 -->
+                <div class="doctor-card-container">
+                    <div class="doctor-card">
+                        <div class="doctor-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=500&fit=crop" alt="Dr. Sarah" class="doctor-image">
+                        </div>
+                        <h3 class="doctor-name">Dr. Sarah</h3>
+                        <p class="doctor-specialty">Prosthodontist</p>
+                    </div>
+                </div>
+
+                <!-- Doctor 6 -->
+                <div class="doctor-card-container">
+                    <div class="doctor-card">
+                        <div class="doctor-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=500&fit=crop" alt="Dr. John" class="doctor-image">
+                        </div>
+                        <h3 class="doctor-name">Dr. John</h3>
+                        <p class="doctor-specialty">Oral Surgeon</p>
+                    </div>
+                </div>
+
+                <!-- Doctor 7 -->
+                <div class="doctor-card-container">
+                    <div class="doctor-card">
+                        <div class="doctor-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&h=500&fit=crop" alt="Dr. Emma" class="doctor-image">
+                        </div>
+                        <h3 class="doctor-name">Dr. Emma</h3>
+                        <p class="doctor-specialty">Pediatric Dentist</p>
+                    </div>
+                </div>
+
+                <!-- Doctor 8 -->
+                <div class="doctor-card-container">
+                    <div class="doctor-card">
+                        <div class="doctor-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1638202993928-7267aad84c31?w=400&h=500&fit=crop" alt="Dr. David" class="doctor-image">
+                        </div>
+                        <h3 class="doctor-name">Dr. David</h3>
+                        <p class="doctor-specialty">General Dentist</p>
+                    </div>
+                </div>
+
+                <!-- Doctor 9 -->
+                <div class="doctor-card-container">
+                    <div class="doctor-card">
+                        <div class="doctor-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1609557927087-f9cf8e88de18?w=400&h=500&fit=crop" alt="Dr. Lisa" class="doctor-image">
+                        </div>
+                        <h3 class="doctor-name">Dr. Lisa</h3>
+                        <p class="doctor-specialty">Cosmetic Dentist</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation controls -->
+            <div class="carousel-controls">
+                <button class="carousel-btn" id="prevBtn">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                    </svg>
+                </button>
+                <button class="carousel-btn" id="nextBtn">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        const track = document.getElementById('carouselTrack');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const cards = document.querySelectorAll('.doctor-card-container');
+        const totalCards = cards.length;
+
+        // Determine cards per view based on screen size
+        function getCardsPerView() {
+            if (window.innerWidth >= 992) return 3;
+            if (window.innerWidth >= 768) return 2;
+            return 1;
+        }
+
+        function updateCarousel() {
+            const cardsPerView = getCardsPerView();
+            const cardWidth = 100 / cardsPerView;
+            const offset = -currentIndex * cardWidth;
+            track.style.transform = `translateX(${offset}%)`;
+
+            // Update button states
+            prevBtn.disabled = currentIndex === 0;
+            nextBtn.disabled = currentIndex >= totalCards - cardsPerView;
+        }
+
+        function nextSlide() {
+            const cardsPerView = getCardsPerView();
+            if (currentIndex < totalCards - cardsPerView) {
+                currentIndex++;
+                updateCarousel();
+            }
+        }
+
+        function prevSlide() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCarousel();
+            }
+        }
+
+        prevBtn.addEventListener('click', prevSlide);
+        nextBtn.addEventListener('click', nextSlide);
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            const cardsPerView = getCardsPerView();
+            if (currentIndex > totalCards - cardsPerView) {
+                currentIndex = Math.max(0, totalCards - cardsPerView);
+            }
+            updateCarousel();
+        });
+
+        // Initialize
+        updateCarousel();
+    </script>
+</body>
+</html>

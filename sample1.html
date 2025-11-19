@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braces Card Design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS to match the exact style */
+        body {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .custom-card {
+            background-color: #EEEEF0; /* Light grey background similar to image */
+            border-radius: 35px;       /* Big rounded corners */
+            overflow: hidden;          /* Clips the image at the bottom */
+            max-width: 380px;          /* Card width */
+            width: 100%;
+            padding-top: 50px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            position: relative;
+        }
+
+        .card-heading {
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 25px;
+            padding-left: 30px; /* Alignment */
+        }
+
+        .tags-container {
+            padding-left: 30px;
+            padding-right: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px; /* Space between tags */
+            margin-bottom: 50px; /* Space between tags and image */
+        }
+
+        .custom-tag {
+            background-color: #ffffff;
+            color: #212529;
+            border-radius: 50px; /* Pill shape */
+            padding: 10px 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: none;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .image-container {
+            text-align: center;
+            line-height: 0; /* Removes extra space below image */
+        }
+
+        .person-image {
+            width: 85%;  /* Adjust based on image size preference */
+            height: auto;
+            object-fit: cover;
+            /* Note: Using a transparent PNG works best here */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="custom-card">
+        <h1 class="display-5 card-heading">Braces</h1>
+
+        <div class="tags-container">
+            <span class="custom-tag">Dental Treatment</span>
+            <span class="custom-tag">Teeth Alignment</span>
+            <span class="custom-tag">Easy</span>
+            <span class="custom-tag">Dental Care</span>
+        </div>
+
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                 alt="Happy person with braces" 
+                 class="person-image">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

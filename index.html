@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denta Care - Every Smile Matters</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2196F3;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #666;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #2196F3;
+        }
+
+        .btn-primary {
+            background: #FF6B35;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: #ff5520;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+            padding: 80px 5% 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            font-weight: 800;
+            color: #64B5F6;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .tooth-splash {
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, #2196F3 0%, #1976D2 100%);
+            border-radius: 50%;
+            position: relative;
+            animation: float 3s ease-in-out infinite;
+            box-shadow: 0 20px 60px rgba(33, 150, 243, 0.4);
+        }
+
+        .tooth-splash::before {
+            content: '🦷';
+            font-size: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Navigation Tabs */
+        .nav-tabs {
+            background: white;
+            padding: 20px 5%;
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .nav-tabs a {
+            text-decoration: none;
+            color: #666;
+            font-weight: 600;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-tabs a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #2196F3;
+            transition: width 0.3s;
+        }
+
+        .nav-tabs a:hover {
+            color: #2196F3;
+        }
+
+        .nav-tabs a:hover::after {
+            width: 100%;
+        }
+
+        /* About Section */
+        .about {
+            padding: 80px 5%;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .about-image {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            height: 250px;
+            background: #E3F2FD;
+        }
+
+        .about-image:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Treatments Section */
+        .treatments {
+            padding: 80px 5%;
+            background: #F5F5F5;
+        }
+
+        .treatment-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .treatment-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .treatment-card:nth-child(1) {
+            background: linear-gradient(135deg, #E1F5FE 0%, #B3E5FC 100%);
+        }
+
+        .treatment-card:nth-child(2) {
+            background: linear-gradient(135deg, #FCE4EC 0%, #F8BBD0 100%);
+        }
+
+        .treatment-card:nth-child(3) {
+            background: linear-gradient(135deg, #E0F2F1 0%, #B2DFDB 100%);
+        }
+
+        .treatment-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .treatment-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .treatment-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Consultation Section */
+        .consultation {
+            padding: 80px 5%;
+            background: linear-gradient(135deg, #81D4FA 0%, #4FC3F7 100%);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .consultation-content {
+            flex: 1;
+        }
+
+        .consultation-content h2 {
+            font-size: 42px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .consultation-content h2 span {
+            color: #FF6B35;
+        }
+
+        .consultation-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .consultation-image img {
+            width: 300px;
+            border-radius: 20px;
+        }
+
+        /* Team Section */
+        .team {
+            padding: 80px 5%;
+            background: white;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .team-member {
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+        }
+
+        .team-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: #E3F2FD;
+            margin: 0 auto 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .team-member h4 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .team-member p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* Services Navigation */
+        .services-nav {
+            background: white;
+            padding: 20px 5%;
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .services-nav a {
+            text-decoration: none;
+            color: #666;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .services-nav a:hover {
+            color: #2196F3;
+        }
+
+        /* Appointment Section */
+        .appointment {
+            padding: 80px 5%;
+            background: #F5F5F5;
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .appointment-form {
+            flex: 1;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .appointment-form h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-size: 14px;
+            transition: border 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #2196F3;
+        }
+
+        .appointment-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #64B5F6 0%, #2196F3 100%);
+            color: white;
+            padding: 60px 5% 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .footer-section a:hover {
+            opacity: 0.7;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .treatment-cards,
+            .team-grid,
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .appointment {
+                flex-direction: column;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">DENTA CARE</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <button class="btn-primary">Book Now</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>EVERY SMILE MATTERS</h1>
+            <p>We provide comprehensive dental care with state-of-the-art technology and experienced professionals dedicated to your oral health. Your smile is our priority.</p>
+            <button class="btn-primary">Get Started</button>
+        </div>
+        <div class="hero-image">
+            <div class="tooth-splash"></div>
+        </div>
+    </section>
+
+    <!-- Navigation Tabs -->
+    <div class="nav-tabs">
+        <a href="#braces">Braces</a>
+        <a href="#denta-care">Denta Care</a>
+        <a href="#dentist">Dentist</a>
+        <a href="#dentures">Dentures</a>
+    </div>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-title">
+            <h2>About Denta Care</h2>
+            <p>Providing exceptional dental care with compassion and expertise</p>
+        </div>
+        <div class="about-content">
+            <div class="about-image"></div>
+            <div class="about-image"></div>
+            <div class="about-image"></div>
+        </div>
+    </section>
+
+    <!-- Treatments Section -->
+    <section class="treatments" id="services">
+        <div class="section-title">
+            <h2>Popular Treatments</h2>
+        </div>
+        <div class="treatment-cards">
+            <div class="treatment-card">
+                <h3>Cosmetic</h3>
+                <p>Transform your smile with our advanced cosmetic dental procedures including whitening, veneers, and smile makeovers.</p>
+            </div>
+            <div class="treatment-card">
+                <h3>General</h3>
+                <p>Comprehensive dental care for the whole family including checkups, cleanings, and preventive treatments.</p>
+            </div>
+            <div class="treatment-card">
+                <h3>Dental Implant</h3>
+                <p>Permanent tooth replacement solutions with natural-looking results and long-lasting durability.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Section -->
+    <section class="consultation">
+        <div class="consultation-content">
+            <h2>Book <span>Free Consultation</span></h2>
+            <button class="btn-primary">Book Now</button>
+        </div>
+        <div class="consultation-image">
+            <div style="width: 300px; height: 300px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 100px;">😎</div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <div class="section-title">
+            <h2>Expert Team</h2>
+            <p>Meet our experienced dental professionals</p>
+        </div>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="team-photo"></div>
+                <h4>Dr. John Smith</h4>
+                <p>Chief Dentist</p>
+            </div>
+            <div class="team-member">
+                <div class="team-photo"></div>
+                <h4>Dr. Sarah Johnson</h4>
+                <p>Orthodontist</p>
+            </div>
+            <div class="team-member">
+                <div class="team-photo"></div>
+                <h4>Dr. Mike Wilson</h4>
+                <p>Oral Surgeon</p>
+            </div>
+            <div class="team-member">
+                <div class="team-photo"></div>
+                <h4>Dr. Emily Brown</h4>
+                <p>Pediatric Dentist</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Navigation -->
+    <div class="services-nav">
+        <a href="#bridges">Bridges</a>
+        <a href="#invisalign">Invisalign</a>
+        <a href="#teeth-cleaning">Teeth Cleaning</a>
+        <a href="#dentures">Dentures</a>
+    </div>
+
+    <!-- Appointment Section -->
+    <section class="appointment" id="contact">
+        <div class="appointment-form">
+            <h2>Book Appointment</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Select Service</option>
+                        <option value="general">General Checkup</option>
+                        <option value="cosmetic">Cosmetic</option>
+                        <option value="implant">Dental Implant</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea rows="4" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Book Appointment</button>
+            </form>
+        </div>
+        <div class="appointment-image">
+            <div style="width: 300px; height: 400px; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>DENTA CARE HEALTH VER</h3>
+                <p>Your trusted partner in dental health and beautiful smiles.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#cosmetic">Cosmetic Dentistry</a></li>
+                    <li><a href="#general">General Dentistry</a></li>
+                    <li><a href="#implants">Dental Implants</a></li>
+                    <li><a href="#orthodontics">Orthodontics</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li>123 Dental Street</li>
+                    <li>Phone: (555) 123-4567</li>
+                    <li>Email: info@dentacare.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Denta Care. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section team-area section-padding">
+    <div class="container">
+        <div class="team-wrapper">
+            <div class="text-center ">
+                <!-- <h2 class="section-title-service">Our Services</h2> -->
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive MRO Solutions for Modern Aviation</p>
+            </div>
+            <div class="team-content-wrapper">
+                <div class="team-content-wrapper">
+
+                    <div class="custom-slide-container swiper">
+                        <div class="custom-slide-content   ">
+                            <div class="custom-card-wrapper swiper-wrapper py-5">
+
+                                <div class="custom-card custom_card_bg_three swiper-slide">
+
+                                    <div class="service-card">
+                                        <div class="service-icon"><i class="bi bi-wrench-adjustable"></i></div>
+                                        <h3 class="service-title">Base Maintenance</h3>
+                                        <p class="service-description">Comprehensive in-depth support for
+                                            long-term airworthiness and
+                                            reliability.</p>
+                                        <!-- <ul class="service-list">
+                                    <li>Heavy maintenance checks (C/D Checks)</li>
+                                    <li>Structural repairs and modifications</li>
+                                    <li>Landing gear overhaul</li>
+                                    <li>Avionics upgrades</li>
+                                    <li>Cabin refurbishment</li>
+                                </ul> -->
+                                        <a href="basemaintenance.php" class="btn  btn-custom_base ">Read more</a>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="custom-card custom_card_bg_three swiper-slide">
+
+
+                                    <div class="service-card">
+                                        <div class="service-icon"><i class="bi bi-clock-history"></i></div>
+                                        <h3 class="service-title">Line Maintenance</h3>
+                                        <p class="service-description">Fast, efficient day-to-day operations
+                                            support with 24/7
+                                            readiness.</p>
+                                        <!-- <ul class="service-list">
+                                    <li>Daily & transit inspections</li>
+                                    <li>Troubleshooting & defect rectification</li>
+                                    <li>Component replacement</li>
+                                    <li>AOG support</li>
+                                    <li>Release-to-service approvals</li>
+                                </ul> -->
+                                        <a href="linemaintenance.php" class="btn btn-custom_base">Get
+                                            Started</a>
+                                    </div>
+                                </div>
+
+                                <div class="custom-card custom_card_bg_three swiper-slide">
+
+
+                                    <div class="service-card">
+                                        <div class="service-icon"><i class="bi bi-lightning-charge"></i></div>
+                                        <h3 class="service-title">Engine & APU Overhaul</h3>
+                                        <p class="service-description">Peak performance restoration for critical
+                                            power systems.</p>
+                                        <!-- <ul class="service-list">
+                                    <li>Full teardown & inspection</li>
+                                    <li>Performance restoration</li>
+                                    <li>Boroscope inspections</li>
+                                    <li>Test cell runs</li>
+                                    <li>Certification documentation</li>
+                                </ul> -->
+                                        <a href="enginemaintenance.php" class="btn btn-custom_base">Get
+                                            Started</a>
+                                    </div>
+                                </div>
+
+                                <div class="custom-card custom_card_bg_three swiper-slide">
+
+
+                                    <div class="service-card">
+                                        <div class="service-icon"><i class="bi bi-chevron-double-down"></i>
+                                        </div>
+                                        <h3 class="service-title">Landing Gear Overhaul</h3>
+                                        <p class="service-description">Precision-engineered restoration with
+                                            advanced NDT testing.</p>
+                                        <!-- <ul class="service-list">
+                                    <li>NDT testing (FPI, MPI, Eddy Current)</li>
+                                    <li>Shock strut servicing</li>
+                                    <li>Brake assembly overhaul</li>
+                                    <li>Load simulation tests</li>
+                                    <li>OEM compliance</li>
+                                </ul> -->
+                                        <a href="landinggear.php" class="btn btn-custom_base">Get
+                                            Started</a>
+                                    </div>
+                                </div>
+
+
+                                <div class="custom-card custom_card_bg_three swiper-slide">
+
+
+                                    <div class="service-card">
+                                        <div class="service-icon"><i class="bi bi-cpu"></i></div>
+                                        <h3 class="service-title">Avionics Accessories Overhaul
+                                        </h3>
+                                        <p class="service-description">Precision restoration of aircraft
+                                            electronic systems.</p>
+                                        <!-- <ul class="service-list">
+                                    <li>LRU functional testing</li>
+                                    <li>Circuit-board repair</li>
+                                    <li>Communication & navigation modules</li>
+                                    <li>Automated test equipment</li>
+                                    <li>Calibration services</li>
+                                </ul> -->
+
+                                        <a href="avionicsaccessories.php" class="btn btn-custom_base">Get
+                                            Started</a>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="custom-card custom_card_bg_three swiper-slide">
+
+
+                                    <div class="service-card">
+                                        <div class="service-icon"><i class="bi bi-cpu"></i></div>
+                                        <h3 class="service-title">Corporate Sustainability
+
+                                        </h3>
+                                        <p class="service-description">We are committed to responsible,
+                                            forward-thinking operations ..</p>
+                                        <!-- <ul class="service-list">
+                                    <li>LRU functional testing</li>
+                                    <li>Circuit-board repair</li>
+                                    <li>Communication & navigation modules</li>
+                                    <li>Automated test equipment</li>
+                                    <li>Calibration services</li>
+                                </ul> -->
+
+                                        <a href="corporatesustainability.php" class="btn btn-custom_base">Get
+                                            Started</a>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+                                <div class="custom-card custom_card_bg_three swiper-slide">
+
+
+                                    <div class="service-card">
+                                        <div class="service-icon"><i class="bi bi-tools"></i></div>
+                                        <h3 class="service-title">Specialized Services</h3>
+                                        <p class="service-description">High-precision solutions for complex
+                                            maintenance needs.</p>
+                                        <!-- <ul class="service-list">
+                                    <li>NDT Services (FPI, MPI, Ultrasonic)</li>
+                                    <li>Composite Repair</li>
+                                    <li>Hydraulic System Testing</li>
+                                    <li>Wheel & Brake Shop</li>
+                                    <li>Painting & Refinishing</li>
+                                </ul> -->
+                                        <a href="specializedservices.php" class="btn btn-custom_base">Get
+                                            Started</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- Team Content Wrapper End -->
+    </div>
+</div>
