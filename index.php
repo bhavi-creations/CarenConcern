@@ -1,7 +1,8 @@
 <?php include 'header.php'; ?>
 
+
 <!-- Hero Section -->
-<section class="home_section">
+ <section class="home_section">
     <div class="hero-section container">
 
 
@@ -32,16 +33,16 @@
 
         <div class="stats d-none d-lg-block">
             <div class="stat-item">
-                <div class="stat-number">150+</div>
-                <div class="stat-label">Expert Dentists</div>
+                <div class="stat-number">15+ </div>
+                <div class="stat-label">Years Expertise</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number">20+</div>
-                <div class="stat-label">Dental Clinics across UK</div>
+                <div class="stat-number">8 + </div>
+                <div class="stat-label">Years of Clinic Excellence</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number">03+</div>
-                <div class="stat-label">Countries presence</div>
+                <div class="stat-number">13,000+</div>
+                <div class="stat-label">Lives Touched</div>
             </div>
         </div>
 
@@ -58,7 +59,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> 
 
 <!-- Services Navigation -->
 <!-- <div class="services-nav">
@@ -118,7 +119,7 @@
                 <div class="row mt-3">
                     <div class="col-12 col-md-6">
                         <button class="about_dental ">Dental Care</button>
-                        <button class="about_dental_care ">Dental Care</button>
+                        <!-- <button class="about_dental_care ">Dental Care</button> -->
                         <!-- <button class="about_section">mani</button> -->
                     </div>
                     <div class="col-12 col-md-6">

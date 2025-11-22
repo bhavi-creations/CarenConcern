@@ -1581,3 +1581,11 @@ text-orientation: upright; */
 }
 
 
+.sample_secrtion img {
+    display: block;        /* removes unwanted gaps */
+    width: 100%;           /* image spans full container width */
+    height: auto;          /* maintains aspect ratio */
+    object-fit: contain;   /* ensures full image is visible, no cropping */
+    margin-left: 20px;     /* adds left space, adjust as needed */
+    border-radius: 10px ;
+}
