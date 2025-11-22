@@ -113,15 +113,16 @@
         <div class="row mt-5">
             <div class="col-md-6 col-12">
                 <div class="row">
-                    <img src="./assets/images/service2.png" alt="" class="img-fluid">
+                    <img src="./assets/images/about_rect1.png" alt="" class="img-fluid">
                 </div>
                 <div class="row mt-3">
                     <div class="col-12 col-md-6">
                         <button class="about_dental ">Dental Care</button>
+                        <button class="about_dental_care ">Dental Care</button>
                         <!-- <button class="about_section">mani</button> -->
                     </div>
                     <div class="col-12 col-md-6">
-                        <img src="./assets/images/2.png" alt="" class="img-fluid">
+                        <img src="./assets/images/about_sq1.png" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -129,14 +130,14 @@
 
                 <div class="row">
                     <div class="col-12 col-md-6">
-                        <img src="./assets/images/2.png" alt="" class="img-fluid">
+                        <img src="./assets/images/about_sq2.png" alt="" class="img-fluid">
                     </div>
                     <div class="col-12 col-md-6">
                     </div>
                 </div>
 
                 <div class="row mt-3">
-                    <img src="./assets/images/service2.png" alt="" class="img-fluid">
+                    <img src="./assets/images/about_rect2.png" alt="" class="img-fluid">
                 </div>
 
             </div>

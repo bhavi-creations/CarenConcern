@@ -1,60 +1,85 @@
 <!-- Footer -->
-<footer class="footer">
+<footer class="footer bg-light pt-5">
     <div class="container">
 
-        <div class="footer-content">
-            <div class="footer-info">
-                <h4><span class="denta">DENTA</span> <span class="care">CARE</span></h4>
-                <p><strong>Denta Care Health Ventures LLP</strong></p>
-                <p>2462/37, 7th B Main Road, Hampinagar, RPC Layout, Vijayanagar, Bengaluru, Karnataka 560104</p>
-                <br>
-                <p><strong>Call us:</strong> 63638 00266 | +91 98458 02787</p>
-                <br>
-                <p><strong>Email us:</strong> mail@hontistry.com</p>
-                <br>
-                <p><strong>Clinic Hours:</strong> 10.00 AM - 7.00 PM (Everyday)</p>
+        <!-- Footer Content -->
+        <div class="row footer-content">
+
+            <!-- Footer Info -->
+            <div class="col-lg-3 mb-4 footer-info">
+                <h4><span class="denta ">Care</span> &nbsp; N  &nbsp;<span class="care">Consurn</span></h4>
+                <!-- <p><strong>Denta Care Health Ventures LLP</strong></p> -->
+                <p class="mt-5">2462/37, 7th B Main Road, Hampinagar, RPC Layout, Vijayanagar, Bengaluru, Karnataka 560104</p>
+                <p class="mt-3"><strong>Call us:</strong> 63638 00266 | +91 98458 02787</p>
+                <p class="mt-2"><strong>Email us:</strong> mail@hontistry.com</p>
+                <p class="mt-2"><strong>Clinic Hours:</strong> 10.00 AM - 7.00 PM (Everyday)</p>
             </div>
 
-            <div class="footer-links">
-                <h5>Available Treatments</h5>
-                <ul>
-                    <li><a href="#dentures">Teeth Cleaning</a></li>
-                    <li><a href="#braces">Crowns & Bridges</a></li>
-                    <li><a href="#invisalign">Painless Teeth Removal ​</a></li>
-                    <li><a href="#teeth-cleaning">Tooth Colored Fillings</a></li>
-                    <li><a href="#teeth-whitening">Basal Implants</a></li>
-                    <li><a href="#root-canals">Teeth Whitening</a></li>
-                    <li><a href="#implants">Laser Dentistry</a></li>
+            <!-- Available Treatments -->
+            <div class="col-lg-3 mb-4 d-none d-md-block col-md-6 footer-links">
+                <h5>General Dentistry</h5>
+                <ul class="list-unstyled mt-5">
+                    <li><a href="root_canal.php" class="text-decoration-none">Root Canal</a></li>
+                    <li><a href="teeth_cleaning.php" class="text-decoration-none">Teeth Cleaning</a></li>
+                    <li><a href="crowns&bridges.php" class="text-decoration-none">Crowns & Bridges</a></li>
+                    <li><a href="teeth_removal.php" class="text-decoration-none">Painless Teeth Removal</a></li>
+                    <li><a href="tooth_colored_fillings.php" class="text-decoration-none">Tooth Colored Fillings</a></li>
+                    <li><a href="jaw_fractures.php" class="text-decoration-none">Fixing Jaw Fractures</a></li>
+
+                    
                 </ul>
             </div>
 
-            <div class="footer-links">
+
+            <div class="col-lg-3 mb-4 d-none d-md-block col-md-6 footer-links">
+                <h5>specialised Treatments</h5>
+                <ul class="list-unstyled mt-5">
+                <li><a href="#teeth-whitening" class="text-decoration-none">Basal Implants</a></li>
+                    <li><a href="teeth_whitening.php" class="text-decoration-none">Teeth Whitening</a></li>
+                    <li><a href="laser_dentistry.php" class="text-decoration-none">Laser Dentistry</a></li>
+                   
+                    <li><a href="clear_aligners.php" class="text-decoration-none">Clear Aligners</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-3 mb-4  d-none d-md-block col-md-6 footer-links">
                 <h5>Quick Links</h5>
-                <ul>
-                    <li><a href="index.php">Home</a></li>
-
-                    <li><a href="about.php">About us</a></li>
-
-                    <li><a href="service.php">Our Treatments</a></li>
-                    <li><a href="clinic.php">Our Clinics</a></li>
-                    <li><a href="contact.php">Contact us</a></li>
-                    <li><a href="appointment.php">Book Appointment</a></li>
-                    <!-- <li><a href="#privacy">Privacy Policy</a></li> -->
+                <ul class="list-unstyled mt-5">
+                    <li><a href="index.php" class="text-decoration-none">Home</a></li>
+                    <li><a href="about.php" class="text-decoration-none">About us</a></li>
+                    <li><a href="service.php" class="text-decoration-none">Our Treatments</a></li>
+                    <li><a href="clinic.php" class="text-decoration-none">Our Clinics</a></li>
+                    <li><a href="blog.php" class="text-decoration-none">Blogs</a></li>
+                    <li><a href="contact.php" class="text-decoration-none">Contact us</a></li>
+                    <li><a href="appointment.php" class="text-decoration-none">Book Appointment</a></li>
                 </ul>
             </div>
+
         </div>
 
-        <div class="footer-bottom">
-            <p style="color: #666; margin: 0;">© 2024 Denta Care Health Ventures LLP. ALL RIGHTS RESERVED</p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/hontistry"><i class="fab fa-facebook"></i> Facebook</a>
-                <a href="https://www.youtube.com/channel/UCmE0BrRzE5dzfljOoCx_PuQ"><i class="fab fa-twitter"></i> Youtube</a>
-                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-                <a href="https://www.linkedin.com/company/hontistry/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <hr>
+
+        <!-- Footer Bottom -->
+        <div class="row footer-bottom align-items-center">
+            <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                <p class="mb-0 text-muted">© 2025 Care n concern dental hospital. ALL RIGHTS RESERVED
+                    <a href="https://bhavicreations.com/" target="_blank" class="text-decoration-none">bhavicreations</a>
+                </p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <a href="https://www.facebook.com/hontistry" class="text-decoration-none social_media me-2"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://www.youtube.com/channel/UCmE0BrRzE5dzfljOoCx_PuQ" class="text-decoration-none  social_media me-2"><i class="fab fa-youtube"></i> Youtube</a>
+                <a href="#" class="text-decoration-none social_media me-2"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.linkedin.com/company/hontistry/" class="text-decoration-none social_media"><i class="fab fa-linkedin"></i> LinkedIn</a>
             </div>
         </div>
+
     </div>
 </footer>
+
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>

@@ -3,589 +3,710 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Dr. Sunil S - Care 'n' Concern Family Dental Care</title>
+    <title>Dental Services - Multiple Designs</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root {
-            --primary-color: #4DAFDF;
-            --secondary-color: #667eea;
-            --accent-color: #764ba2;
-            --text-dark: #2c3e50;
-            --text-light: #6c757d;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Poppins', sans-serif;
-            color: var(--text-dark);
-            line-height: 1.7;
-            overflow-x: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
         }
-
-        /* Hero Section */
-        .hero-section {
-            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
-            padding: 100px 0 60px;
-            position: relative;
-            overflow: hidden;
+        
+        section {
+            padding: 80px 0;
         }
-
-        .hero-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
-            background-size: cover;
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
         }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero-title {
-            font-size: 3.5rem;
+        
+        .section-title h2 {
+            font-size: 2.5rem;
             font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            font-size: 1.1rem;
+            color: #6c757d;
+        }
+        
+        /* DESIGN 1: Gradient Cards with Icons */
+        #design1 {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        #design1 .section-title h2,
+        #design1 .section-title p {
             color: white;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
         }
-
-        .hero-subtitle {
-            font-size: 1.5rem;
-            color: rgba(255,255,255,0.95);
-            font-weight: 300;
-        }
-
-        /* Doctor Profile Section */
-        .doctor-profile {
-            margin-top: -80px;
-            position: relative;
-            z-index: 10;
-        }
-
-        .profile-card {
+        
+        .service-card-1 {
             background: white;
             border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
-            overflow: hidden;
-            transition: transform 0.3s ease;
-        }
-
-        .profile-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .profile-image {
-            width: 100%;
-            height: 500px;
-            object-fit: cover;
-        }
-
-        .profile-content {
-            padding: 40px;
-        }
-
-        .profile-title {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
-
-        .profile-tagline {
-            font-size: 1.2rem;
-            color: var(--text-light);
-            font-style: italic;
-            margin-bottom: 25px;
-        }
-
-        .profile-description {
-            font-size: 1.05rem;
-            color: var(--text-dark);
-            line-height: 1.8;
-        }
-
-        /* Stats Section */
-        .stats-section {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            padding: 60px 0;
-            margin: 60px 0;
-        }
-
-        .stat-card {
+            padding: 40px 30px;
             text-align: center;
-            color: white;
-            padding: 30px 20px;
-        }
-
-        .stat-icon {
-            font-size: 3rem;
-            margin-bottom: 15px;
-            opacity: 0.9;
-        }
-
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .stat-label {
-            font-size: 1rem;
-            opacity: 0.95;
-        }
-
-        /* Features Section */
-        .features-section {
-            padding: 80px 0;
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--text-dark);
-            margin-bottom: 15px;
-            text-align: center;
-        }
-
-        .section-subtitle {
-            font-size: 1.1rem;
-            color: var(--text-light);
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .feature-card {
-            background: white;
-            border-radius: 15px;
-            padding: 35px;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             height: 100%;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
+            margin-bottom: 30px;
         }
-
-        .feature-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-            border-color: var(--primary-color);
+        
+        .service-card-1:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
         }
-
-        .feature-icon {
-            width: 70px;
-            height: 70px;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        
+        .service-card-1 .icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 20px;
-            font-size: 1.8rem;
+            margin: 0 auto 25px;
+            transition: all 0.4s ease;
+        }
+        
+        .service-card-1:hover .icon {
+            transform: rotate(360deg) scale(1.1);
+        }
+        
+        .service-card-1 .icon i {
+            font-size: 35px;
             color: white;
         }
-
-        .feature-title {
-            font-size: 1.3rem;
+        
+        .service-card-1 h4 {
+            font-size: 1.4rem;
             font-weight: 600;
-            color: var(--text-dark);
             margin-bottom: 15px;
+            color: #2c3e50;
         }
-
-        .feature-description {
-            font-size: 0.95rem;
-            color: var(--text-light);
+        
+        .service-card-1 p {
+            color: #7f8c8d;
             line-height: 1.7;
         }
-
-        /* Credentials Section */
-        .credentials-section {
-            background: #f8f9fa;
-            padding: 80px 0;
+        
+        /* DESIGN 2: Horizontal Cards with Image Left */
+        #design2 {
+            background: #ffffff;
         }
-
-        .credential-item {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-            transition: all 0.3s ease;
-            border-left: 4px solid var(--primary-color);
+        
+        #design2 .section-title h2 {
+            color: #2c3e50;
         }
-
-        .credential-item:hover {
-            transform: translateX(10px);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        }
-
-        .credential-icon {
-            color: var(--primary-color);
-            margin-right: 15px;
-            font-size: 1.2rem;
-        }
-
-        /* Philosophy Section */
-        .philosophy-section {
-            padding: 80px 0;
-        }
-
-        .philosophy-card {
-            background: linear-gradient(135deg, rgba(77,175,223,0.1) 0%, rgba(102,126,234,0.1) 100%);
+        
+        .service-card-2 {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             border-radius: 15px;
-            padding: 40px;
+            overflow: hidden;
             margin-bottom: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
         }
-
-        .philosophy-number {
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            border-radius: 50%;
+        
+        .service-card-2:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+        
+        .service-card-2 .icon-box {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            width: 150px;
+            height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 20px;
+            float: left;
         }
-
-        .philosophy-text {
-            font-size: 1.05rem;
-            color: var(--text-dark);
-            line-height: 1.8;
-        }
-
-        /* CTA Section */
-        .cta-section {
-            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
-            padding: 80px 0;
+        
+        .service-card-2 .icon-box i {
+            font-size: 50px;
             color: white;
-            text-align: center;
         }
-
-        .cta-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 20px;
+        
+        .service-card-2 .content {
+            padding: 30px;
+            margin-left: 150px;
         }
-
-        .cta-text {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            opacity: 0.95;
-        }
-
-        .btn-custom {
-            padding: 15px 40px;
-            font-size: 1.1rem;
-            border-radius: 50px;
+        
+        .service-card-2 h4 {
+            font-size: 1.4rem;
             font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .service-card-2 p {
+            color: #34495e;
+            margin: 0;
+            line-height: 1.6;
+        }
+        
+        .grad-1 { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .grad-2 { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .grad-3 { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .grad-4 { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+        .grad-5 { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+        .grad-6 { background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); }
+        .grad-7 { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); }
+        .grad-8 { background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%); }
+        .grad-9 { background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); }
+        
+        /* DESIGN 3: Minimal Cards with Border */
+        #design3 {
+            background: #ecf0f1;
+        }
+        
+        #design3 .section-title h2 {
+            color: #2c3e50;
+        }
+        
+        .service-card-3 {
+            background: white;
+            border: 3px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 40px 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+            height: 100%;
+        }
+        
+        .service-card-3:hover {
+            border-color: #3498db;
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(52, 152, 219, 0.2);
+        }
+        
+        .service-card-3 .icon {
+            font-size: 50px;
+            color: #3498db;
+            margin-bottom: 20px;
             transition: all 0.3s ease;
         }
-
-        .btn-light-custom {
-            background: white;
-            color: var(--primary-color);
-            border: none;
+        
+        .service-card-3:hover .icon {
+            transform: scale(1.2);
+            color: #2980b9;
         }
-
-        .btn-light-custom:hover {
-            background: var(--primary-color);
+        
+        .service-card-3 h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .service-card-3 p {
+            color: #7f8c8d;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        /* DESIGN 4: Modern Glass Morphism */
+        #design4 {
+            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+        }
+        
+        #design4 .section-title h2,
+        #design4 .section-title p {
             color: white;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
-
-        /* Responsive */
+        
+        .service-card-4 {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 35px 25px;
+            text-align: center;
+            transition: all 0.4s ease;
+            margin-bottom: 30px;
+            height: 100%;
+        }
+        
+        .service-card-4:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        
+        .service-card-4 .icon {
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            transition: all 0.4s ease;
+        }
+        
+        .service-card-4:hover .icon {
+            transform: rotateY(180deg);
+        }
+        
+        .service-card-4 .icon i {
+            font-size: 40px;
+            color: white;
+        }
+        
+        .service-card-4 h4 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 15px;
+        }
+        
+        .service-card-4 p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.7;
+        }
+        
         @media (max-width: 768px) {
-            .hero-title {
-                font-size: 2rem;
+            .service-card-2 .icon-box {
+                width: 100%;
+                height: 120px;
+                float: none;
             }
-
-            .hero-subtitle {
-                font-size: 1.1rem;
-            }
-
-            .profile-image {
-                height: 350px;
-            }
-
-            .section-title {
-                font-size: 1.8rem;
-            }
-
-            .stat-number {
-                font-size: 2rem;
+            
+            .service-card-2 .content {
+                margin-left: 0;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container hero-content">
-            <div class="row align-items-center">
-                <div class="col-lg-12 text-center">
-                    <h1 class="hero-title animate__animated animate__fadeInDown">About Dr. Sunil S</h1>
-                    <p class="hero-subtitle animate__animated animate__fadeInUp">"Your Family Dentist" - Bringing Back the Age-Old System of Family Doctor</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Doctor Profile Section -->
-    <section class="doctor-profile">
+    <!-- DESIGN 1: Gradient Background with Card Grid -->
+    <section id="design1">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="profile-card">
-                        <div class="row g-0">
-                            <div class="col-md-5">
-                                <img src="https://i.postimg.cc/Pr4Tg7C1/doctor-office.jpg" alt="Dr. Sunil S" class="profile-image">
-                            </div>
-                            <div class="col-md-7">
-                                <div class="profile-content">
-                                    <h2 class="profile-title">Dr. Sunil S</h2>
-                                    <p class="profile-tagline">"Your Family Dentist"</p>
-                                    <p class="profile-description">
-                                        Director & Chief-Doctor of Care 'n' Concern Family Dental Clinic at Hampinagar since 8 years. Dr. Sunil owns the brand Care 'n Concern' which stands for <strong>Honest Dental Care</strong>. He is also a Professor in the subject of Periodontics & Implantology and holds a fellowship in Dental Lasers from Singapore.
-                                    </p>
-                                    <p class="profile-description">
-                                        Dr. Sunil S is striving to bring back the age-old system of "family doctor" where there is a life-long relationship between patient & dentist. He would like to take care of your dental needs in a trustable & caring manner.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="section-title">
+                <h2>Our Dental Services</h2>
+                <p>Comprehensive care with state-of-the-art technology</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-6">
-                    <div class="stat-card">
-                        <div class="stat-icon"><i class="fas fa-user-md"></i></div>
-                        <div class="stat-number">15+</div>
-                        <div class="stat-label">Years Experience</div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="stat-card">
-                        <div class="stat-icon"><i class="fas fa-users"></i></div>
-                        <div class="stat-number">13,000+</div>
-                        <div class="stat-label">People Reached</div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="stat-card">
-                        <div class="stat-icon"><i class="fas fa-award"></i></div>
-                        <div class="stat-number">8+</div>
-                        <div class="stat-label">Years at Hampinagar</div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="stat-card">
-                        <div class="stat-icon"><i class="fas fa-tooth"></i></div>
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Honest Care</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features-section">
-        <div class="container">
-            <h2 class="section-title">Expertise & Specializations</h2>
-            <p class="section-subtitle">Providing Advanced Dental Care with a Personal Touch</p>
             
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-teeth"></i>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-1">
+                        <div class="icon">
+                            <i class="fas fa-tooth"></i>
                         </div>
-                        <h3 class="feature-title">Periodontics & Implantology</h3>
-                        <p class="feature-description">
-                            Expert in treating gum diseases and performing precise dental implant procedures with over 15 years of specialized experience.
-                        </p>
+                        <h4>Root Canal</h4>
+                        <p>Expert root canal treatment to save your natural teeth and relieve pain with advanced techniques.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-laser"></i>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-1">
+                        <div class="icon">
+                            <i class="fas fa-spray-can"></i>
                         </div>
-                        <h3 class="feature-title">Laser Dentistry</h3>
-                        <p class="feature-description">
-                            Fellowship in Dental Lasers from Singapore. Offering pain-less, blood-less, stitch-less & often anesthesia-less therapies.
-                        </p>
+                        <h4>Teeth Cleaning</h4>
+                        <p>Professional dental cleaning to maintain oral hygiene and prevent gum disease.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-microscope"></i>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-1">
+                        <div class="icon">
+                            <i class="fas fa-crown"></i>
                         </div>
-                        <h3 class="feature-title">Research & Innovation</h3>
-                        <p class="feature-description">
-                            Discovered a new oral condition and developed simplified stitch-less surgical techniques. Patent holder for new drug delivery systems.
-                        </p>
+                        <h4>Crowns & Bridges</h4>
+                        <p>Restore your smile with custom-fitted crowns and bridges for damaged teeth.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-1">
+                        <div class="icon">
                             <i class="fas fa-hand-holding-medical"></i>
                         </div>
-                        <h3 class="feature-title">Preventive Care</h3>
-                        <p class="feature-description">
-                            Trained in iTOP (Individually Trained Oral Prophylaxis) - a Swiss-based concept for preventing decay & gum diseases.
-                        </p>
+                        <h4>Painless Removal</h4>
+                        <p>Comfortable tooth extraction using modern anesthesia techniques.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-syringe"></i>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-1">
+                        <div class="icon">
+                            <i class="fas fa-fill-drip"></i>
                         </div>
-                        <h3 class="feature-title">Needle-less Technology</h3>
-                        <p class="feature-description">
-                            Developing economical needle-less injection technique to address one of the TOP 10 fears in the world - fear of needles.
-                        </p>
+                        <h4>Tooth Fillings</h4>
+                        <p>Natural-looking composite fillings that blend seamlessly with your teeth.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-heart"></i>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-1">
+                        <div class="icon">
+                            <i class="fas fa-x-ray"></i>
                         </div>
-                        <h3 class="feature-title">Holistic Approach</h3>
-                        <p class="feature-description">
-                            Heartfulness international meditation trainer, offering free meditation to transform lives and create a stress-free, harmonious world.
-                        </p>
+                        <h4>Jaw Fractures</h4>
+                        <p>Specialized treatment for jaw injuries with comprehensive care.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-1">
+                        <div class="icon">
+                            <i class="fas fa-teeth"></i>
+                        </div>
+                        <h4>Basal Implants</h4>
+                        <p>Advanced implant technology for permanent tooth replacement.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-1">
+                        <div class="icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Teeth Whitening</h4>
+                        <p>Professional whitening for a brighter, more confident smile.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-1">
+                        <div class="icon">
+                            <i class="fas fa-laser"></i>
+                        </div>
+                        <h4>Laser Dentistry</h4>
+                        <p>Precision laser treatments for minimally invasive procedures.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Philosophy Section -->
-    <section class="philosophy-section">
+    <!-- DESIGN 2: Horizontal Cards Layout -->
+    <section id="design2">
         <div class="container">
-            <h2 class="section-title">Treatment Philosophy</h2>
-            <p class="section-subtitle">Reducing Dental Treatment Costs Through Smart Care</p>
+            <div class="section-title">
+                <h2>Professional Dental Care</h2>
+                <p>Modern treatments for your perfect smile</p>
+            </div>
             
             <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="philosophy-card">
-                        <div class="philosophy-number">1</div>
-                        <p class="philosophy-text">
-                            <strong>Take appropriate preventive measures</strong> - Focus on preventing dental problems before they occur through regular checkups and proper oral hygiene.
-                        </p>
+                <div class="col-lg-6">
+                    <div class="service-card-2">
+                        <div class="icon-box grad-1">
+                            <i class="fas fa-tooth"></i>
+                        </div>
+                        <div class="content">
+                            <h4>Root Canal Treatment</h4>
+                            <p>Expert root canal treatment to save your natural teeth and relieve pain.</p>
+                        </div>
                     </div>
-                    
-                    <div class="philosophy-card">
-                        <div class="philosophy-number">2</div>
-                        <p class="philosophy-text">
-                            <strong>Minimal and necessary interventions</strong> - Only recommend treatments that are truly needed, avoiding unnecessary procedures.
-                        </p>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="service-card-2">
+                        <div class="icon-box grad-2">
+                            <i class="fas fa-spray-can"></i>
+                        </div>
+                        <div class="content">
+                            <h4>Teeth Cleaning</h4>
+                            <p>Professional dental cleaning to maintain oral hygiene and health.</p>
+                        </div>
                     </div>
-                    
-                    <div class="philosophy-card">
-                        <div class="philosophy-number">3</div>
-                        <p class="philosophy-text">
-                            <strong>Affordable advanced care</strong> - Offer advanced quality dental care at prices which are affordable, making it more economical compared to the same quality care elsewhere.
-                        </p>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="service-card-2">
+                        <div class="icon-box grad-3">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="content">
+                            <h4>Crowns & Bridges</h4>
+                            <p>Custom-fitted crowns and bridges for damaged or missing teeth.</p>
+                        </div>
                     </div>
-                    
-                    <div class="philosophy-card">
-                        <div class="philosophy-number">4</div>
-                        <p class="philosophy-text">
-                            <strong>Durable high-quality treatments</strong> - Provide treatments that are long-lasting and durable, lighter on patients' pockets in the long run.
-                        </p>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="service-card-2">
+                        <div class="icon-box grad-4">
+                            <i class="fas fa-hand-holding-medical"></i>
+                        </div>
+                        <div class="content">
+                            <h4>Painless Teeth Removal</h4>
+                            <p>Comfortable extraction using modern anesthesia techniques.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="service-card-2">
+                        <div class="icon-box grad-5">
+                            <i class="fas fa-fill-drip"></i>
+                        </div>
+                        <div class="content">
+                            <h4>Tooth Colored Fillings</h4>
+                            <p>Natural composite fillings that blend with your teeth.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="service-card-2">
+                        <div class="icon-box grad-6">
+                            <i class="fas fa-x-ray"></i>
+                        </div>
+                        <div class="content">
+                            <h4>Fixing Jaw Fractures</h4>
+                            <p>Specialized care for jaw injuries with rehabilitation support.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="service-card-2">
+                        <div class="icon-box grad-7">
+                            <i class="fas fa-teeth"></i>
+                        </div>
+                        <div class="content">
+                            <h4>Basal Implants</h4>
+                            <p>Advanced technology for permanent tooth replacement.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="service-card-2">
+                        <div class="icon-box grad-8">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="content">
+                            <h4>Teeth Whitening</h4>
+                            <p>Professional whitening for a brighter smile.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="service-card-2">
+                        <div class="icon-box grad-9">
+                            <i class="fas fa-laser"></i>
+                        </div>
+                        <div class="content">
+                            <h4>Laser Dentistry</h4>
+                            <p>Precision laser treatments for faster healing.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Credentials Section -->
-    <section class="credentials-section">
+    <!-- DESIGN 3: Minimal Border Cards -->
+    <section id="design3">
         <div class="container">
-            <h2 class="section-title">Professional Credentials</h2>
-            <p class="section-subtitle">Continuous Learning for Better Patient Care</p>
+            <div class="section-title">
+                <h2>Quality Dental Solutions</h2>
+                <p>Your smile is our priority</p>
+            </div>
             
             <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="credential-item">
-                                <i class="fas fa-certificate credential-icon"></i>
-                                <strong>Laser International Fellowship</strong> from Singapore
-                            </div>
-                            <div class="credential-item">
-                                <i class="fas fa-certificate credential-icon"></i>
-                                <strong>Trained in Traditional Implantology</strong>
-                            </div>
-                            <div class="credential-item">
-                                <i class="fas fa-certificate credential-icon"></i>
-                                <strong>Certified Basal Implantologist</strong> from International Foundation for Implant Dentistry
-                            </div>
-                            <div class="credential-item">
-                                <i class="fas fa-certificate credential-icon"></i>
-                                <strong>Expert in Plastic Surgical Procedures</strong> of Gums
-                            </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-3">
+                        <div class="icon">
+                            <i class="fas fa-tooth"></i>
                         </div>
-                        <div class="col-md-6">
-                            <div class="credential-item">
-                                <i class="fas fa-certificate credential-icon"></i>
-                                <strong>Professor in Periodontics & Implantology</strong>
-                            </div>
-                            <div class="credential-item">
-                                <i class="fas fa-certificate credential-icon"></i>
-                                <strong>Editor</strong> for Rajiv Gandhi University Dental Journal (5 years)
-                            </div>
-                            <div class="credential-item">
-                                <i class="fas fa-certificate credential-icon"></i>
-                                <strong>Published Author</strong> in national & international journals
-                            </div>
-                            <div class="credential-item">
-                                <i class="fas fa-certificate credential-icon"></i>
-                                <strong>Heartfulness International Meditation Trainer</strong>
-                            </div>
+                        <h4>Root Canal</h4>
+                        <p>Expert treatment to save your natural teeth with advanced techniques.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-3">
+                        <div class="icon">
+                            <i class="fas fa-spray-can"></i>
                         </div>
+                        <h4>Teeth Cleaning</h4>
+                        <p>Professional cleaning to maintain oral hygiene and prevent disease.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-3">
+                        <div class="icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h4>Crowns & Bridges</h4>
+                        <p>Custom solutions for damaged or missing teeth restoration.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-3">
+                        <div class="icon">
+                            <i class="fas fa-hand-holding-medical"></i>
+                        </div>
+                        <h4>Painless Removal</h4>
+                        <p>Comfortable extraction with modern anesthesia methods.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-3">
+                        <div class="icon">
+                            <i class="fas fa-fill-drip"></i>
+                        </div>
+                        <h4>Tooth Fillings</h4>
+                        <p>Natural-looking fillings that blend perfectly with teeth.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-3">
+                        <div class="icon">
+                            <i class="fas fa-x-ray"></i>
+                        </div>
+                        <h4>Jaw Fractures</h4>
+                        <p>Specialized treatment for jaw injuries and rehabilitation.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-3">
+                        <div class="icon">
+                            <i class="fas fa-teeth"></i>
+                        </div>
+                        <h4>Basal Implants</h4>
+                        <p>Advanced implant technology for permanent replacement.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-3">
+                        <div class="icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Teeth Whitening</h4>
+                        <p>Professional treatments for a brighter, confident smile.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-3">
+                        <div class="icon">
+                            <i class="fas fa-laser"></i>
+                        </div>
+                        <h4>Laser Dentistry</h4>
+                        <p>Precision laser treatments for minimally invasive care.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
+    <!-- DESIGN 4: Glass Morphism Dark Theme -->
+    <section id="design4">
         <div class="container">
-            <h2 class="cta-title">Experience Honest Dental Care</h2>
-            <p class="cta-text">Let Dr. Sunil S be your trusted family dentist for life-long dental health</p>
-            <button class="btn btn-light-custom btn-custom">
-                <i class="fas fa-calendar-check me-2"></i>Book an Appointment
-            </button>
+            <div class="section-title">
+                <h2>Advanced Dental Excellence</h2>
+                <p>Experience the future of dental care</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-4">
+                        <div class="icon">
+                            <i class="fas fa-tooth"></i>
+                        </div>
+                        <h4>Root Canal</h4>
+                        <p>Expert root canal treatment to save your natural teeth and relieve pain.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-4">
+                        <div class="icon">
+                            <i class="fas fa-spray-can"></i>
+                        </div>
+                        <h4>Teeth Cleaning</h4>
+                        <p>Professional cleaning to maintain optimal oral hygiene and health.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-4">
+                        <div class="icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h4>Crowns & Bridges</h4>
+                        <p>Custom-fitted solutions for damaged or missing teeth restoration.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-4">
+                        <div class="icon">
+                            <i class="fas fa-hand-holding-medical"></i>
+                        </div>
+                        <h4>Painless Removal</h4>
+                        <p>Comfortable extraction using modern anesthesia techniques.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-4">
+                        <div class="icon">
+                            <i class="fas fa-fill-drip"></i>
+                        </div>
+                        <h4>Tooth Fillings</h4>
+                        <p>Natural composite fillings that blend seamlessly with your teeth.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-4">
+                        <div class="icon">
+                            <i class="fas fa-x-ray"></i>
+                        </div>
+                        <h4>Jaw Fractures</h4>
+                        <p>Specialized treatment for jaw injuries with comprehensive care.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-4">
+                        <div class="icon">
+                            <i class="fas fa-teeth"></i>
+                        </div>
+                        <h4>Basal Implants</h4>
+                        <p>Advanced implant technology for permanent tooth replacement.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-4">
+                        <div class="icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Teeth Whitening</h4>
+                        <p>Professional whitening treatments for a brighter smile.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-4">
+                        <div class="icon">
+                            <i class="fas fa-laser"></i>
+                        </div>
+                        <h4>Laser Dentistry</h4>
+                        <p>Precision laser treatments for minimally invasive procedures.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 

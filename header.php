@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style2.css">
 
 
 
@@ -160,37 +161,111 @@
     <meta name="twitter:image" content="https://carenconcern.com/og-image.jpg">
 
 
+   
+
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container navbar_section">
-            <a class="navbar-brand" href="#">
-                <!-- <span class="denta">DENTA</span> <span class="care">CARE</span> -->
-                <img src="./assets/images/logo.jpg" alt="" class="img-fluid" style="width: 100px; height: 80px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.php">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.php">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="service.php">OUR TREATMENTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="clinic.php">OUR CLINICS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.php">CONTACT US</a>
-                    </li>
-                </ul>
-            </div>
-            <a href="appointment.php" class="btn-book d-none d-lg-inline-flex">BOOK APPOINTMENT</a>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/images/logo.jpg" alt="Denta Care" class="img-fluid" style="width: 100px; height: 80px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav align-items-center">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.php">HOME</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.php">ABOUT</a>
+                </li>
+
+                <!-- SERVICES Mega Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="service.php" id="servicesDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        SERVICES
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <!-- Sub Service 1 -->
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">General Dentistry</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="root_canal.php">painless Root Canal</a></li>
+                                <li><a class="dropdown-item" href="teeth_cleaning.php">Teeth Cleaning</a></li>
+                                <li><a class="dropdown-item" href="crowns&bridges.php">Crowns & Bridges</a></li>
+                                <li><a class="dropdown-item" href="teeth_removal.php">Painless Teeth Removal ​</a></li>
+                                <li><a class="dropdown-item" href="tooth_colored_fillings.php">Tooth Colored Fillings</a></li>
+                                <li><a class="dropdown-item" href="jaw_fractures.php">Fixing Jaw Fractures</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Sub Service 2 -->
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">specialised Treatment</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="basal_implants.php">Basal Implants</a></li>
+                                <li><a class="dropdown-item" href="laser_dentistry.php">Laser Dentistry</a></li>
+                                <li><a class="dropdown-item" href="teeth_whitening.php">Teeth Whitening</a></li>
+                                <li><a class="dropdown-item" href="clear_aligners.php">Clear Aligners</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="clinic.php">OUR CLINICS</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.php">BLOGS</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.php">CONTACT US</a>
+                </li>
+
+            </ul>
         </div>
-    </nav>
+
+        <a href="#appointment" class="btn-book index_button_section d-none d-lg-inline-flex">BOOK APPOINTMENT</a>
+    </div>
+</nav>
+
+
+<!-- <script>
+document.addEventListener('DOMContentLoaded', function () {
+    const submenus = document.querySelectorAll('.dropdown-submenu > a');
+
+    submenus.forEach(function (submenu) {
+        submenu.addEventListener('click', function (e) {
+            const nextMenu = this.nextElementSibling;
+            if (nextMenu && nextMenu.classList.contains('dropdown-menu')) {
+                e.preventDefault(); // prevent default link action
+                nextMenu.classList.toggle('show');
+            }
+        });
+    });
+
+    // Close all submenus when main dropdown closes
+    const mainDropdowns = document.querySelectorAll('.dropdown');
+    mainDropdowns.forEach(function (dropdown) {
+        dropdown.addEventListener('hidden.bs.dropdown', function () {
+            const submenus = dropdown.querySelectorAll('.dropdown-menu.show');
+            submenus.forEach(function (submenu) {
+                submenu.classList.remove('show');
+            });
+        });
+    });
+});
+</script> -->
