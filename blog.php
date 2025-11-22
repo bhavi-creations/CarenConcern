@@ -64,7 +64,7 @@ $result = $stmt->get_result();
     </div> 
 
     <!-- Blogs Section -->
-    <div class="container blog-sidebar-list" style="padding-top: 20px; padding-bottom: 20px;">
+    <!-- <div class="container blog-sidebar-list" style="padding-top: 20px; padding-bottom: 20px;">
       <div class="row">
         <div class="col-lg-12">
           <div class="grid row">
@@ -95,7 +95,7 @@ $result = $stmt->get_result();
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </main>
   <!-- ======= Footer ======= -->
   <?php include('./footer.php'); ?>

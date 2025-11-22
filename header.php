@@ -238,7 +238,7 @@
             </ul>
         </div>
 
-        <a href="#appointment" class="btn-book index_button_section d-none d-lg-inline-flex">BOOK APPOINTMENT</a>
+        <a href="appointment.php" class="btn-book index_button_section d-none d-lg-inline-flex">BOOK APPOINTMENT</a>
     </div>
 </nav>
 
