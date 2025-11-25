@@ -160,7 +160,9 @@
     <meta name="twitter:description" content="Modern & gentle dental care in Vijayanagar, Bengaluru. Implants, aligners, RCT, laser dentistry & more.">
     <meta name="twitter:image" content="https://carenconcern.com/og-image.jpg">
 
-
+    <!-- boostrap icons cdn link   -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
    
 
 
@@ -224,7 +226,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="clinic.php">OUR CLINICS</a>
+                    <a class="nav-link" href="clinic.php">CLINICS</a>
                 </li>
 
                 <li class="nav-item">
@@ -232,7 +234,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.php">CONTACT US</a>
+                    <a class="nav-link" href="contact.php">CONTACT</a>
                 </li>
 
             </ul>
@@ -269,3 +271,26 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 </script> -->
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('.dropdown-submenu > a').forEach(function (element) {
+        element.addEventListener("click", function (e) {
+            let nextEl = this.nextElementSibling;
+
+            if (nextEl && nextEl.classList.contains('dropdown-menu')) {
+                e.preventDefault();
+
+                if (nextEl.style.display === "block") {
+                    nextEl.style.display = "none";
+                } else {
+                    nextEl.style.display = "block";
+                }
+            }
+        });
+    });
+});
+</script>

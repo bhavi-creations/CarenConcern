@@ -79,6 +79,13 @@
 </footer>
 
 
+<a href="https://api.whatsapp.com/send?phone=919845802787" style="color: #fff;" class="whatsapp-link"
+    target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    
+</a>
+
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

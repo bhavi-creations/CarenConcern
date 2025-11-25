@@ -1,8 +1,12 @@
 <?php include 'header.php'; ?>
 
+<section class="sample_secrtion">
+    <img src="./assets/images/new_images/index page.jpg" alt="" class="img-fluid">
+</section>
+
 
 <!-- Hero Section -->
- <section class="home_section">
+<!-- <section class="home_section">
     <div class="hero-section container">
 
 
@@ -59,7 +63,7 @@
             </div>
         </div>
     </div>
-</section> 
+</section>  -->
 
 <!-- Services Navigation -->
 <!-- <div class="services-nav">
@@ -90,18 +94,18 @@
 
                         <div class="carousel-item active">
                             <h2 class="about_mission">Our Mission</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis perferendis odio quae debitis atque! Laborum iure earum illum, sint at officia quasi, eaque, ex nulla doloremque repudiandae. Distinctio, nemo fuga!</p>
+                            <p>Skillful Dentistry, Experience, Honesty and a Passion to Serve: all blend together to create the environment of Hontistry™. Yes, you can Trust Us and what we offer.</p>
                         </div>
 
                         <div class="carousel-item">
                             <h2 class="about_mission">Our Mission</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis perferendis odio quae debitis atque! Laborum iure earum illum, sint at officia quasi, eaque, ex nulla doloremque repudiandae. Distinctio, nemo fuga!</p>
+                            <p>Advanced & Quality Dental Care You Can Trust. Clinical treatments, products, information and more offerings from Dr Sunil Sathyanarayana, Your Family Dentist.</p>
                         </div>
 
-                        <div class="carousel-item">
+                        <!-- <div class="carousel-item">
                             <h2 class="about_mission">Our Mission</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis perferendis odio quae debitis atque! Laborum iure earum illum, sint at officia quasi, eaque, ex nulla doloremque repudiandae. Distinctio, nemo fuga!</p>
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
@@ -114,16 +118,16 @@
         <div class="row mt-5">
             <div class="col-md-6 col-12">
                 <div class="row">
-                    <img src="./assets/images/about_rect1.png" alt="" class="img-fluid">
+                    <img src="./assets/images/new_images/aboutus  ld1.jpg" alt="" class="img-fluid">
                 </div>
                 <div class="row mt-3">
                     <div class="col-12 col-md-6">
-                        <button class="about_dental ">Dental Care</button>
+                        <!-- <button class="about_dental ">Dental Care</button> -->
                         <!-- <button class="about_dental_care ">Dental Care</button> -->
                         <!-- <button class="about_section">mani</button> -->
                     </div>
                     <div class="col-12 col-md-6">
-                        <img src="./assets/images/about_sq1.png" alt="" class="img-fluid">
+                        <img src="./assets/images/new_images/aboutus sq 1.jpg" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -131,14 +135,14 @@
 
                 <div class="row">
                     <div class="col-12 col-md-6">
-                        <img src="./assets/images/about_sq2.png" alt="" class="img-fluid">
+                        <img src="./assets/images/new_images/aboutus sq 2.jpg" alt="" class="img-fluid">
                     </div>
                     <div class="col-12 col-md-6">
                     </div>
                 </div>
 
                 <div class="row mt-3">
-                    <img src="./assets/images/about_rect2.png" alt="" class="img-fluid">
+                    <img src="./assets/images/new_images/aboutus  ld2.jpg" alt="" class="img-fluid">
                 </div>
 
             </div>
@@ -162,8 +166,8 @@
 
 
                 <div class=>
-                    <h2 class="about_mission">Our Mission</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis perferendis odio quae debitis atque! Laborum iure earum illum, sint at officia quasi, eaque, ex nulla doloremque repudiandae. Distinctio, nemo fuga!</p>
+                    <!-- <h2 class="about_mission">Our Mission</h2> -->
+                    <p>We offer All Round Care And Treatments related to all your dental health at our clinic. We assure best in its class treatment with an attitude to treat you as our own family. We look forward to seeing you.</p>
                 </div>
 
             </div>
@@ -182,20 +186,22 @@
 
                     <div class="custom-card custom_card_bg_three swiper-slide">
                         <div class="custom-card-section service_slide1">
-                            <h1 class="display-5 card-heading">root canal </h1>
+                            <a href="root_canal.php">
+                                <h1 class="display-5 card-heading"> root canal </h1>
 
-                            <div class="tags-container">
-                                <span class="custom-tag">Endo Care</span>
-                                <span class="custom-tag">Pain-Free Procedure</span>
-                                <span class="custom-tag">Nerve Relief</span>
-                                <span class="custom-tag">Fast Healing</span>
-                            </div>
+                                <div class="tags-container">
+                                    <span class="custom-tag">Endo Care</span>
+                                    <span class="custom-tag">Pain-Free Procedure</span>
+                                    <span class="custom-tag">Nerve Relief</span>
+                                    <span class="custom-tag">Fast Healing</span>
+                                </div>
 
-                            <div class="image-container">
-                                <img src="./assets/images/rootcanal image.png"
-                                    alt="Happy person with braces"
-                                    class="person-image">
-                            </div>
+                                <div class="image-container">
+                                    <img src="./assets/images/new_images/treatments 1.jpg"
+                                        alt="Happy person with braces"
+                                        class="person-image">
+                                </div>
+                            </a>
                         </div>
 
                     </div>
@@ -204,40 +210,44 @@
 
 
                         <div class="custom-card-section service_slide2">
-                            <h1 class="display-5 card-heading">Teeth Cleaning</h1>
+                            <a href="teeth_cleaning.php">
+                                <h1 class="display-5 card-heading">Teeth Cleaning</h1>
 
-                            <div class="tags-container">
-                                <span class="custom-tag">Bright Smile</span>
-                                <span class="custom-tag">Plaque Removal</span>
-                                <span class="custom-tag">Fresh Breath</span>
-                                <span class="custom-tag">Healthy Gums</span>
-                            </div>
+                                <div class="tags-container">
+                                    <span class="custom-tag">Bright Smile</span>
+                                    <span class="custom-tag">Plaque Removal</span>
+                                    <span class="custom-tag">Fresh Breath</span>
+                                    <span class="custom-tag">Healthy Gums</span>
+                                </div>
 
-                            <div class="image-container">
-                                <img src="./assets/images/teeth cleaning image.png"
-                                    alt="Happy person with braces"
-                                    class="person-image">
-                            </div>
+                                <div class="image-container">
+                                    <img src="./assets/images/teeth cleaning image.png"
+                                        alt="Happy person with braces"
+                                        class="person-image">
+                                </div>
+                            </a>
                         </div>
                     </div>
 
                     <div class="custom-card custom_card_bg_three swiper-slide  ">
 
                         <div class="custom-card-section service_slide3">
-                            <h1 class="display-5 card-heading">Crowns & Bridges</h1>
+                            <a href="crowns&bridges.php">
+                                <h1 class="display-5 card-heading">Crowns & Bridges</h1>
 
-                            <div class="tags-container">
-                                <span class="custom-tag">Durable Restoration</span>
-                                <span class="custom-tag">Perfect Fit</span>
-                                <span class="custom-tag">Natural Appearance</span>
-                                <span class="custom-tag">Long-Lasting Smile</span>
-                            </div>
+                                <div class="tags-container">
+                                    <span class="custom-tag">Durable Restoration</span>
+                                    <span class="custom-tag">Perfect Fit</span>
+                                    <span class="custom-tag">Natural Appearance</span>
+                                    <span class="custom-tag">Long-Lasting Smile</span>
+                                </div>
 
-                            <div class="image-container">
-                                <img src="./assets/images/Crowns & Bridges imges.png"
-                                    alt="Happy person with braces"
-                                    class="person-image">
-                            </div>
+                                <div class="image-container">
+                                    <img src="./assets/images/Crowns & Bridges imges.png"
+                                        alt="Happy person with braces"
+                                        class="person-image">
+                                </div>
+                            </a>
                         </div>
                     </div>
 
@@ -245,20 +255,22 @@
 
 
                         <div class="custom-card-section service_slide4">
-                            <h1 class="display-5 card-heading">Painless Teeth Removal ​</h1>
+                            <a href="teeth_removal.php">
+                                <h1 class="display-5 card-heading">Painless Teeth Removal ​</h1>
 
-                            <div class="tags-container">
-                                <span class="custom-tag">Comfort Extraction</span>
-                                <span class="custom-tag">Quick Recovery</span>
-                                <span class="custom-tag">No Discomfort</span>
-                                <span class="custom-tag">Safe Procedure</span>
-                            </div>
+                                <div class="tags-container">
+                                    <span class="custom-tag">Comfort Extraction</span>
+                                    <span class="custom-tag">Quick Recovery</span>
+                                    <span class="custom-tag">No Discomfort</span>
+                                    <span class="custom-tag">Safe Procedure</span>
+                                </div>
 
-                            <div class="image-container">
-                                <img src="./assets/images/painless-teeth-removal.png"
-                                    alt="Happy person with braces"
-                                    class="person-image">
-                            </div>
+                                <div class="image-container">
+                                    <img src="./assets/images/painless-teeth-removal.png"
+                                        alt="Happy person with braces"
+                                        class="person-image">
+                                </div>
+                            </a>
                         </div>
                     </div>
 
@@ -267,21 +279,23 @@
 
 
                         <div class="custom-card-section  service_slide5">
-                            <h1 class="display-5 card-heading">Tooth Colored Fillings</h1>
+                            <a href="tooth_colored_fillings.php">
+                                <h1 class="display-5 card-heading">Tooth Colored Fillings</h1>
 
-                            <div class="tags-container">
-                                <span class="custom-tag">Natural Look</span>
-                                <span class="custom-tag">Cavity Protection
-                                </span>
-                                <span class="custom-tag">Durable Filling</span>
-                                <span class="custom-tag">Seamless Smile</span>
-                            </div>
+                                <div class="tags-container">
+                                    <span class="custom-tag">Natural Look</span>
+                                    <span class="custom-tag">Cavity Protection
+                                    </span>
+                                    <span class="custom-tag">Durable Filling</span>
+                                    <span class="custom-tag">Seamless Smile</span>
+                                </div>
 
-                            <div class="image-container">
-                                <img src="./assets/images/Tooth-Colored-Filling.png"
-                                    alt="Happy person with braces"
-                                    class="person-image">
-                            </div>
+                                <div class="image-container">
+                                    <img src="./assets/images/Tooth-Colored-Filling.png"
+                                        alt="Happy person with braces"
+                                        class="person-image">
+                                </div>
+                            </a>
                         </div>
                     </div>
 
@@ -292,20 +306,22 @@
 
 
                         <div class="custom-card-section service_slide6">
-                            <h1 class="display-5 card-heading">Fixing Jaw Fractures</h1>
+                            <a href="jaw_fractures.php">
+                                <h1 class="display-5 card-heading">Fixing Jaw Fractures</h1>
 
-                            <div class="tags-container">
-                                <span class="custom-tag">Bone Realignment</span>
-                                <span class="custom-tag">Stable Healing</span>
-                                <span class="custom-tag">Pain-Free Recovery</span>
-                                <span class="custom-tag">Restored Function</span>
-                            </div>
+                                <div class="tags-container">
+                                    <span class="custom-tag">Bone Realignment</span>
+                                    <span class="custom-tag">Stable Healing</span>
+                                    <span class="custom-tag">Pain-Free Recovery</span>
+                                    <span class="custom-tag">Restored Function</span>
+                                </div>
 
-                            <div class="image-container">
-                                <img src="./assets/images/Jaw-Fractures.png"
-                                    alt="Happy person with braces"
-                                    class="person-image">
-                            </div>
+                                <div class="image-container">
+                                    <img src="./assets/images/Jaw-Fractures.png"
+                                        alt="Happy person with braces"
+                                        class="person-image">
+                                </div>
+                            </a>
                         </div>
                     </div>
 
@@ -318,20 +334,22 @@
 
 
                         <div class="custom-card-section service_slide7">
-                            <h1 class="display-5 card-heading">Basal Implants</h1>
+                            <a href="basal_implants.php">
+                                <h1 class="display-5 card-heading">Basal Implants</h1>
 
-                            <div class="tags-container">
-                                <span class="custom-tag">Immediate Teeth Replacement</span>
-                                <span class="custom-tag">Strong Foundation</span>
-                                <span class="custom-tag">Quick Healing</span>
-                                <span class="custom-tag">Long-Lasting Support</span>
-                            </div>
+                                <div class="tags-container">
+                                    <!-- <span class="custom-tag">Immediate Teeth Replacement</span> -->
+                                    <span class="custom-tag">Strong Foundation</span>
+                                    <span class="custom-tag">Quick Healing</span>
+                                    <span class="custom-tag">Long-Lasting Support</span>
+                                </div>
 
-                            <div class="image-container">
-                                <img src="./assets/images/basalimplant.png"
-                                    alt="Happy person with braces"
-                                    class="person-image">
-                            </div>
+                                <div class="image-container">
+                                    <img src="./assets/images/basalimplant.png"
+                                        alt="Happy person with braces"
+                                        class="person-image">
+                                </div>
+                            </a>
                         </div>
                     </div>
 
@@ -348,20 +366,22 @@
 
 
                         <div class="custom-card-section service_slide8">
-                            <h1 class="display-5 card-heading">Teeth Whitening</h1>
+                            <a href="teeth_whitening.php">
+                                <h1 class="display-5 card-heading">Teeth Whitening</h1>
 
-                            <div class="tags-container">
-                                <span class="custom-tag">Brilliant Smile</span>
-                                <span class="custom-tag">Stain Removal</span>
-                                <span class="custom-tag">Safe Treatment</span>
-                                <span class="custom-tag">Instant Brightening</span>
-                            </div>
+                                <div class="tags-container">
+                                    <span class="custom-tag">Brilliant Smile</span>
+                                    <span class="custom-tag">Stain Removal</span>
+                                    <span class="custom-tag">Safe Treatment</span>
+                                    <span class="custom-tag">Instant Brightening</span>
+                                </div>
 
-                            <div class="image-container">
-                                <img src="./assets/images/teeth-whitening.png"
-                                    alt="Happy person with braces"
-                                    class="person-image">
-                            </div>
+                                <div class="image-container">
+                                    <img src="./assets/images/teeth-whitening.png"
+                                        alt="Happy person with braces"
+                                        class="person-image">
+                                </div>
+                            </a>
                         </div>
                     </div>
 
@@ -372,22 +392,55 @@
 
 
                         <div class="custom-card-section service_slide9">
-                            <h1 class="display-5 card-heading">Laser Dentistry</h1>
+                            <a href="laser_dentistry.php">
+                                <h1 class="display-5 card-heading">Laser Dentistry</h1>
 
-                            <div class="tags-container">
-                                <span class="custom-tag">Precise Treatment</span>
-                                <span class="custom-tag">Minimal Pain</span>
-                                <span class="custom-tag">Quick Recovery</span>
-                                <span class="custom-tag">Advanced Care</span>
-                            </div>
+                                <div class="tags-container">
+                                    <span class="custom-tag">Precise Treatment</span>
+                                    <span class="custom-tag">Minimal Pain</span>
+                                    <span class="custom-tag">Quick Recovery</span>
+                                    <span class="custom-tag">Advanced Care</span>
+                                </div>
 
-                            <div class="image-container">
-                                <img src="./assets/images/laser_image.png"
-                                    alt="Happy person with braces"
-                                    class="person-image">
-                            </div>
+                                <div class="image-container">
+                                    <img src="./assets/images/laser_image.png"
+                                        alt="Happy person with braces"
+                                        class="person-image">
+                                </div>
+                            </a>
                         </div>
                     </div>
+
+
+
+
+
+
+
+
+                    <div class="custom-card custom_card_bg_three swiper-slide">
+
+                        <div class="custom-card-section service_slide9">
+                            <a href="clear_aligners.php">
+                                <h1 class="display-5 card-heading">Clear Aligners</h1>
+
+                                <div class="tags-container">
+                                    <span class="custom-tag">Invisible Treatment</span>
+                                    <span class="custom-tag">Teeth Straightening</span>
+                                    <span class="custom-tag">Comfort Fit</span>
+                                    <span class="custom-tag">No Metal Braces</span>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="./assets/images/new_images/treatments 20.jpg"
+                                        alt="Happy person with braces"
+                                        class="person-image">
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
 
 
 
@@ -410,7 +463,7 @@
     <div class="container appointment_container">
         <div class="appointment_content">
             <h1>Book <span>Free Consultation</span></h1>
-            <a href="#appointment" class="btn-book index_button_appointment">BOOK Now</a>
+            <a href="appointment.php" class="btn-book index_button_appointment">BOOK Now</a>
         </div>
         <div class="appointment_image">
             <img src="./assets/images/bg_remoive.png" alt="Consultation Image">
@@ -436,7 +489,7 @@
 
                 <div class=>
                     <!-- <h2 class="about_mission">Our Mission</h2> -->
-                    <p>Our export team at denta care is decided to providing personalized, comfortable care to help you achieve your best oral health</p>
+                    <p>Care ‘n’ Concern Family Dental Clinic is not a name but an attitude inculcated in our daily service delivery.</p>
                 </div>
 
             </div>
@@ -585,7 +638,7 @@
 
 
 
-<marquee behavior="" direction="" class="second_marquee_section">Root Canal &nbsp; + &nbsp;  Teeth Cleaning  + &nbsp; Crowns & Bridges  + &nbsp;  Painless Teeth Removal ​  + &nbsp;  Tooth Colored Fillings   + &nbsp;  Fixing Jaw Fractures   + &nbsp;   Basal Implants + &nbsp;   Teeth Whitening + &nbsp; Laser Dentistry</marquee>
+<marquee behavior="" direction="" class="second_marquee_section">Root Canal &nbsp; + &nbsp; Teeth Cleaning + &nbsp; Crowns & Bridges + &nbsp; Painless Teeth Removal ​ + &nbsp; Tooth Colored Fillings + &nbsp; Fixing Jaw Fractures + &nbsp; Basal Implants + &nbsp; Teeth Whitening + &nbsp; Laser Dentistry</marquee>
 
 
 
@@ -650,7 +703,7 @@
             <div class="col-lg-6">
                 <div class="appointment-img-placeholder">
                     <!-- <i class="fas fa-tooth"></i> -->
-                     <img src="./assets/images/appointment.png" alt="" style="width: 300px; height: 500px;">
+                    <img src="./assets/images/appointment.png" alt="" style="width: 300px; height: 500px;">
                 </div>
             </div>
         </div>
@@ -658,7 +711,7 @@
 </section>
 
 
-<marquee class="footer-title">Care N Concern  Dental Hospital </marquee>
+<marquee class="footer-title">Care N Concern Dental Hospital </marquee>
 
 
 

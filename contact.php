@@ -17,9 +17,10 @@
             <!-- ⭐ LEFT SIDE – CONTACT FORM -->
             <div class="col-lg-6 mb-4">
                 <div class="contact-card p-4">
-                    <div class="contact-icon text-center">
+                    <h1>Contact Form</h1>
+                    <!-- <div class="contact-icon text-center">
                         <i class="bi bi-envelope"></i>
-                    </div>
+                    </div> -->
 
                     <!-- <h3 class="text-center" style="color: var(--primary-color); margin-bottom: 1rem;">Get in Touch
                         </h3>

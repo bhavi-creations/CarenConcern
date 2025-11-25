@@ -60,6 +60,14 @@ body {
     font-weight: 500;
     transition: color 0.3s;
 }
+@media (min-width:992px) and (max-width:1200px) {
+    .nav-link {
+        margin: 0 4px !important;
+     
+    }
+    
+}
+
 
 .nav-link:hover,
 .nav-link.active {
@@ -599,7 +607,7 @@ body {
 
 
 .marquee_section {
-    /* margin-top: 20px; */
+    margin-top: 30px;
     background-color: lightblue;
     color: black;
     font-weight: 300;
@@ -1586,6 +1594,317 @@ text-orientation: upright; */
     width: 100%;           /* image spans full container width */
     height: auto;          /* maintains aspect ratio */
     object-fit: contain;   /* ensures full image is visible, no cropping */
-    margin-left: 20px;     /* adds left space, adjust as needed */
+    /* margin-left: 40px !important;     adds left space, adjust as needed */
     border-radius: 10px ;
 }
+
+
+
+/* service new cards   */
+
+.custom-card-wrapper {
+    display: flex;
+    align-items: stretch !important;
+}
+
+.custom-card {
+    height: 450px; /* You can increase to 480 / 500 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.custom-card-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-heading {
+    font-size: 28px;
+    margin-bottom: 15px;
+    min-height: 60px; /* So headings do not jump */
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    min-height: 80px; /* Equal space for tags */
+}
+
+.custom-tag {
+    background: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.image-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* about us section stylings   */
+ .hero-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            padding: 80px 0;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-30px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            line-height: 1.8;
+        }
+
+        .feature-card {
+            /* background: white; */
+            background-color: lightblue;
+            border-radius: 20px;
+            padding: 2rem;
+            height: 100%;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border: 1px solid rgba(33, 147, 176, 0.1);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(33, 147, 176, 0.2);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-bottom: 3rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            border-radius: 2px;
+        }
+
+        .tech-badge {
+            display: inline-block;
+            padding: 1rem 2rem;
+            /* background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); */
+            background-color: lightblue;
+            color: white;
+            border-radius: 50px;
+            margin: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .tech-badge:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(245, 87, 108, 0.3);
+        }
+
+        .service-item {
+            padding: 1.5rem;
+            background: linear-gradient(135deg, rgba(33, 147, 176, 0.05), rgba(109, 213, 237, 0.05));
+            border-radius: 15px;
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--primary-color);
+            transition: all 0.3s ease;
+        }
+
+        .service-item:hover {
+            background: linear-gradient(135deg, rgba(33, 147, 176, 0.1), rgba(109, 213, 237, 0.1));
+            transform: translateX(10px);
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 60px 0;
+            color: white;
+            border-radius: 20px;
+            margin: 3rem 0;
+        }
+
+        .btn-custom {
+            /* background: white; */
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+            color: var(--primary-color);
+            padding: 1rem 3rem;
+            border-radius: 50px;
+            font-weight: 600;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background: var(--accent-color);
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .mission-box {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 3rem;
+            border-radius: 20px;
+            color: var(--dark-color);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .check-icon {
+            color: #10b981;
+            font-size: 1.2rem;
+            margin-right: 0.5rem;
+        }
+        
+
+
+    /* whats app stylings  */
+    .whatsapp-link {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        bottom: 90px;
+        right: 20px;
+        background-color: #25d366;
+        color: #fff;
+        /* padding: 5px; */
+        border-radius: 50%;
+        text-decoration: none;
+        font-size: 35px;
+        text-align: center;
+      }
+
+      /* service page  stylings  */
+
+
+
+      .service-card-upgraded {
+        background: #ffffff;
+        padding: 25px;
+        border-radius: 18px;
+        text-align: center;
+        box-shadow: 0px 4px 20px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+        position: relative;
+    }
+    
+    .service-card-upgraded:hover {
+        transform: translateY(-6px);
+        box-shadow: 0px 8px 25px rgba(0,0,0,0.12);
+    }
+    
+    .service-img-wrapper {
+        width: 100%;
+        height: 220px;
+        overflow: hidden;
+        border-radius: 16px;
+        margin-bottom: 18px;
+    }
+    
+    .service-img-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.4s;
+    }
+    
+    .service-card-upgraded:hover img {
+        transform: scale(1.05);
+    }
+    
+    .service-title {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    .service-desc {
+        font-size: 0.95rem;
+        color: #555;
+        margin-bottom: 18px;
+    }
+    
+    .btn-book-upgraded {
+        display: inline-block;
+        padding: 10px 24px;
+        
+    background: #FF5722;
+        color: white;
+        border-radius: 25px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    
+    .btn-book-upgraded:hover {
+
+        background: #FF5722;    }
+    
