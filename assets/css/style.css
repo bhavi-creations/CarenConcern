@@ -316,7 +316,9 @@ body {
 }
 
 .about_bg_section{
-    background: rgba(173, 219, 234, 0.405);
+    /* background: rgba(173, 219, 234, 0.405); */
+    /* background-color: black; */
+    background-color: #dfdbdb;
 }
 
 .section-subtitle {
@@ -577,7 +579,8 @@ body {
 .footer-title {
     font-size: 110px;
     font-weight: 300 !important;
-    color: #87CEEB;
+    color: black;
+    /* color: #87CEEB; */
     text-transform: uppercase;
     margin-bottom: 20px;
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
@@ -593,7 +596,8 @@ body {
 /* Footer */
 .footer {
     
-    background: linear-gradient(to left, #ffffff 0%, #E8F7FF 40%, #a5dbff 100%);
+    background: linear-gradient(to left, #ffffff 0%, #f7f9fa 40%, #d6d9db 100%);
+    /* background: linear-gradient(to left, #ffffff 0%, #E8F7FF 40%, #a5dbff 100%); */
 
 
     padding: 60px 0 30px;
@@ -608,8 +612,10 @@ body {
 
 .marquee_section {
     margin-top: 30px;
-    background-color: lightblue;
-    color: black;
+    /* background-color: lightblue; */
+    /* color: black; */
+    background-color: black;
+    color: white;
     font-weight: 300;
     font-size: 50px;
 }
@@ -1004,7 +1010,8 @@ text-orientation: upright; */
 .appointment_section {
     /* padding: 50px 0; */
     /* background-color: #f9f9f9; */
-    background: linear-gradient(to right, #E8F7FC 30%, #B8E6F5 50%) !important;
+    background: linear-gradient(to right, #E8F7FC 30%, black 50%) !important;
+    /* background: linear-gradient(to right, black 0%, grey 100%) !important; */
     ;
 }
 
@@ -1243,7 +1250,8 @@ text-orientation: upright; */
     /* background: #fff; */
     /* background-color: ; */
     /* background: linear-gradient(to left, #ffffff 0%, #E8F7FF 40%, #a5dbff 100%); */
-    background-color: rgba(238, 238, 238, 0.61);
+    /* background-color: rgba(238, 238, 238, 0.61); */
+    background-color: #E6E7E8;
 
     padding: 40px 40px;
     border-radius: 16px;
@@ -1703,7 +1711,9 @@ a{
 
         .feature-card {
             /* background: white; */
-            background-color: lightblue;
+            /* background-color: lightblue; */
+            background-color: #E6E7E8;
+           
             border-radius: 20px;
             padding: 2rem;
             height: 100%;
@@ -1754,7 +1764,8 @@ a{
             display: inline-block;
             padding: 1rem 2rem;
             /* background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); */
-            background-color: lightblue;
+            /* background-color: lightblue; */
+            background-color: #000;
             color: white;
             border-radius: 50px;
             margin: 0.5rem;
@@ -1764,7 +1775,8 @@ a{
 
         .tech-badge:hover {
             transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(245, 87, 108, 0.3);
+            /* box-shadow: 0 8px 20px rgba(248, 247, 247, 0.3); */
+            box-shadow: 0 8px 20px grey;
         }
 
         .service-item {
@@ -1782,7 +1794,8 @@ a{
         }
 
         .cta-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+            background: linear-gradient(135deg, black 0%, grey 100%);
             padding: 60px 0;
             color: white;
             border-radius: 20px;
@@ -1791,7 +1804,9 @@ a{
 
         .btn-custom {
             /* background: white; */
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+            background: linear-gradient(135deg, black 0%, grey 100%);
+            border: 1px solid white !important;
 
             color: var(--primary-color);
             padding: 1rem 3rem;
@@ -1809,7 +1824,9 @@ a{
         }
 
         .mission-box {
-            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            /* background: linear-gradient(135deg, rgb(213, 206, 206) 30%, white 0%,white 0%, rgb(213, 206, 206) 50%); */
+            background-color: #E6E7E8;
+            /* background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); */
             padding: 3rem;
             border-radius: 20px;
             color: var(--dark-color);
@@ -1908,3 +1925,39 @@ a{
 
         background: #FF5722;    }
     
+
+        .gallery-card{
+            background-color: #E6E7E8;
+            height: 420px !important;
+            border-radius: 6px;
+        }
+        .box-title{
+            color: black !important;
+        }
+        .post-desc{
+            color: rgb(67, 60, 60);
+        }
+        .card-btn{
+            background: linear-gradient(135deg, black 0%, grey 100%);
+            padding: 8px 15px ;
+            border-radius: 10px;
+            color: white;
+        }
+        .card-btn:hover{
+            background: linear-gradient(135deg, grey  0%, black 100%);
+        }
+
+        @media (min-width:425px)  and  (max-width:768px){
+            .gallery-card{
+                height: 500px !important;
+            }
+        }
+        .card-content{
+            padding: 10px !important;
+        }
+        /* .blog_box_image:hover{
+            transform: scale(1.1);
+            transition: transform 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
+        } */
+
+      

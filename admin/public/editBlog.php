@@ -48,7 +48,7 @@ $services_result = $conn->query("SELECT id, service_name FROM services ORDER BY 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Edit Blog - Care N Concern Dental Hospital</title>
+<title>Edit Blog - Care n Concern Hospital</title>
 
 <!-- Custom fonts and styles -->
 <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">

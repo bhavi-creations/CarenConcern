@@ -79,7 +79,7 @@
 <!-- Why Choose Us -->
 <section class="py-5 ">
     <div class="container">
-        <h2 class="section-title mb-5 text-center">Why Choose Us</h2>
+        <h2 class="section-title mb-5 text-center d-flex justify-content-center">Why Choose Us</h2>
         <div class="row g-4">
             <div class="col-md-4">
                 <div class="feature-card">
@@ -142,7 +142,7 @@
 <!-- Services Section -->
 <section class="py-5 bg-light">
     <div class="container">
-        <h2 class="section-title mb-5 text-center">Our Comprehensive Services</h2>
+        <h2 class="section-title mb-5 text-center  d-flex justify-content-center">Our Comprehensive Services</h2>
         <div class="row">
             <div class="col-lg-6">
                 <div class="service-item">

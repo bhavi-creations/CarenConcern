@@ -91,7 +91,7 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vision-Dental</title>
+    <title>Care n Concern</title>
 
     <!-- libraries CSS -->
     <!-- <link rel="stylesheet" href="assets2/icon/flaticon_digicom.css"> -->
@@ -106,14 +106,14 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
     <link rel="stylesheet" href="assets2/css/style.css">
 
 
-      <!-- Favicons -->
-  <link href="assets/img/vision/fav.png" rel="icon">
+    <!-- Favicons -->
+    <link href="assets/img/vision/fav.png" rel="icon">
 </head>
 
 <body>
     <div class="preloader" id="preloader">
         <!-- <div class="loader"></div> -->
-           <img src="assets/img/vision/large_icon.png" >
+        <img src="assets/img/vision/large_icon.png">
     </div>
 
     <!-- SIDEBAR SECTION START -->
@@ -204,12 +204,12 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
                                             ? "./admin/uploads/photos/{$row['main_image']}"
                                             : "https://mailrelay.com/wp-content/uploads/2018/03/que-es-un-blog-1.png";
                                         echo "
-              <a href='service_detsils.php?id={$row['id']}' class='blog-item d-flex align-items-center mb-3 text-decoration-none'>
-                  <img src='{$image_path}' class='me-2 blog-thumb' alt='Blog Image'>
-                  <h6 class='mb-0 blog-title'>" . get_words($row['title'], 6) . "...</h6>
-              </a>
-              ";
-                                    }
+                                            <a href='service_detsils.php?id={$row['id']}' class='blog-item d-flex align-items-center mb-3 text-decoration-none'>
+                                                <img src='{$image_path}' class='me-2 blog-thumb' alt='Blog Image'>
+                                                <h6 class='mb-0 blog-title'>" . get_words($row['title'], 6) . "...</h6>
+                                            </a>
+                                            ";
+                                                                    }
                                 } else {
                                     echo "<p>No blogs found.</p>";
                                 }
@@ -1906,7 +1906,7 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
                                 <?php endif; ?>
 
 
-                             
+
 
                                 <!-- option images   -->
 

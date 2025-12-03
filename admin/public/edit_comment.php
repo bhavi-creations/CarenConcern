@@ -110,7 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <!-- Footer -->
         <footer class="sticky-footer bg-white">
             <div class="container my-auto text-center">
-                <p style="color:black">©2024 Vision Dental. Designed & Developed by 
+                <p style="color:black">©2024 Care n Concern. Designed & Developed by 
                     <a href="https://bhavicreations.com/" target="_blank" style="color:black;text-decoration:none;">Bhavi Creations</a>
                 </p>
             </div>

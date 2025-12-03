@@ -21,7 +21,7 @@ if (!isset($_SESSION['username'])) {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Care N Concern- Dashboard</title>
+    <title>Care n Concern - Dashboard</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -133,7 +133,7 @@ if (!isset($_SESSION['username'])) {
                     <div class="container my-auto">
                         <div class="copyright text-center my-auto">
                             <div class="footer-widget__copyright">
-                                <p class="mini_text" style="color:black"> ©2024 Care N Concern. All Rights Reserved. Designed &
+                                <p class="mini_text" style="color:black"> ©2025 Care n Concern. All Rights Reserved. Designed &
                                     Developed by <a href="https://bhavicreations.com/" target="_blank" style="text-decoration: none;color:black">Bhavi
                                         Creations</a></p>
                             </div>
