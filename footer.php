@@ -7,7 +7,7 @@
 
             <!-- Footer Info -->
             <div class="col-lg-3 mb-4 footer-info">
-                <h4><span class="denta ">Care</span> &nbsp; N  &nbsp;<span class="care">Consurn</span></h4>
+                <h4><span class="denta ">Care</span> &nbsp; N  &nbsp;<span class="care">Concern</span></h4>
                 <!-- <p><strong>Denta Care Health Ventures LLP</strong></p> -->
                 <p class="mt-5">2462/37, 7th B Main Road, Hampinagar, RPC Layout, Vijayanagar, Bengaluru, Karnataka 560104</p>
                 <p class="mt-3"><strong>Call us:</strong> 63638 00266 | +91 98458 02787</p>
@@ -63,15 +63,15 @@
         <!-- Footer Bottom -->
         <div class="row footer-bottom align-items-center">
             <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
-                <p class="mb-0 text-muted">© 2025 Care n concern dental hospital. ALL RIGHTS RESERVED
-                    <a href="https://bhavicreations.com/" target="_blank" class="text-decoration-none">bhavicreations</a>
+                <p class="mb-0 text-muted">© 2025 Care n concern dental hospital. All Rights Reserved By
+                    <a href="https://bhavicreations.com/" target="_blank" class="text-decoration-none">Bhavi Creations Pvt L</a>
                 </p>
             </div>
             <div class="col-md-6 text-center text-md-end">
-                <a href="https://www.facebook.com/hontistry" class="text-decoration-none social_media me-2"><i class="fab fa-facebook"></i> Facebook</a>
-                <a href="https://www.youtube.com/channel/UCmE0BrRzE5dzfljOoCx_PuQ" class="text-decoration-none  social_media me-2"><i class="fab fa-youtube"></i> Youtube</a>
-                <a href="#" class="text-decoration-none social_media me-2"><i class="fab fa-instagram"></i> Instagram</a>
-                <a href="https://www.linkedin.com/company/hontistry/" class="text-decoration-none social_media"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://www.facebook.com/hontistry" class="text-decoration-none social_media me-2" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://www.youtube.com/channel/UCmE0BrRzE5dzfljOoCx_PuQ" class="text-decoration-none  social_media me-2" target="_blank"><i class="fab fa-youtube"></i> Youtube</a>
+                <a href="#" class="text-decoration-none social_media me-2"><i class="fab fa-instagram" target="_blank"></i> Instagram</a>
+                <a href="https://www.linkedin.com/company/hontistry/" class="text-decoration-none social_media" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
             </div>
         </div>
 

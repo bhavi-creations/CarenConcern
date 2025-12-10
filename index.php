@@ -711,7 +711,7 @@
 </section>
 
 
-<marquee class="footer-title">Care N Concern Dental Hospital </marquee>
+<marquee class="footer-title">Care N Concern Family dental Hospital </marquee>
 
 
 

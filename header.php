@@ -294,3 +294,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 </script>
+
+ <?php include 'c2.php' ; ?>

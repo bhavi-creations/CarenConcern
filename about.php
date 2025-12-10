@@ -3,8 +3,8 @@
 <section class='mt-5'>
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <img src="./assets/images/Sunil .png" alt="" class="img-fluid">
+            <div class="col-md-6 d-flex align-items-center">
+                <img src="./assets/images/Sunil .png" alt="" class="img-fluid ">
             </div>
             <div class="col-md-6">
                 <h2 class="about-title">About Dr. Sunil S – Your Family Dentist</h2>

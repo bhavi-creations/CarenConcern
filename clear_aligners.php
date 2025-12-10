@@ -37,9 +37,9 @@
 
 
 
-                                <div class="ul-service-details-inner-block-img">
+                                <!-- <div class="ul-service-details-inner-block-img">
                                     <img src="assets/img/home/root canal.png" alt="Image">
-                                </div>
+                                </div> -->
                             </div>
 
 

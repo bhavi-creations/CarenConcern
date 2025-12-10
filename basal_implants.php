@@ -12,7 +12,7 @@
                 <div class="col-lg-8 col-md-7">
                     <div>
                         <div class="ul-service-details-img">
-                            <img src="./assets/images/basalimplant.png" alt="Image" class="img-fluid">
+                            <img src="./assets/images/new_images/treatments 19.jpg" alt="Image" class="img-fluid">
                         </div>
                         <div class="ul-service-details-txt">
                             <h2 class="ul-service-details-title">Basal Implants </h2>
@@ -37,9 +37,9 @@
 
 
 
-                                <div class="ul-service-details-inner-block-img">
+                                <!-- <div class="ul-service-details-inner-block-img">
                                     <img src="assets/img/home/root canal.png" alt="Image">
-                                </div>
+                                </div> -->
                             </div>
 
 
