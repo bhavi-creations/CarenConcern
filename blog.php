@@ -47,14 +47,14 @@ $result = $stmt->get_result();
                         <div class='grid-item col-sm-12 col-md-6 col-lg-4 mb-5'>
                             <div class='post-box card_bg_div_box gallery-card'>
                                 <figure class='image-wrapper'>
-                                    <a href='service_detsils.php?id={$row['id']}'>
+                                    <a href='fullblog.php?id={$row['id']}'>
                                         <img src='{$image_path}' alt='Blog Image' class='img-fluid blog_box_image hover-zoom'>
                                     </a>
                                 </figure>
 
                                 <div class='box-content card-content'>
                                     <h5 class='box-title card-title'>
-                                        <a class='box-title' href='service_detsils.php?id={$row['id']}'>
+                                        <a class='box-title' href='fullblog.php?id={$row['id']}'>
                                             " . htmlspecialchars($row['title']) . "
                                         </a>
                                     </h5>
@@ -63,7 +63,7 @@ $result = $stmt->get_result();
                                         " . substr(strip_tags($row['main_content']), 0, 90) . "...
                                     </p>
 
-                                    <a href='service_detsils.php?id={$row['id']}'>
+                                    <a href='fullblog.php?id={$row['id']}'>
                                         <button class='blog_main_btn card-btn'>Read More..</button>
                                     </a>
                                 </div>

@@ -227,7 +227,7 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
                             $redirect_link = !empty($blog['logo_link']) ? htmlspecialchars($blog['logo_link']) : '#';
                             ?>
 
-                            <a href="https://visiondentalguntur.com/"> <img src="./assets/img/vision/large_icon.png" alt="" class="img-fluid" style="width: 200px ;"></a>
+                            <a href="#"> <img src="./assets/img/vision/large_icon.png" alt="" class="img-fluid" style="width: 200px ;"></a>
 
 
                             <!-- Title -->
@@ -293,7 +293,7 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
 
                             <!-- Logo -->
 
-                            <a href="https://visiondentalguntur.com/"> <img src="./assets/img/vision/large_icon.png" alt="" class="img-fluid" style="width: 200px ;"></a>
+                            <a href="#"> <img src="./assets/img/vision/large_icon.png" alt="" class="img-fluid" style="width: 200px ;"></a>
 
 
 
@@ -408,7 +408,7 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
 
                             <!-- Logo -->
 
-                            <a href="https://visiondentalguntur.com/"> <img src="./assets/img/vision/large_icon.png" alt="" class="img-fluid" style="width: 200px ;"></a>
+                            <a href="#"> <img src="./assets/img/vision/large_icon.png" alt="" class="img-fluid" style="width: 200px ;"></a>
 
 
 
@@ -471,7 +471,7 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
 
                     <div class=" col-md-6 blogs_side_branding ">
 
-                        <img src="./assets/img/small_device_image2.png" alt="" class="img-fluid">
+                        <img src="./assets/images/small_device_image2.png" alt="" class="img-fluid">
 
 
 
@@ -1085,14 +1085,14 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
                     <div class="col-lg-2 col-md-2">
 
 
-                        <img src="./assets/img/service_side_image2.jpg" alt="" class="img-fluid">
+                        <img src="./assets/images/small_device_image3.png" alt="" class="img-fluid">
 
 
                         <div class="card aligner-card" style="display:flex; justify-content:center; align-items:center; flex-direction:column; padding:8px 5px 5px 0px; border-radius:12px; background:linear-gradient(135deg, #f1f5ff, #ffffff); box-shadow:0 4px 12px rgba(0,0,0,0.1); text-align:center;">
 
 
 
-                            <a href="https://visiondentalguntur.com/" class="shake-link">
+                            <a href="#" class="shake-link">
                                 <img src="./assets/img/vision/large_icon.png"
                                     alt="Vision Dental"
                                     class="img-fluid shake-img">
@@ -1160,7 +1160,7 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
 
                     <div class="col-lg-2 col-md-2 blogs_side_branding  ">
 
-                        <img src="./assets/img/service_side_image1.png" alt="" class="img-fluid">
+                        <img src="./assets/images/small_device_image2.png" alt="" class="img-fluid">
 
 
 
@@ -1766,14 +1766,14 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
                     <div class="col-lg-2 col-md-2">
 
 
-                        <img src="./assets/img/service_side_image2.jpg" alt="" class="img-fluid">
+                        <img src="./assets/images/small_device_image3.png" alt="" class="img-fluid">
 
 
                         <div class="card aligner-card" style="display:flex; justify-content:center; align-items:center; flex-direction:column; padding:8px 5px 5px 0px; border-radius:12px; background:linear-gradient(135deg, #f1f5ff, #ffffff); box-shadow:0 4px 12px rgba(0,0,0,0.1); text-align:center;">
 
 
 
-                            <a href="https://visiondentalguntur.com/" class="shake-link">
+                            <a href="#" class="shake-link">
                                 <img src="./assets/img/vision/large_icon.png"
                                     alt="Vision Dental"
                                     class="img-fluid shake-img">
@@ -2369,7 +2369,7 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
 
                     <div class=" col-md-6 blogs_side_branding ">
 
-                        <img src="./assets/img/small_device_image2.png" alt="" class="img-fluid">
+                        <img src="./assets/images/small_device_image2.png" alt="" class="img-fluid">
 
 
 
@@ -2410,12 +2410,12 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
                     <div class=" col-md-6  blogs_side_branding">.
 
 
-                        <img src="./assets/img/small_device_image3.png" alt="" class="img-fluid">
+                        <img src="./assets/images/small_device_image3.png" alt="" class="img-fluid">
 
 
                         <div class="card aligner-card" style="display:flex; justify-content:center; align-items:center; flex-direction:column; padding:8px 5px 5px 0px; border-radius:12px; background:linear-gradient(135deg, #f1f5ff, #ffffff); box-shadow:0 4px 12px rgba(0,0,0,0.1); text-align:center;">
 
-                            <a href="https://visiondentalguntur.com/" class="shake-link">
+                            <a href="#" class="shake-link">
                                 <img src="./assets/img/vision/large_icon.png"
                                     alt="Vision Dental"
                                     class="img-fluid shake-img">

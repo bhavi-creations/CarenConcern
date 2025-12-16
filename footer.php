@@ -12,7 +12,8 @@
                 <p class="mt-5">2462/37, 7th B Main Road, Hampinagar, RPC Layout, Vijayanagar, Bengaluru, Karnataka 560104</p>
                 <p class="mt-3"><strong>Call us:</strong> 63638 00266 | +91 98458 02787</p>
                 <p class="mt-2"><strong>Email us:</strong> mail@hontistry.com</p>
-                <p class="mt-2"><strong>Clinic Hours:</strong> 10.00 AM - 7.00 PM (Everyday)</p>
+                <p class="mt-2"><strong>Clinic Hours:</strong>	10:30am-2:30pm, 4-8:30pm  <br> <span class=""> sunday-close</span></p>
+                <!-- <p class="mt-2"><strong>sunday close </p> -->
             </div>
 
             <!-- Available Treatments -->
@@ -63,8 +64,8 @@
         <!-- Footer Bottom -->
         <div class="row footer-bottom align-items-center">
             <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
-                <p class="mb-0 text-muted">© 2025 Care n concern dental hospital. All Rights Reserved By
-                    <a href="https://bhavicreations.com/" target="_blank" class="text-decoration-none">Bhavi Creations Pvt L</a>
+                <p class="mb-0 text-muted">© 2025 Care n Concern Family Dental Hospital.Designed By
+                    <a href="https://bhavicreations.com/" target="_blank" class="text-decoration-none">Bhavi Creations Pvt Ltd</a>
                 </p>
             </div>
             <div class="col-md-6 text-center text-md-end">
