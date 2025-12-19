@@ -34,6 +34,7 @@ $result = $stmt->get_result();
   <!-- Filter Buttons -->
   <h1 class="d-flex justify-content-center">blogs </h1>
 
+  <h1>mohan mani kumar malladi</h1>
   <!-- Blogs Section -->
   <div class="container blog-sidebar-list" style="padding-top: 20px; padding-bottom: 20px;">
     <div class="row">
