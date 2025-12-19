@@ -5,15 +5,15 @@
         <div class="sidebar-brand-icon  ">
             <i class="fas fa-stethoscope"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">Care n Concern</div>
+        <div class="sidebar-brand-text mx-3"> Care  <br> N Concern</div>
     </a>
- 
+
     <!-- Divider -->
     <hr class="sidebar-divider my-0">
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" href="index.php">
+        <a class="nav-link" href="index.php">8/
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>
@@ -28,11 +28,11 @@
 
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
             <i class="fas fa-fw fa-blog"></i>
             <span>BLOGS</span>
         </a>
-        <div id="collapsethree" class="collapse" aria-labelledby="headingthree" data-parent="#accordionSidebar">
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">NEW BLOG</h6>
                 <a class="collapse-item" href="newBlog.php"> <i class="fas fa-fw fa-blog"></i> CREATE BLOG</a>
@@ -42,33 +42,15 @@
     </li>
 
 
-
-
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseservice" aria-expanded="true" aria-controls="collapseservice">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
             <i class="fas fa-fw fa-blog"></i>
-            <span>Service</span>
+            <span>Comments</span>
         </a>
-        <div id="collapseservice" class="collapse" aria-labelledby="headingservice" data-parent="#accordionSidebar">
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">NEW Service</h6>
-                <a class="collapse-item" href="addservice.php"> <i class="fas fa-fw fa-blog"></i> add Service</a>
-                <a class="collapse-item" href="view_services.php"> <i class="fas fa-fw fa-edit"></i> All Service</a>
-            </div>
-        </div>
-    </li>
-
-
-
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-            <i class="fas fa-fw fa-blog"></i>
-            <span>Commetns</span>
-        </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">NEW BLOG</h6>
-                <a class="collapse-item" href="all_commetns.php"> <i class="fas fa-fw fa-blog"></i> Commetns</a>
+                <h6 class="collapse-header">COMMENTS</h6>
+                <a class="collapse-item" href="all_commetns.php"> <i class="fas fa-fw fa-blog"></i> Comments</a>
                 <!-- <a class="collapse-item" href="allBlog.php"> <i class="fas fa-fw fa-edit"></i> All BLOGS</a> -->
             </div>
         </div>
@@ -76,6 +58,36 @@
 
 
 
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseservice" aria-expanded="true" aria-controls="collapseservice">
+            <i class="fas fa-fw fa-file-pdf"></i>
+            <span>Service</span>
+        </a>
+        <div id="collapseservice" class="collapse" aria-labelledby="headingservice" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">NEW Service</h6>
+                <a class="collapse-item" href="addservice.php"> <i class="fas fa-fw fa-upload"></i> UPLOAD Service</a>
+                <a class="collapse-item" href="view_services.php"> <i class="fas fa-fw fa-list"></i> All Service</a>
+            </div>
+        </div>
+    </li>
+
+
+
+    <!-- <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+            <i class="fas fa-fw fa-blog"></i>
+            <span>Comments</span>
+        </a>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">COMMENTS</h6>
+                <a class="collapse-item" href="all_commetns.php"> <i class="fas fa-fw fa-blog"></i> Comments</a>
+                 <a class="collapse-item" href="allBlog.php"> <i class="fas fa-fw fa-edit"></i> All BLOGS</a> 
+            </div>
+        </div>
+    </li> -->
 
 
 

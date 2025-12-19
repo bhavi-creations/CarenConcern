@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Vision Dental - Dashboard</title>
+    <title>Krishnadentacure - Dashboard</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -68,20 +68,23 @@
                                             <select id="service" name="service" class="form-control" required>
                                                 <option value="">Select a Service</option>
                                                 <option value="Root Canal">Root Canal</option>
-                                                <option value="Teeth Braces">Teeth Braces</option>
-                                                <option value="Pediatric Dentist">Pediatric Dentist</option>
-                                                <option value="Paedodontist Doctors">Paedodontist Doctors </option>     
-                                                <option value="Clear Aligners">Clear Aligners</option>
-                                                <option value="Laminate Veneers">Laminate Veneers</option>
-                                                <option value="Crown Bridge">Crown & Bridge</option>
-                                                <option value="Dental Implants">Dental Implants</option>
-                                                <option value="Dentures Treatment">Dentures</option>
-                                                <option value="Invisalign">Invisalign </option>
-                                                <option value="Jaw Corrective">Jaw Corrective</option>
-                                                <option value="Laser Gum">Laser & Gum</option>
-                                                <option value="Smile Designing">Smile Designing</option>
+                                                <option value="Wisdom Tooth Removal">Wisdom Tooth Removal</option>
+                                                <option value="Bad Breath Treatment">Bad Breath Treatment</option>
+                                                <option value="Gum Treatment">Gum Treatment</option>
+                                                <option value="Teeth Cleaning">Teeth Cleaning </option>
+                                                <option value="Orthodontic Treatment">Orthodontic Treatment</option>
+                                                <option value="Dental Crown & Bridge">Dental Crown & Bridge</option>
+                                                <option value="Invisible Aligners">Invisible Aligners </option>
+                                                <option value="Dental Veneers">Dental Veneers</option>
                                                 <option value="Smile Makeover">Smile Makeover</option>
-                                                <option value="Teeth Alignment">Teeth Alignment</option>
+                                                <option value="Teeth Whitening">Teeth Whitening</option>
+                                                <option value="Dental Implants">Dental Implants</option>
+                                                <option value="Dentures">Dentures</option>
+                                                <option value="Fluoride Application & Dental Sealant">Fluoride Application & Dental Sealant</option>
+                                                <option value="Full Mouth Rehabilitation Treatment">Full Mouth Rehabilitation Treatment</option>
+
+
+                                                <!-- <option value="Laser Gum">Laser & Gum</option>
                                                 <option value="Tooth Extraction">Tooth Extraction</option>
                                                 <option value="Tooth Cleaning">Teeth Cleaning</option>
                                                 <option value="Gum Depigment">Gum Depigment</option>
@@ -89,13 +92,13 @@
                                                 <option value="Laser Gum Surgery">Laser Gum Surgery </option>
                                                 <option value="Mouth Ulcers">Mouth Ulcers </option> 
                                                 <option value="Precancerous Lesion">Precancerous Lesion</option>
-                                                <option value="Laser Crown Lengthening">Laser Crown Lengthening</option>
-                                               
+                                                <option value="Laser Crown Lengthening">Laser Crown Lengthening</option> -->
+
                                             </select>
                                         </div>
 
 
-                                
+
 
 
                                         <!-- Main Content Quill Editor -->
@@ -122,28 +125,76 @@
                                             <input name="full_content" id="formcontentdata" style="display: none">
                                         </div>
 
-                                        <!-- Include the Quill library -->
-                                        <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet" />
-                                        <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
 
-                                        <!-- Initialize Quill editors for both Main Content and Full Content -->
+
+
+                                        <div class="mb-3">
+                                            <label for="formFileMainImage" class="form-label text-primary my-2">Choose Main Image</label>
+                                            <input class="form-control" name="main_image" type="file" id="formFileMainImage" required>
+                                        </div>
+
+
+
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput2" class="form-label text-primary">ENTER MAIN CONTENT</label>
+                                            <div id="mainEditor" style="height: 200px;"></div>
+                                            <input name="main_content" id="mainContentData" style="display: none">
+                                        </div>
+
+
+                                        <div class="mb-3">
+                                            <label for="formFileMainImage" class="form-label text-primary my-2">Choose Main Image</label>
+                                            <input class="form-control" name="main_image" type="file" id="formFileMainImage" required>
+                                        </div>
+
+
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput2" class="form-label text-primary">ENTER MAIN CONTENT</label>
+                                            <div id="mainEditor" style="height: 200px;"></div>
+                                            <input name="main_content" id="mainContentData" style="display: none">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="formFileMainImage" class="form-label text-primary my-2">Choose Main Image</label>
+                                            <input class="form-control" name="main_image" type="file" id="formFileMainImage" required>
+                                        </div>
+
+
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput2" class="form-label text-primary">ENTER MAIN CONTENT</label>
+                                            <div id="mainEditor" style="height: 200px;"></div>
+                                            <input name="main_content" id="mainContentData" style="display: none">
+                                        </div>
+
+
+
+
+
+
+
+
+                                        <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
                                         <script>
+                                            // Initialize Quill editors
                                             const quillMain = new Quill('#mainEditor', {
                                                 theme: 'snow',
                                                 modules: {
                                                     toolbar: [
                                                         [{
-                                                            'header': '1'
-                                                        }, {
-                                                            'header': '2'
+                                                            'header': [1, 2, false]
                                                         }, {
                                                             'font': []
                                                         }],
                                                         [{
-                                                            size: []
+                                                            'size': []
                                                         }],
                                                         ['bold', 'italic', 'underline', 'strike'],
-                                                        ['link', 'blockquote', 'code-block'],
+                                                        [{
+                                                            'color': []
+                                                        }, {
+                                                            'background': []
+                                                        }],
+                                                        ['link', 'blockquote'],
                                                         [{
                                                             'list': 'ordered'
                                                         }, {
@@ -161,11 +212,6 @@
                                                         }],
                                                         [{
                                                             'direction': 'rtl'
-                                                        }],
-                                                        [{
-                                                            'color': []
-                                                        }, {
-                                                            'background': []
                                                         }],
                                                         [{
                                                             'align': []
@@ -175,23 +221,25 @@
                                                 },
                                                 placeholder: 'Enter main content...',
                                             });
-
                                             const quillFull = new Quill('#editor', {
                                                 theme: 'snow',
                                                 modules: {
                                                     toolbar: [
                                                         [{
-                                                            'header': '1'
-                                                        }, {
-                                                            'header': '2'
+                                                            'header': [1, 2, false]
                                                         }, {
                                                             'font': []
                                                         }],
                                                         [{
-                                                            size: []
+                                                            'size': []
                                                         }],
                                                         ['bold', 'italic', 'underline', 'strike'],
-                                                        ['link', 'blockquote', 'code-block'],
+                                                        [{
+                                                            'color': []
+                                                        }, {
+                                                            'background': []
+                                                        }],
+                                                        ['link', 'blockquote'],
                                                         [{
                                                             'list': 'ordered'
                                                         }, {
@@ -209,11 +257,6 @@
                                                         }],
                                                         [{
                                                             'direction': 'rtl'
-                                                        }],
-                                                        [{
-                                                            'color': []
-                                                        }, {
-                                                            'background': []
                                                         }],
                                                         [{
                                                             'align': []
@@ -224,10 +267,42 @@
                                                 placeholder: 'Compose full content...',
                                             });
 
-                                            document.querySelector('#addblogform').onsubmit = function() {
+                                            // Load existing content
+                                            quillMain.root.innerHTML = <?php echo json_encode($main_content); ?>;
+                                            quillFull.root.innerHTML = <?php echo json_encode($full_content); ?>;
+
+                                            // On form submission
+                                            document.querySelector('#editblogform').onsubmit = function() {
                                                 document.querySelector('#mainContentData').value = quillMain.root.innerHTML;
                                                 document.querySelector('#formcontentdata').value = quillFull.root.innerHTML;
                                             };
+
+                                            // Extra images add/remove
+                                            let extraIndex = <?php echo !empty($extra_images) ? count($extra_images) : 0; ?>;
+                                            document.getElementById('addExtraImage').addEventListener('click', function() {
+                                                const container = document.getElementById('extraImagesContainer');
+                                                const div = document.createElement('div');
+                                                div.className = 'extra-image-item mb-3 border p-2';
+                                                div.setAttribute('data-index', extraIndex);
+                                                div.innerHTML = `
+        <div class="mb-2">
+            <label class="form-label">Upload Image</label>
+            <input type="file" name="extra_image[]" class="form-control" required>
+        </div>
+        <div class="mb-2">
+            <label class="form-label">Description</label>
+            <input type="text" name="extra_description[]" class="form-control" placeholder="Enter description" required>
+        </div>
+        <button type="button" class="btn btn-danger remove-extra">Remove</button>
+    `;
+                                                container.appendChild(div);
+                                                extraIndex++;
+                                            });
+                                            document.getElementById('extraImagesContainer').addEventListener('click', function(e) {
+                                                if (e.target && e.target.classList.contains('remove-extra')) {
+                                                    e.target.closest('.extra-image-item').remove();
+                                                }
+                                            });
                                         </script>
 
                                         <div class='row p-3'>
@@ -250,7 +325,7 @@
                     <div class="container my-auto">
                         <div class="copyright text-center my-auto">
                             <div class="footer-widget__copyright">
-                                <p class="mini_text" style="color:black"> ©2024 Vision Dental . All Rights Reserved. Designed & Developed by <a href="https://bhavicreations.com/" target="_blank" style="text-decoration: none;color:black">Bhavi Creations</a></p>
+                                <p class="mini_text" style="color:black"> ©2024 Krishnadentacure . All Rights Reserved. Designed & Developed by <a href="https://bhavicreations.com/" target="_blank" style="text-decoration: none;color:black">Bhavi Creations</a></p>
                             </div>
                         </div>
                     </div>

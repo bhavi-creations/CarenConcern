@@ -1,49 +1,91 @@
 <?php
-// Database connection
+// Database connection (replace with your actual database connection details)
 include '../../db.connection/db_connection.php';
 
-// Handle form submit
+// Function to generate a unique file name
+function generateUniqueFileName($fileName) {
+    $ext = pathinfo($fileName, PATHINFO_EXTENSION);
+    return uniqid() . '_' . time() . '.' . $ext;
+}
+
+// Check if the form was submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Collect form data
-    $review_id = isset($_POST['id']) ? intval($_POST['id']) : 0;
-    $parent_id = !empty($_POST['parent_id']) ? intval($_POST['parent_id']) : NULL;
-    $name      = isset($_POST['name']) ? trim($_POST['name']) : '';
-    $email     = isset($_POST['email']) ? trim($_POST['email']) : '';
-    $rating    = isset($_POST['rating']) ? intval($_POST['rating']) : 0;
-    $comment   = isset($_POST['comment']) ? trim($_POST['comment']) : '';
+    // Check for existence of $_POST keys to avoid undefined index warnings
+    $blog_id = isset($_POST['id']) ? intval($_POST['id']) : 0;
+    $title = isset($_POST['title']) ? $_POST['title'] : '';
+    $main_content = isset($_POST['main_content']) ? $_POST['main_content'] : '';
+    $full_content = isset($_POST['full_content']) ? $_POST['full_content'] : '';
+    $service = isset($_POST['service']) ? $_POST['service'] : '';  // Capture selected service
 
-    // Validation
-    if (empty($name) || empty($comment)) {
-        die("Error: Name and Comment are required!");
+    // Ensure required fields are not empty
+    if (empty($title) || empty($main_content) || empty($full_content) || empty($service)) {
+        die("Error: Title, Main Content, Full Content, and Service cannot be empty.");
     }
 
-    // Insert or Update
-    if ($review_id > 0) {
-        // Update existing review
-        $stmt = $conn->prepare("UPDATE reviews 
-            SET parent_id = ?, name = ?, email = ?, rating = ?, comment = ?
-            WHERE id = ?");
-        $stmt->bind_param("issisi", $parent_id, $name, $email, $rating, $comment, $review_id);
+    // Handle file uploads for title image and main image
+    $title_image_path = '';
+    if (!empty($_FILES['title_image']['name'])) {
+        $title_image_directory = __DIR__ . "/../uploads/photos/";
+        $title_image_name = generateUniqueFileName($_FILES['title_image']['name']);
+        $title_image_path = $title_image_name;
+
+        if (!move_uploaded_file($_FILES['title_image']['tmp_name'], $title_image_directory . $title_image_name)) {
+            die("Error uploading title image.");
+        }
+    }
+
+    $main_image_path = '';
+    if (!empty($_FILES['main_image']['name'])) {
+        $main_image_directory = __DIR__ . "/../uploads/photos/";
+        $main_image_name = generateUniqueFileName($_FILES['main_image']['name']);
+        $main_image_path = $main_image_name;
+
+        if (!move_uploaded_file($_FILES['main_image']['tmp_name'], $main_image_directory . $main_image_name)) {
+            die("Error uploading main image.");
+        }
+    }
+
+    // Handle video upload
+    $video_path = '';
+    if (!empty($_FILES['video']['name'])) {
+        $video_directory = __DIR__ . "/../uploads/videos/";  // Adjust the upload directory path for videos
+        $video_name = generateUniqueFileName($_FILES['video']['name']);
+        $video_path = $video_name;  // Store only the filename
+
+        // Ensure the video upload directory exists
+        if (!is_dir($video_directory)) {
+            mkdir($video_directory, 0777, true);
+        }
+
+        if (!move_uploaded_file($_FILES['video']['tmp_name'], $video_directory . $video_name)) {
+            die("Error uploading video.");
+        }
+    }
+
+    // Prepare SQL statement based on whether it's an insert or update
+    if ($blog_id > 0) {
+        // Update existing blog post
+        $stmt = $conn->prepare("UPDATE blogs SET title = ?, main_content = ?, full_content = ?, title_image = ?, main_image = ?, video = ?, service = ? WHERE id = ?");
+        $stmt->bind_param("sssssssi", $title, $main_content, $full_content, $title_image_path, $main_image_path, $video_path, $service, $blog_id);
     } else {
-        // Insert new review
-        $stmt = $conn->prepare("INSERT INTO reviews 
-            (parent_id, name, email, rating, comment, created_at) 
-            VALUES (?, ?, ?, ?, ?, NOW())");
-        $stmt->bind_param("issis", $parent_id, $name, $email, $rating, $comment);
+        // Insert new blog post
+        $stmt = $conn->prepare("INSERT INTO blogs (title, main_content, full_content, title_image, main_image, video, service, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, NOW())");
+        $stmt->bind_param("sssssss", $title, $main_content, $full_content, $title_image_path, $main_image_path, $video_path, $service);
     }
 
-    // Execute SQL
+    // Execute the SQL statement
     if ($stmt->execute()) {
-        echo "Review saved successfully!";
-        header("Location: ../../../../allreviews.php"); // 👈 Reviews list page
+        echo "Blog post published/updated successfully!";
+        header("Location: allBlog.php");  // Redirect after successful submission
         exit();
     } else {
         echo "Error: " . $stmt->error;
-        header("Location: newReview.php"); // 👈 Review form page
+        header("Location: newBlog.php");
         exit();
     }
 
     $stmt->close();
 }
+
 $conn->close();
 ?>

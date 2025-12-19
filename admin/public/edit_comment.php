@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Edit Comment</title>
+    <title> Care N Concern</title>
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 </head>
@@ -110,7 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <!-- Footer -->
         <footer class="sticky-footer bg-white">
             <div class="container my-auto text-center">
-                <p style="color:black">©2024 Care n Concern. Designed & Developed by 
+                <p style="color:black">©2024  Care N Concern. Designed & Developed by 
                     <a href="https://bhavicreations.com/" target="_blank" style="color:black;text-decoration:none;">Bhavi Creations</a>
                 </p>
             </div>
