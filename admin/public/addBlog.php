@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             exit("Invalid file type");
         }
 
-        $path = __DIR__ . "/../uploads/photos/";
+        $path = __DIR__ . "/../uploads/$dir/";
         if (!is_dir($path)) mkdir($path, 0777, true);
 
         $name = generateUniqueFileName($_FILES[$key]['name']);

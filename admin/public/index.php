@@ -27,7 +27,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : 'Guest';
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title> Care N Concern </title>
+    <title>Krishnadentacure </title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -139,7 +139,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : 'Guest';
                     <div class="container my-auto">
                         <div class="copyright text-center my-auto">
                             <div class="footer-widget__copyright">
-                                <p class="mini_text" style="color:black"> ©2024  Care N Concern . All Rights Reserved. Designed &
+                                <p class="mini_text" style="color:black"> ©2024 Krishnadentacure . All Rights Reserved. Designed &
                                     Developed by <a href="https://bhavicreations.com/" target="_blank" style="text-decoration: none;color:black">Bhavi
                                         Creations</a></p>
                             </div>

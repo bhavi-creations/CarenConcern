@@ -63,7 +63,7 @@ if ($service_result && $service_result->num_rows > 0) {
 
 <head>
     <meta charset="utf-8">
-    <title> Care N Concern</title>
+    <title>Edit Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">

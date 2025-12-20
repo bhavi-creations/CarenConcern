@@ -25,7 +25,7 @@ $result = $stmt->get_result();
 
 <main>
 
-<h1 class="d-flex justify-content-center">Blogs</h1>
+<h1 class="d-flex justify-content-center mt-5">Blogs</h1>
 
 <div class="container blog-sidebar-list" style="padding-top:20px;padding-bottom:20px;">
     <div class="row">
@@ -33,16 +33,27 @@ $result = $stmt->get_result();
             <div class="grid row">
 
                 <?php
-                // IMAGE PATH CONFIG
-                $imageBaseUrl  = "admin/uploads/photos/";
-                $imageBaseDir  = __DIR__ . "/admin/uploads/photos/";
-                $defaultImage  = "https://mailrelay.com/wp-content/uploads/2018/03/que-es-un-blog-1.png";
+                // ===============================
+                // IMAGE PATH CONFIG (FIXED)
+                // ===============================
+
+                // Browser path
+                $imageBaseUrl = "admin/uploads/photos/";
+
+                // Server path (for file_exists)
+                $imageBaseDir = $_SERVER['DOCUMENT_ROOT'] . "/CarenConcern/admin/uploads/photos/";
+
+                // Default image
+                $defaultImage = "https://mailrelay.com/wp-content/uploads/2018/03/que-es-un-blog-1.png";
 
                 if ($result && $result->num_rows > 0) {
                     while ($row = $result->fetch_assoc()) {
 
-                        if (!empty($row['main_image']) && file_exists($imageBaseDir . $row['main_image'])) {
-                            $image_path = $imageBaseUrl . $row['main_image'];
+                        // Clean image name
+                        $imageName = trim($row['main_image']);
+
+                        if (!empty($imageName) && file_exists($imageBaseDir . $imageName)) {
+                            $image_path = $imageBaseUrl . $imageName;
                         } else {
                             $image_path = $defaultImage;
                         }
@@ -53,7 +64,7 @@ $result = $stmt->get_result();
 
                                 <figure class="image-wrapper">
                                     <a href="fullblog.php?id=<?= $row['id']; ?>">
-                                        <img src="<?= $image_path; ?>"
+                                        <img src="<?= htmlspecialchars($image_path); ?>"
                                              alt="Blog Image"
                                              class="img-fluid blog_box_image hover-zoom">
                                     </a>

@@ -4,11 +4,11 @@ $host = 'localhost';
 if ($_SERVER['SERVER_NAME'] == 'localhost') {
     $user = "root";
     $pass = "";
-    $db = "carenconcern";
+    $db = "krishnadental";
 } else {
-    $user = "bhavicreations";
-    $pass = "d8Az75YlgmyBnVM";
-    $db = "carenconcernfamilydental";
+    $user = "krishnadentacureclinic";
+    $pass = "ip4IvBVvK8TlT7y";
+    $db = "krishnadentacureclinic";
 }
 
 

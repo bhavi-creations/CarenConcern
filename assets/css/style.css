@@ -2067,3 +2067,61 @@ a {
 .lang-btn:active {
     transform: scale(0.95);
 }
+
+
+.badge_service_name {
+  display: inline-block;
+  /* background: linear-gradient(135deg, #283779, #4e6cef); */
+  background-color: #26282a !important;
+  /* premium look */
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 10px 22px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.badge_service_name:hover {
+background: linear-gradient(135deg, black 0%, grey 100%);
+}
+
+
+
+/* SUB SERVICE DROPDOWN  */
+/* Main dropdown hover */
+.nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+/* Submenu positioning */
+.dropdown-submenu {
+    position: relative;
+}
+
+/* Hide sub-sub menu by default */
+.dropdown-submenu > .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: 0.1rem;
+}
+
+/* Arrow indicator */
+/* .dropdown-submenu > a::after {
+    content: "›";
+    float: right;
+    font-size: 18px;
+} */
+
+/* Mobile view fix */
+@media (max-width: 991px) {
+    .dropdown-submenu > .dropdown-menu {
+        position: static;
+        margin-left: 15px;
+    }
+}

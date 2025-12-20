@@ -7,7 +7,7 @@
 
             <!-- Footer Info -->
             <div class="col-lg-3 mb-4 footer-info">
-                <h4><span class="denta ">Care</span> &nbsp; N  &nbsp;<span class="care">Concern</span></h4>
+                <h4><span class="denta ">Care</span> &nbsp; 'n' &nbsp;<span class="care">Concern</span></h4>
                 <!-- <p><strong>Denta Care Health Ventures LLP</strong></p> -->
                 <p class="mt-5">2462/37, 7th B Main Road, Hampinagar, RPC Layout, Vijayanagar, Bengaluru, Karnataka 560104</p>
                 <p class="mt-3"><strong>Call us:</strong> 63638 00266 | +91 98458 02787</p>
@@ -33,7 +33,7 @@
 
 
             <div class="col-lg-3 mb-4 d-none d-md-block col-md-6 footer-links">
-                <h5>specialised Treatments</h5>
+                <h5>Specialised Treatments</h5>
                 <ul class="list-unstyled mt-5">
                 <li><a href="#teeth-whitening" class="text-decoration-none">Basal Implants</a></li>
                     <li><a href="teeth_whitening.php" class="text-decoration-none">Teeth Whitening</a></li>

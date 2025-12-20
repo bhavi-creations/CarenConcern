@@ -5,7 +5,7 @@
         <div class="sidebar-brand-icon  ">
             <i class="fas fa-stethoscope"></i>
         </div>
-        <div class="sidebar-brand-text mx-3"> Care  <br> N Concern</div>
+        <div class="sidebar-brand-text mx-3">Krishna <br> Dentacure</div>
     </a>
 
     <!-- Divider -->
