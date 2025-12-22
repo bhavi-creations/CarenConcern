@@ -43,6 +43,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Reply for Comment</title>
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <style>
+        textarea {
+            width: 100%;
+            resize: vertical;
+            padding: 10px;
+            border: 1px solid #d1d3e2;
+            border-radius: 5px;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+    </style>
 </head>
 <body id="page-top">
 <div id="wrapper">
@@ -70,8 +84,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         
                         <form method="POST">
                             <div class="mb-3">
-                                <label>Reply Text</label>
-                                <textarea name="reply_text" class="form-control" rows="4" required><?= htmlspecialchars($comment['reply_text']); ?></textarea>
+                                <label for="reply_text">Reply Text</label>
+                                <textarea id="reply_text" name="reply_text" rows="4"><?= isset($comment['reply_text']) ? htmlspecialchars($comment['reply_text']) : '' ?></textarea>
                             </div>
 
                             <button type="submit" class="btn btn-success">Submit Reply</button>
@@ -96,7 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <footer class="sticky-footer bg-white">
             <div class="container my-auto text-center">
-                <p style="color:black">©2024 Srinivasa Dental. Designed & Developed by 
+                <p style="color:black">©2024 Vision Dental. Designed & Developed by 
                     <a href="https://bhavicreations.com/" target="_blank" style="color:black;text-decoration:none;">Bhavi Creations</a>
                 </p>
             </div>

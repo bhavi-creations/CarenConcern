@@ -9,7 +9,7 @@ $services_result = $conn->query("SELECT id, service_name FROM services ORDER BY 
 
 <head>
     <meta charset="utf-8">
-    <title>Krishna dental hospital - Dashboard</title>
+    <title>Srinivasa dental hospital - Dashboard</title>
 
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
@@ -151,25 +151,3 @@ $services_result = $conn->query("SELECT id, service_name FROM services ORDER BY 
 </body>
 
 </html>
-
-
-
-<!-- <label class="form-label text-primary">Select Service</label>
-                                        <select name="service" class="form-control" required>
-                                            <option value="">Select a Service</option>
-                                            <option value="Root Canal">Root Canal</option>
-                                            <option value="Wisdom Tooth Removal">Wisdom Tooth Removal</option>
-                                            <option value="Bad Breath Treatment">Bad Breath Treatment</option>
-                                            <option value="Gum Treatment">Gum Treatment</option>
-                                            <option value="Teeth Cleaning">Teeth Cleaning</option>
-                                            <option value="Orthodontic Treatment">Orthodontic Treatment</option>
-                                            <option value="Dental Crown & Bridge">Dental Crown & Bridge</option>
-                                            <option value="Invisible Aligners">Invisible Aligners</option>
-                                            <option value="Dental Veneers">Dental Veneers</option>
-                                            <option value="Smile Makeover">Smile Makeover</option>
-                                            <option value="Teeth Whitening">Teeth Whitening</option>
-                                            <option value="Dental Implants">Dental Implants</option>
-                                            <option value="Dentures">Dentures</option>
-                                            <option value="Fluoride Application & Dental Sealant">Fluoride Application & Dental Sealant</option>
-                                            <option value="Full Mouth Rehabilitation Treatment">Full Mouth Rehabilitation Treatment</option>
-                                        </select> -->
