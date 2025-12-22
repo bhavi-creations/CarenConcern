@@ -65,10 +65,10 @@ $conn->close();
     <div class="container blog-detailed" style="padding-top: 50px;">
 
         <!-- Language buttons -->
-        <!-- <div class="d-flex justify-content-center mb-3">
+        <div class="d-flex justify-content-center mb-3">
             <button id="english-btn" class="lang-btn btn btn-sm me-2 english-btn">English</button>
             <button id="telugu-btn" class="lang-btn btn btn-sm telugu-btn mx-4">తెలుగు</button>
-        </div> -->
+        </div>
 
 
         <?php if (!empty($service)) { ?>
@@ -196,7 +196,7 @@ $conn->close();
                                         <img src='{$sidebar_image_path}' class='img-fluid' style='width:100%; height:100%; object-fit:cover;' alt='Blog Image'>
                                     </div>
                                     <a href='fullblog.php?id={$row['id']}'>
-                                        <p class='blog-card-text text-white mt-2'>{$title_short}</p>
+                                        <p class='blog-card-text mt-2'>{$title_short}</p>
                                     </a>
                                 </div>
                             </div>";
