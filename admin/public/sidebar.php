@@ -5,7 +5,7 @@
         <div class="sidebar-brand-icon  ">
             <i class="fas fa-stethoscope"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">IVY Dental</div>
+        <div class="sidebar-brand-text mx-3">Krishna <br> Dentacure</div>
     </a>
 
     <!-- Divider -->
@@ -13,7 +13,7 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" href="index.php">
+        <a class="nav-link" href="index.php">8/
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>
@@ -42,20 +42,21 @@
     </li>
 
 
-
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
             <i class="fas fa-fw fa-blog"></i>
-            <span>Comment</span>
+            <span>Comments</span>
         </a>
-        <div id="collapsethree" class="collapse" aria-labelledby="headingthree" data-parent="#accordionSidebar">
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Comment</h6>
-                <a class="collapse-item" href="all_commetns.php"> <i class="fas fa-fw fa-blog"></i>Comment</a>
+                <h6 class="collapse-header">COMMENTS</h6>
+                <a class="collapse-item" href="all_commetns.php"> <i class="fas fa-fw fa-blog"></i> Comments</a>
                 <!-- <a class="collapse-item" href="allBlog.php"> <i class="fas fa-fw fa-edit"></i> All BLOGS</a> -->
             </div>
         </div>
     </li>
+
+
 
 
     <li class="nav-item">
@@ -73,6 +74,23 @@
     </li>
 
 
+
+    <!-- <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+            <i class="fas fa-fw fa-blog"></i>
+            <span>Comments</span>
+        </a>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">COMMENTS</h6>
+                <a class="collapse-item" href="all_commetns.php"> <i class="fas fa-fw fa-blog"></i> Comments</a>
+                 <a class="collapse-item" href="allBlog.php"> <i class="fas fa-fw fa-edit"></i> All BLOGS</a> 
+            </div>
+        </div>
+    </li> -->
+
+
+
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
 
@@ -82,8 +100,6 @@
     </div>
 
     <!-- Sidebar Message -->
-
-
 
 
 </ul>

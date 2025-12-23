@@ -17,7 +17,7 @@ $result = $conn->query($sql);
 
 <head>
     <meta charset="utf-8">
-    <title>Vision Dental - Comments</title>
+    <title>Krishna Dental - Comments</title>
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700,800" rel="stylesheet">
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
@@ -40,7 +40,7 @@ $result = $conn->query($sql);
                                 All Blog Comments
                             <?php } ?>
                         </h2>
-                        <a href="all_commetns.php" class="btn btn-sm btn-primary shadow-sm">
+                        <a href="dashboard.php" class="btn btn-sm btn-primary shadow-sm">
                             <i class="fas fa-arrow-left fa-sm text-white-50"></i> Back to Blogs
                         </a>
                     </div>
@@ -103,7 +103,7 @@ $result = $conn->query($sql);
 
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto text-center">
-                    <p style="color:black">©2024 Vision Dental. Designed & Developed by 
+                    <p style="color:black">©2024 Srinivasa Dental. Designed & Developed by 
                         <a href="https://bhavicreations.com/" target="_blank" style="color:black;text-decoration:none;">Bhavi Creations</a>
                     </p>
                 </div>

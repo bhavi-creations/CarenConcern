@@ -9,7 +9,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title> IVY Dental</title>
+        <title> Krishnadentacure</title>
         <link href="img\Oncology logo.png" rel="icon">
 
         <!-- Custom fonts for this template-->
@@ -35,7 +35,7 @@
                             <!-- Nested Row within Card Body -->
                             <div class="row">
                                 <div class="col-lg-6 d-none d-lg-block  ">
-                                    <img src="img/admin_panel_logo.png" alt="login image" class="img-fluid">
+                                    <img src="img/login.jpg" alt="login image" class="img-fluid">
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="p-5">

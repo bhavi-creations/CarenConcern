@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title> IVY Dental</title>
+    <title> Krishnadentacure</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -22,7 +22,7 @@
 
 </head>
 
-<body style="background: #A9A8D4;">
+<body style="background: #A9A8D4;"  >
 
     <div class="container">
 
@@ -30,15 +30,15 @@
             <div class="card-body p-0">
                 <!-- Nested Row within Card Body -->
                 <div class="row">
-                    <div class="col-lg-6 d-none d-lg-block   d-flex justify-content-center">
-                        <img src="img/admin_panel_logo.png" alt="login image" class="img-fluid">
-                    </div>
+                <div class="col-lg-6 d-none d-lg-block  ">
+                                <img src="img/register.jpg" alt="login image" class="img-fluid">
+                            </div>
                     <div class="col-lg-6">
                         <div class="p-5">
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                             </div>
-
+ 
 
 
 
@@ -67,15 +67,15 @@
                                 <hr>
                             </form>
 
-
+                          
                             <div class="text-center">
                                 <a class="small" href="login.php">Already have an account? Login!</a>
-                            </div>
+                            </div> 
                             <?php
-                            if (isset($_GET['error'])) {
-                                echo "<p style='color:red;'>" . htmlspecialchars($_GET['error']) . "</p>";
-                            }
-                            ?>
+                                            if (isset($_GET['error'])) {
+                                                echo "<p style='color:red;'>".htmlspecialchars($_GET['error'])."</p>";
+                                            }
+                                        ?>
 
                         </div>
                     </div>
