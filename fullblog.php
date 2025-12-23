@@ -65,10 +65,10 @@ $conn->close();
     <div class="container blog-detailed" style="padding-top: 200px;">
 
         <!-- Language buttons -->
-        <div class="d-flex justify-content-center mb-3">
+        <!-- <div class="d-flex justify-content-center mb-3">
             <button id="english-btn" class="lang-btn btn btn-sm me-2 english-btn">English</button>
             <button id="telugu-btn" class="lang-btn btn btn-sm telugu-btn mx-4">తెలుగు</button>
-        </div>
+        </div> -->
 
 
         <?php if (!empty($service)) { ?>

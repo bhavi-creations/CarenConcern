@@ -29,50 +29,11 @@ $result = $stmt->get_result();
 
 
 
-<?php include 'navbar.php';  ?>
+<?php include 'header.php';  ?>
 
 
   <!-- End Header -->
   <main>
-    <!-- Filter Buttons -->
-    <div class="container new_space">
-      <div class="filter_buttons redirect_section mt-4">
-        <a href="blogs.php?service="><button class="redirect_blog_srivice">All</button></a>
-        <a href="blogs.php?service=Bladder Cancer"><button class="redirect_blog_srivice">Bladder Cancer</button></a>
-        <a href="blogs.php?service=Brain Cancer"><button class="redirect_blog_srivice">Brain Cancer</button></a>
-        <a href="blogs.php?service=Cervical Cancer"><button class="redirect_blog_srivice">Cervical Cancer</button></a>
-        <a href="blogs.php?service=Childhood Cancer"><button class="redirect_blog_srivice">Childhood Cancer</button></a>
-        <a href="blogs.php?service=Colon Cancer"><button class="redirect_blog_srivice">Colon Cancer</button></a>
-        <a href="blogs.php?service=Esophageal Cancer"><button class="redirect_blog_srivice">Esophageal Cancer</button></a>
-        <a href="blogs.php?service=Kidney Cancer"><button class="redirect_blog_srivice">Kidney Cancer</button></a>
-        <a href="blogs.php?service=Leiomyosarcoma Cancer"><button class="redirect_blog_srivice">Leiomyosarcoma Cancer</button></a>
-        <a href="blogs.php?service=Leukemia Cancer"><button class="redirect_blog_srivice">Leukemia Cancer</button></a>
-        <a href="blogs.php?service=Liver Cancer"><button class="redirect_blog_srivice">Liver Cancer</button></a>
-        <a href="blogs.php?service=Lung Cancer"><button class="redirect_blog_srivice">Lung Cancer</button></a>
-        <a href="blogs.php?service=Lymphoma Cancer"><button class="redirect_blog_srivice">Lymphoma Cancer</button></a>
-        <a href="blogs.php?service=Melanoma Cancer"><button class="redirect_blog_srivice">Melanoma Cancer</button></a>
-        <a href="blogs.php?service=Ovarian Cancer"><button class="redirect_blog_srivice">Ovarian Cancer</button></a>
-        <a href="blogs.php?service=Pancreatic Cancer"><button class="redirect_blog_srivice">Pancreatic Cancer</button></a>
-        <a href="blogs.php?service=Prostate Cancer"><button class="redirect_blog_srivice">Prostate Cancer</button></a>
-        <a href="blogs.php?service=Sarcoma/Bone Cancer"><button class="redirect_blog_srivice">Sarcoma/Bone Cancer</button></a>
-        <a href="blogs.php?service=Stomach Cancer"><button class="redirect_blog_srivice">Stomach Cancer</button></a>
-        <a href="blogs.php?service=Testicular Cancer"><button class="redirect_blog_srivice">Testicular Cancer</button></a>
-        <a href="blogs.php?service=Uterine Cancer"><button class="redirect_blog_srivice">Uterine Cancer</button></a>
-        <a href="blogs.php?service=Head Neck Cancer"><button class="redirect_blog_srivice">Head & Neck Cancer</button></a>
-        <a href="blogs.php?service=Breast Cancer"><button class="redirect_blog_srivice">Breast Cancer</button></a>
-        <a href="blogs.php?service=Multiple Cancer"><button class="redirect_blog_srivice">Multiple Cancer</button></a>
-        <a href="blogs.php?service=Honors Cancer"><button class="redirect_blog_srivice">Honors Cancer</button></a>
-
-
-
-
-
-        <a href="blogs.php?service=Other"><button class="redirect_blog_srivice">Other Blog</button></a>
-
-
-
-      </div>
-    </div>
 
     <!-- Blogs Section -->
     <div class="container blog-sidebar-list" style="padding-top: 20px; padding-bottom: 20px;">
