@@ -10,14 +10,15 @@ if ($blog_id <= 0) {
 }
 
 // ---------------------------------------------
-// FETCH BLOG DATA
+// FETCH BLOG DATA (SERVICE INCLUDED)
 // ---------------------------------------------
 $stmt = $conn->prepare("
     SELECT 
         title, main_content, full_content, 
         title_image, main_image, video, 
         telugu_title, telugu_main_content, telugu_full_content,
-        section1_image
+        section1_image,
+        service
     FROM blogs 
     WHERE id = ?
 ");
@@ -33,13 +34,14 @@ $stmt->bind_result(
     $telugu_title,
     $telugu_main_content,
     $telugu_full_content,
-    $section1_image
+    $section1_image,
+    $service
 );
 $stmt->fetch();
 $stmt->close();
 
 // ---------------------------------------------
-// FETCH LIKE / DISLIKE COUNTS (IMPORTANT)
+// FETCH LIKE / DISLIKE COUNTS
 // ---------------------------------------------
 $count_sql = "SELECT 
                 SUM(reaction='like') AS likes,
@@ -57,16 +59,25 @@ $count_stmt->close();
 $conn->close();
 ?>
 
-<?php include 'header.php'; ?>
+<?php include 'navbar.php'; ?>
 
 <main>
-    <div class="container blog-detailed" style="padding-top: 50px;">
+    <div class="container blog-detailed" style="padding-top: 200px;">
 
         <!-- Language buttons -->
         <div class="d-flex justify-content-center mb-3">
             <button id="english-btn" class="lang-btn btn btn-sm me-2 english-btn">English</button>
             <button id="telugu-btn" class="lang-btn btn btn-sm telugu-btn mx-4">తెలుగు</button>
         </div>
+
+
+        <?php if (!empty($service)) { ?>
+            <div class="text-center mb-3">
+                <span class="badge_service_name px-4 py-2">
+                    <?= htmlspecialchars($service) ?>
+                </span>
+            </div>
+        <?php } ?>
 
         <!-- Image -->
         <div class="text-center mb-4">
@@ -90,8 +101,7 @@ $conn->close();
             Your browser does not support the video tag.
           </video>";
                                         } elseif (!empty($main_image)) {
-                                            $main_image_path = "./admin/uploads/photos/{$main_image}";
-                                           ;
+                                            $main_image_path = "./admin/uploads/photos/{$main_image}";;
                                         }
                                         ?>
         </div>
@@ -108,11 +118,18 @@ $conn->close();
             Your browser does not support the video tag.
           </video>";
             } elseif (!empty($main_image)) {
-                $main_image_path = "./admin/uploads/photos/{$main_image}";
-                ;
+                $main_image_path = "./admin/uploads/photos/{$main_image}";;
             }
             ?>
         </div>
+
+
+
+
+        <!-- SERVICE BADGE -->
+        <!-- SERVICE BADGE -->
+       
+
 
         <!-- Title -->
         <h4 class="blog-title text-center mt-5" style="color:#283779; font-weight:800;">
@@ -153,7 +170,7 @@ $conn->close();
     <div class="container">
         <div class="blogs_side my-5">
             <div class="side-bar">
-                <h1 class="d-flex justify-content-center my-3 " style="color:#3d7553; font-weight: 500;">LATEST BLOGS</h1>
+                <h1 class="d-flex justify-content-center my-3">LATEST BLOGS</h1>
                 <div class="swiper blog-swiper">
                     <div class="swiper-wrapper">
                         <?php
@@ -173,7 +190,7 @@ $conn->close();
 
                                 echo "
                             <div class='swiper-slide d-flex justify-content-center'>
-                                <div class='custom-card background_sidebar_ivy text-center' 
+                                <div class='custom-card background_sidebar text-center' 
                                     style='width:100%; max-width:400px; height:350px; display:flex; flex-direction:column; justify-content:flex-start; align-items:center; padding:10px; border-radius:8px; box-shadow:0px 2px 10px rgba(0,0,0,0.1);'>
                                     <div style='flex:1; display:flex; align-items:center; justify-content:center; width:100%; overflow:hidden;'>
                                         <img src='{$sidebar_image_path}' class='img-fluid' style='width:100%; height:100%; object-fit:cover;' alt='Blog Image'>
