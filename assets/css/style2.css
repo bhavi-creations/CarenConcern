@@ -409,3 +409,58 @@
         font-size: 0.95rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.index_button_section {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; */
+    background: #26282a;
+    /* border-radius: 10px; */
+    /* color: #2c3e50; */
+    color: white;
+    /* text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 2px solid transparent; */
+}
+.index_button_section{
+ 
+    background: linear-gradient(135deg, black  0%, grey 100%);
+   
+    color: white;
+   
+}
+
+
+
+
+.submit_section{
+    background: #26282a !important;
+    /* border-radius: 10px; */
+    /* color: #2c3e50; */
+    color: white !important;
+}
+
+
+
+.submit_section:hover{
+    background: linear-gradient(135deg, black  0%, grey 100%);
+   
+    color: white;
+   
+}

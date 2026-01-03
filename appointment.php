@@ -14,19 +14,12 @@
                     <h3>Book <span>Appointment</span></h3>
                     <p>Fill out the form below to schedule your dental appointment</p>
 
+
+
                     <form>
                         <div class="row">
                             <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="First Name" required>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Last Name" required>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="email" class="form-control" placeholder="Email Address" required>
+                                <input type="text" class="form-control" placeholder=" Name" required>
                             </div>
                             <div class="col-md-6">
                                 <input type="tel" class="form-control" placeholder="Phone Number" required>
@@ -34,30 +27,41 @@
                         </div>
 
                         <div class="row">
+
                             <div class="col-md-6">
                                 <input type="date" class="form-control" placeholder="Select Date" required>
                             </div>
                             <div class="col-md-6">
-                                <input type="time" class="form-control" placeholder="Select Time" required>
+                                <select class="form-select form-control-uniform" name="service" required>
+                                    <option value="">SELECT SERVICE </option>
+                                    <option value="painless Root Canal">painless Root Canal</option>
+                                    <option value="Teeth Cleaning">Teeth Cleaning</option>
+                                    <option value="Crowns & Bridges">Crowns & Bridges</option>
+                                    <option value="Painless Teeth Removal">Painless Teeth Removal</option>
+                                    <option value="Tooth Colored Fillings">Tooth Colored Fillings</option>
+                                    <option value="Fixing Jaw Fractures">Fixing Jaw Fractures</option>
+                                    <option value="Basal Implants">Basal Implants</option>
+                                    <option value="Laser Dentistry">Laser Dentistry</option>
+                                    <option value="Teeth Whitening">Teeth Whitening</option>
+                                    <option value="Clear Aligners">Clear Aligners</option>
+
+                                </select>
                             </div>
                         </div>
 
-                        <select class="form-control">
-                            <option value="">Select Treatment</option>
-                            <option value="checkup">General Checkup</option>
-                            <option value="cleaning">Teeth Cleaning</option>
-                            <option value="whitening">Teeth Whitening</option>
-                            <option value="braces">Braces</option>
-                            <option value="implants">Dental Implants</option>
-                            <option value="dentures">Dentures</option>
-                            <option value="root-canal">Root Canal</option>
-                            <option value="cosmetic">Cosmetic Dentistry</option>
-                        </select>
+                        <div class="row">
 
-                        <textarea class="form-control" rows="4" placeholder="Additional Notes (Optional)"></textarea>
 
-                        <button type="submit" class="btn-book w-100 justify-content-center">SUBMIT APPOINTMENT</button>
+                        </div>
+
+
+
+                        <textarea class="form-control" rows="4" placeholder="Meassage  "></textarea>
+
+                        <button type="submit" class="btn-book submit_section w-100 justify-content-center">SUBMIT APPOINTMENT</button>
                     </form>
+
+               
                 </div>
             </div>
             <div class="col-lg-6">

@@ -7,7 +7,7 @@
 <section id="contact" class="section contact-section">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="section-title">Reach Us</h2>
+            <h2 class="section-title mt-5">Reach Us</h2>
             <p class="section-subtitle">Contact with our team </p>
             <!-- <p class="section-subtitle">Get in touch with our expert to explore tailored MRO solutions designed for your fleet's success.</p> -->
         </div>
@@ -38,47 +38,48 @@
                         <div class="row g-3">
 
                             <div class="col-12 col-md-6">
-                                <input type="text" name="name" class="form-control form-control-uniform" placeholder="Your Name">
+                                <input type="text" name="name" class="form-control form-control-uniform" placeholder="Your Name" required>
                             </div>
 
                             <div class="col-12 col-md-6">
-                                <input type="email" name="Company" class="form-control form-control-uniform" placeholder="Company Name">
+                                <input type="tel" name="phone" class="form-control form-control-uniform" placeholder="Phone Number" required>
                             </div>
 
                             <div class="col-12 col-md-6">
-                                <input type="email" name="Email" class="form-control form-control-uniform" placeholder="Enter Your Email">
+                                <input type="email" name="email" class="form-control form-control-uniform" placeholder="Email" required>
                             </div>
 
-                            <div class="col-12 col-md-6">
-                                <input type="text" name="title" class="form-control form-control-uniform" placeholder="Title">
-                            </div>
+                         
 
                             <div class="col-12 col-md-6">
-                                <select class="form-select form-control-uniform" name="service">
-                                    <option selected>Primary Interest</option>
-                                    <option value="Base Maintenance">Base Maintenance</option>
-                                    <option value="Component Overhaul">Component Overhaul</option>
-                                    <option value="Partnership">Partnership</option>
-                                    <!-- <option value="Invisible aligners">Invisible aligners</option>
-                                    <option value="Teeth whitening">Teeth whitening</option>
-                                    <option value="Teeth cleaning">Teeth cleaning</option>
-                                    <option value="Teeth jewellery">Teeth jewellery</option>
-                                    <option value="root canal">Root canal</option> -->
+                                <select class="form-select form-control-uniform" name="service" required>
+                                    <option value="">SELECT SERVICE </option>
+                                    <option value="painless Root Canal">painless Root Canal</option>
+                                    <option value="Teeth Cleaning">Teeth Cleaning</option>
+                                    <option value="Crowns & Bridges">Crowns & Bridges</option>
+                                    <option value="Painless Teeth Removal">Painless Teeth Removal</option>
+                                    <option value="Tooth Colored Fillings">Tooth Colored Fillings</option>
+                                    <option value="Fixing Jaw Fractures">Fixing Jaw Fractures</option>
+                                    <option value="Basal Implants">Basal Implants</option>
+                                    <option value="Laser Dentistry">Laser Dentistry</option>
+                                    <option value="Teeth Whitening">Teeth Whitening</option>
+                                    <option value="Clear Aligners">Clear Aligners</option>
+                                   
                                 </select>
                             </div>
 
-                            <div class="mb-3 col-12 col-md-6 ">
-                                <!-- <label class="form-label">Message</label> -->
-                                <textarea class="form-control" name="meassage" rows="1" placeholder="Write your message"
-                                    required></textarea>
+                            <div class="col-12 ">
+                                <textarea class="form-control form-control-uniform" name="message"
+                                    placeholder="Write your message" required></textarea>
                             </div>
 
                             <button type="submit" class="btn-book w-100 justify-content-center">
                                 Send Message
                             </button>
-                            
+
                         </div>
                     </form>
+
 
                 </div>
             </div>

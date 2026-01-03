@@ -1,8 +1,10 @@
 <?php include 'header.php'; ?>
 
 <section class="sample_secrtion">
-    <img src="./assets/images/new_images/index page.jpg" alt="" class="img-fluid">
+    <img src="./assets/images/new_images/index_12.jpeg" alt="" class="img-fluid">
 </section>
+
+
 
 
 <!-- Hero Section -->
@@ -463,9 +465,9 @@
     <div class="container appointment_container">
         <div class="appointment_content">
             <h1>Book <span>Free Consultation</span></h1>
-            <a href="appointment.php" class="btn-book index_button_appointment">BOOK Now</a>
+            <a href="appointment.php" class="btn-book index_button_appointment index_button_section">BOOK Now</a>
         </div>
-        <div class="appointment_image">
+        <div class="appointment_image d-none d-md-block">
             <img src="./assets/images/bg_remoive.png" alt="Consultation Image">
         </div>
     </div>
@@ -502,14 +504,34 @@
     <div class="container">
         <div class="carousel-wrapper">
             <div class="carousel-track" id="carouselTrack">
+
+
+
+
+
+
+
+
+            <div class="doctor-card-container">
+                    <div class="doctor-card">
+                        <div class="doctor-image-wrapper">
+                            <img src=".\assets\images\new_images\main_doctor.png" alt="Dr. Andru" class="doctor-image">
+                        </div>
+                        <h3 class="doctor-name">Dr Sunil S</h3>
+                        <!-- <p class="doctor-specialty">Prosthodontist</p> -->
+                    </div>
+                </div>
+
+
+
                 <!-- Doctor 1 -->
                 <div class="doctor-card-container">
                     <div class="doctor-card">
                         <div class="doctor-image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=500&fit=crop" alt="Dr. Andru" class="doctor-image">
+                            <img src=".\assets\images\new_images\Keerthi.png" alt="Dr. Andru" class="doctor-image">
                         </div>
-                        <h3 class="doctor-name">Dr. Andru</h3>
-                        <p class="doctor-specialty">Endodontist</p>
+                        <h3 class="doctor-name">Dr Keerthi Ramachandra</h3>
+                        <p class="doctor-specialty">Prosthodontist</p>
                     </div>
                 </div>
 
@@ -517,9 +539,9 @@
                 <div class="doctor-card-container">
                     <div class="doctor-card">
                         <div class="doctor-image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=500&fit=crop" alt="Dr. Amily" class="doctor-image">
+                            <img src=".\assets\images\new_images\Smitha.png" alt="Dr. Amily" class="doctor-image">
                         </div>
-                        <h3 class="doctor-name">Dr. Amily</h3>
+                        <h3 class="doctor-name">Dr Smitha Shetty</h3>
                         <p class="doctor-specialty">Orthodontist</p>
                     </div>
                 </div>
@@ -528,10 +550,10 @@
                 <div class="doctor-card-container">
                     <div class="doctor-card">
                         <div class="doctor-image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=500&fit=crop" alt="Dr. Howard" class="doctor-image">
+                            <img src=".\assets\images\new_images\Saurabh.png" alt="Dr. Howard" class="doctor-image">
                         </div>
-                        <h3 class="doctor-name">Dr. Howard</h3>
-                        <p class="doctor-specialty">Oral Pathologist</p>
+                        <h3 class="doctor-name">Dr Saurabh TJ</h3>
+                        <p class="doctor-specialty">Endodontist and Esthetic Dentist</p>
                     </div>
                 </div>
 
@@ -539,15 +561,15 @@
                 <div class="doctor-card-container">
                     <div class="doctor-card">
                         <div class="doctor-image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&h=500&fit=crop" alt="Dr. Mike" class="doctor-image">
+                            <img src=".\assets\images\new_images\Ranjith.png" alt="Dr. Mike" class="doctor-image">
                         </div>
-                        <h3 class="doctor-name">Dr. Mike</h3>
-                        <p class="doctor-specialty">Periodontist</p>
+                        <h3 class="doctor-name">Dr Ranjith</h3>
+                        <p class="doctor-specialty">Oral & Maxillofacial Surgeon</p>
                     </div>
                 </div>
 
                 <!-- Doctor 5 -->
-                <div class="doctor-card-container">
+                <!-- <div class="doctor-card-container">
                     <div class="doctor-card">
                         <div class="doctor-image-wrapper">
                             <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=500&fit=crop" alt="Dr. Sarah" class="doctor-image">
@@ -555,10 +577,10 @@
                         <h3 class="doctor-name">Dr. Sarah</h3>
                         <p class="doctor-specialty">Prosthodontist</p>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Doctor 6 -->
-                <div class="doctor-card-container">
+                <!-- <div class="doctor-card-container">
                     <div class="doctor-card">
                         <div class="doctor-image-wrapper">
                             <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=500&fit=crop" alt="Dr. John" class="doctor-image">
@@ -566,10 +588,10 @@
                         <h3 class="doctor-name">Dr. John</h3>
                         <p class="doctor-specialty">Oral Surgeon</p>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Doctor 7 -->
-                <div class="doctor-card-container">
+                <!-- <div class="doctor-card-container">
                     <div class="doctor-card">
                         <div class="doctor-image-wrapper">
                             <img src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&h=500&fit=crop" alt="Dr. Emma" class="doctor-image">
@@ -577,10 +599,10 @@
                         <h3 class="doctor-name">Dr. Emma</h3>
                         <p class="doctor-specialty">Pediatric Dentist</p>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Doctor 8 -->
-                <div class="doctor-card-container">
+                <!-- <div class="doctor-card-container">
                     <div class="doctor-card">
                         <div class="doctor-image-wrapper">
                             <img src="https://images.unsplash.com/photo-1638202993928-7267aad84c31?w=400&h=500&fit=crop" alt="Dr. David" class="doctor-image">
@@ -588,10 +610,10 @@
                         <h3 class="doctor-name">Dr. David</h3>
                         <p class="doctor-specialty">General Dentist</p>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Doctor 9 -->
-                <div class="doctor-card-container">
+                <!-- <div class="doctor-card-container">
                     <div class="doctor-card">
                         <div class="doctor-image-wrapper">
                             <img src="https://images.unsplash.com/photo-1609557927087-f9cf8e88de18?w=400&h=500&fit=crop" alt="Dr. Lisa" class="doctor-image">
@@ -599,7 +621,7 @@
                         <h3 class="doctor-name">Dr. Lisa</h3>
                         <p class="doctor-specialty">Cosmetic Dentist</p>
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <!-- Navigation controls -->
@@ -696,7 +718,7 @@
 
                         <textarea class="form-control" rows="4" placeholder="Additional Notes (Optional)"></textarea>
 
-                        <button type="submit" class="btn-book w-100 justify-content-center">SUBMIT APPOINTMENT</button>
+                        <button type="submit" class="btn-book submit_section w-100 justify-content-center ">SUBMIT APPOINTMENT</button>
                     </form>
                 </div>
             </div>

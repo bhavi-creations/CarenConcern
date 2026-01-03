@@ -7,6 +7,7 @@
 
             <!-- Footer Info -->
             <div class="col-lg-3 mb-4 footer-info">
+          
                 <h4><span class="denta ">Care</span> &nbsp; 'n' &nbsp;<span class="care">Concern</span></h4>
                 <!-- <p><strong>Denta Care Health Ventures LLP</strong></p> -->
                 <p class="mt-5">2462/37, 7th B Main Road, Hampinagar, RPC Layout, Vijayanagar, Bengaluru, Karnataka 560104</p>
@@ -86,7 +87,7 @@
     
 </a>
 
-
+<?PHP include 'c2.php' ;?>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

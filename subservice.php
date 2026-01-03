@@ -12,6 +12,9 @@
                 <li><a href="teeth_whitening.php">Teeth Whitening<i class="flaticon-arrow-up-right"></i></a></li>
                 <li><a href="laser_dentistry.php">Laser Dentistry <i class="flaticon-arrow-up-right"></i></a></li>
 
+                <li><a href="laser_dentistry.php">Laser Dentistry <i class="flaticon-arrow-up-right"></i></a></li>
+                <li><a href="laser_dentistry.php">Laser Dentistry <i class="flaticon-arrow-up-right"></i></a></li>
+
         </div>
         </ul>
     </div>

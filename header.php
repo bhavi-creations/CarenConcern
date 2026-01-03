@@ -162,137 +162,126 @@
 
     <!-- boostrap icons cdn link   -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    
-   
+
+
 
 
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="./assets/images/logo.jpg" alt="Denta Care" class="img-fluid" style="width: 100px; height: 80px;">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav align-items-center">
+    <?php include 'view_count.php'; ?>
 
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.php">HOME</a>
-                </li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/logo.jpg" alt="Denta Care" class="img-fluid" style="width: 100px; height: 80px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="about.php">ABOUT</a>
-                </li>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
 
-                <!-- SERVICES Mega Menu -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="service.php" id="servicesDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        SERVICES
-                    </a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.php">HOME</a>
+                    </li>
 
-                    <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                        <!-- Sub Service 1 -->
-                        <li class="dropdown-submenu">
-                            <a class="dropdown-item dropdown-toggle" href="#">General Dentistry</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="root_canal.php">painless Root Canal</a></li>
-                                <li><a class="dropdown-item" href="teeth_cleaning.php">Teeth Cleaning</a></li>
-                                <li><a class="dropdown-item" href="crowns&bridges.php">Crowns & Bridges</a></li>
-                                <li><a class="dropdown-item" href="teeth_removal.php">Painless Teeth Removal ​</a></li>
-                                <li><a class="dropdown-item" href="tooth_colored_fillings.php">Tooth Colored Fillings</a></li>
-                                <li><a class="dropdown-item" href="jaw_fractures.php">Fixing Jaw Fractures</a></li>
-                            </ul>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.php">ABOUT</a>
+                    </li>
 
-                        <!-- Sub Service 2 -->
-                        <li class="dropdown-submenu">
-                            <a class="dropdown-item dropdown-toggle" href="#">specialised Treatment</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="basal_implants.php">Basal Implants</a></li>
-                                <li><a class="dropdown-item" href="laser_dentistry.php">Laser Dentistry</a></li>
-                                <li><a class="dropdown-item" href="teeth_whitening.php">Teeth Whitening</a></li>
-                                <li><a class="dropdown-item" href="clear_aligners.php">Clear Aligners</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
+                    <!-- SERVICES Mega Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="service.php" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            SERVICES
+                        </a>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="clinic.php">CLINICS</a>
-                </li>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="blog.php">BLOGS</a>
-                </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">General Dentistry</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="root_canal.php">painless Root Canal</a></li>
+                                    <li><a class="dropdown-item" href="teeth_cleaning.php">Teeth Cleaning</a></li>
+                                    <li><a class="dropdown-item" href="crowns&bridges.php">Crowns & Bridges</a></li>
+                                    <li><a class="dropdown-item" href="teeth_removal.php">Painless Teeth Removal ​</a></li>
+                                    <li><a class="dropdown-item" href="tooth_colored_fillings.php">Tooth Colored Fillings</a></li>
+                                    <li><a class="dropdown-item" href="jaw_fractures.php">Fixing Jaw Fractures</a></li>
+                                </ul>
+                            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.php">CONTACT</a>
-                </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">specialised Treatment</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="basal_implants.php">Basal Implants</a></li>
+                                    <li><a class="dropdown-item" href="laser_dentistry.php">Laser Dentistry</a></li>
+                                    <li><a class="dropdown-item" href="teeth_whitening.php">Teeth Whitening</a></li>
+                                    <li><a class="dropdown-item" href="clear_aligners.php">Clear Aligners</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
 
-            </ul>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="clinic.php">CLINICS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.php">BLOGS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.php">CONTACT</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <a href="appointment.php" class="btn-book index_button_section d-none d-lg-inline-flex">BOOK APPOINTMENT</a>
         </div>
-
-        <a href="appointment.php" class="btn-book index_button_section d-none d-lg-inline-flex">BOOK APPOINTMENT</a>
-    </div>
-</nav>
+    </nav>
 
 
-<!-- <script>
-document.addEventListener('DOMContentLoaded', function () {
-    const submenus = document.querySelectorAll('.dropdown-submenu > a');
 
-    submenus.forEach(function (submenu) {
-        submenu.addEventListener('click', function (e) {
-            const nextMenu = this.nextElementSibling;
-            if (nextMenu && nextMenu.classList.contains('dropdown-menu')) {
-                e.preventDefault(); // prevent default link action
-                nextMenu.classList.toggle('show');
-            }
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+            // MAIN SERVICES TOGGLE (ARROW CLICK ONLY)
+            document.querySelectorAll('.nav-item.dropdown > a .toggle-icon')
+                .forEach(function(icon) {
+
+                    icon.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        e.stopPropagation(); // 🚨 stop redirect
+
+                        let parent = this.closest('.dropdown');
+                        parent.classList.toggle('show');
+                    });
+
+                });
+
+            // SUBMENU TOGGLE
+            document.querySelectorAll('.dropdown-submenu > a .toggle-icon')
+                .forEach(function(icon) {
+
+                    icon.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+
+                        let parent = this.closest('.dropdown-submenu');
+                        parent.classList.toggle('show');
+                    });
+
+                });
+
         });
-    });
-
-    // Close all submenus when main dropdown closes
-    const mainDropdowns = document.querySelectorAll('.dropdown');
-    mainDropdowns.forEach(function (dropdown) {
-        dropdown.addEventListener('hidden.bs.dropdown', function () {
-            const submenus = dropdown.querySelectorAll('.dropdown-menu.show');
-            submenus.forEach(function (submenu) {
-                submenu.classList.remove('show');
-            });
-        });
-    });
-});
-</script> -->
-
-
-
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll('.dropdown-submenu > a').forEach(function (element) {
-        element.addEventListener("click", function (e) {
-            let nextEl = this.nextElementSibling;
-
-            if (nextEl && nextEl.classList.contains('dropdown-menu')) {
-                e.preventDefault();
-
-                if (nextEl.style.display === "block") {
-                    nextEl.style.display = "none";
-                } else {
-                    nextEl.style.display = "block";
-                }
-            }
-        });
-    });
-});
-</script>
-
- <?php include 'c2.php' ; ?>
+    </script>

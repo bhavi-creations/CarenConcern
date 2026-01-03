@@ -59,10 +59,10 @@ $count_stmt->close();
 $conn->close();
 ?>
 
-<?php include 'navbar.php'; ?>
+<?php include 'header.php'; ?>
 
 <main>
-    <div class="container blog-detailed" style="padding-top: 200px;">
+    <div class="container blog-detailed" >
 
         <!-- Language buttons -->
         <!-- <div class="d-flex justify-content-center mb-3">
@@ -196,7 +196,7 @@ $conn->close();
                                         <img src='{$sidebar_image_path}' class='img-fluid' style='width:100%; height:100%; object-fit:cover;' alt='Blog Image'>
                                     </div>
                                     <a href='fullblog.php?id={$row['id']}'>
-                                        <p class='blog-card-text mt-2'>{$title_short}</p>
+                                        <p class='blog-card-text text-white mt-2'>{$title_short}</p>
                                     </a>
                                 </div>
                             </div>";
