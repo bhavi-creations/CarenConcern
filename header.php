@@ -171,7 +171,7 @@
 <body>
 
 
-    <?php include 'view_count.php'; ?>
+    <!-- <?php include 'view_count.php'; ?> -->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
         <div class="container">
