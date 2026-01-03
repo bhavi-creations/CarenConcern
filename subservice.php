@@ -12,8 +12,8 @@
                 <li><a href="teeth_whitening.php">Teeth Whitening<i class="flaticon-arrow-up-right"></i></a></li>
                 <li><a href="laser_dentistry.php">Laser Dentistry <i class="flaticon-arrow-up-right"></i></a></li>
 
-                <li><a href="laser_dentistry.php">Laser Dentistry <i class="flaticon-arrow-up-right"></i></a></li>
-                <li><a href="laser_dentistry.php">Laser Dentistry <i class="flaticon-arrow-up-right"></i></a></li>
+                <li><a href="jaw_fractures.php">Fixing Jaw Fracture<i class="flaticon-arrow-up-right"></i></a></li>
+                <li><a href="clear_aligners.php">Clear Aligners <i class="flaticon-arrow-up-right"></i></a></li>
 
         </div>
         </ul>

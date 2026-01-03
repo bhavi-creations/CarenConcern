@@ -73,7 +73,7 @@
                                     placeholder="Write your message" required></textarea>
                             </div>
 
-                            <button type="submit" class="btn-book w-100 justify-content-center">
+                            <button type="submit" class="btn-book submit_section w-100 justify-content-center">
                                 Send Message
                             </button>
 
