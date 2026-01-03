@@ -62,7 +62,7 @@ $conn->close();
 <?php include 'header.php'; ?>
 
 <main>
-    <div class="container blog-detailed" >
+    <div class="container blog-detailed mt-5" >
 
         <!-- Language buttons -->
         <!-- <div class="d-flex justify-content-center mb-3">
