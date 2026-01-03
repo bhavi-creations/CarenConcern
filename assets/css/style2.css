@@ -6,7 +6,7 @@
 }
 
 .ul-section-spacing {
-    padding: 80px 0;
+    padding: 30px 0;
 }
 
 .ul-container {
@@ -370,9 +370,9 @@
 }
 
 @media (max-width: 768px) {
-    .ul-section-spacing {
+    /* .ul-section-spacing {
         padding: 50px 0;
-    }
+    } */
     
     .ul-service-details-txt {
         padding: 25px;

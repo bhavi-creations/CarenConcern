@@ -89,9 +89,9 @@ body {
     text-decoration: none;
 }
 
-.index_button_section {
+/* .index_button_section {
     margin-left: 50px !important;
-}
+} */
 
 .btn-book:hover {
     transform: translateY(-2px);
@@ -1581,7 +1581,17 @@ ul li {
 /* Submenu hover for desktop */
 .dropdown-submenu:hover>.dropdown-menu {
     display: block;
+   
 }
+
+
+@media (min-width:992px) {
+    .dropdown-submenu:hover>.dropdown-menu {
+        margin-left:-20px;
+       
+    }
+}
+
 
 /* Mobile submenu toggle fix */
 @media(max-width: 1199px) {
@@ -2443,3 +2453,5 @@ textarea.form-control {
     resize: none;              /* resize option off */
     height: 52px;              /* textarea kuda same height */
 }
+
+

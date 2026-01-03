@@ -34,7 +34,7 @@ $totalCount = $totalRes->fetch_assoc()['total'] ?? 0;
     <!-- 👁 -->
     <img src=".\assets\images\eye.png"class="img-fluid" alt="" style="width: 30px; height: 30px;">
     <div class="visitor-tooltip">
-        <div>Total Website Visitors: <b><?php echo $totalCount; ?></b></div>
+        <div>Total Pages Visitors: <b><?php echo $totalCount; ?></b></div>
         <div>This Page Visitors: <b><?php echo $pageCount; ?></b></div>
     </div>
 </a>
