@@ -82,7 +82,7 @@
 
         <!-- TOTAL VISITORS -->
         <div class="va-box">
-            <h3>👥 Total Website Visitors</h3>
+            <h3>👥 Total Pages Visitors</h3>
             <div class="va-total"><?php echo $totalCount; ?></div>
             <?php if ($isFiltered) { ?>
                 <small><?php echo $from; ?> → <?php echo $to; ?></small>

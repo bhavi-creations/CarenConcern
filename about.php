@@ -7,14 +7,14 @@
                 <img src="./assets/images/Sunil .png" alt="" class="img-fluid ">
             </div>
             <div class="col-md-6">
-                <h2 class="about-title">About Dr. Sunil S – Your Family Dentist</h2>
+                <h2 class="about-title ">About Dr. Sunil S – Your Family Dentist</h2>
                 <p class="about-subtitle">Director & Chief Doctor – Care ‘n’ Concern Family Dental Clinic, Hampinagar</p>
 
                 <div class="about-content">
                     <p>
                         Dr. Sunil S, fondly known as <strong>“Your Family Dentist”</strong>, is committed to providing
-                        honest, high-quality and compassionate dental care. With over <strong>15 years of experience</strong>,
-                        he has been leading Care ‘n’ Concern Family Dental Clinic for the past 8 years, offering
+                        honest, high-quality and compassionate dental care. With over <strong>25+ years of experience</strong>,
+                        he has been leading Care ‘n’ Concern Family Dental Clinic for the past 12+ years, offering
                         advanced treatments backed by modern technology and genuine care.
                     </p>
 

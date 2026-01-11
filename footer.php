@@ -21,12 +21,12 @@
             <div class="col-lg-3 mb-4 d-none d-md-block col-md-6 footer-links">
                 <h5>General Dentistry</h5>
                 <ul class="list-unstyled mt-5">
-                    <li><a href="root_canal.php" class="text-decoration-none">Root Canal</a></li>
-                    <li><a href="teeth_cleaning.php" class="text-decoration-none">Teeth Cleaning</a></li>
-                    <li><a href="crowns&bridges.php" class="text-decoration-none">Crowns & Bridges</a></li>
-                    <li><a href="teeth_removal.php" class="text-decoration-none">Painless Teeth Removal</a></li>
-                    <li><a href="tooth_colored_fillings.php" class="text-decoration-none">Tooth Colored Fillings</a></li>
-                    <li><a href="jaw_fractures.php" class="text-decoration-none">Fixing Jaw Fractures</a></li>
+                    <li><a href="root_canal_treatment_in_bengaluru.php" class="text-decoration-none">Root Canal</a></li>
+                    <li><a href="teeth_cleaning_treatment_in_bengaluru.php" class="text-decoration-none">Teeth Cleaning</a></li>
+                    <li><a href="dentalcrown_bridge_treatment_in_bengaluru..php" class="text-decoration-none">Crowns & Bridges</a></li>
+                    <li><a href="teeth_removal_treatment_in_bengaluru.php" class="text-decoration-none">Painless Teeth Removal</a></li>
+                    <li><a href="tooth_colored_fillings_treatment_in_bengaluru.php" class="text-decoration-none">Tooth Colored Fillings</a></li>
+                    <li><a href="jaw_fractures_treatment_in_bengaluru.php" class="text-decoration-none">Fixing Jaw Fractures</a></li>
 
                     
                 </ul>
@@ -36,11 +36,11 @@
             <div class="col-lg-3 mb-4 d-none d-md-block col-md-6 footer-links">
                 <h5>Specialised Treatments</h5>
                 <ul class="list-unstyled mt-5">
-                <li><a href="#teeth-whitening" class="text-decoration-none">Basal Implants</a></li>
-                    <li><a href="teeth_whitening.php" class="text-decoration-none">Teeth Whitening</a></li>
-                    <li><a href="laser_dentistry.php" class="text-decoration-none">Laser Dentistry</a></li>
+                <li><a href="basal_implants_treatment_in_bengaluru.php" class="text-decoration-none">Basal Implants</a></li>
+                    <li><a href="teeth_whitening_treatment_in_bengaluru.php" class="text-decoration-none">Teeth Whitening</a></li>
+                    <li><a href="laser_dentistry_treatment_in_bengaluru.php" class="text-decoration-none">Laser Dentistry</a></li>
                    
-                    <li><a href="clear_aligners.php" class="text-decoration-none">Clear Aligners</a></li>
+                    <li><a href="invisalignaligners_clearaligners_treatment_in_bengaluru.php" class="text-decoration-none">Clear Aligners</a></li>
                 </ul>
             </div>
 
@@ -65,8 +65,8 @@
         <!-- Footer Bottom -->
         <div class="row footer-bottom align-items-center">
             <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
-                <p class="mb-0 text-muted">© 2025 Care n Concern Family Dental Hospital.Designed By
-                    <a href="https://bhavicreations.com/" target="_blank" class="text-decoration-none">Bhavi Creations Pvt Ltd</a>
+                <p class="mb-0 " style="color: white;">© 2025 Care n Concern Family Dental Hospital.Designed By
+                    <a href="https://bhavicreations.com/" target="_blank" class="text-decoration-none" style="color: grey;">Bhavi Creations Pvt Ltd</a>
                 </p>
             </div>
             <div class="col-md-6 text-center text-md-end">

@@ -19,7 +19,7 @@
                         Treats tooth infection by removing pulp, cleaning canals, and sealing for long-lasting comfort.
                     </p>
 
-                    <a href="root_canal.php" class="btn-book-upgraded">Read More</a>
+                    <a href="root_canal_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
                 </div>
             </div>
 
@@ -37,7 +37,7 @@
                         Professional cleaning removes plaque and stains, keeping your teeth healthy and bright.
                     </p>
 
-                    <a href="teeth_cleaning.php" class="btn-book-upgraded">Read More</a>
+                    <a href="teeth_cleaning_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
                 </div>
             </div>
 
@@ -55,7 +55,7 @@
                         Restores damaged teeth or replaces missing teeth for improved function and aesthetics.
                     </p>
 
-                    <a href="crowns&bridges.php" class="btn-book-upgraded">Read More</a>
+                    <a href="dentalcrown_bridge_treatment_in_bengaluru..php" class="btn-book-upgraded">Read More</a>
                 </div>
             </div>
 
@@ -73,7 +73,7 @@
                         Gentle and pain-free extraction ensuring comfort and fast recovery.
                     </p>
 
-                    <a href="teeth_removal.php" class="btn-book-upgraded">Read More</a>
+                    <a href="teeth_removal_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
                 </div>
             </div>
 
@@ -91,7 +91,7 @@
                         Durable and natural-looking fillings to restore decayed teeth seamlessly.
                     </p>
 
-                    <a href="tooth_colored_fillings.php" class="btn-book-upgraded">Read More</a>
+                    <a href="tooth_colored_fillings_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
                 </div>
             </div>
 
@@ -109,7 +109,7 @@
                         Modern implants for patients with low bone density, providing fast and stable teeth replacement.
                     </p>
 
-                    <a href="basal_implants.php" class="btn-book-upgraded">Read More</a>
+                    <a href="basal_implants_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
                 </div>
             </div>
 
@@ -126,7 +126,7 @@
                         Removes stains and discoloration to restore a bright, confident smile.
                     </p>
 
-                    <a href="teeth_whitening.php" class="btn-book-upgraded">Read More</a>
+                    <a href="teeth_whitening_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
                 </div>
             </div>
 
@@ -144,7 +144,7 @@
                         Advanced laser treatments for gum care, cavity treatment, and cosmetic procedures with minimal discomfort.
                     </p>
 
-                    <a href="laser_dentistry.php" class="btn-book-upgraded">Read More</a>
+                    <a href="laser_dentistry_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
                 </div>
             </div>
 
@@ -164,7 +164,7 @@
                         Invisible aligners to straighten teeth comfortably and effectively without traditional braces.
                     </p>
 
-                    <a href="clear_aligners.php" class="btn-book-upgraded">Read More</a>
+                    <a href="invisalignaligners_clearaligners_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
                 </div>
             </div>
 
@@ -182,7 +182,7 @@
                         Expert bone realignment and stabilization ensuring pain-free recovery and restored function.
                     </p>
 
-                    <a href="jaw_fractures.php" class="btn-book-upgraded">Read More</a>
+                    <a href="jaw_fractures_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
                 </div>
             </div>
 

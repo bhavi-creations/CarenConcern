@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
 
 <section class="sample_secrtion">
-    <img src="./assets/images/new_images/index_12.jpeg" alt="" class="img-fluid">
+    <img src="./assets/images/new_images/index_12.png" alt="" class="img-fluid">
 </section>
 
 
@@ -188,11 +188,11 @@
 
                     <div class="custom-card custom_card_bg_three swiper-slide">
                         <div class="custom-card-section service_slide1">
-                            <a href="root_canal.php">
-                                <h1 class="display-5 card-heading"> root canal </h1>
+                            <a href="root_canal_treatment_in_bengaluru.php">
+                                <h1 class="display-5 card-heading"> Root canal </h1>
 
                                 <div class="tags-container">
-                                    <span class="custom-tag">Endo Care</span>
+                                    <!-- <span class="custom-tag">Endo Care</span> -->
                                     <span class="custom-tag">Pain-Free Procedure</span>
                                     <span class="custom-tag">Nerve Relief</span>
                                     <span class="custom-tag">Fast Healing</span>
@@ -212,7 +212,7 @@
 
 
                         <div class="custom-card-section service_slide2">
-                            <a href="teeth_cleaning.php">
+                            <a href="teeth_cleaning_treatment_in_bengaluru.php">
                                 <h1 class="display-5 card-heading">Teeth Cleaning</h1>
 
                                 <div class="tags-container">
@@ -234,7 +234,7 @@
                     <div class="custom-card custom_card_bg_three swiper-slide  ">
 
                         <div class="custom-card-section service_slide3">
-                            <a href="crowns&bridges.php">
+                            <a href="dentalcrown_bridge_treatment_in_bengaluru..php">
                                 <h1 class="display-5 card-heading">Crowns & Bridges</h1>
 
                                 <div class="tags-container">
@@ -257,7 +257,7 @@
 
 
                         <div class="custom-card-section service_slide4">
-                            <a href="teeth_removal.php">
+                            <a href="teeth_removal_treatment_in_bengaluru.php">
                                 <h1 class="display-5 card-heading">Painless Teeth Removal ​</h1>
 
                                 <div class="tags-container">
@@ -281,7 +281,7 @@
 
 
                         <div class="custom-card-section  service_slide5">
-                            <a href="tooth_colored_fillings.php">
+                            <a href="tooth_colored_fillings_treatment_in_bengaluru.php">
                                 <h1 class="display-5 card-heading">Tooth Colored Fillings</h1>
 
                                 <div class="tags-container">
@@ -308,7 +308,7 @@
 
 
                         <div class="custom-card-section service_slide6">
-                            <a href="jaw_fractures.php">
+                            <a href="jaw_fractures_treatment_in_bengaluru.php">
                                 <h1 class="display-5 card-heading">Fixing Jaw Fractures</h1>
 
                                 <div class="tags-container">
@@ -336,7 +336,7 @@
 
 
                         <div class="custom-card-section service_slide7">
-                            <a href="basal_implants.php">
+                            <a href="basal_implants_treatment_in_bengaluru.php">
                                 <h1 class="display-5 card-heading">Basal Implants</h1>
 
                                 <div class="tags-container">
@@ -368,7 +368,7 @@
 
 
                         <div class="custom-card-section service_slide8">
-                            <a href="teeth_whitening.php">
+                            <a href="teeth_whitening_treatment_in_bengaluru.php">
                                 <h1 class="display-5 card-heading">Teeth Whitening</h1>
 
                                 <div class="tags-container">
@@ -394,7 +394,7 @@
 
 
                         <div class="custom-card-section service_slide9">
-                            <a href="laser_dentistry.php">
+                            <a href="laser_dentistry_treatment_in_bengaluru.php">
                                 <h1 class="display-5 card-heading">Laser Dentistry</h1>
 
                                 <div class="tags-container">
@@ -423,11 +423,11 @@
                     <div class="custom-card custom_card_bg_three swiper-slide">
 
                         <div class="custom-card-section service_slide9">
-                            <a href="clear_aligners.php">
+                            <a href="invisalignaligners_clearaligners_treatment_in_bengaluru.php">
                                 <h1 class="display-5 card-heading">Clear Aligners</h1>
 
                                 <div class="tags-container">
-                                    <span class="custom-tag">Invisible Treatment</span>
+                                    <span class="custom-tag">Invisible braces </span>
                                     <span class="custom-tag">Teeth Straightening</span>
                                     <span class="custom-tag">Comfort Fit</span>
                                     <span class="custom-tag">No Metal Braces</span>
@@ -484,7 +484,7 @@
         <div class="row">
             <div class="col-md-6 col-12">
                 <h2 class="about_about">Our </h2>
-                <h1 class="about_dental_section">Export Team</h1>
+                <h1 class="about_dental_section">expert Team</h1>
             </div>
             <div class="col-md-6 col-12 mb-4 mb-md-0 ">
 

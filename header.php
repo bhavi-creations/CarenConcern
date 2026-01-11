@@ -8,6 +8,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet"> -->
+
+
+
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -171,9 +183,11 @@
 <body>
 
 
-    
+
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+
+
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="./assets/images/logo.jpg" alt="Denta Care" class="img-fluid" style="width: 100px; height: 80px;">
@@ -187,41 +201,43 @@
                 <ul class="navbar-nav align-items-center">
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.php">HOME</a>
+                        <a class="nav-link active" href="index.php">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="about.php">ABOUT</a>
+                        <a class="nav-link" href="about.php">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link d-block d-lg-none" href="service.php">Service</a>
                     </li>
 
                     <!-- SERVICES Mega Menu -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="service.php" id="servicesDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            SERVICES
+                    <li class="nav-item dropdown d-none d-lg-block">
+                        <a class="nav-link dropdown-toggle" href="service.php" id="servicesDropdown">
+                            Service
                         </a>
 
-                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-
+                        <ul class="dropdown-menu">
                             <li class="dropdown-submenu">
                                 <a class="dropdown-item dropdown-toggle" href="#">General Dentistry</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="root_canal.php">painless Root Canal</a></li>
-                                    <li><a class="dropdown-item" href="teeth_cleaning.php">Teeth Cleaning</a></li>
-                                    <li><a class="dropdown-item" href="crowns&bridges.php">Crowns & Bridges</a></li>
-                                    <li><a class="dropdown-item" href="teeth_removal.php">Painless Teeth Removal ​</a></li>
-                                    <li><a class="dropdown-item" href="tooth_colored_fillings.php">Tooth Colored Fillings</a></li>
-                                    <li><a class="dropdown-item" href="jaw_fractures.php">Fixing Jaw Fractures</a></li>
+                                    <li><a class="dropdown-item" href="root_canal_treatment_in_bengaluru.php">Painless Root Canal</a></li>
+                                    <li><a class="dropdown-item" href="teeth_cleaning_treatment_in_bengaluru.php">Teeth Cleaning</a></li>
+                                    <li><a class="dropdown-item" href="dentalcrown_bridge_treatment_in_bengaluru.php">Crowns & Bridges</a></li>
+                                    <li><a class="dropdown-item" href="teeth_removal_treatment_in_bengaluru.php">Painless Teeth Removal</a></li>
+                                    <li><a class="dropdown-item" href="tooth_colored_fillings_treatment_in_bengaluru.php">Tooth Colored Fillings</a></li>
+                                    <li><a class="dropdown-item" href="jaw_fractures_treatment_in_bengaluru.php">Fixing Jaw Fractures</a></li>
                                 </ul>
                             </li>
 
                             <li class="dropdown-submenu">
-                                <a class="dropdown-item dropdown-toggle" href="#">specialised Treatment</a>
+                                <a class="dropdown-item dropdown-toggle" href="#">Specialised Treatment</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="basal_implants.php">Basal Implants</a></li>
-                                    <li><a class="dropdown-item" href="laser_dentistry.php">Laser Dentistry</a></li>
-                                    <li><a class="dropdown-item" href="teeth_whitening.php">Teeth Whitening</a></li>
-                                    <li><a class="dropdown-item" href="clear_aligners.php">Clear Aligners</a></li>
+                                    <li><a class="dropdown-item" href="basal_implants_treatment_in_bengaluru.php">Basal Implants</a></li>
+                                    <li><a class="dropdown-item" href="laser_dentistry_treatment_in_bengaluru.php">Laser Dentistry</a></li>
+                                    <li><a class="dropdown-item" href="teeth_whitening_treatment_in_bengaluru.php">Teeth Whitening</a></li>
+                                    <li><a class="dropdown-item" href="invisalignaligners_clearaligners_treatment_in_bengaluru.php">Clear Aligners</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -229,16 +245,17 @@
 
 
 
+
                     <li class="nav-item">
-                        <a class="nav-link" href="clinic.php">CLINICS</a>
+                        <a class="nav-link" href="clinic.php">Clinics</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="blog.php">BLOGS</a>
+                        <a class="nav-link" href="blog.php">Blogs</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.php">CONTACT</a>
+                        <a class="nav-link" href="contact.php">Contact</a>
                     </li>
 
                 </ul>
@@ -249,39 +266,87 @@
     </nav>
 
 
+    <!-- sub service open script  -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
 
+            // Desktop hover behaviour
+            if (window.innerWidth >= 992) {
+
+                document.querySelectorAll('.nav-item.dropdown').forEach(function(el) {
+                    el.addEventListener('mouseenter', function() {
+                        this.classList.add('show');
+                        this.querySelector('.dropdown-menu').classList.add('show');
+                    });
+
+                    el.addEventListener('mouseleave', function() {
+                        this.classList.remove('show');
+                        this.querySelector('.dropdown-menu').classList.remove('show');
+                    });
+                });
+
+                document.querySelectorAll('.dropdown-submenu').forEach(function(el) {
+                    el.addEventListener('mouseenter', function() {
+                        this.querySelector('.dropdown-menu').classList.add('show');
+                    });
+
+                    el.addEventListener('mouseleave', function() {
+                        this.querySelector('.dropdown-menu').classList.remove('show');
+                    });
+                });
+            }
+
+        });
+    </script>
 
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
 
-            // MAIN SERVICES TOGGLE (ARROW CLICK ONLY)
-            document.querySelectorAll('.nav-item.dropdown > a .toggle-icon')
-                .forEach(function(icon) {
+            // MAIN SERVICE TOGGLE
+            document.querySelectorAll('.nav-item.dropdown > a').forEach(function(link) {
 
-                    icon.addEventListener('click', function(e) {
+                link.addEventListener('click', function(e) {
+                    if (window.innerWidth >= 992) { // desktop only
                         e.preventDefault();
-                        e.stopPropagation(); // 🚨 stop redirect
 
                         let parent = this.closest('.dropdown');
-                        parent.classList.toggle('show');
-                    });
+                        let isOpen = parent.classList.contains('show');
 
+                        // Close all first
+                        document.querySelectorAll('.nav-item.dropdown').forEach(function(d) {
+                            d.classList.remove('show');
+                            let menu = d.querySelector('.dropdown-menu');
+                            if (menu) menu.classList.remove('show');
+                        });
+
+                        // Toggle current
+                        if (!isOpen) {
+                            parent.classList.add('show');
+                            parent.querySelector('.dropdown-menu').classList.add('show');
+                        }
+                    }
                 });
 
-            // SUBMENU TOGGLE
-            document.querySelectorAll('.dropdown-submenu > a .toggle-icon')
-                .forEach(function(icon) {
+            });
 
-                    icon.addEventListener('click', function(e) {
+            // SUBMENU TOGGLE
+            document.querySelectorAll('.dropdown-submenu > a').forEach(function(link) {
+
+                link.addEventListener('click', function(e) {
+                    if (window.innerWidth >= 992) {
                         e.preventDefault();
                         e.stopPropagation();
 
                         let parent = this.closest('.dropdown-submenu');
-                        parent.classList.toggle('show');
-                    });
+                        let submenu = parent.querySelector('.dropdown-menu');
 
+                        parent.classList.toggle('show');
+                        submenu.classList.toggle('show');
+                    }
                 });
+
+            });
 
         });
     </script>
