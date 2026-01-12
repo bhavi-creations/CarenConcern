@@ -96,12 +96,12 @@
 
                         <div class="carousel-item active">
                             <h2 class="about_mission">Our Mission</h2>
-                            <p class="index_mission_section">Skillful Dentistry, Experience, Honesty and a Passion to Serve: all blend together to create the environment of Hontistry™. Yes, you can Trust us and what we offer.</p>
+                            <p class="index_mission_section">Where clinical excellence meets an honest heart. We’ve blended decades of experience with a genuine passion to serve, creating a sanctuary for your dental health. At Dr. Sunil Sathyanarayana’s, trust isn’t just promised—it’s earned.</p>
                         </div>
 
                         <div class="carousel-item">
                             <h2 class="about_mission">Our Mission</h2>
-                            <p class="index_mission_section">Advanced & Quality Dental Care You Can Trust. Clinical treatments, products, information and more offerings from Dr Sunil Sathyanarayana, Your Family Dentist.</p>
+                            <p class="index_mission_section">Redefining Dental Excellence. From advanced clinical procedures to curated dental products and expert wellness insights, Dr. Sunil Sathyanarayana offers a 360-degree approach to your oral health. Modern care, traditional trust.</p>
                         </div>
 
                         <!-- <div class="carousel-item">
@@ -169,8 +169,16 @@
 
                 <div class=>
                     <!-- <h2 class="about_mission">Our Mission</h2> -->
-                    <p>We offer All Round Care And Treatments related to all your dental health at our clinic. We assure best in its class treatment with an attitude to treat you as our own family. We look forward to seeing you.</p>
+                    <!-- <p>We offer All Round Care And Treatments related to all your dental health at our clinic. We assure best in its class treatment with an attitude to treat you as our own family. We look forward to seeing you.</p> -->
+                    <p> Comprehensive dental excellence with a personal touch. At our clinic, you aren’t just a patient; you’re family. We combine world-class treatments with the warmth of a home, ensuring your smile is always in the best hands.
                 </div>
+                </p>
+
+
+
+
+
+
 
             </div>
 
@@ -653,7 +661,7 @@
                     </div>
                 </div>
 
-                      <div class="doctor-card-container">
+                <div class="doctor-card-container">
                     <div class="doctor-card">
                         <div class="doctor-image-wrapper">
                             <img src="./assets/images/new_images/2.png" alt="Dr. Andru" class="doctor-image">
