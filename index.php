@@ -639,7 +639,7 @@
                             <img src=".\assets\images\new_images\main_doctor.png" alt="Dr. Andru" class="doctor-image">
                         </div>
                         <h3 class="doctor-name">Dr Sunil Sathyanarayana</h3>
-                        <p class="doctor-specialty">Periodontist,implantologist,laser specialist</p>
+                        <p class="doctor-specialty">Periodontist,Implantologist,Laser specialist</p>
                     </div>
                 </div>
 
@@ -649,7 +649,7 @@
                             <img src="./assets/images/new_images/kavya.png" alt="Dr. Andru" class="doctor-image">
                         </div>
                         <h3 class="doctor-name">Dr Kavya</h3>
-                        <p class="doctor-specialty">Associate dentist</p>
+                        <p class="doctor-specialty">Associate Dentist</p>
                     </div>
                 </div>
 
@@ -658,8 +658,8 @@
                         <div class="doctor-image-wrapper">
                             <img src="./assets/images/new_images/2.png" alt="Dr. Andru" class="doctor-image">
                         </div>
-                        <!-- <h3 class="doctor-name">Dr Kavya</h3>
-                        <p class="doctor-specialty">Associate dentist</p> -->
+                        <h3 class="doctor-name">Dr Deepashri</h3>
+                        <p class="doctor-specialty">MDS-Associate Dentist</p>
                     </div>
                 </div>
 
