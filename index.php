@@ -96,12 +96,12 @@
 
                         <div class="carousel-item active">
                             <h2 class="about_mission">Our Mission</h2>
-                            <p>Skillful Dentistry, Experience, Honesty and a Passion to Serve: all blend together to create the environment of Hontistry™. Yes, you can Trust Us and what we offer.</p>
+                            <p class="index_mission_section">Skillful Dentistry, Experience, Honesty and a Passion to Serve: all blend together to create the environment of Hontistry™. Yes, you can Trust us and what we offer.</p>
                         </div>
 
                         <div class="carousel-item">
                             <h2 class="about_mission">Our Mission</h2>
-                            <p>Advanced & Quality Dental Care You Can Trust. Clinical treatments, products, information and more offerings from Dr Sunil Sathyanarayana, Your Family Dentist.</p>
+                            <p class="index_mission_section">Advanced & Quality Dental Care You Can Trust. Clinical treatments, products, information and more offerings from Dr Sunil Sathyanarayana, Your Family Dentist.</p>
                         </div>
 
                         <!-- <div class="carousel-item">
@@ -162,7 +162,7 @@
         <div class="row">
             <div class="col-md-6 col-12">
                 <h2 class="about_about">Available </h2>
-                <h1 class="about_dental_section">Treatment</h1>
+                <h1 class="about_dental_section">Treatments</h1>
             </div>
             <div class="col-md-6 col-12 mb-4 mb-md-0 ">
 
@@ -459,6 +459,127 @@
 
 
 
+<!-- why choose us  -->
+<div class="container" style="padding: 40px;">
+    <div class="dental-why-choose-section">
+        <div class="dental-section-title">
+            <h2>Why Choose Us</h2>
+            <div class="dental-title-underline"></div>
+        </div>
+
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-lg-6 dental-left-column">
+                <div class="dental-feature-item">
+                    <div class="dental-feature-icon-wrapper">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="dental-feature-text">Hygienic High Quality</div>
+                </div>
+
+                <div class="dental-feature-item">
+                    <div class="dental-feature-icon-wrapper">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="dental-feature-text">Laser Dentistry</div>
+                </div>
+
+                <div class="dental-feature-item">
+                    <div class="dental-feature-icon-wrapper">
+                        <i class="fas fa-syringe"></i>
+                    </div>
+                    <div class="dental-feature-text">Needle-Less Injection</div>
+                </div>
+
+                <div class="dental-feature-item">
+                    <div class="dental-feature-icon-wrapper">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <div class="dental-feature-text">Advanced Implants</div>
+                </div>
+
+                <div class="dental-feature-item">
+                    <div class="dental-feature-icon-wrapper">
+                        <i class="fas fa-align-justify"></i>
+                    </div>
+                    <div class="dental-feature-text">Best In Class Clear Aligners</div>
+                </div>
+
+                <div class="dental-feature-item">
+                    <div class="dental-feature-icon-wrapper">
+                        <i class="fas fa-grip-horizontal"></i>
+                    </div>
+                    <div class="dental-feature-text">Latest Generation Braces</div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-lg-6 dental-right-column">
+                <div class="dental-feature-item">
+                    <div class="dental-feature-icon-wrapper">
+                        <i class="fas fa-x-ray"></i>
+                    </div>
+                    <div class="dental-feature-text">Digital OPG & RVG X-Rays</div>
+                </div>
+
+                <div class="dental-feature-item">
+                    <div class="dental-feature-icon-wrapper">
+                        <i class="fas fa-barcode"></i>
+                    </div>
+                    <div class="dental-feature-text">Digital Scanner</div>
+                </div>
+
+                <div class="dental-feature-item">
+                    <div class="dental-feature-icon-wrapper">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="dental-feature-text">Intra-Oral Camera</div>
+                </div>
+
+                <div class="dental-feature-item">
+                    <div class="dental-feature-icon-wrapper">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="dental-feature-text">Best Brand Materials</div>
+                </div>
+
+                <div class="dental-feature-item">
+                    <div class="dental-feature-icon-wrapper">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="dental-feature-text">Honest & Caring Services</div>
+                </div>
+
+                <div class="dental-feature-item">
+                    <div class="dental-feature-icon-wrapper">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <div class="dental-feature-text">Remove Fear Of Dental Treatments</div>
+                </div>
+
+                <div class="dental-feature-item">
+                    <div class="dental-feature-icon-wrapper">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <div class="dental-feature-text">EMI & Easy Payment Options</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <section class="appointment_section">
@@ -517,8 +638,28 @@
                         <div class="doctor-image-wrapper">
                             <img src=".\assets\images\new_images\main_doctor.png" alt="Dr. Andru" class="doctor-image">
                         </div>
-                        <h3 class="doctor-name">Dr Sunil S</h3>
-                        <!-- <p class="doctor-specialty">Prosthodontist</p> -->
+                        <h3 class="doctor-name">Dr Sunil Sathyanarayana</h3>
+                        <p class="doctor-specialty">Periodontist,implantologist,laser specialist</p>
+                    </div>
+                </div>
+
+                <div class="doctor-card-container">
+                    <div class="doctor-card">
+                        <div class="doctor-image-wrapper">
+                            <img src="./assets/images/new_images/kavya.png" alt="Dr. Andru" class="doctor-image">
+                        </div>
+                        <h3 class="doctor-name">Dr Kavya</h3>
+                        <p class="doctor-specialty">Associate dentist</p>
+                    </div>
+                </div>
+
+                      <div class="doctor-card-container">
+                    <div class="doctor-card">
+                        <div class="doctor-image-wrapper">
+                            <img src="./assets/images/new_images/2.png" alt="Dr. Andru" class="doctor-image">
+                        </div>
+                        <!-- <h3 class="doctor-name">Dr Kavya</h3>
+                        <p class="doctor-specialty">Associate dentist</p> -->
                     </div>
                 </div>
 
@@ -660,7 +801,7 @@
 
 
 
-<marquee behavior="" direction="" class="second_marquee_section">Root Canal &nbsp; + &nbsp; Teeth Cleaning + &nbsp; Crowns & Bridges + &nbsp; Painless Teeth Removal ​ + &nbsp; Tooth Colored Fillings + &nbsp; Fixing Jaw Fractures + &nbsp; Basal Implants + &nbsp; Teeth Whitening + &nbsp; Laser Dentistry</marquee>
+<marquee behavior="" direction="" class="second_marquee_section">Root Canal &nbsp; + &nbsp; Teeth Cleaning + &nbsp; Crowns & Bridges + &nbsp; Painless Teeth Removal + &nbsp; Tooth Colored Fillings + &nbsp; Fixing Jaw Fractures + &nbsp; Basal Implants + &nbsp; Teeth Whitening + &nbsp; Laser Dentistry</marquee>
 
 
 
@@ -672,28 +813,36 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0">
-                <div class="appointment-form">
+                <div class="appointment-form py-3">
                     <h3>Book <span>Appointment</span></h3>
                     <p>Fill out the form below to schedule your dental appointment</p>
 
-                    <form>
+                    <form action="appointmentform.php" method="post" role="form" class="php-email-form "
+                        data-aos-delay="100">
                         <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder=" Name" required>
+                            <div class="col-md-6 form-group  mt-md-0  mb-4">
+                                <input type="text" name="name" class="form-control  " id="name"
+                                    style="border-radius: 23px; " placeholder="Your Name" required>
                             </div>
-                            <div class="col-md-6">
-                                <input type="tel" class="form-control" placeholder="Phone Number" required>
+                            <div class="col-md-6 form-group  mt-md-0 mb-4">
+                                <input type="email" class="form-control  " name="email" id="email"
+                                    style="border-radius: 23px;" placeholder="Your Email" required>
+                            </div>
+                            <div class="col-md-6 form-group  mt-md-0 mb-4">
+                                <input type="tel" class="form-control  " name="phone" id="phone"
+                                    style="border-radius: 23px;" placeholder="Your Phone" required>
+                            </div>
+                            <div class="col-md-6 form-group   mt-md-0">
+                                <input type="date" name="date" class="form-control datepicker  "
+                                    style="border-radius: 23px;" id="date" placeholder="Appointment Date" required>
                             </div>
                         </div>
-
                         <div class="row">
 
-                            <div class="col-md-6">
-                                <input type="date" class="form-control" placeholder="Select Date" required>
-                            </div>
-                            <div class="col-md-6">
-                                <select class="form-select form-control-uniform" name="service" required>
-                                    <option value="">SELECT SERVICE </option>
+                            <div class="  form-group mt-4">
+                                <select name="department" id="department" style="border-radius: 23px;"
+                                    class="form-select" required>
+                                    <option value="">Select Service</option>
                                     <option value="painless Root Canal">painless Root Canal</option>
                                     <option value="Teeth Cleaning">Teeth Cleaning</option>
                                     <option value="Crowns & Bridges">Crowns & Bridges</option>
@@ -705,20 +854,24 @@
                                     <option value="Teeth Whitening">Teeth Whitening</option>
                                     <option value="Clear Aligners">Clear Aligners</option>
 
+
+
+
+
                                 </select>
                             </div>
-                        </div>
-
-                        <div class="row">
-
 
                         </div>
 
-
-
-                        <textarea class="form-control" rows="4" placeholder="Meassage  "></textarea>
-
+                        <div class="form-group mt-4 mb-5">
+                            <textarea class="form-control" name="message" style="border-radius: 23px;" rows="5"
+                                placeholder="Message (Optional)"></textarea>
+                        </div>
                         <button type="submit" class="btn-book submit_section w-100 justify-content-center">SUBMIT APPOINTMENT</button>
+
+
+                        <!-- <div class="text-center maker"><button type="submit" class="makee">Make an
+                                For Appointment</button></div> -->
                     </form>
                 </div>
             </div>

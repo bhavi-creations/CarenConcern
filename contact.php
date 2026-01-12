@@ -34,7 +34,7 @@
                         </a> -->
 
                     <!-- Contact Form -->
-                    <form action="contactform.php" method="post" role="form" class="php-email-form" data-aos-delay="100">
+                    <!-- <form action="contactform.php" method="post" role="form" class="php-email-form" data-aos-delay="100">
                         <div class="row g-3">
 
                             <div class="col-12 col-md-6">
@@ -78,9 +78,38 @@
                             </button>
 
                         </div>
+                    </form> -->
+
+                    <form action="contactform .php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="contactname" class="form-control" id="name" placeholder="Your Name" required="" style="font-family:Mulish;">
+                            </div>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                <input type="email" class="form-control just_font" name="contactemail" id="email" placeholder="Your Email" style="font-family:Mulish;" required="">
+                            </div>
+
+                            <div class="col-md-6 form-group mt-3">
+                                <input type="text" class="form-control" name="contactsubject" id="subject" placeholder="Subject" style="font-family:Mulish;">
+                            </div>
+                            <div class="col-md-6 form-group mt-3">
+                                <input type="text" class="form-control" name="contactnumber" id="number" placeholder="Phone" required="" style="font-family:Mulish;">
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <textarea class="form-control" name="contactmessage" rows="7" placeholder="Message" required=" " style="font-family:Mulish;"></textarea>
+                        </div>
+                        <!-- <div class="my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div> -->
+
+                         <button type="submit" class="btn-book submit_section w-100 justify-content-center">
+                                Send Message
+                            </button>
+                        <!-- <div class="text-center"><button type="submit">Send Message</button></div> -->
                     </form>
-
-
                 </div>
             </div>
 

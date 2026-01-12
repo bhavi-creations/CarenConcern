@@ -8,11 +8,11 @@
             <!-- Footer Info -->
             <div class="col-lg-3 mb-4 footer-info">
           
-                <h4><span class="denta ">Care</span> &nbsp; 'n' &nbsp;<span class="care">Concern</span></h4>
+                <h4><span class="denta ">Care</span>&nbsp; 'n' &nbsp;<span class="care">Concern</span></h4>
                 <!-- <p><strong>Denta Care Health Ventures LLP</strong></p> -->
                 <p class="mt-5">2462/37, 7th B Main Road, Hampinagar, RPC Layout, Vijayanagar, Bengaluru, Karnataka 560104</p>
                 <p class="mt-3"><strong>Call us:</strong> 63638 00266 | +91 98458 02787</p>
-                <p class="mt-2"><strong>Email us:</strong> mail@hontistry.com</p>
+                <p class="mt-2"><strong>Email us:</strong> drsunilsathyanarayana@gmail.com</p>
                 <p class="mt-2"><strong>Clinic Hours:</strong>	10:30am-2:30pm, 4-8:30pm  <br> <span class=""> sunday-close</span></p>
                 <!-- <p class="mt-2"><strong>sunday close </p> -->
             </div>
@@ -80,6 +80,9 @@
     </div>
 </footer>
 
+
+<!-- footer link for  choose us  -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
 <a href="https://api.whatsapp.com/send?phone=919845802787" style="color: #fff;" class="whatsapp-link"
     target="_blank">

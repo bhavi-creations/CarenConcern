@@ -18,6 +18,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet"> -->
 
+<!-- why chose us links -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
 
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700;800&display=swap" rel="stylesheet">
@@ -46,7 +49,7 @@
             "url": "https://carenconcern.com/",
             "description": "CARE N CONCERN Dental Clinic offers family-friendly, modern dental treatments including root canals, braces, implants, and cosmetic dentistry in Vijayanagar, Bengaluru.",
             "telephone": "+91 98458 02787",
-            "email": "mail@hontistry.com",
+            "email": "drsunilsathyanarayana@gmail.com",
             "logo": "https://carenconcern.com/logo.png",
             "image": "https://carenconcern.com/clinic-image.jpg",
 
@@ -180,8 +183,8 @@
 
 </head>
 
+<?php include 'view_count.php'; ?>
 <body>
-
 
 
 
@@ -270,82 +273,70 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
 
-            // Desktop hover behaviour
-            if (window.innerWidth >= 992) {
+            const isDesktop = () => window.innerWidth >= 992;
 
-                document.querySelectorAll('.nav-item.dropdown').forEach(function(el) {
-                    el.addEventListener('mouseenter', function() {
-                        this.classList.add('show');
-                        this.querySelector('.dropdown-menu').classList.add('show');
-                    });
-
-                    el.addEventListener('mouseleave', function() {
-                        this.classList.remove('show');
-                        this.querySelector('.dropdown-menu').classList.remove('show');
-                    });
+            const closeAll = () => {
+                document.querySelectorAll('.nav-item.dropdown').forEach(d => {
+                    d.classList.remove('show');
+                    const menu = d.querySelector('.dropdown-menu');
+                    if (menu) menu.classList.remove('show');
                 });
 
-                document.querySelectorAll('.dropdown-submenu').forEach(function(el) {
-                    el.addEventListener('mouseenter', function() {
-                        this.querySelector('.dropdown-menu').classList.add('show');
-                    });
-
-                    el.addEventListener('mouseleave', function() {
-                        this.querySelector('.dropdown-menu').classList.remove('show');
-                    });
+                document.querySelectorAll('.dropdown-submenu').forEach(s => {
+                    s.classList.remove('show');
+                    const menu = s.querySelector('.dropdown-menu');
+                    if (menu) menu.classList.remove('show');
                 });
-            }
+            };
 
-        });
-    </script>
-
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-
-            // MAIN SERVICE TOGGLE
-            document.querySelectorAll('.nav-item.dropdown > a').forEach(function(link) {
-
+            // MAIN SERVICE CLICK
+            document.querySelectorAll('.nav-item.dropdown > a').forEach(link => {
                 link.addEventListener('click', function(e) {
-                    if (window.innerWidth >= 992) { // desktop only
-                        e.preventDefault();
+                    if (!isDesktop()) return;
 
-                        let parent = this.closest('.dropdown');
-                        let isOpen = parent.classList.contains('show');
+                    e.preventDefault();
+                    e.stopPropagation();
 
-                        // Close all first
-                        document.querySelectorAll('.nav-item.dropdown').forEach(function(d) {
-                            d.classList.remove('show');
-                            let menu = d.querySelector('.dropdown-menu');
-                            if (menu) menu.classList.remove('show');
-                        });
+                    const parent = this.closest('.dropdown');
+                    const isOpen = parent.classList.contains('show');
 
-                        // Toggle current
-                        if (!isOpen) {
-                            parent.classList.add('show');
-                            parent.querySelector('.dropdown-menu').classList.add('show');
-                        }
+                    closeAll();
+
+                    if (!isOpen) {
+                        parent.classList.add('show');
+                        parent.querySelector('.dropdown-menu').classList.add('show');
                     }
                 });
-
             });
 
-            // SUBMENU TOGGLE
-            document.querySelectorAll('.dropdown-submenu > a').forEach(function(link) {
-
+            // SUBMENU CLICK
+            document.querySelectorAll('.dropdown-submenu > a').forEach(link => {
                 link.addEventListener('click', function(e) {
-                    if (window.innerWidth >= 992) {
-                        e.preventDefault();
-                        e.stopPropagation();
+                    if (!isDesktop()) return;
 
-                        let parent = this.closest('.dropdown-submenu');
-                        let submenu = parent.querySelector('.dropdown-menu');
+                    e.preventDefault();
+                    e.stopPropagation();
 
-                        parent.classList.toggle('show');
-                        submenu.classList.toggle('show');
+                    const parent = this.closest('.dropdown-submenu');
+                    const submenu = parent.querySelector('.dropdown-menu');
+                    const isOpen = parent.classList.contains('show');
+
+                    document.querySelectorAll('.dropdown-submenu').forEach(s => {
+                        s.classList.remove('show');
+                        const m = s.querySelector('.dropdown-menu');
+                        if (m) m.classList.remove('show');
+                    });
+
+                    if (!isOpen) {
+                        parent.classList.add('show');
+                        submenu.classList.add('show');
                     }
                 });
+            });
 
+            // CLICK OUTSIDE TO CLOSE
+            document.addEventListener('click', function() {
+                if (isDesktop()) closeAll();
             });
 
         });

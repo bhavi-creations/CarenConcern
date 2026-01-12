@@ -34,7 +34,7 @@
             "url": "https://carenconcern.com/",
             "description": "CARE N CONCERN Dental Clinic offers family-friendly, modern dental treatments including root canals, braces, implants, and cosmetic dentistry in Vijayanagar, Bengaluru.",
             "telephone": "+91 98458 02787",
-            "email": "mail@hontistry.com",
+            "email": "drsunilsathyanarayana@gmail.com",
             "logo": "https://carenconcern.com/logo.png",
             "image": "https://carenconcern.com/clinic-image.jpg",
 
