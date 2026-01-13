@@ -477,7 +477,7 @@
 
         <div class="row">
             <!-- Left Column -->
-            <div class="col-lg-6 dental-left-column">
+            <div class="col-md-6 dental-left-column">
                 <div class="dental-feature-item">
                     <div class="dental-feature-icon-wrapper">
                         <i class="fas fa-shield-alt"></i>
@@ -522,7 +522,7 @@
             </div>
 
             <!-- Right Column -->
-            <div class="col-lg-6 dental-right-column">
+            <div class="col-md-6 dental-right-column">
                 <div class="dental-feature-item">
                     <div class="dental-feature-icon-wrapper">
                         <i class="fas fa-x-ray"></i>
@@ -565,12 +565,12 @@
                     <div class="dental-feature-text">Remove Fear Of Dental Treatments</div>
                 </div>
 
-                <div class="dental-feature-item">
+                <!-- <div class="dental-feature-item">
                     <div class="dental-feature-icon-wrapper">
                         <i class="fas fa-credit-card"></i>
                     </div>
                     <div class="dental-feature-text">EMI & Easy Payment Options</div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

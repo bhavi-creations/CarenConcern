@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet"> -->
 
-<!-- why chose us links -->
+    <!-- why chose us links -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
@@ -184,6 +184,7 @@
 </head>
 
 <?php include 'view_count.php'; ?>
+
 <body>
 
 
@@ -339,5 +340,14 @@
                 if (isDesktop()) closeAll();
             });
 
+        });
+    </script>
+
+    <script>
+        document.querySelector('#servicesDropdown').addEventListener('click', function(e) {
+            // Desktop view lo unnapudu (d-lg-block use chesaru kabatti)
+            if (window.innerWidth > 992) {
+                window.location.href = this.getAttribute('href');
+            }
         });
     </script>
