@@ -590,7 +590,7 @@
 
 
 
-<section class="appointment_section">
+<!-- <section class="appointment_section">
     <div class="container appointment_container">
         <div class="appointment_content">
             <h1>Book <span>Free Consultation</span></h1>
@@ -600,7 +600,7 @@
             <img src="./assets/images/bg_remoive.png" alt="Consultation Image">
         </div>
     </div>
-</section>
+</section> -->
 
 
 

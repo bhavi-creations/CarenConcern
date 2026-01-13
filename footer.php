@@ -8,12 +8,12 @@
             <!-- Footer Info -->
             <div class="col-lg-3 mb-4 footer-info">
           
-                <h4><span class="denta ">Care</span>&nbsp; 'n' &nbsp;<span class="care">Concern</span></h4>
+                <h4><span class="denta ">Care</span>&nbsp; 'n' &nbsp;<span class="care">Concern  Family Dental Clinic</span></h4>
                 <!-- <p><strong>Denta Care Health Ventures LLP</strong></p> -->
                 <p class="mt-5">2462/37, 7th B Main Road, Hampinagar, RPC Layout, Vijayanagar, Bengaluru, Karnataka 560104</p>
-                <p class="mt-3"><strong>Call us:</strong> 63638 00266 | +91 98458 02787</p>
-                <p class="mt-2"><strong>Email us:</strong> drsunilsathyanarayana@gmail.com</p>
-                <p class="mt-2"><strong>Clinic Hours:</strong>	10:30am-2:30pm, 4-8:30pm  <br> <span class=""> sunday-close</span></p>
+                <p class="mt-3"><strong>Call us:</strong>  +91 63638 00266 | 98458 02787</p>
+                <p class="mt-2"><strong>Email us:</strong> drsunil19@yahoo.com</p>
+                <p class="mt-2"><strong>Clinic Hours: <br></strong>Morning - 10.30am to 2.30pm  <br> Evening - 4pm to 8.30pm <br> <span class=""> sunday-close</span></p>
                 <!-- <p class="mt-2"><strong>sunday close </p> -->
             </div>
 
@@ -65,11 +65,11 @@
         <!-- Footer Bottom -->
         <div class="row footer-bottom align-items-center">
             <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
-                <p class="mb-0 " style="color: white;">© 2025 Care n Concern Family Dental Hospital.Designed By
+                <p class="mb-0 " style="color: white;">© 2026  <br>Care n Concern Family Dental Clinic<br>Designed By
                     <a href="https://bhavicreations.com/" target="_blank" class="text-decoration-none" style="color: grey;">Bhavi Creations Pvt Ltd</a>
                 </p>
             </div>
-            <div class="col-md-6 text-center text-md-end">
+            <div class="col-md-6 text-center text-md-end d-none d-md-block" >
                 <a href="https://www.facebook.com/hontistry" class="text-decoration-none social_media me-2" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
                 <a href="https://www.youtube.com/channel/UCmE0BrRzE5dzfljOoCx_PuQ" class="text-decoration-none  social_media me-2" target="_blank"><i class="fab fa-youtube"></i> Youtube</a>
                 <a href="#" class="text-decoration-none social_media me-2"><i class="fab fa-instagram" target="_blank"></i> Instagram</a>

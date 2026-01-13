@@ -70,7 +70,7 @@
                         <div class="ul-service-details-sidebar-cta-content">
                             <p class="contact-info">2462/37, 7th B Main Road, Hampinagar, RPC Layout, Vijayanagar, Bengaluru, Karnataka 560104</p>
                             <span class="contact-info number"><a href="tel:+1890123456">+91 63638 00266 , +91 98458 02787</a></span>
-                            <p class="contact-info"><a href=" drsunilsathyanarayana@gmail.com"> drsunilsathyanarayana@gmail.com</a></p>
+                            <p class="contact-info"><a href=" drsunil19@yahoo.com"> drsunil19@yahoo.com</a></p>
                             <a href="contact.php" class="ul-btn">Contact Us <i class="flaticon-arrow-up-right"></i></a>
                         </div>
                     </div>

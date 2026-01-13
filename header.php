@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Care n Concern</title>
+    <title>Care n Concern family clinic</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -49,7 +49,7 @@
             "url": "https://carenconcern.com/",
             "description": "CARE N CONCERN Dental Clinic offers family-friendly, modern dental treatments including root canals, braces, implants, and cosmetic dentistry in Vijayanagar, Bengaluru.",
             "telephone": "+91 98458 02787",
-            "email": "drsunilsathyanarayana@gmail.com",
+            "email": "drsunil19@yahoo.com",
             "logo": "https://carenconcern.com/logo.png",
             "image": "https://carenconcern.com/clinic-image.jpg",
 
@@ -194,7 +194,8 @@
 
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="./assets/images/logo.jpg" alt="Denta Care" class="img-fluid" style="width: 100px; height: 80px;">
+                <img src="./assets/images/cnc_logo.png" alt="Denta Care" class="img-fluid" style="width: 100px; height: 100px; ">
+                <!-- <img src="./assets/images/logo.jpg" alt="Denta Care" class="img-fluid" style="width: 100px; height: 80px; "> -->
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
