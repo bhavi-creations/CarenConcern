@@ -71,6 +71,207 @@
         </div>
     </section>
     <!-- SERVICE DETAILS SECTION END -->
+
+
+
+    <section class="py-5">
+        <div class="container">
+
+            <h2 class="ul-service-details-title text-center">Scaling & Polishing </h2>
+            <p class="ul-service-details-descr">Scaling & Polishing
+                 removes plaque, tartar, and stains. It improves gum health, prevents decay, and keeps your smile fresh.
+            </p>
+
+
+
+
+            <h3 class="text-center" style="font-weight: 900;">Frequently Ask Question (FAQ)</h3>
+
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="accordion">
+                        <!-- Accordion 1 -->
+
+                        <div class="faq_section">
+
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <h2 class="faq_heading_section">Is scaling harmful for teeth?
+
+
+
+                                </h2>
+                                <h2 class="accordion-icon">+</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    No. It only removes plaque and tartar; enamel remains safe.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Accordion 2  -->
+
+                        <div class="faq_section">
+
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <h2 class="faq_heading_section">Will my teeth become loose after cleaning?
+
+
+                                </h2>
+                                <h2 class="accordion-icon">+</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    No. If gums are weak, teeth may feel slightly mobile but become healthier.
+                                </p>
+                            </div>
+                        </div>
+
+
+
+
+                        <!-- Accordion 3 
+                        <div class="faq_section">
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <h2 class="faq_heading_section">How long do composite build-ups last?
+
+
+                                </h2>
+                                <h2 class="accordion-icon">+</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    They usually last 5–7 years, depending on habits and care.
+                            </div>
+                        </div>-->
+
+                        <!-- Accordion 4 
+
+
+
+
+
+                        <div class="faq_section">
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <h2 class="faq_heading_section">What is a digital smile makeover?
+
+                                </h2>
+                                <h2 class="accordion-icon">+</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    It uses digital tools to preview and plan your future smile before treatment begins.</p>
+                            </div>
+                        </div>-->
+                        <!-- Accordion 5 
+                        <div class="faq_section">
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <h2 class="faq_heading_section">Is the filling procedure painful?
+                                </h2>
+                                <h2 class="accordion-icon">+</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Usually no. Local anesthesia may be used if the cavity is deep. </p>
+                            </div>
+                        </div>-->
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6">
+
+
+                    <div class="accordion">
+
+
+                        <!-- Accordion 1 -->
+
+
+
+                        <div class="faq_section">
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <h2 class="faq_heading_section">How often should I get scaling done?
+
+
+                                </h2>
+                                <h2 class="accordion-icon">+</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Every 6 months or as advised by your dentist.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion 2
+
+
+
+                        <div class="faq_section">
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <h2 class="faq_heading_section">How long will the treated tooth last?
+
+
+
+                                </h2>
+                                <h2 class="accordion-icon">+</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    How long will the treated tooth last?</p>
+                            </div>
+                        </div>-->
+
+
+
+                        <!-- Accordion 3 
+                        <div class="faq_section">
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <h2 class="faq_heading_section">Is scaling harmful for teeth?
+
+
+                                </h2>
+                                <h2 class="accordion-icon">+</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    No. It only removes plaque and tartar; enamel remains safe.</p>
+                            </div>
+                        </div>-->
+                        <!-- Accordion 4 
+                        <div class="faq_section">
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <h2 class="faq_heading_section">How long do traditional implants take to heal?
+
+
+
+                                </h2>
+                                <h2 class="accordion-icon">+</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Typically around 3 months, but depending on bone quality and healing can be a bit longer too. </p>
+                            </div>
+                        </div>-->
+                        <!-- Accordion 5 
+                        <div class="faq_section">
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <h2 class="faq_heading_section"> What is the main advantage of bi-cortical implants?
+                                </h2>
+                                <h2 class="accordion-icon">+</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <p class="faq_section">
+                                    What is the main advantage of bi-cortical implants? </p>
+                            </div>
+                        </div>-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
 </main>
 
 

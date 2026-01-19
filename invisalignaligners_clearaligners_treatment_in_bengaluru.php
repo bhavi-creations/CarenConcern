@@ -71,6 +71,162 @@
         </div>
     </section>
     <!-- SERVICE DETAILS SECTION END -->
+
+
+
+
+
+
+    <section class="py-5">
+        <div class="container">
+
+            <h3 class="text-center" style="font-weight: 900;">Frequently Ask Question (FAQ)</h3>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="accordion">
+                        <!-- Accordion 1 -->
+
+                        <div class="faq_section">
+
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <h2 class="faq_heading_section">How often should aligners be worn?
+
+
+
+                                </h2>
+                                <h2 class="accordion-icon">+</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    At least 20–22 hours a day for effective results.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Accordion 2  -->
+
+                        <div class="faq_section">
+
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <h2 class="faq_heading_section">Can I eat with aligners?
+
+
+                                </h2>
+                                <h2 class="accordion-icon">+</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Aligners should be removed while eating or drinking anything except water.
+                                </p>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <div class="faq_section">
+
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <h2 class="faq_heading_section">How long does aligner treatment take?
+
+
+                                </h2>
+                                <h2 class="accordion-icon">+</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Treatment duration is usually faster than with braces, but might depend on the complexity of the case sometimes.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6">
+
+
+                    <div class="accordion">
+
+
+                        <!-- Accordion 1 -->
+
+
+
+                        <div class="faq_section">
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <h2 class="faq_heading_section">Are aligners suitable for everyone?
+
+
+                                </h2>
+                                <h2 class="accordion-icon">+</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Usually good for all situations except when some teeth are not erupted & are stuck within the bone, you may need braces. </p>
+                            </div>
+                        </div>
+                        <!-- Accordion 2-->
+
+
+
+                        <div class="faq_section">
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <h2 class="faq_heading_section">What might be the cost of treatment?
+
+
+
+                                </h2>
+                                <h2 class="accordion-icon">+</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Usually moderate to high, but can be same as braces in mild cases.</p>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="faq_section">
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <h2 class="faq_heading_section">Does aligners offer any specific advantages over braces?
+
+
+
+                                </h2>
+                                <h2 class="accordion-icon">+</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Yes, definitely.<br>
+                                    - They are almost invisible<br>
+                                    - Socially more acceptable<br>
+                                    - No food restrictions<br>
+                                    - Faster results<br>
+                                    - Results can be achieved without removing teeth in      majority cases as compared to braces<br>
+                                    - Can be removed for meals, sports, or special occasions, making them more flexible<br>
+                                    - Easier to maintain oral hygiene
+                                   
+
+                                </p>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 </main>
 
 

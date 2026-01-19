@@ -7,13 +7,13 @@
 
             <!-- Footer Info -->
             <div class="col-lg-3 mb-4 footer-info">
-          
-                <h4><span class="denta ">Care</span>&nbsp; n &nbsp;Concern <br>  Family Dental Clinic</h4>
+
+                <h4><span class="denta ">Care</span>&nbsp; n &nbsp;Concern <br> Family Dental Clinic</h4>
                 <!-- <p><strong>Denta Care Health Ventures LLP</strong></p> -->
                 <p class="mt-5">2462/37, 7th B Main Road, Hampinagar, RPC Layout, Vijayanagar, Bengaluru, Karnataka 560104</p>
-                <p class="mt-3"><strong>Call us:</strong>  +91 63638 00266 | 98458 02787</p>
+                <p class="mt-3"><strong>Call us:</strong> +91 63638 00266 | 98458 02787</p>
                 <p class="mt-2"><strong>Email us:</strong> drsunil19@yahoo.com</p>
-                <p class="mt-2"><strong>Clinic Hours: <br></strong>Morning - 10.30am to 2.30pm  <br> Evening - 4pm to 8.30pm <br> <span class=""> Sunday-Holiday</span></p>
+                <p class="mt-2"><strong>Clinic Hours: <br></strong>Morning - 10.30am to 2.30pm <br> Evening - 4pm to 8.30pm <br> <span class=""> Sunday-Holiday</span></p>
                 <!-- <p class="mt-2"><strong>sunday close </p> -->
             </div>
 
@@ -28,7 +28,7 @@
                     <li><a href="tooth_colored_fillings_treatment_in_bengaluru.php" class="text-decoration-none">Tooth Colored Fillings</a></li>
                     <li><a href="jaw_fractures_treatment_in_bengaluru.php" class="text-decoration-none">Fixing Jaw Fractures</a></li>
 
-                    
+
                 </ul>
             </div>
 
@@ -36,10 +36,10 @@
             <div class="col-lg-3 mb-4 d-none d-md-block col-md-6 footer-links">
                 <h5>Specialised Treatments</h5>
                 <ul class="list-unstyled mt-5">
-                <li><a href="basal_implants_treatment_in_bengaluru.php" class="text-decoration-none">Basal Implants</a></li>
+                    <li><a href="basal_implants_treatment_in_bengaluru.php" class="text-decoration-none">Basal Implants</a></li>
                     <li><a href="teeth_whitening_treatment_in_bengaluru.php" class="text-decoration-none">Teeth Whitening</a></li>
                     <li><a href="laser_dentistry_treatment_in_bengaluru.php" class="text-decoration-none">Laser Dentistry</a></li>
-                   
+
                     <li><a href="invisalignaligners_clearaligners_treatment_in_bengaluru.php" class="text-decoration-none">Clear Aligners</a></li>
                 </ul>
             </div>
@@ -65,11 +65,11 @@
         <!-- Footer Bottom -->
         <div class="row footer-bottom align-items-center">
             <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
-                <p class="mb-0 " style="color: white;">© 2026  <br>Care n Concern Family Dental Clinic<br>Designed By
+                <p class="mb-0 " style="color: white;">© 2026 <br>Care n Concern Family Dental Clinic<br>Designed By
                     <a href="https://bhavicreations.com/" target="_blank" class="text-decoration-none" style="color: grey;">Bhavi Creations Pvt Ltd</a>
                 </p>
             </div>
-            <div class="col-md-6 text-center text-md-end d-none d-md-block" >
+            <div class="col-md-6 text-center text-md-end d-none d-md-block">
                 <a href="https://www.facebook.com/hontistry" class="text-decoration-none social_media me-2" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
                 <a href="https://www.youtube.com/channel/UCmE0BrRzE5dzfljOoCx_PuQ" class="text-decoration-none  social_media me-2" target="_blank"><i class="fab fa-youtube"></i> Youtube</a>
                 <a href="#" class="text-decoration-none social_media me-2"><i class="fab fa-instagram" target="_blank"></i> Instagram</a>
@@ -82,15 +82,15 @@
 
 
 <!-- footer link for  choose us  -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
 <a href="https://api.whatsapp.com/send?phone=919845802787" style="color: #fff;" class="whatsapp-link"
     target="_blank">
     <i class="fab fa-whatsapp"></i>
-    
+
 </a>
 
-<?PHP include 'c2.php' ;?>
+<?PHP include 'c2.php'; ?>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -225,6 +225,19 @@
 
     // Initialize
     updateCarousel();
+</script>
+
+<!-- faq open and close script -->
+<script>
+    function toggleAccordion(header) {
+        const content = header.nextElementSibling;
+        const icon = header.querySelector(".accordion-icon");
+
+        content.classList.toggle("open");
+        icon.classList.toggle("rotate");
+
+        icon.textContent = content.classList.contains("open") ? "−" : "+";
+    }
 </script>
 </body>
 

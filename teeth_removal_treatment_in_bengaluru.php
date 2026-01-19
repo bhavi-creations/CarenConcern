@@ -25,7 +25,7 @@
                                     <h3 class="ul-service-details-inner-title">Key Features:</h3>
                                     <ul>
                                         <li><span class="title">Zero‑pain technique:</span> <span class="value"> Local anesthesia and advanced equipment ensure a comfortable, pain‑free extraction.</span></li>
-                                        <li><span class="title">Safe & precise removal:</span> <span class="value">  Modern tools allow smooth extraction with minimal trauma to gums and bone.</span></li>
+                                        <li><span class="title">Safe & precise removal:</span> <span class="value"> Modern tools allow smooth extraction with minimal trauma to gums and bone.</span></li>
                                         <li><span class="title"> Quick recovery:</span> <span class="value"> Reduced swelling, faster healing, and minimal post‑procedure discomfort.</span></li>
                                         <li><span class="title">Prevents future issues: </span> <span class="value">Stops infection, overcrowding, or alignment problems from worsening.</span></li>
 
@@ -71,7 +71,18 @@
         </div>
     </section>
     <!-- SERVICE DETAILS SECTION END -->
+
+
+
+
+
+
+
+  
 </main>
+
+
+
 
 
 <?php include 'footer.php'; ?>

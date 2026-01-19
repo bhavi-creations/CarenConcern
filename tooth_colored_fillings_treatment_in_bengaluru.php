@@ -71,6 +71,205 @@
         </div>
     </section>
     <!-- SERVICE DETAILS SECTION END -->
+
+
+
+
+
+    <section class="py-5">
+        <div class="container">
+
+            <h3 class="text-center" style="font-weight: 900;">Frequently Ask Question (FAQ)</h3>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="accordion">
+                        <!-- Accordion 1 -->
+
+                        <div class="faq_section">
+
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <h2 class="faq_heading_section">Is the filling procedure painful?
+
+
+
+                                </h2>
+                                <h2 class="accordion-icon">+</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                  Usually no. Local anesthesia may be used if the cavity is deep.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Accordion 2  -->
+
+                        <div class="faq_section">
+
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <h2 class="faq_heading_section">How long does the filling last?
+
+
+                                </h2>
+                                <h2 class="accordion-icon">+</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    5–10 years depending on oral habits, material, and maintenance.
+                                </p>
+                            </div>
+                        </div>
+
+
+
+
+                        <!-- Accordion 3 
+                        <div class="faq_section">
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <h2 class="faq_heading_section">How long do composite build-ups last?
+
+
+                                </h2>
+                                <h2 class="accordion-icon">+</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    They usually last 5–7 years, depending on habits and care.
+                            </div>
+                        </div>-->
+
+                        <!-- Accordion 4 
+
+
+
+
+
+                        <div class="faq_section">
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <h2 class="faq_heading_section">What is a digital smile makeover?
+
+                                </h2>
+                                <h2 class="accordion-icon">+</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    It uses digital tools to preview and plan your future smile before treatment begins.</p>
+                            </div>
+                        </div>-->
+                        <!-- Accordion 5 
+                        <div class="faq_section">
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <h2 class="faq_heading_section">Is the filling procedure painful?
+                                </h2>
+                                <h2 class="accordion-icon">+</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Usually no. Local anesthesia may be used if the cavity is deep. </p>
+                            </div>
+                        </div>-->
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6">
+
+
+                    <div class="accordion">
+
+
+                        <!-- Accordion 1 -->
+
+
+
+                        <div class="faq_section">
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <h2 class="faq_heading_section">Can I eat immediately after a filling?
+
+                                </h2>
+                                <h2 class="accordion-icon">+</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                   Wait at least 30–60 minutes. Avoid hard or sticky food for a day.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion 2-->
+
+
+
+                        <div class="faq_section">
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <h2 class="faq_heading_section">Why do I feel sensitivity after a filling?
+
+
+
+                                </h2>
+                                <h2 class="accordion-icon">+</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Mild sensitivity is common for a few days and settles on its own.</p>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Accordion 3 
+                        <div class="faq_section">
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <h2 class="faq_heading_section">Is scaling harmful for teeth?
+
+
+                                </h2>
+                                <h2 class="accordion-icon">+</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    No. It only removes plaque and tartar; enamel remains safe.</p>
+                            </div>
+                        </div>-->
+                        <!-- Accordion 4 
+                        <div class="faq_section">
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <h2 class="faq_heading_section">How long do traditional implants take to heal?
+
+
+
+                                </h2>
+                                <h2 class="accordion-icon">+</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Typically around 3 months, but depending on bone quality and healing can be a bit longer too. </p>
+                            </div>
+                        </div>-->
+                        <!-- Accordion 5 
+                        <div class="faq_section">
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <h2 class="faq_heading_section"> What is the main advantage of bi-cortical implants?
+                                </h2>
+                                <h2 class="accordion-icon">+</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <p class="faq_section">
+                                    What is the main advantage of bi-cortical implants? </p>
+                            </div>
+                        </div>-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
 </main>
 
 

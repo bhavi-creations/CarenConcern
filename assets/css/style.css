@@ -62,8 +62,9 @@ body {
 .nav-link {
     color: #666 !important;
     margin: 0 15px;
-    font-weight: 500;
+    font-weight: 600;
     transition: color 0.3s;
+    font-size: 20PX;
 }
 
 @media (min-width:992px) and (max-width:1200px) {
@@ -2721,7 +2722,8 @@ textarea.form-control {
   overflow: hidden;
   transition: max-height 0.4s ease;
   padding: 0 20px;
-  background-color: #E7F3FE80;
+  background-color: #b1b9c1bd;
+  /* background-color: #E7F3FE80; */
 }
 
 .accordion-content.open {
@@ -2732,14 +2734,17 @@ textarea.form-control {
 
 .faq_heading_section {
   font-size: 20px !important;
-  color: #07ccec;
-  font-weight: 600;
+  /* color: black !important; */
+  font-weight: 400;
+  color: rgb(0, 0, 0) !important;
 }
 
 
 .breadcumb-title {
   color: white !important;
 }
+
+
 
 
 
