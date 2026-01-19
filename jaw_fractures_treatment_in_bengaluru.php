@@ -15,7 +15,7 @@
                             <img src="./assets/images/Jaw-Fractures.png" alt="Image" class="img-fluid">
                         </div>
                         <div class="ul-service-details-txt">
-                            <h2 class="ul-service-details-title">Fixing Jaw Fractures </h2>
+                            <h2 class="ul-service-details-title">Fixing Jaw Fractures Treatment</h2>
                             <p class="ul-service-details-descr">Fixing jaw fractures is a specialized dental and maxillofacial procedure that restores the alignment, function, and aesthetics of the jaw after trauma or injury. The treatment involves careful assessment, stabilization, and surgical or non-surgical intervention to ensure proper healing and optimal oral function.</p>
                             <div class="ul-service-details-inner-block inner-block-1">
 

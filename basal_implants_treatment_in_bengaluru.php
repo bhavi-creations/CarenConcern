@@ -15,7 +15,7 @@
                             <img src="./assets/images/new_images/treatments 19.jpg" alt="Image" class="img-fluid">
                         </div>
                         <div class="ul-service-details-txt">
-                            <h2 class="ul-service-details-title">Basal Implants </h2>
+                            <h2 class="ul-service-details-title">Basal Implants Treatment </h2>
                             <p class="ul-service-details-descr">Basal implants are a modern dental solution designed for patients with reduced bone density who cannot undergo traditional implants. These implants anchor directly into the basal bone, providing a strong, stable foundation for dental crowns or bridges. They allow immediate function and reduce the need for bone grafting, making the process faster and more comfortable.</p>
                             <div class="ul-service-details-inner-block inner-block-1">
 

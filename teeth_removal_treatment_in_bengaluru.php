@@ -15,7 +15,7 @@
                             <img src="./assets/images/new_images/treatments 17.jpg" alt="Image" class="img-fluid">
                         </div>
                         <div class="ul-service-details-txt">
-                            <h2 class="ul-service-details-title">Painless Teeth Removal </h2>
+                            <h2 class="ul-service-details-title">Painless Teeth Removal Treatment</h2>
                             <p class="ul-service-details-descr">Painless teeth removal is a modern dental procedure designed to extract damaged or problematic teeth with advanced techniques that minimize discomfort. Whether it’s due to decay, infection, overcrowding, or impacted teeth, this procedure ensures a smooth and stress‑free experience with quick healing and complete comfort.</p>
                             <div class="ul-service-details-inner-block inner-block-1">
 

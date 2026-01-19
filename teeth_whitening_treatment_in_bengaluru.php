@@ -15,7 +15,7 @@
                             <img src="./assets/images/new_images/treatments 13.jpg" alt="Image" class="img-fluid">
                         </div>
                         <div class="ul-service-details-txt">
-                            <h2 class="ul-service-details-title">Teeth Whitening </h2>
+                            <h2 class="ul-service-details-title">Teeth Whitening Treatment</h2>
                             <p class="ul-service-details-descr">Teeth whitening is a cosmetic dental procedure that removes stains and discoloration from your teeth, restoring a bright, confident smile. Using safe and professional methods, it effectively lightens teeth while protecting enamel, giving you a fresher and more youthful appearance.</p>
                             <div class="ul-service-details-inner-block inner-block-1">
 

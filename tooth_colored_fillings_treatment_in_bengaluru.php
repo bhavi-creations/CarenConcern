@@ -15,7 +15,7 @@
                             <img src="./assets/images/new_images/treatments 12.jpg" alt="Image" class="img-fluid">
                         </div>
                         <div class="ul-service-details-txt">
-                            <h2 class="ul-service-details-title">Tooth Colored Fillings </h2>
+                            <h2 class="ul-service-details-title">Tooth Colored Fillings Treatment</h2>
                             <p class="ul-service-details-descr">Tooth colored fillings are a modern dental solution for repairing cavities or minor tooth damage while keeping your smile natural. Made from durable composite resin, these fillings blend seamlessly with your teeth, restoring function and aesthetics without noticeable metal or discoloration.</p>
                             <div class="ul-service-details-inner-block inner-block-1">
 

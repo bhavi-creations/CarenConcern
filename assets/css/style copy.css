@@ -582,7 +582,7 @@ body {
     font-size: 110px;
     font-weight: 300 !important;
     color: #87CEEB;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin-bottom: 20px;
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */

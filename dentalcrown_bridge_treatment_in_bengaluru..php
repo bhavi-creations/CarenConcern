@@ -15,7 +15,7 @@
                             <img src="./assets/images/new_images/treatments 16.jpg" alt="Image" class="img-fluid">
                         </div>
                         <div class="ul-service-details-txt">
-                            <h2 class="ul-service-details-title">Crowns & Bridges </h2>
+                            <h2 class="ul-service-details-title">Crowns & Bridges Treatment </h2>
                             <p class="ul-service-details-descr">Crowns and bridges are restorative dental treatments used to repair damaged teeth and replace missing ones. A crown covers and strengthens a weakened tooth, while a bridge fills the gap created by one or more missing teeth. These treatments restore your bite, protect your natural teeth, and enhance the appearance of your smile.</p>
                             <div class="ul-service-details-inner-block inner-block-1">
 

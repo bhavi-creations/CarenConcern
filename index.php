@@ -894,7 +894,7 @@
 </section>
 
 
-<marquee class="footer-title">Care N Concern Family dental Hospital </marquee>
+<marquee class="footer-title">Care n Concern Family Dental Clinic </marquee>
 
 
 

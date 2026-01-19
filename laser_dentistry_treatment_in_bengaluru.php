@@ -15,7 +15,7 @@
                             <img src="./assets/images/new_images/treatments 14.jpg" alt="Image" class="img-fluid">
                         </div>
                         <div class="ul-service-details-txt">
-                            <h2 class="ul-service-details-title">Laser Dentistry </h2>
+                            <h2 class="ul-service-details-title">Laser Dentistry Treatment</h2>
                             <p class="ul-service-details-descr">Laser dentistry is an advanced dental procedure that uses focused light energy to treat a variety of oral conditions with precision and minimal discomfort. It can be used for gum reshaping, cavity treatment, teeth whitening, and soft tissue procedures, ensuring faster healing and reduced pain compared to traditional methods.</p>
                             <div class="ul-service-details-inner-block inner-block-1">
 

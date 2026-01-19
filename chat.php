@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Care N Concern Chatbot</title>
+    <title>Care n Concern Family Dental Clinic  Chatbot</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
@@ -106,7 +106,7 @@
 
 <div id="chatbot-window">
     <div id="chat-header">
-        <span>Care N Concern Chatbot</span>
+        <span>Care n Concern Family Dental Clinic  Chatbot</span>
         <button type="button" class="btn-close btn-close-white" aria-label="Close" onclick="toggleChatbot()"></button>
     </div>
     <div id="chat-body">
@@ -179,7 +179,7 @@
         // చాట్ బాడీని ఖాళీ చేయండి
         chatBody.innerHTML = ''; 
 
-        const welcomeText = "Hi! Welcome to **Care N Concern Family Dental Hospital.** మా సేవలను తెలుసుకోవడానికి, దయచేసి కింద ఉన్న **సర్వీసెస్‌**లో మీకు కావాల్సిన ట్రీట్‌మెంట్‌ను ఎంచుకోండి.";
+        const welcomeText = "Hi! Welcome to **Care n Concern Family Dental Clinic.** మా సేవలను తెలుసుకోవడానికి, దయచేసి కింద ఉన్న **సర్వీసెస్‌**లో మీకు కావాల్సిన ట్రీట్‌మెంట్‌ను ఎంచుకోండి.";
         appendMessage(welcomeText, 'bot');
 
         // సర్వీస్ బటన్లను చూపించడానికి ఒక setTimeout వాడండి, బాట్ మెసేజ్ తర్వాత అవి కనిపిస్తాయి
@@ -216,7 +216,7 @@
             ${contentMessage}
             <hr>
             **మరిన్ని వివరాల కోసం:**
-            **Care N Concern Family Dental Hospital**ను సంప్రదించండి.
+            **Care n Concern Family Dental Clinic **ను సంప్రదించండి.
             **సంప్రదించవలసిన నంబర్:** <a href="tel:${contactNumber}" class="text-white">${contactNumber}</a>
         `;
         

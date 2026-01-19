@@ -27,7 +27,7 @@
                             <img src="./assets/images/new_images/treatments 11.jpg" alt="Image" class="img-fluid">
                         </div>
                         <div class="ul-service-details-txt">
-                            <h2 class="ul-service-details-title">Root canal </h2>
+                            <h2 class="ul-service-details-title">Root canal Treatment</h2>
                             <p class="ul-service-details-descr">A root canal is a dental procedure that treats infection inside a tooth by removing the infected pulp, cleaning the canals, and sealing them to prevent reinfection. It helps preserve your natural tooth, restores function, and eliminates pain. Modern techniques make the treatment safe, effective, and virtually painless.</p>
                             <div class="ul-service-details-inner-block inner-block-1">
 

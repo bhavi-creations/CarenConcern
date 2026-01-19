@@ -8,12 +8,12 @@
             <!-- Footer Info -->
             <div class="col-lg-3 mb-4 footer-info">
           
-                <h4><span class="denta ">Care</span>&nbsp; 'n' &nbsp;<span class="care">Concern  Family Dental Clinic</span></h4>
+                <h4><span class="denta ">Care</span>&nbsp; 'n' Concern <br>  Family Dental Clinic</h4>
                 <!-- <p><strong>Denta Care Health Ventures LLP</strong></p> -->
                 <p class="mt-5">2462/37, 7th B Main Road, Hampinagar, RPC Layout, Vijayanagar, Bengaluru, Karnataka 560104</p>
                 <p class="mt-3"><strong>Call us:</strong>  +91 63638 00266 | 98458 02787</p>
                 <p class="mt-2"><strong>Email us:</strong> drsunil19@yahoo.com</p>
-                <p class="mt-2"><strong>Clinic Hours: <br></strong>Morning - 10.30am to 2.30pm  <br> Evening - 4pm to 8.30pm <br> <span class=""> sunday-close</span></p>
+                <p class="mt-2"><strong>Clinic Hours: <br></strong>Morning - 10.30am to 2.30pm  <br> Evening - 4pm to 8.30pm <br> <span class=""> Sunday-Holiday</span></p>
                 <!-- <p class="mt-2"><strong>sunday close </p> -->
             </div>
 
@@ -51,7 +51,7 @@
                     <li><a href="index.php" class="text-decoration-none">Home</a></li>
                     <li><a href="about.php" class="text-decoration-none">About us</a></li>
                     <li><a href="service.php" class="text-decoration-none">Our Treatments</a></li>
-                    <li><a href="clinic.php" class="text-decoration-none">Our Clinics</a></li>
+                    <li><a href="clinic.php" class="text-decoration-none">Our Clinic</a></li>
                     <li><a href="blog.php" class="text-decoration-none">Blogs</a></li>
                     <li><a href="contact.php" class="text-decoration-none">Contact us</a></li>
                     <li><a href="appointment.php" class="text-decoration-none">Book Appointment</a></li>

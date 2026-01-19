@@ -50,6 +50,8 @@
     margin-bottom: 20px;
     position: relative;
     padding-bottom: 15px;
+    display: inline-block;
+    /* IMPORTANT */
 }
 
 .ul-service-details-title::after {
@@ -57,11 +59,14 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 80px;
+    width: 100%;
+    /* Text width matrame */
     height: 4px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border-radius: 2px;
 }
+
+
 
 .ul-service-details-descr {
     font-size: 1.1rem;
@@ -205,8 +210,8 @@
 .ul-service-details-sidebar-links li a:hover,
 .ul-service-details-sidebar-links li a.active {
     /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
-    background: linear-gradient(135deg, black  0%, grey 100%);
-   
+    background: linear-gradient(135deg, black 0%, grey 100%);
+
     color: white;
     transform: translateX(5px);
     border-color: #667eea;
@@ -373,19 +378,19 @@
     /* .ul-section-spacing {
         padding: 50px 0;
     } */
-    
+
     .ul-service-details-txt {
         padding: 25px;
     }
-    
+
     .ul-service-details-title {
         font-size: 2rem;
     }
-    
+
     .ul-service-details-inner-title {
         font-size: 1.5rem;
     }
-    
+
     .ul-service-details-sidebar-widget {
         padding: 20px;
     }
@@ -395,15 +400,15 @@
     .ul-service-details-title {
         font-size: 1.8rem;
     }
-    
+
     .ul-service-details-descr {
         font-size: 1rem;
     }
-    
+
     .ul-service-details-inner-block ul li {
         padding: 12px 15px;
     }
-    
+
     .ul-service-details-sidebar-links li a {
         padding: 12px 15px;
         font-size: 0.95rem;
@@ -438,18 +443,19 @@
     transition: all 0.3s ease;
     border: 2px solid transparent; */
 }
-.index_button_section{
- 
-    background: linear-gradient(135deg, black  0%, grey 100%);
-   
+
+.index_button_section {
+
+    background: linear-gradient(135deg, black 0%, grey 100%);
+
     color: white;
-   
+
 }
 
 
 
 
-.submit_section{
+.submit_section {
     background: #26282a !important;
     /* border-radius: 10px; */
     /* color: #2c3e50; */
@@ -458,9 +464,9 @@
 
 
 
-.submit_section:hover{
-    background: linear-gradient(135deg, black  0%, grey 100%);
-   
+.submit_section:hover {
+    background: linear-gradient(135deg, black 0%, grey 100%);
+
     color: white;
-   
+
 }

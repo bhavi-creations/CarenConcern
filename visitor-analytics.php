@@ -56,7 +56,7 @@
     <!DOCTYPE html>
     <html>
     <head>
-        <title>Care n Concern Dental Hospital</title>
+        <title>Care n Concern Family Dental Clinic </title>
         <style>
             body { font-family: Arial; padding: 20px; background: #fafafa; }
             .va-container { max-width: 1000px; margin: auto; }
