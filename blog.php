@@ -92,5 +92,12 @@ $result = $stmt->get_result();
   </div>
 
 </main>
+<script>
+  window.addEventListener("pageshow", function(event) {
+    if (event.persisted || performance.getEntriesByType("navigation")[0].type === "back_forward") {
+      window.location.reload();
+    }
+  });
+</script>
 
 <?php include 'footer.php'; ?>
