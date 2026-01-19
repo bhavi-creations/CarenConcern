@@ -8,7 +8,7 @@
             <!-- Footer Info -->
             <div class="col-lg-3 mb-4 footer-info">
           
-                <h4><span class="denta ">Care</span>&nbsp; 'n' Concern <br>  Family Dental Clinic</h4>
+                <h4><span class="denta ">Care</span>&nbsp; n &nbsp;Concern <br>  Family Dental Clinic</h4>
                 <!-- <p><strong>Denta Care Health Ventures LLP</strong></p> -->
                 <p class="mt-5">2462/37, 7th B Main Road, Hampinagar, RPC Layout, Vijayanagar, Bengaluru, Karnataka 560104</p>
                 <p class="mt-3"><strong>Call us:</strong>  +91 63638 00266 | 98458 02787</p>

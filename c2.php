@@ -272,7 +272,7 @@
         const contactMessage = `
             ${contentMessage}
             <hr>
-            **For more details, please contact ${hospitalName}.**
+            **For more details, please contact ${hospitalName}.
             **Contact Number:** <a href="tel:${contactNumber}" style="color: black; text-decoration: underline; font-weight: bold;">${contactNumber}</a>
         `;
         
