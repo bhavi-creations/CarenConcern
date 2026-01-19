@@ -15,7 +15,7 @@
                             <img src="./assets/images/new_images/treatments 15.jpg" alt="Image" class="img-fluid">
                         </div>
                         <div class="ul-service-details-txt">
-                            <h2 class="ul-service-details-title">Teeth Cleaning Treatment</h2>
+                            <h2 class="ul-service-details-title">Teeth Cleaning </h2>
                             <p class="ul-service-details-descr">Teeth cleaning is a preventive dental procedure that removes plaque, tartar, and bacteria from the surface of your teeth and gumline. It helps prevent cavities, gum disease, bad breath, and keeps your mouth healthy and fresh. Professional cleaning ensures deep hygiene that regular brushing cannot achieve</p>
                             <div class="ul-service-details-inner-block inner-block-1">
 
