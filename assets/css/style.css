@@ -2683,69 +2683,155 @@ textarea.form-control {
 
 /* faq stylings  */
 .accordion {
-  /* border: 1px solid #ddd; */
-  border-radius: 5px;
-  max-width: 500px;
-  margin: 20px auto;
-  font-family: Arial, sans-serif;
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
 }
 
 .accordion-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
-  cursor: pointer;
-  background-color: #f5f5f5;
-  font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    font-size: 18px;
 
 }
 
 .faq_section {
-  margin-bottom: 20px !important;
+    margin-bottom: 20px !important;
 }
 
 
 
 
 .accordion-icon {
-  font-size: 22px;
-  transition: transform 0.3s ease;
+    font-size: 22px;
+    transition: transform 0.3s ease;
 }
 
 .accordion-icon.rotate {
-  transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-  padding: 0 20px;
-  background-color: #b1b9c1bd;
-  /* background-color: #E7F3FE80; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 20px;
+    background-color: #b1b9c1bd;
+    /* background-color: #E7F3FE80; */
 }
 
 .accordion-content.open {
-  max-height: 500px;
-  /* adjust as needed */
-  padding: 15px 20px;
+    max-height: 500px;
+    /* adjust as needed */
+    padding: 15px 20px;
 }
 
 .faq_heading_section {
-  font-size: 20px !important;
-  /* color: black !important; */
-  font-weight: 400;
-  color: rgb(0, 0, 0) !important;
+    font-size: 20px !important;
+    /* color: black !important; */
+    font-weight: 400;
+    color: rgb(0, 0, 0) !important;
 }
 
 
 .breadcumb-title {
-  color: white !important;
+    color: white !important;
 }
 
 
 
+
+
+
+.holiday-form {
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.holiday-form label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+.holiday-form .form-control {
+    height: 48px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.holiday-form .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.15);
+}
+
+.holiday-form button {
+    margin-top: 15px;
+    height: 48px;
+    font-weight: 600;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+    border: none;
+}
+
+.holiday-form button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+
+
+.appointment_slot_leave {
+    width: 400px !important;
+    border: 10px solid rgb(0, 0, 0) !important;
+    border-radius: 6px;
+    padding: 20px;
+
+}
+
+@media (max-width:450px) {
+    .appointment_slot_leave {
+        width: 300px !important;
+    }
+
+}
+
+/* .appointment_slot_leave:hover {
+    border: 10px solid rgb(129, 123, 123) !important;
+} */
+
+.appointment_slot_leave_h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.save_holiday{
+color: rgb(255, 255, 255) !important;
+ display: block;   
+background-color: rgb(0, 0, 0);
+padding:4px 9px;
+display: flex !important;
+justify-content: center !important;
+border-radius: 8px !important;
+ margin: 20px auto; 
+}
+
+.save_holiday:hover{
+    opacity: 0.9;
+}
 
 
 

@@ -31,8 +31,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->Port = 587;
 
         // Recipients
-        $mail->setFrom('drsunilsathyanarayana@gmail.com', 'Care n Concern Family Dental Clinic '); // Your Gmail email and name
-        $mail->addAddress('drsunilsathyanarayana@gmail.com', 'Care n Concern Family Dental Clinic '); // Recipient's email and name
+        $mail->setFrom('drsunilsathyanarayana@gmail.com', 'Care 'n' Concern Family Dental Clinic '); // Your Gmail email and name
+        $mail->addAddress('drsunilsathyanarayana@gmail.com', 'Care 'n' Concern Family Dental Clinic '); // Recipient's email and name
 
 // Content
         $mail->isHTML(true);

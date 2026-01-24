@@ -91,7 +91,7 @@ function displaySectionImage($imagePath, $alt = 'Section Image')
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Care n Concern Family Dental Clinic </title>
+    <title>Care 'n' Concern Family Dental Clinic </title>
 
     <!-- libraries CSS -->
     <!-- <link rel="stylesheet" href="assets2/icon/flaticon_digicom.css"> -->

@@ -8,7 +8,7 @@
             <!-- Footer Info -->
             <div class="col-lg-3 mb-4 footer-info">
 
-                <h4><span class="denta ">Care</span>&nbsp; n &nbsp;Concern <br> Family Dental Clinic</h4>
+                <h4><span class="denta ">Care</span>&nbsp; 'n' &nbsp;Concern <br> Family Dental Clinic</h4>
                 <!-- <p><strong>Denta Care Health Ventures LLP</strong></p> -->
                 <p class="mt-5">2462/37, 7th B Main Road, Hampinagar, RPC Layout, Vijayanagar, Bengaluru, Karnataka 560104</p>
                 <p class="mt-3"><strong>Call us:</strong> +91 63638 00266 | 98458 02787</p>
@@ -21,7 +21,7 @@
             <div class="col-lg-3 mb-4 d-none d-md-block col-md-6 footer-links">
                 <h5>General Dentistry</h5>
                 <ul class="list-unstyled mt-5">
-                    <li><a href="root_canal_treatment_in_bengaluru.php" class="text-decoration-none">Root Canal</a></li>
+                    <li><a href="root_canal_treatment_in_bengaluru.php" class="text-decoration-none">Root Canal Treatment</a></li>
                     <li><a href="teeth_cleaning_treatment_in_bengaluru.php" class="text-decoration-none">Teeth Cleaning</a></li>
                     <li><a href="dentalcrown_bridge_treatment_in_bengaluru..php" class="text-decoration-none">Crowns & Bridges</a></li>
                     <li><a href="teeth_removal_treatment_in_bengaluru.php" class="text-decoration-none">Painless Teeth Removal</a></li>
@@ -50,7 +50,7 @@
                 <ul class="list-unstyled mt-5">
                     <li><a href="index.php" class="text-decoration-none">Home</a></li>
                     <li><a href="about.php" class="text-decoration-none">About us</a></li>
-                    <li><a href="service.php" class="text-decoration-none">Our Treatments</a></li>
+                    <li><a href="service.php" class="text-decoration-none">Our Services</a></li>
                     <li><a href="clinic.php" class="text-decoration-none">Our Clinic</a></li>
                     <li><a href="blog.php" class="text-decoration-none">Blogs</a></li>
                     <li><a href="contact.php" class="text-decoration-none">Contact us</a></li>
@@ -65,7 +65,7 @@
         <!-- Footer Bottom -->
         <div class="row footer-bottom align-items-center">
             <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
-                <p class="mb-0 " style="color: white;">© 2026 <br>Care n Concern Family Dental Clinic<br>Designed By
+                <p class="mb-0 " style="color: white;">© 2026 <br>Care 'n' Concern Family Dental Clinic<br>Designed By
                     <a href="https://bhavicreations.com/" target="_blank" class="text-decoration-none" style="color: grey;">Bhavi Creations Pvt Ltd</a>
                 </p>
             </div>
@@ -239,6 +239,9 @@
         icon.textContent = content.classList.contains("open") ? "−" : "+";
     }
 </script>
+
+
+<?php include 'view_count.php'; ?>
 </body>
 
 </html>

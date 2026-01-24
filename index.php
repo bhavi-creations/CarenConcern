@@ -79,7 +79,7 @@
         </div>
     </div> -->
 
-<marquee behavior="" direction="" class="marquee_section">Braces &nbsp; + &nbsp; Denta Care + &nbsp; Dentist + &nbsp; Dentures</marquee>
+<marquee behavior="" direction="" class="marquee_section">Braces &nbsp; + &nbsp; Dental Care + &nbsp; Dentist + &nbsp; Dentures</marquee>
 
 
 <!-- About Section -->
@@ -894,7 +894,7 @@
 </section>
 
 
-<marquee class="footer-title">Care n Concern Family Dental Clinic </marquee>
+<marquee class="footer-title">Care ‘n’ Concern Family Dental Clinic </marquee>
 
 
 

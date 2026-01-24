@@ -1,60 +1,67 @@
 <?php
-include './admin/public/counter.php';
-include './db.connection/db_connection.php';
+include __DIR__ . '/db.connection/db_connection.php';
 
-$page = basename($_SERVER['PHP_SELF']);
+$page  = basename($_SERVER['PHP_SELF']);
+$ip    = $_SERVER['REMOTE_ADDR'];
+$today = date('Y-m-d');
 
-// Current page count
-$stmt = $conn->prepare(
-    "SELECT visit_count FROM visitors WHERE page_name = ?"
-);
-$stmt->bind_param("s", $page);
-$stmt->execute();
-$res = $stmt->get_result();
-$pageCount = $res->fetch_assoc()['visit_count'] ?? 0;
+// ===============================
+// Record visitor (once per page per day)
+// ===============================
+$check = $conn->prepare("
+    SELECT id FROM visitor_logs
+    WHERE page_name = ? AND ip_address = ? AND visit_date = ?
+");
+$check->bind_param("sss", $page, $ip, $today);
+$check->execute();
+$res = $check->get_result();
 
-// Total website visitors
-$totalRes = $conn->query(
-    "SELECT SUM(visit_count) AS total FROM visitors"
-);
+if ($res->num_rows == 0) {
+    $city = 'Unknown';
+
+    $ins = $conn->prepare("
+        INSERT INTO visitor_logs
+        (page_name, ip_address, visit_date, visited_at, city)
+        VALUES (?, ?, ?, NOW(), ?)
+    ");
+    $ins->bind_param("ssss", $page, $ip, $today, $city);
+    $ins->execute();
+}
+
+// ===============================
+// COUNTS (FROM visitor_logs ONLY)
+// ===============================
+
+// 🌍 Total unique visitors (entire website)
+$totalRes = $conn->query("
+    SELECT COUNT(DISTINCT ip_address) AS total
+    FROM visitor_logs
+");
 $totalCount = $totalRes->fetch_assoc()['total'] ?? 0;
+
+// 📄 This page unique visitors
+$pstmt = $conn->prepare("
+    SELECT COUNT(DISTINCT ip_address) AS total
+    FROM visitor_logs
+    WHERE page_name = ?
+");
+$pstmt->bind_param("s", $page);
+$pstmt->execute();
+$pageRes = $pstmt->get_result();
+$pageCount = $pageRes->fetch_assoc()['total'] ?? 0;
 ?>
 
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Apple  Multispeciality Dental Hospital Kakinada</title>
-</head>
-
-<body>  
-    
+<style>
+#visitor-eye:hover .visitor-tooltip{
+    display:block;
+}
+</style>
 
 <a href="visitor-analytics.php" id="visitor-eye">
-    <!-- 👁 -->
-    <img src=".\assets\images\eye.png"class="img-fluid" alt="" style="width: 30px; height: 30px;">
+    <img src="./assets/images/eye.png" style="width:30px;height:30px;">
     <div class="visitor-tooltip">
-        <div>Total Pages Visitors: <b><?php echo $totalCount; ?></b></div>
-        <div>This Page Visitors: <b><?php echo $pageCount; ?></b></div>
+        <div>Total Website Visitors: <b><?= $totalCount ?></b></div>
+        <div>This Page Visitors: <b><?= $pageCount ?></b></div>
     </div>
 </a>
 
-    <?php
-    include './db.connection/db_connection.php';
-
-    // Total website visitors
-    $totalRes = $conn->query(
-        "SELECT SUM(visit_count) AS total FROM visitors"
-    );
-    $totalCount = $totalRes->fetch_assoc()['total'] ?? 0;
-
-    // All pages data
-    $pages = $conn->query(
-        "SELECT page_name, visit_count FROM visitors ORDER BY visit_count DESC"
-    );
-    ?>
-
-
-</body>
-
-</html>

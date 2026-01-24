@@ -6,12 +6,12 @@
 <!-- Chatbot Popup -->
 <div id="chatbot-popup" style="display:none; position:fixed; bottom:90px; right:20px; width:300px; max-height:400px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.2); background:#fff; overflow:hidden; z-index:1001; font-family:Arial, sans-serif;">
     <div style="background:#28a745; color:#fff; padding:10px; font-weight:bold; display:flex; justify-content:space-between; align-items:center;">
-        Care n Concern Family Dental Clinic
+        Care ‘n’ Concern Family Dental Clinic
         <span id="close-chat" style="cursor:pointer;">✖</span>
     </div>
     <div id="chat-content" style="padding:10px; height:300px; overflow-y:auto; background:#f5f5f5;">
         <div class="chat-message bot-message" style="margin-bottom:10px; padding:5px 10px; background:#e0e0e0; border-radius:10px;">
-            Welcome to Care n Concern Family Dental Clinic! How can we help you today?
+            Welcome to Care ‘n’ Concern Family Dental Clinic! How can we help you today?
         </div>
         <div style="margin-top:10px;">
             <strong>Our Services:</strong>
@@ -24,7 +24,7 @@
         </div>
     </div>
     <div id="chat-footer" style="padding:10px; background:#fff; border-top:1px solid #ddd; font-size:14px;">
-        For more details, contact Care & Concern Family Dental Hospital: <br>
+        For more details, contact Care ‘n’ Concern Family Dental Clinic: <br>
         <strong>+91 9876543210</strong>
     </div>
 </div>
