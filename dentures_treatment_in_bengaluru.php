@@ -12,11 +12,11 @@
                 <div class="col-lg-8 col-md-7">
                     <div>
                         <div class="ul-service-details-img">
-                            <img src="./assets/images/new_images/treatments 19.jpg" alt="Image" class="img-fluid">
+                            <!-- <img src="./assets/images/new_images/treatments 19.jpg" alt="Image" class="img-fluid"> -->
                         </div>
                         <div class="ul-service-details-txt">
-                            <h2 class="ul-service-details-title"> Basal implants / Immediate loading implants  </h2>
-                            <p class="ul-service-details-descr">Basal implants are a modern dental solution designed for patients with reduced bone density who cannot undergo traditional implants. These implants anchor directly into the basal bone, providing a strong, stable foundation for dental crowns or bridges. They allow immediate function and reduce the need for bone grafting, making the process faster and more comfortable.</p>
+                            <h2 class="ul-service-details-title">Dentures </h2>
+                            <p class="ul-service-details-descr">Dentures are removable dental appliances designed to replace missing teeth and restore your smile. They help improve chewing ability, speech, and facial appearance while providing a comfortable and natural-looking solution for tooth loss. Modern dentures are custom-made to fit securely and look more natural than ever.</p>
                             <div class="ul-service-details-inner-block inner-block-1">
 
 
@@ -24,10 +24,10 @@
                                 <div class="ul-service-details-inner-block">
                                     <h3 class="ul-service-details-inner-title">Key Features:</h3>
                                     <ul>
-                                        <li><span class="title">Immediate loading:</span> <span class="value">  Allows placement of teeth quickly after implant surgery.</span></li>
-                                        <li><span class="title"> Strong bone support:</span> <span class="value">  Anchors into basal bone for maximum stability, even in low bone density.</span></li>
-                                        <li><span class="title"> Minimally invasive: </span> <span class="value"> Requires less surgery and reduces treatment time compared to conventional implants.</span></li>
-                                        <li><span class="title"> Durable & long-lasting:  </span> <span class="value">High-quality implants ensure strength, reliability, and long-term function.</span></li>
+                                        <li><span class="title">Restores Missing Teeth:</span> <span class="value">  Replaces multiple or full sets of lost teeth.</span></li>
+                                        <li><span class="title"> Improves Chewing & Speech: </span> <span class="value"> Helps you eat and speak comfortably.</span></li>
+                                        <li><span class="title">  Natural Appearance:</span> <span class="value">  Designed to closely match natural teeth and gums.</span></li>
+                                        <li><span class="title">Comfortable & Removable:  </span> <span class="value">  Easy to wear, clean, and maintain.</span></li>
 
                                     </ul>
                                 </div>
@@ -46,7 +46,7 @@
 
                             <div class="ul-service-details-inner-block">
                                 <h3 class="ul-service-details-inner-title">Why It Matters:</h3>
-                                <p>Basal implants restore functionality and aesthetics for patients who cannot undergo conventional implants. They improve chewing, speaking, and smile confidence while minimizing surgical complications, offering a fast, reliable solution for long-term oral health.</p>
+                                <p>Tooth loss can affect confidence, nutrition, and facial structure. Dentures restore function and appearance, helping you smile, eat, and live comfortably every day.</p>
 
                             </div>
 

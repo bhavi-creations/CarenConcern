@@ -79,7 +79,7 @@
         </div>
     </div> -->
 
-<marquee behavior="" direction="" class="marquee_section">Braces &nbsp; + &nbsp; Dental Care + &nbsp; Dentist + &nbsp; Dentures</marquee>
+<marquee behavior="" direction="" class="marquee_section">Braces &nbsp; + &nbsp; Dental Care + &nbsp; Dentist + &nbsp; Dentures + &nbsp;Implants + &nbsp; Invisalign + &nbsp; Braces   </marquee>
 
 
 <!-- About Section -->
@@ -1077,7 +1077,7 @@
                         </div>
                         <div class="accordion-content">
                             <p class="faq_section">
-                                What is the main advantage of bi-cortical implants? </p>
+                               They provide strong stability even in patients with less bone volume.</p>
                         </div>
                     </div>
 

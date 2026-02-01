@@ -12,11 +12,11 @@
                 <div class="col-lg-8 col-md-7">
                     <div>
                         <div class="ul-service-details-img">
-                            <img src="./assets/images/new_images/treatments 19.jpg" alt="Image" class="img-fluid">
+                            <img src="./assets/images/new_images/full_mouth_rehabitions (2).png" alt="Image" class="img-fluid">
                         </div>
                         <div class="ul-service-details-txt">
-                            <h2 class="ul-service-details-title"> Basal implants / Immediate loading implants  </h2>
-                            <p class="ul-service-details-descr">Basal implants are a modern dental solution designed for patients with reduced bone density who cannot undergo traditional implants. These implants anchor directly into the basal bone, providing a strong, stable foundation for dental crowns or bridges. They allow immediate function and reduce the need for bone grafting, making the process faster and more comfortable.</p>
+                            <h2 class="ul-service-details-title">Full Mouth Rehabilitation </h2>
+                            <p class="ul-service-details-descr">Full mouth rehabilitation is a comprehensive dental treatment designed to restore the function, health, and appearance of your entire mouth. It combines multiple dental procedures to rebuild damaged, worn, or missing teeth, giving you a strong bite and a confident smile.</p>
                             <div class="ul-service-details-inner-block inner-block-1">
 
 
@@ -24,10 +24,10 @@
                                 <div class="ul-service-details-inner-block">
                                     <h3 class="ul-service-details-inner-title">Key Features:</h3>
                                     <ul>
-                                        <li><span class="title">Immediate loading:</span> <span class="value">  Allows placement of teeth quickly after implant surgery.</span></li>
-                                        <li><span class="title"> Strong bone support:</span> <span class="value">  Anchors into basal bone for maximum stability, even in low bone density.</span></li>
-                                        <li><span class="title"> Minimally invasive: </span> <span class="value"> Requires less surgery and reduces treatment time compared to conventional implants.</span></li>
-                                        <li><span class="title"> Durable & long-lasting:  </span> <span class="value">High-quality implants ensure strength, reliability, and long-term function.</span></li>
+                                        <li><span class="title"> Complete Oral Restoration:</span> <span class="value"> Treats teeth, gums, and bite issues together.</span></li>
+                                        <li><span class="title"> Customized Treatment Plan: </span> <span class="value">Tailored solutions based on your dental condition.</span></li>
+                                        <li><span class="title">  Improved Chewing & Speech: </span> <span class="value">Restores proper bite alignment and comfort.</span></li>
+                                        <li><span class="title">Enhanced Smile Aesthetics: </span> <span class="value">Creates a natural, balanced, and healthy smile.</span></li>
 
                                     </ul>
                                 </div>
@@ -46,7 +46,7 @@
 
                             <div class="ul-service-details-inner-block">
                                 <h3 class="ul-service-details-inner-title">Why It Matters:</h3>
-                                <p>Basal implants restore functionality and aesthetics for patients who cannot undergo conventional implants. They improve chewing, speaking, and smile confidence while minimizing surgical complications, offering a fast, reliable solution for long-term oral health.</p>
+                                <p>Full mouth rehabilitation goes beyond fixing individual teeth—it transforms your overall oral health. It relieves discomfort, improves daily function, and restores confidence by giving you a healthy, beautiful smile that lasts for years.</p>
 
                             </div>
 

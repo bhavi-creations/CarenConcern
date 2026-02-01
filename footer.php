@@ -36,11 +36,11 @@
             <div class="col-lg-3 mb-4 d-none d-md-block col-md-6 footer-links">
                 <h5>Specialised Treatments</h5>
                 <ul class="list-unstyled mt-5">
-                    <li><a href="basal_implants_treatment_in_bengaluru.php" class="text-decoration-none">Basal Implants</a></li>
+                    <li><a href="basal_implants_treatment_in_bengaluru.php" class="text-decoration-none"> Basal implants / Immediate loading implants</a></li>
                     <li><a href="teeth_whitening_treatment_in_bengaluru.php" class="text-decoration-none">Teeth Whitening</a></li>
                     <li><a href="laser_dentistry_treatment_in_bengaluru.php" class="text-decoration-none">Laser Dentistry</a></li>
 
-                    <li><a href="invisalignaligners_clearaligners_treatment_in_bengaluru.php" class="text-decoration-none">Clear Aligners</a></li>
+                    <li><a href="invisalignaligners_clearaligners_treatment_in_bengaluru.php" class="text-decoration-none">Clear aligners / Invisalign</a></li>
                 </ul>
             </div>
 
@@ -241,7 +241,6 @@
 </script>
 
 
-<?php include 'view_count.php'; ?>
 </body>
 
 </html>

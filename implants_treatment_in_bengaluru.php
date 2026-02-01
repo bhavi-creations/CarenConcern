@@ -12,11 +12,11 @@
                 <div class="col-lg-8 col-md-7">
                     <div>
                         <div class="ul-service-details-img">
-                            <img src="./assets/images/new_images/treatments 19.jpg" alt="Image" class="img-fluid">
+                            <!-- <img src="./assets/images/new_images/treatments 19.jpg" alt="Image" class="img-fluid"> -->
                         </div>
                         <div class="ul-service-details-txt">
-                            <h2 class="ul-service-details-title"> Basal implants / Immediate loading implants  </h2>
-                            <p class="ul-service-details-descr">Basal implants are a modern dental solution designed for patients with reduced bone density who cannot undergo traditional implants. These implants anchor directly into the basal bone, providing a strong, stable foundation for dental crowns or bridges. They allow immediate function and reduce the need for bone grafting, making the process faster and more comfortable.</p>
+                            <h2 class="ul-service-details-title">Dental Implants  </h2>
+                            <p class="ul-service-details-descr">Dental implants are a permanent and advanced solution for replacing missing teeth. A titanium implant is placed into the jawbone, acting as a strong artificial tooth root. Once healed, a custom-made crown is attached, restoring the look, feel, and function of a natural tooth. Dental implants offer excellent stability, durability, and a natural appearance.</p>
                             <div class="ul-service-details-inner-block inner-block-1">
 
 
@@ -24,10 +24,10 @@
                                 <div class="ul-service-details-inner-block">
                                     <h3 class="ul-service-details-inner-title">Key Features:</h3>
                                     <ul>
-                                        <li><span class="title">Immediate loading:</span> <span class="value">  Allows placement of teeth quickly after implant surgery.</span></li>
-                                        <li><span class="title"> Strong bone support:</span> <span class="value">  Anchors into basal bone for maximum stability, even in low bone density.</span></li>
-                                        <li><span class="title"> Minimally invasive: </span> <span class="value"> Requires less surgery and reduces treatment time compared to conventional implants.</span></li>
-                                        <li><span class="title"> Durable & long-lasting:  </span> <span class="value">High-quality implants ensure strength, reliability, and long-term function.</span></li>
+                                        <li><span class="title">Natural Look & Feel:</span> <span class="value">  Designed to match your natural teeth perfectly.</span></li>
+                                        <li><span class="title">  Strong & Stable:</span> <span class="value"> Provides a secure foundation for chewing and speaking confidently.</span></li>
+                                        <li><span class="title">Long-Lasting Solution: </span> <span class="value"> With proper care, implants can last for many years.</span></li>
+                                        <li><span class="title">Protects Jawbone:  </span> <span class="value"> Prevents bone loss and maintains facial structure.</span></li>
 
                                     </ul>
                                 </div>
@@ -46,7 +46,7 @@
 
                             <div class="ul-service-details-inner-block">
                                 <h3 class="ul-service-details-inner-title">Why It Matters:</h3>
-                                <p>Basal implants restore functionality and aesthetics for patients who cannot undergo conventional implants. They improve chewing, speaking, and smile confidence while minimizing surgical complications, offering a fast, reliable solution for long-term oral health.</p>
+                                <p>Missing teeth can affect your confidence, speech, and oral health. Dental implants restore your smile, improve functionality, and help you enjoy a healthier, more confident life.</p>
 
                             </div>
 

@@ -40,19 +40,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $morningSlots = [
 
-            "10:30 AM - 11:30 AM",
-            "11:30 AM - 12:30 PM",
-            "12:30 PM - 01:30 PM",
-             "01:30 PM - 02:30 PM",
+            "09:00 AM - 10:00 AM",
+            "10:00 AM - 11:00 AM",
+            "11:00 AM - 12:00 PM",
+            "12:00 PM - 01:00 PM",
+            "01:00 PM - 02:00 PM"
         ];
 
         $afternoonSlots = [
-           
+            "02:00 PM - 03:00 PM",
+            "03:00 PM - 04:00 PM",
             "04:00 PM - 05:00 PM",
             "05:00 PM - 06:00 PM",
             "06:00 PM - 07:00 PM",
-            "07:00 PM - 08:30 PM"
-
+            "07:00 PM - 08:30 PM",
+            
         ];
 
         if (
@@ -61,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             ($type == 'afternoon' && in_array($slot, $afternoonSlots))
         ) {
             echo "<script>
-                alert('" . $row['reason'] . "');
+                alert('".$row['reason']."');
                 window.location='index.php';
             </script>";
             exit;
@@ -134,6 +136,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         ";
 
         $mailDoctor->send();
+
     } catch (Exception $e) {
         echo 'Doctor Mail Error: ' . $mailDoctor->ErrorInfo;
         exit;
@@ -155,7 +158,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $mailPatient->setFrom(
             'manimalladi05@gmail.com',
-            'Care  'n'  Concern Family Dental Clinic'
+            'Srinivasa Multispeciality Dental Hospital'
         );
 
         $mailPatient->addAddress($email);
@@ -176,7 +179,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </table>
 
             <p>Thank you for choosing<br>
-            <b>Care  'n'  Concern Family Dental Clinic</b>.</p>
+            <b>Srinivasa Multispeciality Dental Hospital</b>.</p>
         ";
 
         $mailPatient->send();
@@ -185,7 +188,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             alert('Appointment booked successfully');
             window.location='index.php';
         </script>";
+
     } catch (Exception $e) {
         echo 'Patient Mail Error: ' . $mailPatient->ErrorInfo;
     }
 }
+?>

@@ -12,11 +12,11 @@
                 <div class="col-lg-8 col-md-7">
                     <div>
                         <div class="ul-service-details-img">
-                            <img src="./assets/images/new_images/treatments 19.jpg" alt="Image" class="img-fluid">
+                            <img src="./assets/images/new_images/veeners.png" alt="Image" class="img-fluid">
                         </div>
                         <div class="ul-service-details-txt">
-                            <h2 class="ul-service-details-title"> Basal implants / Immediate loading implants  </h2>
-                            <p class="ul-service-details-descr">Basal implants are a modern dental solution designed for patients with reduced bone density who cannot undergo traditional implants. These implants anchor directly into the basal bone, providing a strong, stable foundation for dental crowns or bridges. They allow immediate function and reduce the need for bone grafting, making the process faster and more comfortable.</p>
+                            <h2 class="ul-service-details-title">Dental Veneers </h2>
+                            <p class="ul-service-details-descr">Dental veneers are thin, custom-made shells designed to cover the front surface of teeth to improve their appearance. They help correct discoloration, gaps, chips, and uneven teeth, giving you a bright, natural-looking smile.</p>
                             <div class="ul-service-details-inner-block inner-block-1">
 
 
@@ -24,10 +24,10 @@
                                 <div class="ul-service-details-inner-block">
                                     <h3 class="ul-service-details-inner-title">Key Features:</h3>
                                     <ul>
-                                        <li><span class="title">Immediate loading:</span> <span class="value">  Allows placement of teeth quickly after implant surgery.</span></li>
-                                        <li><span class="title"> Strong bone support:</span> <span class="value">  Anchors into basal bone for maximum stability, even in low bone density.</span></li>
-                                        <li><span class="title"> Minimally invasive: </span> <span class="value"> Requires less surgery and reduces treatment time compared to conventional implants.</span></li>
-                                        <li><span class="title"> Durable & long-lasting:  </span> <span class="value">High-quality implants ensure strength, reliability, and long-term function.</span></li>
+                                        <li><span class="title">Instant Smile Enhancement:</span> <span class="value"> Improves tooth shape, color, and alignment.</span></li>
+                                        <li><span class="title">Natural Appearance: </span> <span class="value"> Crafted to blend seamlessly with your natural teeth.</span></li>
+                                        <li><span class="title"> Minimally Invasive: </span> <span class="value">Requires minimal tooth preparation.</span></li>
+                                        <li><span class="title">Long-Lasting Results: </span> <span class="value"> Durable solution with proper care.</span></li>
 
                                     </ul>
                                 </div>
@@ -46,7 +46,7 @@
 
                             <div class="ul-service-details-inner-block">
                                 <h3 class="ul-service-details-inner-title">Why It Matters:</h3>
-                                <p>Basal implants restore functionality and aesthetics for patients who cannot undergo conventional implants. They improve chewing, speaking, and smile confidence while minimizing surgical complications, offering a fast, reliable solution for long-term oral health.</p>
+                                <p>A beautiful smile boosts confidence and leaves a lasting impression. Veneers help you achieve a flawless smile while preserving your natural teeth and enhancing your overall appearance.</p>
 
                             </div>
 
@@ -81,7 +81,7 @@
 
             <h2 class="ul-service-details-title text-center">Scaling & Polishing </h2>
             <p class="ul-service-details-descr">Scaling & Polishing
-                 removes plaque, tartar, and stains. It improves gum health, prevents decay, and keeps your smile fresh.
+                removes plaque, tartar, and stains. It improves gum health, prevents decay, and keeps your smile fresh.
             </p>
 
 
@@ -132,7 +132,7 @@
 
 
 
-                    
+
 
                     </div>
 
@@ -160,7 +160,7 @@
                                     Every 6 months or as advised by your dentist.</p>
                             </div>
                         </div>
-                       
+
 
                     </div>
                 </div>

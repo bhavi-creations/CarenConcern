@@ -239,10 +239,10 @@
                             <li class="dropdown-submenu">
                                 <a class="dropdown-item dropdown-toggle" href="#">Specialised Treatment</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="basal_implants_treatment_in_bengaluru.php">Basal Implants</a></li>
+                                    <li><a class="dropdown-item" href="basal_implants_treatment_in_bengaluru.php">Basal implants / Immediate loading implants </a></li>
                                     <li><a class="dropdown-item" href="laser_dentistry_treatment_in_bengaluru.php">Laser Dentistry</a></li>
                                     <li><a class="dropdown-item" href="teeth_whitening_treatment_in_bengaluru.php">Teeth Whitening</a></li>
-                                    <li><a class="dropdown-item" href="invisalignaligners_clearaligners_treatment_in_bengaluru.php">Clear Aligners</a></li>
+                                    <li><a class="dropdown-item" href="invisalignaligners_clearaligners_treatment_in_bengaluru.php">Clear aligners / Invisalign</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -352,5 +352,3 @@
             }
         });
     </script>
-
-    

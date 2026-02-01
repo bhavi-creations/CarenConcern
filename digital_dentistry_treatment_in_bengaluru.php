@@ -12,11 +12,11 @@
                 <div class="col-lg-8 col-md-7">
                     <div>
                         <div class="ul-service-details-img">
-                            <img src="./assets/images/new_images/treatments 19.jpg" alt="Image" class="img-fluid">
+                            <img src="./assets/images/new_images/digital_dentistry.png" alt="Image" class="img-fluid">
                         </div>
                         <div class="ul-service-details-txt">
-                            <h2 class="ul-service-details-title"> Basal implants / Immediate loading implants  </h2>
-                            <p class="ul-service-details-descr">Basal implants are a modern dental solution designed for patients with reduced bone density who cannot undergo traditional implants. These implants anchor directly into the basal bone, providing a strong, stable foundation for dental crowns or bridges. They allow immediate function and reduce the need for bone grafting, making the process faster and more comfortable.</p>
+                            <h2 class="ul-service-details-title">Digital Dentistry </h2>
+                            <p class="ul-service-details-descr">Digital dentistry uses advanced technology and computer-aided systems to deliver precise, faster, and more comfortable dental treatments. From digital scans to 3D planning, it ensures accurate diagnosis and high-quality results with minimal discomfort.</p>
                             <div class="ul-service-details-inner-block inner-block-1">
 
 
@@ -24,10 +24,10 @@
                                 <div class="ul-service-details-inner-block">
                                     <h3 class="ul-service-details-inner-title">Key Features:</h3>
                                     <ul>
-                                        <li><span class="title">Immediate loading:</span> <span class="value">  Allows placement of teeth quickly after implant surgery.</span></li>
-                                        <li><span class="title"> Strong bone support:</span> <span class="value">  Anchors into basal bone for maximum stability, even in low bone density.</span></li>
-                                        <li><span class="title"> Minimally invasive: </span> <span class="value"> Requires less surgery and reduces treatment time compared to conventional implants.</span></li>
-                                        <li><span class="title"> Durable & long-lasting:  </span> <span class="value">High-quality implants ensure strength, reliability, and long-term function.</span></li>
+                                        <li><span class="title">High Precision & Accuracy:</span> <span class="value"> Digital tools ensure exact treatment planning and execution.</span></li>
+                                        <li><span class="title">Faster Treatment Process: </span> <span class="value"> Reduces chair time and multiple visits.</span></li>
+                                        <li><span class="title">   Comfortable Experience:</span> <span class="value"> No messy impressions, only smooth digital scans.</span></li>
+                                        <li><span class="title">Better Treatment Outcomes: </span> <span class="value">  Advanced planning leads to predictable and long-lasting results.</span></li>
 
                                     </ul>
                                 </div>
@@ -46,7 +46,7 @@
 
                             <div class="ul-service-details-inner-block">
                                 <h3 class="ul-service-details-inner-title">Why It Matters:</h3>
-                                <p>Basal implants restore functionality and aesthetics for patients who cannot undergo conventional implants. They improve chewing, speaking, and smile confidence while minimizing surgical complications, offering a fast, reliable solution for long-term oral health.</p>
+                                <p>Digital dentistry enhances both patient comfort and treatment quality. With advanced technology, you receive safer, quicker, and more precise care—helping you achieve a healthier smile with confidence and peace of mind</p>
 
                             </div>
 

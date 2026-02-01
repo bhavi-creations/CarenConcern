@@ -12,11 +12,11 @@
                 <div class="col-lg-8 col-md-7">
                     <div>
                         <div class="ul-service-details-img">
-                            <img src="./assets/images/new_images/treatments 19.jpg" alt="Image" class="img-fluid">
+                            <img src="./assets/images/new_images/refular_implants.png" alt="Image" class="img-fluid">
                         </div>
                         <div class="ul-service-details-txt">
-                            <h2 class="ul-service-details-title"> Basal implants / Immediate loading implants  </h2>
-                            <p class="ul-service-details-descr">Basal implants are a modern dental solution designed for patients with reduced bone density who cannot undergo traditional implants. These implants anchor directly into the basal bone, providing a strong, stable foundation for dental crowns or bridges. They allow immediate function and reduce the need for bone grafting, making the process faster and more comfortable.</p>
+                            <h2 class="ul-service-details-title">Regular Dental Implants </h2>
+                            <p class="ul-service-details-descr">Regular dental implants are a permanent solution for missing teeth. They involve placing a titanium implant into the jawbone, which acts as a strong artificial root. Once healed, a natural-looking crown is fixed on top, restoring your smile, chewing ability, and confidence.</p>
                             <div class="ul-service-details-inner-block inner-block-1">
 
 
@@ -24,10 +24,10 @@
                                 <div class="ul-service-details-inner-block">
                                     <h3 class="ul-service-details-inner-title">Key Features:</h3>
                                     <ul>
-                                        <li><span class="title">Immediate loading:</span> <span class="value">  Allows placement of teeth quickly after implant surgery.</span></li>
-                                        <li><span class="title"> Strong bone support:</span> <span class="value">  Anchors into basal bone for maximum stability, even in low bone density.</span></li>
-                                        <li><span class="title"> Minimally invasive: </span> <span class="value"> Requires less surgery and reduces treatment time compared to conventional implants.</span></li>
-                                        <li><span class="title"> Durable & long-lasting:  </span> <span class="value">High-quality implants ensure strength, reliability, and long-term function.</span></li>
+                                        <li><span class="title">Permanent Tooth Replacement:</span> <span class="value"> Designed to last for many years with proper care.</span></li>
+                                        <li><span class="title"> Natural Look & Feel: </span> <span class="value">Matches the shape, color, and function of natural teeth.</span></li>
+                                        <li><span class="title"> Strong & Stable:  </span> <span class="value"> Titanium implants fuse with the jawbone for maximum support.</span></li>
+                                        <li><span class="title"> Protects Jawbone Health: </span> <span class="value"> Prevents bone loss caused by missing teeth.</span></li>
 
                                     </ul>
                                 </div>
@@ -46,7 +46,7 @@
 
                             <div class="ul-service-details-inner-block">
                                 <h3 class="ul-service-details-inner-title">Why It Matters:</h3>
-                                <p>Basal implants restore functionality and aesthetics for patients who cannot undergo conventional implants. They improve chewing, speaking, and smile confidence while minimizing surgical complications, offering a fast, reliable solution for long-term oral health.</p>
+                                <p>Replacing missing teeth is not just cosmetic—it’s essential for oral health. Regular dental implants restore full function, maintain facial structure, and help you smile, speak, and eat with complete confidence for a lifetime.</p>
 
                             </div>
 
