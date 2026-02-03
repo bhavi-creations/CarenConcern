@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Advanced Facilities</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --accent-gold: #c5a059; /* Premium Dental Gold Tone */
+            --dark-bg: #0a0a0a;
+        }
+
+        body { background-color: #fdfdfd; padding: 60px 0; font-family: 'Poppins', sans-serif; }
+
+        .section-title {
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #222;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .facility-card {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            height: 280px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: all 0.5s ease;
+            border: 2px solid transparent;
+        }
+
+        .facility-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        /* Hover Styles */
+        .facility-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-gold);
+            box-shadow: 0 15px 30px rgba(197, 160, 89, 0.4);
+        }
+
+        .facility-card:hover img {
+            transform: scale(1.15);
+            filter: brightness(40%) blur(2px);
+        }
+
+        /* Hover Overlay Name */
+        .facility-name-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+            opacity: 0;
+            transition: all 0.4s ease;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .facility-name {
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            border-top: 2px solid var(--accent-gold);
+            border-bottom: 2px solid var(--accent-gold);
+            padding: 10px 0;
+            transform: translateY(20px);
+            transition: all 0.4s ease;
+        }
+
+        .facility-card:hover .facility-name-overlay {
+            opacity: 1;
+        }
+
+        .facility-card:hover .facility-name {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 class="section-title">Advanced Dental Facilities</h2>
+    
+    <div class="row g-4 justify-content-center">
+        <div class="col-lg-3 col-md-6">
+            <div class="facility-card">
+                <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=600" alt="Itero scanner">
+                <div class="facility-name-overlay">
+                    <div class="facility-name">Itero Scanner</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="facility-card">
+                <img src="https://plus.unsplash.com/premium_photo-1664475143321-df54c251475c?q=80&w=600" alt="OPG Machine">
+                <div class="facility-name-overlay">
+                    <div class="facility-name">Italian OPG Machine</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="facility-card">
+                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=600" alt="Laser Machine">
+                <div class="facility-name-overlay">
+                    <div class="facility-name">Advanced Laser Machine</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="facility-card">
+                <img src="https://images.unsplash.com/photo-1583324113626-70df0f4deaab?q=80&w=600" alt="Autoclave">
+                <div class="facility-name-overlay">
+                    <div class="facility-name">B Class Autoclave</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="facility-card">
+                <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=600" alt="Dental Implant">
+                <div class="facility-name-overlay">
+                    <div class="facility-name">Best Implant Systems</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="facility-card">
+                <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?q=80&w=600" alt="Physiodispenser">
+                <div class="facility-name-overlay">
+                    <div class="facility-name">Physiodispenser</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="facility-card">
+                <img src="https://images.unsplash.com/photo-1468493390812-32a22956976a?q=80&w=600" alt="Endo motor">
+                <div class="facility-name-overlay">
+                    <div class="facility-name">Endo Motor for Rotary Endo</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="facility-card">
+                <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=600" alt="Apex locator">
+                <div class="facility-name-overlay">
+                    <div class="facility-name">Apex Locator</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

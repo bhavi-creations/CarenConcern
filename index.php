@@ -79,7 +79,7 @@
         </div>
     </div> -->
 
-<marquee behavior="" direction="" class="marquee_section">Braces &nbsp; + &nbsp; Dental Care + &nbsp; Dentist + &nbsp; Dentures + &nbsp;Implants + &nbsp; Invisalign + &nbsp; Braces   </marquee>
+<marquee behavior="" direction="" class="marquee_section">Braces &nbsp; + &nbsp; Dental Care + &nbsp; Dentist + &nbsp; Dentures + &nbsp;Implants + &nbsp; Invisalign + &nbsp; Braces </marquee>
 
 
 <!-- About Section -->
@@ -253,7 +253,7 @@
                                 </div>
 
                                 <div class="image-container">
-                                    <img src="./assets/images/Crowns & Bridges imges.png"
+                                    <img src="./assets/images/new_images/treatments 6.jpg"
                                         alt="Happy person with braces"
                                         class="person-image">
                                 </div>
@@ -795,6 +795,58 @@
 
 
 
+
+
+<!-- <section class="advanced-facilities">
+    <div class="container">
+        <h2 class="section-title">Advanced Facilities</h2>
+
+        <div class="facilities-grid">
+            <div class="facility-card">
+                <i class="fas fa-tooth"></i>
+                <p>Itero Scanner</p>
+            </div>
+
+            <div class="facility-card">
+                <i class="fas fa-x-ray"></i>
+                <p>Italian OPG Machine</p>
+            </div>
+
+            <div class="facility-card">
+                <i class="fas fa-bolt"></i>
+                <p>Advanced Laser Machine</p>
+            </div>
+
+            <div class="facility-card">
+                <i class="fas fa-shield-virus"></i>
+                <p>B Class Autoclave</p>
+            </div>
+
+            <div class="facility-card">
+                <i class="fas fa-screwdriver"></i>
+                <p>Best Implant Systems</p>
+            </div>
+
+            <div class="facility-card">
+                <i class="fas fa-cogs"></i>
+                <p>Physiodispenser</p>
+            </div>
+
+            <div class="facility-card">
+                <i class="fas fa-sync-alt"></i>
+                <p>Endo Motor for Rotary Endo</p>
+            </div>
+
+            <div class="facility-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Apex Locator</p>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+
 <!-- Services Bottom Navigation -->
 <!-- <div class="services-bottom-nav">
     <div class="container">
@@ -805,7 +857,86 @@
         </ul>
     </div>
 </div> -->
+<section>
+    <div class="container my-5">
+        <h2 class="section-title d-flex justify-content-center">Advanced Dental Facilities</h2>
 
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-3 col-md-6">
+                <div class="facility-card">
+                    <img src="./assets/images/new_images/Itero scanner.png" alt="Itero scanner">
+                    <div class="facility-name-overlay">
+                        <div class="facility-name">Itero scanner</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="facility-card">
+                    <!-- <img src="./assets/images/" alt="OPG Machine"> -->
+                    <img src="./assets/images/new_images/opg_mechanic.png" alt="OPG Machine">
+                    <div class="facility-name-overlay">
+                        <div class="facility-name">Italian OPG machine</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="facility-card">
+                    <img src="./assets/images/new_images/laser.png" alt="Laser Machine">
+                    <div class="facility-name-overlay">
+                        <div class="facility-name">Advanced laser machine</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="facility-card">
+                    <img src="./assets/images/new_images/B class autoclave.png" alt="Autoclave">
+                    <div class="facility-name-overlay">
+                        <div class="facility-name">B class autoclave</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="facility-card">
+                    <img src="./assets/images/new_images/Best implant systems.png" alt="Dental Implant">
+                    <div class="facility-name-overlay">
+                        <div class="facility-name">Best implant systems</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="facility-card">
+                    <img src="./assets/images/new_images/physio.png" alt="Physiodispenser">
+                    <div class="facility-name-overlay">
+                        <div class="facility-name">Physiodispenser</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="facility-card">
+                    <img src="./assets/images/new_images/Endo motor for rotary endo.png" alt="Endo motor">
+                    <div class="facility-name-overlay">
+                        <div class="facility-name">Endo motor for rotary endo</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="facility-card">
+                    <img src="./assets/images/new_images/apex.png" alt="Apex locator">
+                    <div class="facility-name-overlay">
+                        <div class="facility-name">Apex locator</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
@@ -1077,7 +1208,7 @@
                         </div>
                         <div class="accordion-content">
                             <p class="faq_section">
-                               They provide strong stability even in patients with less bone volume.</p>
+                                They provide strong stability even in patients with less bone volume.</p>
                         </div>
                     </div>
 
