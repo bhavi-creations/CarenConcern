@@ -214,7 +214,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link d-block d-lg-none" href="service.php">Service</a>
+                        <a class="nav-link d-block d-lg-none" href="service.php">Services</a>
                     </li>
 
                     <!-- SERVICES Mega Menu -->
