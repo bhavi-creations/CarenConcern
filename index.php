@@ -940,7 +940,7 @@
 
 
 
-<marquee behavior="" direction="" class="second_marquee_section">Root Canal &nbsp; + &nbsp; Teeth Cleaning + &nbsp; Crowns & Bridges + &nbsp; Painless Teeth Removal + &nbsp; Tooth Colored Fillings + &nbsp; Fixing Jaw Fractures + &nbsp; Basal Implants + &nbsp; Teeth Whitening + &nbsp; Laser Dentistry</marquee>
+<marquee behavior="" direction="" class="second_marquee_section">Root Canal Treatment &nbsp; + &nbsp; Teeth Cleaning + &nbsp; Crowns & Bridges + &nbsp; Painless Teeth Removal + &nbsp; Tooth Colored Fillings + &nbsp; Fixing Jaw Fractures + &nbsp; Basal Implants + &nbsp; Teeth Whitening + &nbsp; Laser Dentistry</marquee>
 
 
 
