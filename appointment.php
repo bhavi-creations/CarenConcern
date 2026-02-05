@@ -75,6 +75,7 @@ $slots = [
         fetch('get_slots.php?date=' + date)
             .then(r => r.json())
             .then(data => {
+
                 if (data.isHoliday && data.type == 'fullday') {
                     alert("Holiday: " + data.reason);
                     slotSelect.innerHTML = '<option>No Slots Available</option>';
@@ -86,11 +87,20 @@ $slots = [
                 }
 
                 let html = '<option value="">--Select Slot--</option>';
+
                 data.slots.forEach(s => {
                     let dis = s.available <= 0 ? 'disabled' : '';
-                    html += `<option ${dis} value="${s.time}">${s.time}</option>`;
+                    let text = s.available <= 0 ?
+                        `${s.time} (FULL)` :
+                        `${s.time} (${s.available} Slots Available)`;
+
+                    html += `<option ${dis} value="${s.time}">${text}</option>`;
                 });
+
                 slotSelect.innerHTML = html;
+            })
+            .catch(() => {
+                slotSelect.innerHTML = '<option>Error loading slots</option>';
             });
     });
 </script>
