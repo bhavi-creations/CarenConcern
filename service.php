@@ -46,7 +46,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="service-card-upgraded">
                     <div class="service-img-wrapper">
-                        <img src="./assets/images/new_images/treatments 6.jpg" alt="Crowns & Bridges">
+                        <img src="./assets/images/new_images/crowns.png" alt="Crowns & Bridges">
                     </div>
 
                     <h4 class="service-title">Crowns & Bridges </h4>
