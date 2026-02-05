@@ -2911,3 +2911,12 @@ textarea.form-control {
 .facility-card:hover .facility-name {
     transform: translateY(0);
 }
+
+/* mobile device  stylings  */
+@media (max-width: 991px) {
+    .dropdown-menu.show {
+        display: block !important;
+        border: none;
+        padding-left: 20px; /* Nested feel కోసం */
+    }
+}

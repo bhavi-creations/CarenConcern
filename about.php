@@ -19,7 +19,7 @@
                     </p>
 
                     <p>
-                        A <strong>Professor in Periodontics & Implantology</strong>, and a <strong>Laser International Fellow (Singapore)</strong>,
+                        A  <strong>  Former Professor & Head of Department in Periodontics & Implantology</strong>, and a <strong>Laser International Fellow (Singapore)</strong>,
                         Dr. Sunil combines strong academic knowledge with clinical expertise. He is passionate about
                         reviving the age-old “family doctor” culture by building lifelong relationships with his patients
                         and caring for them with trust, skill, and transparency.
