@@ -15,7 +15,7 @@
                             <img src=".\assets\images\new_images\treatments 10.jpg" alt="Image" class="img-fluid">
                         </div>
                         <div class="ul-service-details-txt">
-                            <h2 class="ul-service-details-title">Clear Aligners </h2>
+                            <h2 class="ul-service-details-title">Clear aligners / Invisalign  </h2>
                             <p class="ul-service-details-descr">Clear aligners are a modern orthodontic treatment designed to straighten teeth discreetly and comfortably. They use a series of custom-made, transparent trays to gradually move your teeth into proper alignment, eliminating the need for traditional metal braces. This solution is convenient, removable, and ideal for adults and teens seeking an invisible alternative to braces.</p>
                             <div class="ul-service-details-inner-block inner-block-1">
 

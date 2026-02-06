@@ -110,17 +110,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mailDoctor->isSMTP();
         $mailDoctor->Host       = 'smtp.gmail.com';
         $mailDoctor->SMTPAuth   = true;
-        $mailDoctor->Username   = 'drsunilsathyanarayana@gmail.com';
-        $mailDoctor->Password   = 'qrlcwwkjajkixujh';
+        $mailDoctor->Username   = 'manimalladi05@gmail.com';
+        $mailDoctor->Password   = 'uajvznmirtkywvqu';
         $mailDoctor->SMTPSecure = 'tls';
         $mailDoctor->Port       = 587;
 
         $mailDoctor->setFrom(
-            'drsunilsathyanarayana@gmail.com',
+            'manimalladi05@gmail.com',
             'Clinic Appointment System'
         );
 
-        $mailDoctor->addAddress('drsunilsathyanarayana@gmail.com');
+        $mailDoctor->addAddress('manimalladi05@gmail.com');
 
         $mailDoctor->isHTML(true);
         $mailDoctor->Subject = 'New Appointment Booked';
@@ -151,20 +151,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mailPatient->isSMTP();
         $mailPatient->Host       = 'smtp.gmail.com';
         $mailPatient->SMTPAuth   = true;
-        $mailPatient->Username   = 'drsunilsathyanarayana@gmail.com';
-        $mailPatient->Password   = 'qrlcwwkjajkixujh';
+        $mailPatient->Username   = 'manimalladi05@gmail.com';
+        $mailPatient->Password   = 'mxhnohjzbkofbrbs';
         $mailPatient->SMTPSecure = 'tls';
         $mailPatient->Port       = 587;
 
         $mailPatient->setFrom(
-            'drsunilsathyanarayana@gmail.com',
-            'Care n concern'
+            'manimalladi05@gmail.com',
+            'Srinivasa Multispeciality Dental Hospital'
         );
 
         $mailPatient->addAddress($email);
 
         $mailPatient->isHTML(true);
-        $mailPatient->Subject = 'care n concern family dental clini';
+        $mailPatient->Subject = 'Appointment Confirmation';
 
         $mailPatient->Body = "
             <h2>Appointment Confirmed ✅</h2>
@@ -179,7 +179,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </table>
 
             <p>Thank you for choosing<br>
-            <b>Care n concern Family Dental Clinic </b>.</p>
+            <b>Srinivasa Multispeciality Dental Hospital</b>.</p>
         ";
 
         $mailPatient->send();

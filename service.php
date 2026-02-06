@@ -15,7 +15,7 @@
                         <img src="assets/images/new_images/treatments 20.jpg" alt="Clear Aligners">
                     </div>
 
-                    <h4 class="service-title">Clear Aligners </h4>
+                    <h4 class="service-title">Clear aligners / Invisalign </h4>
 
                     <p class="service-desc">
                         Invisible aligners to straighten teeth comfortably and effectively without traditional braces.
@@ -31,7 +31,7 @@
                         <img src="assets/images/basalimplant.png" alt="Basal Implants">
                     </div>
 
-                    <h4 class="service-title">Basal Implants </h4>
+                    <h4 class="service-title">Basal implants / Immediate loading implants </h4>
 
                     <p class="service-desc">
                         Modern implants for patients with low bone density, providing fast and stable teeth replacement.
