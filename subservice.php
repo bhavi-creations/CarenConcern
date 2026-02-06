@@ -8,7 +8,7 @@
                 <li><a href="regular_implants_treatment_in_bengaluru.php" class="active">Regular implants <i class="flaticon-arrow-up-right"></i></a></li>
 
                 <li><a href="full_mouth_rehabilitation_treatment_in_bengaluru.php" class="active"> Full Mouth Rehabilitation (FMR)<i class="flaticon-arrow-up-right"></i></a></li>
-                <li><a href="veneers_treatment_in_bengaluru.php" class="active">Veneers <i class="flaticon-arrow-up-right"></i></a></li>
+                <li><a href="veneers_treatment_in_bengaluru.php" class="active">Dental Veneers <i class="flaticon-arrow-up-right"></i></a></li>
                 <li><a href="smile_correction_treatment_in_bengaluru.php" class="active">Smile correction <i class="flaticon-arrow-up-right"></i></a></li>
                 <li><a href="digital_dentistry_treatment_in_bengaluru.php" class="active">Digital Dentistry  <i class="flaticon-arrow-up-right"></i></a></li>
 

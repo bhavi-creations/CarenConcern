@@ -197,7 +197,7 @@
                     <div class="custom-card custom_card_bg_three swiper-slide">
                         <div class="custom-card-section service_slide1">
                             <a href="root_canal_treatment_in_bengaluru.php">
-                                <h1 class="display-5 card-heading"> Root canal </h1>
+                                <h1 class="display-5 card-heading"> Root canal Treatment </h1>
 
                                 <div class="tags-container">
                                     <!-- <span class="custom-tag">Endo Care</span> -->

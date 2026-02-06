@@ -164,7 +164,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mailPatient->addAddress($email);
 
         $mailPatient->isHTML(true);
-        $mailPatient->Subject = 'Appointment Confirmation';
+        $mailPatient->Subject = 'care n concern family dental clini';
 
         $mailPatient->Body = "
             <h2>Appointment Confirmed ✅</h2>
@@ -179,7 +179,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </table>
 
             <p>Thank you for choosing<br>
-            <b>Srinivasa Multispeciality Dental Hospital</b>.</p>
+            <b>Care n concern Family Dental Clinic </b>.</p>
         ";
 
         $mailPatient->send();

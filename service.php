@@ -6,6 +6,143 @@
         <h2 class="section-title text-center d-flex justify-content-center">Our Services</h2>
         <div class="row g-4 justify-content-center">
 
+
+
+            <!-- clear Aligners -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card-upgraded">
+                    <div class="service-img-wrapper">
+                        <img src="assets/images/new_images/treatments 20.jpg" alt="Clear Aligners">
+                    </div>
+
+                    <h4 class="service-title">Clear Aligners </h4>
+
+                    <p class="service-desc">
+                        Invisible aligners to straighten teeth comfortably and effectively without traditional braces.
+                    </p>
+
+                    <a href="invisalignaligners_clearaligners_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
+                </div>
+            </div>
+            <!-- Basal Implants -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card-upgraded">
+                    <div class="service-img-wrapper">
+                        <img src="assets/images/basalimplant.png" alt="Basal Implants">
+                    </div>
+
+                    <h4 class="service-title">Basal Implants </h4>
+
+                    <p class="service-desc">
+                        Modern implants for patients with low bone density, providing fast and stable teeth replacement.
+                    </p>
+
+                    <a href="basal_implants_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- regular implants-->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card-upgraded">
+                    <div class="service-img-wrapper">
+                        <img src="assets/images/new_images/regular_implants.png" alt="Fixing Jaw Fractures">
+                    </div>
+
+                    <h4 class="service-title">Regular Implants </h4>
+
+                    <p class="service-desc">
+                        Expert bone realignment and stabilization ensuring pain-free recovery and restored function.
+                    </p>
+
+                    <a href="regular_implants_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
+                </div>
+            </div>
+
+
+
+
+            <!-- full mouth rehabilitation -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card-upgraded">
+                    <div class="service-img-wrapper">
+                        <img src="assets/images/new_images/full_mouth.png" alt="Fixing Jaw Fractures">
+                    </div>
+
+                    <h4 class="service-title">Full Mouth Rehabilitation </h4>
+
+                    <p class="service-desc">
+                        Expert full mouth rehabilitation ensuring comfort, pain-free recovery, and restored function.
+                    </p>
+
+                    <a href="full_mouth_rehabilitation_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
+                </div>
+            </div>
+
+
+            <!--  Dental Veneers-->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card-upgraded">
+                    <div class="service-img-wrapper">
+                        <img src="assets/images/new_images/dental veeners.png" alt="Fixing Jaw Fractures">
+                    </div>
+
+                    <h4 class="service-title"> Dental Veneers </h4>
+
+                    <p class="service-desc">
+                        Precision dental veneer treatment ensuring comfort, natural appearance, and confident smiles
+                    </p>
+
+                    <a href="veneers_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- Smile correction-->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card-upgraded">
+                    <div class="service-img-wrapper">
+                        <img src="assets/images/new_images/smile correction.png" alt="Fixing Jaw Fractures">
+                    </div>
+
+                    <h4 class="service-title"> Smile correction </h4>
+
+                    <p class="service-desc">
+                        Advanced smile correction ensuring comfort, confidence, and aesthetic enhancement.
+                    </p>
+
+                    <a href="smile_correction_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
+                </div>
+            </div>
+
+
+            <!--  Digital Dentistry-->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card-upgraded">
+                    <div class="service-img-wrapper">
+                        <img src="assets/images/new_images/digital dentistry.png" alt="Fixing Jaw Fractures">
+                    </div>
+
+                    <h4 class="service-title"> Digital Dentistry </h4>
+
+                    <p class="service-desc">
+                        Modern digital dentistry delivering precision, comfort, and reliable results.
+                    </p>
+
+                    <a href="digital_dentistry_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
+                </div>
+            </div>
+
+
+
+
+
             <!-- Root Canal -->
             <div class="col-lg-4 col-md-6">
                 <div class="service-card-upgraded">
@@ -96,22 +233,6 @@
             </div>
 
 
-            <!-- Basal Implants -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card-upgraded">
-                    <div class="service-img-wrapper">
-                        <img src="assets/images/basalimplant.png" alt="Basal Implants">
-                    </div>
-
-                    <h4 class="service-title">Basal Implants </h4>
-
-                    <p class="service-desc">
-                        Modern implants for patients with low bone density, providing fast and stable teeth replacement.
-                    </p>
-
-                    <a href="basal_implants_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
-                </div>
-            </div>
 
             <!-- Teeth Whitening -->
             <div class="col-lg-4 col-md-6">
@@ -151,22 +272,6 @@
 
 
 
-            <!-- clear Aligners -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card-upgraded">
-                    <div class="service-img-wrapper">
-                        <img src="assets/images/new_images/treatments 20.jpg" alt="Clear Aligners">
-                    </div>
-
-                    <h4 class="service-title">Clear Aligners </h4>
-
-                    <p class="service-desc">
-                        Invisible aligners to straighten teeth comfortably and effectively without traditional braces.
-                    </p>
-
-                    <a href="invisalignaligners_clearaligners_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
-                </div>
-            </div>
 
 
             <!-- Laser Dentistry -->
