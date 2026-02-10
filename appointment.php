@@ -66,6 +66,15 @@ $slots = [
     </div>
 </section>
 
+<div class="map-container"
+    style="border-radius: 15px; overflow: hidden; height: 100%; min-height: 450px;">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.1794341972895!2d77.53775897454643!3d12.960367315125565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3e0b271d0cf5%3A0x6777a67f630670a4!2sCare%20n%20Concern%20Family%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1763552838013!5m2!1sen!2sin"
+        width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+</div>
+
+
 <script>
     document.getElementById('appointment_date').addEventListener('change', function() {
         const date = this.value;

@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/style2.css">
 
-
+ <link href="./assets/images/cnc_logo.png" rel="icon">
 
     <!-- image slider  -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

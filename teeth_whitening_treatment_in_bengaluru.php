@@ -12,7 +12,7 @@
                 <div class="col-lg-8 col-md-7">
                     <div>
                         <div class="ul-service-details-img">
-                            <img src="assets/images/teeth-whitening.png" alt="Image" class="img-fluid">
+                            <img src="assets/images/new_images/treatments 13.jpg" alt="Image" class="img-fluid">
                         </div>
                         <div class="ul-service-details-txt">
                             <h2 class="ul-service-details-title">Teeth Whitening </h2>
