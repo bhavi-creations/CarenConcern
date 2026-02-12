@@ -15,11 +15,11 @@
                     <div class="carousel-inner rounded-4 shadow p-3">
 
                         <div class="carousel-item active">
-                           <img src="./assets/images/new_images/clinic_1.png" alt="" class="img-fluid">
+                            <img src="./assets/images/new_images/clinic_1.png" alt="" class="img-fluid">
                         </div>
 
                         <div class="carousel-item">
-                        <img src="./assets/images/new_images/clinic_2.png" alt="" class="img-fluid">
+                            <img src="./assets/images/new_images/clinic_2.png" alt="" class="img-fluid">
 
                         </div>
 
@@ -57,6 +57,8 @@
                     </div>
                 </div>
             </div>
+ 
+
         </div>
     </div>
 </section>
@@ -183,7 +185,7 @@
             <h2 class="display-5 fw-bold mb-4">Ready to Transform Your Smile?</h2>
             <p class="lead mb-4">Schedule your appointment today and experience the difference of compassionate, professional dental care.</p>
             <button class="btn btn-custom btn-lg me-3"><i class="fas fa-calendar-alt me-2"></i> <a href="appointment.php" class="contact_link">Book Appointment</a> </button>
-           <button  class="btn btn-custom btn-lg"><i class="fas fa-phone me-2"></i> </i> <a href="contact.php" class="contact_link" >Call Us Now</a> </button></a>
+            <button class="btn btn-custom btn-lg"><i class="fas fa-phone me-2"></i> </i> <a href="contact.php" class="contact_link">Call Us Now</a> </button></a>
             <p class="mt-4 mb-0">We welcome new patients of all ages and are excited to be your family's go-to dental care provider!</p>
         </div>
     </div>

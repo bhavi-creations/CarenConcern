@@ -629,6 +629,84 @@
     </div>
 </section>
 
+<style>
+    .reels-section {
+        padding: 40px 0;
+    }
+
+    .reel-box video {
+        width: 100%;
+        height: 380px;
+        /* 👈 HEIGHT REDUCED */
+        object-fit: contain;
+        /* ❌ CUT AVVADHU */
+        background: #000;
+        /* Black background for empty space */
+        border-radius: 12px;
+        border: 1px solid #222;
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+        .reel-box video {
+            height: 380px;
+        }
+    }
+
+    /* PDF Preview */
+    .pdf-preview {
+        width: 100%;
+        height: 380px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+
+    /* Popup Background */
+    .pdf-modal {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Popup Box */
+    .pdf-modal-content {
+        width: 90%;
+        height: 90%;
+        background: #fff;
+        margin: 3% auto;
+        border-radius: 10px;
+        padding: 10px;
+        position: relative;
+    }
+
+    /* Full PDF inside popup */
+    .pdf-full {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    /* Close Button */
+    .pdf-close {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        color: red;
+    }
+</style>
+
+
+
+
+
 <section>
     <div class="container">
         <div class="carousel-wrapper">
@@ -793,8 +871,60 @@
 
 
 
+<section class="reels-section">
+    <div class="container">
+        <div class="row">
+<!-- <h1 class="about_dental_section">expert Team</h1> -->
+            <div class="col-md-6 reel-box">
+                <h1 class="about_dental_section  d-flex justify-content-center">our clinic shot</h1>
+                <video src="./assets/images/new_images/clini_video.mp4"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    controls>
+                </video>
+            </div>
 
 
+            <div class="col-md-6 reel-box mt-2">
+                <h1 class="  about_dental_section d-flex justify-content-center">Our Services & Pricing Details</h1>
+
+                <!-- PDF Preview -->
+                <iframe
+                    src="./assets/images/new_images/cnc treatment pdf.pdf"
+                    class="pdf-preview">
+                </iframe>
+
+                <!-- Open PDF Button -->
+                <button class="btn btn-primary mt-2" onclick="openPDF()">Open PDF</button>
+            </div>
+
+            <!-- PDF POPUP MODAL -->
+            <div id="pdfModal" class="pdf-modal">
+                <div class="pdf-modal-content">
+                    <span class="pdf-close" onclick="closePDF()">&times;</span>
+
+                    <iframe src="./assets/images/new_images/cnc treatment pdf.pdf" class="pdf-full"></iframe>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</section>
+
+
+<script>
+    function openPDF() {
+        document.getElementById("pdfModal").style.display = "block";
+    }
+
+    function closePDF() {
+        document.getElementById("pdfModal").style.display = "none";
+    }
+</script>
 
 
 <!-- <section class="advanced-facilities">
