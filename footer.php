@@ -72,7 +72,7 @@
             <div class="col-md-6 text-center text-md-end d-none d-md-block">
                 <a href="https://www.facebook.com/hontistry" class="text-decoration-none social_media me-2" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
                 <a href="https://www.youtube.com/channel/UCmE0BrRzE5dzfljOoCx_PuQ" class="text-decoration-none  social_media me-2" target="_blank"><i class="fab fa-youtube"></i> Youtube</a>
-                <a href="#" class="text-decoration-none social_media me-2"><i class="fab fa-instagram" target="_blank"></i> Instagram</a>
+                <a href="https://www.instagram.com/care_n_concern/" class="text-decoration-none social_media me-2"><i class="fab fa-instagram" target="_blank"></i> Instagram</a>
                 <a href="https://www.linkedin.com/company/hontistry/" class="text-decoration-none social_media" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
             </div>
         </div>

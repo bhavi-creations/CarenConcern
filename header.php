@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/style2.css">
 
- <link href="./assets/images/cnc_logo.png" rel="icon">
+    <link href="./assets/images/cnc_logo.png" rel="icon">
 
     <!-- image slider  -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -178,7 +178,7 @@
     <!-- boostrap icons cdn link   -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-
+    <meta name="google-site-verification" content="Wehzpr13wXWtahW_gnYctm8cBXe0LxR7vAzMqhj3KJM" />
 
 
 </head>

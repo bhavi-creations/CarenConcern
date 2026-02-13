@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Block private folders (only if they exist)
+Disallow: /admin/
+Disallow: /config/
+Disallow: /includes/
+Disallow: /cgi-bin/
+
+Sitemap: https://carenconcern.com/sitemap.xml
