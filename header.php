@@ -192,7 +192,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-3" style="border-bottom: 2px solid grey;">
 
 
-        <div class="container">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="./assets/images/cnc_logo.png" alt="Denta Care" class="img-fluid" style="width: 100px; height: 100px; ">
                 <!-- <img src="./assets/images/logo.jpg" alt="Denta Care" class="img-fluid" style="width: 100px; height: 80px; "> -->
@@ -259,8 +259,18 @@
                         <a class="nav-link" href="blog.php">Blogs</a>
                     </li>
 
+                      <li class="nav-item">
+                        <a class="nav-link" href="reviews.php">Google Reviews</a>
+                        <!-- <a class="nav-link" href="reviews.php">Testimonials</a> -->
+                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="contact.php">Contact</a>
+                    </li>
+
+                    
+ <li class="nav-item d-lg-none">
+                        <a class="nav-link " href="appointment.php">appointment</a>
                     </li>
 
                 </ul>
