@@ -259,7 +259,7 @@
                         <a class="nav-link" href="blog.php">Blogs</a>
                     </li>
 
-                      <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="reviews.php">Google Reviews</a>
                         <!-- <a class="nav-link" href="reviews.php">Testimonials</a> -->
                     </li>
@@ -268,8 +268,8 @@
                         <a class="nav-link" href="contact.php">Contact</a>
                     </li>
 
-                    
- <li class="nav-item d-lg-none">
+
+                    <li class="nav-item d-lg-none">
                         <a class="nav-link " href="appointment.php">appointment</a>
                     </li>
 
