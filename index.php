@@ -468,7 +468,7 @@
 
 
 <!-- why choose us  -->
-<div class="container" style="padding: 40px;">
+<div class="container" style="padding: 10px;">
     <div class="dental-why-choose-section">
         <div class="dental-section-title">
             <h2>Why Choose Us</h2>
@@ -897,7 +897,7 @@
 
                 <!-- PDF Preview -->
                 <iframe
-                    src="./assets/images/new_images/cnc treatment pdf.pdf"
+                    src="./assets/images/new_images/CNC_Treatment_Price_list.pdf"
                     class="pdf-preview">
                 </iframe>
 
