@@ -82,7 +82,7 @@
 
 
 <!-- footer link for  choose us  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
 
 <a href="https://api.whatsapp.com/send?phone=919845802787" style="color: #fff;" class="whatsapp-link"
     target="_blank">
@@ -93,7 +93,7 @@
 <?PHP include 'c2.php'; ?>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
 <script>
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -130,6 +130,8 @@
         });
     });
 </script>
+
+
 <!-- img slider code   -->
 <script>
     var swiper = new Swiper(".custom-slide-content", {

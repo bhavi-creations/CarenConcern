@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'header.php' ; ?>
 
 <section class="sample_secrtion">
     <img src="./assets/images/new_images/index_12.png" alt="" class="img-fluid">
@@ -663,7 +663,7 @@
                             <img src="./assets/images/new_images/kavya.png" alt="Dr. Andru" class="doctor-image">
                         </div>
                         <h3 class="doctor-name">Dr Kavya</h3>
-                        <p class="doctor-specialty">Associate Dentist</p>
+                        <p class="doctor-specialty">MDS-Associate Dentist </p>
                     </div>
                 </div>
 
@@ -873,15 +873,60 @@
         cursor: pointer;
         color: red;
     }
+
+
+    .pdf-preview {
+        width: 100%;
+        height: 320px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+    }
+
+    .pdf-modal {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .pdf-modal-content {
+        background: #fff;
+        width: 90%;
+        height: 90%;
+        margin: 3% auto;
+        border-radius: 10px;
+        padding: 10px;
+        position: relative;
+    }
+
+    .pdf-close {
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        right: 15px;
+        top: 5px;
+    }
+
+    .pdf-full {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
 </style>
 
 
 <section class="reels-section">
     <div class="container">
         <div class="row">
-<!-- <h1 class="about_dental_section">expert Team</h1> -->
+
+            <!-- VIDEO -->
             <div class="col-md-6 reel-box">
-                <h1 class="about_dental_section  d-flex justify-content-center">our clinic shot</h1>
+                <h1 class="about_dental_section d-flex justify-content-center">Our Clinic Shot</h1>
+
                 <video src="./assets/images/new_images/clini_video.mp4"
                     autoplay
                     muted
@@ -891,13 +936,13 @@
                 </video>
             </div>
 
-
+            <!-- PDF SECTION -->
             <div class="col-md-6 reel-box mt-2">
-                <h1 class="  about_dental_section d-flex justify-content-center">Treatment Price list</h1>
+                <h1 class="about_dental_section d-flex justify-content-center">Treatment Price List</h1>
 
-                <!-- PDF Preview -->
+                <!-- PDF Preview (Mobile Fix) -->
                 <iframe
-                    src="./assets/images/new_images/CNC_Treatment_Price_list.pdf"
+                    src="https://docs.google.com/gview?url=https://YOURDOMAIN.com/assets/images/new_images/cnc-treatment-pdf.pdf&embedded=true"
                     class="pdf-preview">
                 </iframe>
 
@@ -905,20 +950,23 @@
                 <button class="btn btn-primary mt-2" onclick="openPDF()">Open PDF</button>
             </div>
 
-            <!-- PDF POPUP MODAL -->
+            <!-- PDF MODAL -->
             <div id="pdfModal" class="pdf-modal">
                 <div class="pdf-modal-content">
                     <span class="pdf-close" onclick="closePDF()">&times;</span>
 
-                    <iframe src="./assets/images/new_images/CNC_Treatment_Price_list.pdf" class="pdf-full"></iframe>
+                    <iframe
+                        src="https://docs.google.com/gview?url=https://YOURDOMAIN.com/assets/images/new_images/cnc-treatment-pdf.pdf&embedded=true"
+                        class="pdf-full">
+                    </iframe>
+
                 </div>
             </div>
-
-
 
         </div>
     </div>
 </section>
+
 
 
 <script>
@@ -930,6 +978,7 @@
         document.getElementById("pdfModal").style.display = "none";
     }
 </script>
+
 
 
 <!-- <section class="advanced-facilities">
