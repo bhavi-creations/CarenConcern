@@ -16,7 +16,7 @@ $slots = [
 ];
 ?>
 
-<?php include 'header.php'; ?>
+<?php include 'navbar.php' ; ?>
 
 <section id="appointment" class="appointment-section">
     <div class="container">

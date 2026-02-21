@@ -24,7 +24,7 @@ $stmt->execute();
 $result = $stmt->get_result();
 ?>
 
-<?php include 'header.php'; ?>
+<?php include 'navbar.php' ; ?>
 
 
 

@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'navbar.php' ; ?>
 
 
 <section class="dental-services-section ul-section-spacing">

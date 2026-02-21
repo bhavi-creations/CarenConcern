@@ -1,4 +1,4 @@
-<?php include 'header.php' ; ?>
+<?php include 'navbar.php' ; ?>
 
 <section class="sample_secrtion">
     <img src="./assets/images/new_images/index_12.png" alt="" class="img-fluid">
