@@ -215,11 +215,11 @@
 
         @media (min-width:992px) and (max-width:1260px) {
             .nav-link {
-                padding: 12px 14px !important;
+                padding: 12px 7px !important;
             }
         }
 
-    
+
 
         .nav-link:hover {
             color: var(--sreenika-accent) !important;
@@ -253,7 +253,8 @@
         @media (max-width: 991px) {
             .navbar-collapse {
                 /* background: rgba(0, 34, 68, 0.98); */
-                background-color: rgb(190 199 208 / 32%);;
+                background-color: rgb(190 199 208 / 32%);
+                ;
                 border-radius: 15px;
                 padding: 20px;
                 margin-top: 15px;
@@ -311,12 +312,12 @@
         }
 
 
-        .index_appointment_buton{
-            background-color: white ;
+        .index_appointment_buton {
+            background-color: white;
             color: black !important;
         }
 
-        .index_appointment_buton:hover{
+        .index_appointment_buton:hover {
             background-color: black;
             border: 1px solid white;
             color: white !important;
@@ -368,7 +369,7 @@
                                     Speech Services <i class="fa fa-angle-right ms-2"></i>
                                 </a>
                                 <ul class="dropdown-menu">
-                                     <li><a class="dropdown-item" href="root_canal_treatment_in_bengaluru.php">Painless Root Canal</a></li>
+                                    <li><a class="dropdown-item" href="root_canal_treatment_in_bengaluru.php">Painless Root Canal</a></li>
                                     <li><a class="dropdown-item" href="teeth_cleaning_treatment_in_bengaluru.php">Teeth Cleaning</a></li>
                                     <li><a class="dropdown-item" href="dentalcrown_bridge_treatment_in_bengaluru.php">Crowns & Bridges</a></li>
                                     <li><a class="dropdown-item" href="teeth_removal_treatment_in_bengaluru.php">Painless Teeth Removal</a></li>
@@ -378,10 +379,10 @@
                             </li>
                             <li class="dropdown-submenu">
                                 <a class="dropdown-item d-flex justify-content-between align-items-center" href="service.php#hearing_service">
-                                   Specialised Treatment <i class="fa fa-angle-right ms-2"></i>
+                                    Specialised Treatment <i class="fa fa-angle-right ms-2"></i>
                                 </a>
                                 <ul class="dropdown-menu">
-                                      <li><a class="dropdown-item" href="basal_implants_treatment_in_bengaluru.php">Basal implants / Immediate loading implants </a></li>
+                                    <li><a class="dropdown-item" href="basal_implants_treatment_in_bengaluru.php">Basal implants / Immediate loading implants </a></li>
                                     <li><a class="dropdown-item" href="laser_dentistry_treatment_in_bengaluru.php">Laser Dentistry</a></li>
                                     <li><a class="dropdown-item" href="teeth_whitening_treatment_in_bengaluru.php">Teeth Whitening</a></li>
                                     <li><a class="dropdown-item" href="invisalignaligners_clearaligners_treatment_in_bengaluru.php">Clear aligners / Invisalign</a></li>
@@ -389,9 +390,15 @@
                             </li>
                         </ul>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clinic.php">Clinic</a>
+                    </li>
 
                     <li class="nav-item"><a class="nav-link" href="blog.php">Blogs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.php">Gallery</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.php">Reviews</a>
+                        <!-- <a class="nav-link" href="reviews.php">Testimonials</a> -->
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
                     <li class="nav-item"><a class="nav-link index_appointment_buton  ms-lg-3" href="appointment.php" style="border-radius: 10px;">Appointment</a></li>
                 </ul>
