@@ -942,7 +942,7 @@
 
                 <!-- PDF Preview (Mobile Fix) -->
                 <iframe
-                    src="https://docs.google.com/gview?url=https://YOURDOMAIN.com/assets/images/new_images/cnc-treatment-pdf.pdf&embedded=true"
+                    src="./assets/CNC_Treatment_Price_list.pdf"
                     class="pdf-preview">
                 </iframe>
 
@@ -956,7 +956,7 @@
                     <span class="pdf-close" onclick="closePDF()">&times;</span>
 
                     <iframe
-                        src="https://docs.google.com/gview?url=https://YOURDOMAIN.com/assets/images/new_images/cnc-treatment-pdf.pdf&embedded=true"
+                        src="./assets/CNC_Treatment_Price_list.pdf"
                         class="pdf-full">
                     </iframe>
 
