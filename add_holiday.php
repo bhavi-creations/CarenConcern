@@ -12,7 +12,7 @@ if (isset($_POST['submit'])) {
     echo "<script>alert('Holiday Added');</script>";
 }
 ?>
-<?php include 'navbar.php' ; ?>
+<?php include 'header.php' ?>
 
 
 

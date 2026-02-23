@@ -1,4 +1,4 @@
-<?php include 'navbar.php' ; ?>
+<?php include 'header.php' ?>
 
 <section class='mt-5'>
     <div class="container">
