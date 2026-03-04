@@ -108,7 +108,7 @@ $result = $conn->query("SELECT * FROM services ORDER BY id DESC");
         <footer class="sticky-footer bg-white">
             <div class="container my-auto">
                 <div class="copyright text-center my-auto">
-                    <span>© 2024 VisionDentalhospital. All Rights Reserved. Designed & Developed by <a href="https://bhavicreations.com/" target="_blank">Bhavi Creations</a></span>
+                    <span>© 2024 Care n Concern Family Dental Clinic . All Rights Reserved. Designed & Developed by <a href="https://bhavicreations.com/" target="_blank">Bhavi Creations</a></span>
                 </div>
             </div>
         </footer>
