@@ -1948,7 +1948,7 @@ a {
     text-decoration: none;
     font-size: 35px;
     text-align: center;
-    z-index: 99;
+    /* z-index: 99; */
 }
 
 /* service page  stylings  */
