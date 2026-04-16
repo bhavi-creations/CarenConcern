@@ -1,860 +1,727 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denta Care - Every Smile Matters</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333;
-            overflow-x: hidden;
-        }
-
-        /* Header */
-        header {
-            background: white;
-            padding: 20px 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #2196F3;
-        }
-
-        nav {
-            display: flex;
-            gap: 30px;
-            align-items: center;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #666;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #2196F3;
-        }
-
-        .btn-primary {
-            background: #FF6B35;
-            color: white;
-            padding: 12px 30px;
-            border-radius: 25px;
-            border: none;
-            cursor: pointer;
-            font-weight: 600;
-            transition: all 0.3s;
-        }
-
-        .btn-primary:hover {
-            background: #ff5520;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
-            padding: 80px 5% 100px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero-content {
-            flex: 1;
-            max-width: 600px;
-        }
-
-        .hero h1 {
-            font-size: 64px;
-            font-weight: 800;
-            color: #64B5F6;
-            line-height: 1.1;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-        }
-
-        .hero p {
-            color: #666;
-            font-size: 16px;
-            margin-bottom: 30px;
-            line-height: 1.6;
-        }
-
-        .hero-image {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-
-        .tooth-splash {
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, #2196F3 0%, #1976D2 100%);
-            border-radius: 50%;
-            position: relative;
-            animation: float 3s ease-in-out infinite;
-            box-shadow: 0 20px 60px rgba(33, 150, 243, 0.4);
-        }
-
-        .tooth-splash::before {
-            content: '🦷';
-            font-size: 200px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-        }
-
-        /* Navigation Tabs */
-        .nav-tabs {
-            background: white;
-            padding: 20px 5%;
-            display: flex;
-            gap: 40px;
-            justify-content: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-
-        .nav-tabs a {
-            text-decoration: none;
-            color: #666;
-            font-weight: 600;
-            transition: color 0.3s;
-            position: relative;
-        }
-
-        .nav-tabs a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: #2196F3;
-            transition: width 0.3s;
-        }
-
-        .nav-tabs a:hover {
-            color: #2196F3;
-        }
-
-        .nav-tabs a:hover::after {
-            width: 100%;
-        }
-
-        /* About Section */
-        .about {
-            padding: 80px 5%;
-            background: white;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .section-title h2 {
-            font-size: 36px;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .about-content {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .about-image {
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-            height: 250px;
-            background: #E3F2FD;
-        }
-
-        .about-image:hover {
-            transform: translateY(-10px);
-        }
-
-        /* Treatments Section */
-        .treatments {
-            padding: 80px 5%;
-            background: #F5F5F5;
-        }
-
-        .treatment-cards {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .treatment-card {
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            text-align: center;
-            transition: all 0.3s;
-            cursor: pointer;
-        }
-
-        .treatment-card:nth-child(1) {
-            background: linear-gradient(135deg, #E1F5FE 0%, #B3E5FC 100%);
-        }
-
-        .treatment-card:nth-child(2) {
-            background: linear-gradient(135deg, #FCE4EC 0%, #F8BBD0 100%);
-        }
-
-        .treatment-card:nth-child(3) {
-            background: linear-gradient(135deg, #E0F2F1 0%, #B2DFDB 100%);
-        }
+    <title>Care 'n' Concern Family Dental Clinic </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet"> -->
+
+    <!-- why chose us links -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style2.css">
+
+    <link href="./assets/images/cnc_logo.png" rel="icon">
+
+    <!-- image slider  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+
+
+
+
+    <meta name="title" content=" CARE N CONCERN Dental Clinic | Advanced & Family-Friendly Dentistry">
+    <meta name="description" content="Experience gentle, expert dental care at CARE N CONCERN Dental Clinic. We offer painless treatments, cosmetic dentistry, implants, braces, root canals, and complete family dental care in a safe, caring environment.">
+
+    <link rel="canonical" href="https://carenconcern.com/" />
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Dentist",
+            "name": "CARE N CONCERN Dental Clinic",
+            "url": "https://carenconcern.com/",
+            "description": "CARE N CONCERN Dental Clinic offers family-friendly, modern dental treatments including root canals, braces, implants, and cosmetic dentistry in Vijayanagar, Bengaluru.",
+            "telephone": "+91 98458 02787",
+            "email": "drsunil19@yahoo.com",
+            "logo": "https://carenconcern.com/logo.png",
+            "image": "https://carenconcern.com/clinic-image.jpg",
+
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "2462/37, 7th B Main Rd, Hampi Nagar, Vijayanagar",
+                "addressLocality": "Bengaluru",
+                "addressRegion": "Karnataka",
+                "postalCode": "560104",
+                "addressCountry": "IN"
+            },
+
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "12.9603621",
+                "longitude": "77.5403339"
+            },
+
+            "openingHoursSpecification": [{
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Monday",
+                    "opens": "10:30",
+                    "closes": "14:30"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Monday",
+                    "opens": "16:00",
+                    "closes": "20:30"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Tuesday",
+                    "opens": "10:30",
+                    "closes": "14:30"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Tuesday",
+                    "opens": "16:00",
+                    "closes": "20:30"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Wednesday",
+                    "opens": "10:30",
+                    "closes": "14:30"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Wednesday",
+                    "opens": "16:00",
+                    "closes": "20:30"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Thursday",
+                    "opens": "10:30",
+                    "closes": "14:30"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Thursday",
+                    "opens": "16:00",
+                    "closes": "20:30"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Friday",
+                    "opens": "10:30",
+                    "closes": "14:30"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Friday",
+                    "opens": "16:00",
+                    "closes": "20:30"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Saturday",
+                    "opens": "10:30",
+                    "closes": "14:30"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Saturday",
+                    "opens": "16:00",
+                    "closes": "20:30"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Sunday",
+                    "opens": "Closed",
+                    "closes": "Closed"
+                }
+            ],
+
+            "sameAs": [
+                "https://www.facebook.com/hontistry?rdid=Je9ZlzsaSmwTi1VM&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17i4mugtoM%2F"
+            ],
+
+            "priceRange": "$$"
+        }
+    </script>
+
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CARE N CONCERN Dental Clinic | Trusted Family Dental Care in Vijayanagar, Bengaluru">
+    <meta property="og:description" content="Experience painless, modern dentistry at CARE N CONCERN Dental Clinic. Root canal, implants, aligners, laser dentistry & complete family dental care under one roof.">
+    <meta property="og:url" content="https://carenconcern.com/">
+    <meta property="og:site_name" content="CARE N CONCERN Dental Clinic">
+    <meta property="og:image" content="https://carenconcern.com/og-image.jpg">
+    <meta property="og:image:alt" content="CARE N CONCERN Dental Clinic">
+    <meta property="og:locale" content="en_IN">
+
+
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CARE N CONCERN Dental Clinic | Trusted Family Dental Care">
+    <meta name="twitter:description" content="Modern & gentle dental care in Vijayanagar, Bengaluru. Implants, aligners, RCT, laser dentistry & more.">
+    <meta name="twitter:image" content="https://carenconcern.com/og-image.jpg">
+
+    <!-- boostrap icons cdn link   -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <meta name="google-site-verification" content="Wehzpr13wXWtahW_gnYctm8cBXe0LxR7vAzMqhj3KJM" />
 
-        .treatment-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-        }
-
-        .treatment-card h3 {
-            font-size: 24px;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .treatment-card p {
-            color: #666;
-            line-height: 1.6;
-        }
-
-        /* Consultation Section */
-        .consultation {
-            padding: 80px 5%;
-            background: linear-gradient(135deg, #81D4FA 0%, #4FC3F7 100%);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .consultation-content {
-            flex: 1;
-        }
-
-        .consultation-content h2 {
-            font-size: 42px;
-            color: white;
-            margin-bottom: 20px;
-        }
-
-        .consultation-content h2 span {
-            color: #FF6B35;
-        }
-
-        .consultation-image {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-        }
-
-        .consultation-image img {
-            width: 300px;
-            border-radius: 20px;
-        }
-
-        /* Team Section */
-        .team {
-            padding: 80px 5%;
-            background: white;
-        }
-
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .team-member {
-            text-align: center;
-            transition: transform 0.3s;
-        }
-
-        .team-member:hover {
-            transform: translateY(-10px);
-        }
-
-        .team-photo {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            background: #E3F2FD;
-            margin: 0 auto 20px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .team-member h4 {
-            font-size: 20px;
-            color: #333;
-            margin-bottom: 5px;
-        }
-
-        .team-member p {
-            color: #666;
-            font-size: 14px;
-        }
-
-        /* Services Navigation */
-        .services-nav {
-            background: white;
-            padding: 20px 5%;
-            display: flex;
-            gap: 40px;
-            justify-content: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-
-        .services-nav a {
-            text-decoration: none;
-            color: #666;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-
-        .services-nav a:hover {
-            color: #2196F3;
-        }
-
-        /* Appointment Section */
-        .appointment {
-            padding: 80px 5%;
-            background: #F5F5F5;
-            display: flex;
-            gap: 50px;
-            align-items: center;
-        }
-
-        .appointment-form {
-            flex: 1;
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .appointment-form h2 {
-            font-size: 32px;
-            margin-bottom: 30px;
-            color: #333;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            font-size: 14px;
-            transition: border 0.3s;
-        }
-
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #2196F3;
-        }
-
-        .appointment-image {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-        }
 
-        /* Footer */
-        footer {
-            background: linear-gradient(135deg, #64B5F6 0%, #2196F3 100%);
-            color: white;
-            padding: 60px 5% 30px;
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-
-        .footer-section h3 {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-
-        .footer-section ul {
-            list-style: none;
-        }
-
-        .footer-section ul li {
-            margin-bottom: 10px;
-        }
-
-        .footer-section a {
-            color: white;
-            text-decoration: none;
-            transition: opacity 0.3s;
-        }
-
-        .footer-section a:hover {
-            opacity: 0.7;
-        }
-
-        .footer-bottom {
-            text-align: center;
-            padding-top: 30px;
-            border-top: 1px solid rgba(255,255,255,0.2);
-        }
-
-        @media (max-width: 768px) {
-            .hero {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .hero h1 {
-                font-size: 42px;
-            }
-
-            .treatment-cards,
-            .team-grid,
-            .about-content {
-                grid-template-columns: 1fr;
-            }
-
-            .appointment {
-                flex-direction: column;
-            }
-
-            .footer-content {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 </head>
+
+
+
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo">DENTA CARE</div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-            <button class="btn-primary">Book Now</button>
-        </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>EVERY SMILE MATTERS</h1>
-            <p>We provide comprehensive dental care with state-of-the-art technology and experienced professionals dedicated to your oral health. Your smile is our priority.</p>
-            <button class="btn-primary">Get Started</button>
-        </div>
-        <div class="hero-image">
-            <div class="tooth-splash"></div>
-        </div>
-    </section>
 
-    <!-- Navigation Tabs -->
-    <div class="nav-tabs">
-        <a href="#braces">Braces</a>
-        <a href="#denta-care">Denta Care</a>
-        <a href="#dentist">Dentist</a>
-        <a href="#dentures">Dentures</a>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3" style="border-bottom: 2px solid grey;">
+
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/cnc_logo.png" alt="Denta Care" class="img-fluid" style="width: 100px; height: 100px; ">
+                <!-- <img src="./assets/images/logo.jpg" alt="Denta Care" class="img-fluid" style="width: 100px; height: 80px; "> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.php">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.php">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link d-block d-lg-none" href="service.php">Services</a>
+                    </li>
+
+                    <!-- SERVICES Mega Menu -->
+                    <li class="nav-item dropdown d-none d-lg-block">
+                        <a class="nav-link dropdown-toggle" href="service.php" id="servicesDropdown">
+                            Service
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">General Dentistry</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="root_canal_treatment_in_bengaluru.php">Painless Root Canal</a></li>
+                                    <li><a class="dropdown-item" href="teeth_cleaning_treatment_in_bengaluru.php">Teeth Cleaning</a></li>
+                                    <li><a class="dropdown-item" href="dentalcrown_bridge_treatment_in_bengaluru.php">Crowns & Bridges</a></li>
+                                    <li><a class="dropdown-item" href="teeth_removal_treatment_in_bengaluru.php">Painless Teeth Removal</a></li>
+                                    <li><a class="dropdown-item" href="tooth_colored_fillings_treatment_in_bengaluru.php">Tooth Colored Fillings</a></li>
+                                    <li><a class="dropdown-item" href="jaw_fractures_treatment_in_bengaluru.php">Fixing Jaw Fractures</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Specialised Treatment</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="basal_implants_treatment_in_bengaluru.php">Basal implants / Immediate loading implants </a></li>
+                                    <li><a class="dropdown-item" href="laser_dentistry_treatment_in_bengaluru.php">Laser Dentistry</a></li>
+                                    <li><a class="dropdown-item" href="teeth_whitening_treatment_in_bengaluru.php">Teeth Whitening</a></li>
+                                    <li><a class="dropdown-item" href="invisalignaligners_clearaligners_treatment_in_bengaluru.php">Clear aligners / Invisalign</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="clinic.php">Clinic</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.php">Blogs</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.php">Google Reviews</a>
+                        <!-- <a class="nav-link" href="reviews.php">Testimonials</a> -->
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.php">Contact</a>
+                    </li>
+
+
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link " href="appointment.php">appointment</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <a href="appointment.php" class="btn-book index_button_section d-none d-lg-inline-flex">BOOK APPOINTMENT</a>
+        </div>
+    </nav>
+
+
+    <!-- sub service open script  -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+            const isDesktop = () => window.innerWidth >= 992;
+
+            const closeAll = () => {
+                document.querySelectorAll('.nav-item.dropdown').forEach(d => {
+                    d.classList.remove('show');
+                    const menu = d.querySelector('.dropdown-menu');
+                    if (menu) menu.classList.remove('show');
+                });
+
+                document.querySelectorAll('.dropdown-submenu').forEach(s => {
+                    s.classList.remove('show');
+                    const menu = s.querySelector('.dropdown-menu');
+                    if (menu) menu.classList.remove('show');
+                });
+            };
+
+            // MAIN SERVICE CLICK
+            document.querySelectorAll('.nav-item.dropdown > a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    if (!isDesktop()) return;
+
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    const parent = this.closest('.dropdown');
+                    const isOpen = parent.classList.contains('show');
+
+                    closeAll();
+
+                    if (!isOpen) {
+                        parent.classList.add('show');
+                        parent.querySelector('.dropdown-menu').classList.add('show');
+                    }
+                });
+            });
+
+            // SUBMENU CLICK
+            document.querySelectorAll('.dropdown-submenu > a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    if (!isDesktop()) return;
+
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    const parent = this.closest('.dropdown-submenu');
+                    const submenu = parent.querySelector('.dropdown-menu');
+                    const isOpen = parent.classList.contains('show');
+
+                    document.querySelectorAll('.dropdown-submenu').forEach(s => {
+                        s.classList.remove('show');
+                        const m = s.querySelector('.dropdown-menu');
+                        if (m) m.classList.remove('show');
+                    });
+
+                    if (!isOpen) {
+                        parent.classList.add('show');
+                        submenu.classList.add('show');
+                    }
+                });
+            });
+
+            // CLICK OUTSIDE TO CLOSE
+            document.addEventListener('click', function() {
+                if (isDesktop()) closeAll();
+            });
+
+        });
+    </script>
+
+    <script>
+        document.querySelector('#servicesDropdown').addEventListener('click', function(e) {
+            // Desktop view lo unnapudu (d-lg-block use chesaru kabatti)
+            if (window.innerWidth > 992) {
+                window.location.href = this.getAttribute('href');
+            }
+        });
+    </script>
+<section class="sample_secrtion">
+    <img src="./assets/images/new_images/index_12.png" alt="" class="img-fluid">
+</section>
+
+
+
+
+<!-- Hero Section -->
+<!-- <section class="home_section">
+    <div class="hero-section container">
+
+
+        <div class=" hero-content">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="main-heading">
+                        <span class="span1">EVERY</span>
+                        <span class="span2">SMILE</span>
+                        <span class="span3">MATTERS</span>
+
+
+                    </h1>
+
+                    <div class="info-card">
+                        <p>Our skilled dentists use advanced technology to offer complete care in a comfortable and friendly environment.</p>
+                    </div>
+
+                    <div class="working-hours">
+                        <h6>We're Open</h6>
+                        <p>10.00 AM - 07.00 PM</p>
+                    </div>
+
+                    <a href="#appointment" class="btn-book index_button_section">BOOK APPOINTMENT</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats d-none d-lg-block">
+            <div class="stat-item">
+                <div class="stat-number">15+ </div>
+                <div class="stat-label">Years Expertise</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">8 + </div>
+                <div class="stat-label">Years of Clinic Excellence</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">13,000+</div>
+                <div class="stat-label">Lives Touched</div>
+            </div>
+        </div>
+
+        <div class="tooth-image">
+            <div class="tooth-graphic">
+                <div class="splash splash1"></div>
+                <div class="splash splash2"></div>
+                <div class="splash splash3"></div>
+                <div class="splash splash4"></div>
+                <div class="splash splash5"></div>
+                <div class="tooth-body"></div>
+                <div class="tooth-crown"></div>
+                <div class="tooth-shine"></div>
+            </div>
+        </div>
     </div>
+</section>  -->
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="section-title">
-            <h2>About Denta Care</h2>
-            <p>Providing exceptional dental care with compassion and expertise</p>
+<!-- Services Navigation -->
+<!-- <div class="services-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#braces">Braces</a></li>
+                <li><a href="#denta-care">Denta Care</a></li>
+                <li><a href="#dentist">Dentist</a></li>
+                <li><a href="#dentures">Dentures</a></li>
+            </ul>
         </div>
-        <div class="about-content">
-            <div class="about-image"></div>
-            <div class="about-image"></div>
-            <div class="about-image"></div>
-        </div>
-    </section>
+    </div> -->
 
-    <!-- Treatments Section -->
-    <section class="treatments" id="services">
-        <div class="section-title">
-            <h2>Popular Treatments</h2>
-        </div>
-        <div class="treatment-cards">
-            <div class="treatment-card">
-                <h3>Cosmetic</h3>
-                <p>Transform your smile with our advanced cosmetic dental procedures including whitening, veneers, and smile makeovers.</p>
-            </div>
-            <div class="treatment-card">
-                <h3>General</h3>
-                <p>Comprehensive dental care for the whole family including checkups, cleanings, and preventive treatments.</p>
-            </div>
-            <div class="treatment-card">
-                <h3>Dental Implant</h3>
-                <p>Permanent tooth replacement solutions with natural-looking results and long-lasting durability.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Consultation Section -->
-    <section class="consultation">
-        <div class="consultation-content">
-            <h2>Book <span>Free Consultation</span></h2>
-            <button class="btn-primary">Book Now</button>
-        </div>
-        <div class="consultation-image">
-            <div style="width: 300px; height: 300px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 100px;">😎</div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="team">
-        <div class="section-title">
-            <h2>Expert Team</h2>
-            <p>Meet our experienced dental professionals</p>
-        </div>
-        <div class="team-grid">
-            <div class="team-member">
-                <div class="team-photo"></div>
-                <h4>Dr. John Smith</h4>
-                <p>Chief Dentist</p>
-            </div>
-            <div class="team-member">
-                <div class="team-photo"></div>
-                <h4>Dr. Sarah Johnson</h4>
-                <p>Orthodontist</p>
-            </div>
-            <div class="team-member">
-                <div class="team-photo"></div>
-                <h4>Dr. Mike Wilson</h4>
-                <p>Oral Surgeon</p>
-            </div>
-            <div class="team-member">
-                <div class="team-photo"></div>
-                <h4>Dr. Emily Brown</h4>
-                <p>Pediatric Dentist</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Navigation -->
-    <div class="services-nav">
-        <a href="#bridges">Bridges</a>
-        <a href="#invisalign">Invisalign</a>
-        <a href="#teeth-cleaning">Teeth Cleaning</a>
-        <a href="#dentures">Dentures</a>
-    </div>
-
-    <!-- Appointment Section -->
-    <section class="appointment" id="contact">
-        <div class="appointment-form">
-            <h2>Book Appointment</h2>
-            <form>
-                <div class="form-group">
-                    <input type="text" placeholder="Full Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Email Address" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" placeholder="Phone Number" required>
-                </div>
-                <div class="form-group">
-                    <select required>
-                        <option value="">Select Service</option>
-                        <option value="general">General Checkup</option>
-                        <option value="cosmetic">Cosmetic</option>
-                        <option value="implant">Dental Implant</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <textarea rows="4" placeholder="Message"></textarea>
-                </div>
-                <button type="submit" class="btn-primary">Book Appointment</button>
-            </form>
-        </div>
-        <div class="appointment-image">
-            <div style="width: 300px; height: 400px; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);"></div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>DENTA CARE HEALTH VER</h3>
-                <p>Your trusted partner in dental health and beautiful smiles.</p>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Services</h3>
-                <ul>
-                    <li><a href="#cosmetic">Cosmetic Dentistry</a></li>
-                    <li><a href="#general">General Dentistry</a></li>
-                    <li><a href="#implants">Dental Implants</a></li>
-                    <li><a href="#orthodontics">Orthodontics</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Contact Info</h3>
-                <ul>
-                    <li>123 Dental Street</li>
-                    <li>Phone: (555) 123-4567</li>
-                    <li>Email: info@dentacare.com</li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Denta Care. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>
+<marquee behavior="" direction="" class="marquee_section">Braces &nbsp; + &nbsp; Dental Care + &nbsp; Dentist + &nbsp; Dentures + &nbsp;Implants + &nbsp; Invisalign + &nbsp; Braces </marquee>
 
 
-
-
-
-
-
-
-
-
-
-
-
-<div class="section team-area section-padding">
+<!-- About Section -->
+<section id="about" class="about-section">
     <div class="container">
-        <div class="team-wrapper">
-            <div class="text-center ">
-                <!-- <h2 class="section-title-service">Our Services</h2> -->
-                <h2 class="section-title">Our Services</h2>
-                <p class="section-subtitle">Comprehensive MRO Solutions for Modern Aviation</p>
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <h2 class="about_about">About Us </h2>
+                <h1 class="about_dental_section">Dental Care</h1>
             </div>
-            <div class="team-content-wrapper">
-                <div class="team-content-wrapper">
+            <div class="col-md-6 col-12 mb-4 mb-md-0 ">
+                <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+                    <div class="carousel-inner rounded-4 shadow p-3">
 
-                    <div class="custom-slide-container swiper">
-                        <div class="custom-slide-content   ">
-                            <div class="custom-card-wrapper swiper-wrapper py-5">
+                        <div class="carousel-item active">
+                            <h2 class="about_mission">Our Mission</h2>
+                            <p class="index_mission_section">Where clinical excellence meets an honest heart. We’ve blended decades of experience with a genuine passion to serve, creating a sanctuary for your dental health. At Dr. Sunil Sathyanarayana’s, trust isn’t just promised—it’s earned.</p>
+                        </div>
 
-                                <div class="custom-card custom_card_bg_three swiper-slide">
+                        <div class="carousel-item">
+                            <h2 class="about_mission">Our Mission</h2>
+                            <p class="index_mission_section">Redefining Dental Excellence. From advanced clinical procedures to curated dental products and expert wellness insights, Dr. Sunil Sathyanarayana offers a 360-degree approach to your oral health. Modern care, traditional trust.</p>
+                        </div>
 
-                                    <div class="service-card">
-                                        <div class="service-icon"><i class="bi bi-wrench-adjustable"></i></div>
-                                        <h3 class="service-title">Base Maintenance</h3>
-                                        <p class="service-description">Comprehensive in-depth support for
-                                            long-term airworthiness and
-                                            reliability.</p>
-                                        <!-- <ul class="service-list">
-                                    <li>Heavy maintenance checks (C/D Checks)</li>
-                                    <li>Structural repairs and modifications</li>
-                                    <li>Landing gear overhaul</li>
-                                    <li>Avionics upgrades</li>
-                                    <li>Cabin refurbishment</li>
-                                </ul> -->
-                                        <a href="basemaintenance.php" class="btn  btn-custom_base ">Read more</a>
+                        <!-- <div class="carousel-item">
+                            <h2 class="about_mission">Our Mission</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis perferendis odio quae debitis atque! Laborum iure earum illum, sint at officia quasi, eaque, ex nulla doloremque repudiandae. Distinctio, nemo fuga!</p>
+                        </div> -->
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
 
-                                    </div>
+
+        <div class="row mt-5">
+            <div class="col-md-6 col-12">
+                <div class="row">
+                    <img src="./assets/images/new_images/aboutus  ld1.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12 col-md-6">
+                        <!-- <button class="about_dental ">Dental Care</button> -->
+                        <!-- <button class="about_dental_care ">Dental Care</button> -->
+                        <!-- <button class="about_section">mani</button> -->
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img src="./assets/images/new_images/aboutus sq 1.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <img src="./assets/images/new_images/aboutus sq 2.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-6">
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <img src="./assets/images/new_images/aboutus  ld2.jpg" alt="" class="img-fluid">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- SERVICE   BEYONG COPY  -->
+
+
+
+<section class="treatment_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <h2 class="about_about">Available </h2>
+                <h1 class="about_dental_section">Treatments</h1>
+            </div>
+            <div class="col-md-6 col-12 mb-4 mb-md-0 ">
+
+
+                <div class=>
+                    <!-- <h2 class="about_mission">Our Mission</h2> -->
+                    <!-- <p>We offer All Round Care And Treatments related to all your dental health at our clinic. We assure best in its class treatment with an attitude to treat you as our own family. We look forward to seeing you.</p> -->
+                    <p> Comprehensive dental excellence with a personal touch. At our clinic, you aren’t just a patient; you’re family. We combine world-class treatments with the warmth of a home, ensuring your smile is always in the best hands.
+                </div>
+                </p>
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<section class="service_section">
+    <div class="container">
+        <div class="custom-slide-container swiper">
+            <div class="custom-slide-content   ">
+                <div class="custom-card-wrapper swiper-wrapper py-5">
+
+                    <div class="custom-card custom_card_bg_three swiper-slide">
+                        <div class="custom-card-section service_slide1">
+                            <a href="root_canal_treatment_in_bengaluru.php">
+                                <h1 class="display-5 card-heading"> Root canal Treatment </h1>
+
+                                <div class="tags-container">
+                                    <!-- <span class="custom-tag">Endo Care</span> -->
+                                    <span class="custom-tag">Pain-Free Procedure</span>
+                                    <span class="custom-tag">Nerve Relief</span>
+                                    <span class="custom-tag">Fast Healing</span>
                                 </div>
 
-                                <div class="custom-card custom_card_bg_three swiper-slide">
+                                <div class="image-container">
+                                    <img src="./assets/images/new_images/treatments 1.jpg"
+                                        alt="Happy person with braces"
+                                        class="person-image">
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="custom-card custom_card_bg_three swiper-slide  ">
 
 
-                                    <div class="service-card">
-                                        <div class="service-icon"><i class="bi bi-clock-history"></i></div>
-                                        <h3 class="service-title">Line Maintenance</h3>
-                                        <p class="service-description">Fast, efficient day-to-day operations
-                                            support with 24/7
-                                            readiness.</p>
-                                        <!-- <ul class="service-list">
-                                    <li>Daily & transit inspections</li>
-                                    <li>Troubleshooting & defect rectification</li>
-                                    <li>Component replacement</li>
-                                    <li>AOG support</li>
-                                    <li>Release-to-service approvals</li>
-                                </ul> -->
-                                        <a href="linemaintenance.php" class="btn btn-custom_base">Get
-                                            Started</a>
-                                    </div>
+                        <div class="custom-card-section service_slide2">
+                            <a href="teeth_cleaning_treatment_in_bengaluru.php">
+                                <h1 class="display-5 card-heading">Teeth Cleaning</h1>
+
+                                <div class="tags-container">
+                                    <span class="custom-tag">Bright Smile</span>
+                                    <span class="custom-tag">Plaque Removal</span>
+                                    <span class="custom-tag">Fresh Breath</span>
+                                    <span class="custom-tag">Healthy Gums</span>
                                 </div>
 
-                                <div class="custom-card custom_card_bg_three swiper-slide">
+                                <div class="image-container">
+                                    <img src="./assets/images/teeth cleaning image.png"
+                                        alt="Happy person with braces"
+                                        class="person-image">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
 
+                    <div class="custom-card custom_card_bg_three swiper-slide  ">
 
-                                    <div class="service-card">
-                                        <div class="service-icon"><i class="bi bi-lightning-charge"></i></div>
-                                        <h3 class="service-title">Engine & APU Overhaul</h3>
-                                        <p class="service-description">Peak performance restoration for critical
-                                            power systems.</p>
-                                        <!-- <ul class="service-list">
-                                    <li>Full teardown & inspection</li>
-                                    <li>Performance restoration</li>
-                                    <li>Boroscope inspections</li>
-                                    <li>Test cell runs</li>
-                                    <li>Certification documentation</li>
-                                </ul> -->
-                                        <a href="enginemaintenance.php" class="btn btn-custom_base">Get
-                                            Started</a>
-                                    </div>
+                        <div class="custom-card-section service_slide3">
+                            <a href="dentalcrown_bridge_treatment_in_bengaluru..php">
+                                <h1 class="display-5 card-heading">Crowns & Bridges</h1>
+
+                                <div class="tags-container">
+                                    <span class="custom-tag">Durable Restoration</span>
+                                    <span class="custom-tag">Perfect Fit</span>
+                                    <span class="custom-tag">Natural Appearance</span>
+                                    <span class="custom-tag">Long-Lasting Smile</span>
                                 </div>
 
-                                <div class="custom-card custom_card_bg_three swiper-slide">
+                                <div class="image-container">
+                                    <img src="./assets/images/new_images/treatments 6.jpg"
+                                        alt="Happy person with braces"
+                                        class="person-image">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="custom-card custom_card_bg_three swiper-slide ">
 
 
-                                    <div class="service-card">
-                                        <div class="service-icon"><i class="bi bi-chevron-double-down"></i>
-                                        </div>
-                                        <h3 class="service-title">Landing Gear Overhaul</h3>
-                                        <p class="service-description">Precision-engineered restoration with
-                                            advanced NDT testing.</p>
-                                        <!-- <ul class="service-list">
-                                    <li>NDT testing (FPI, MPI, Eddy Current)</li>
-                                    <li>Shock strut servicing</li>
-                                    <li>Brake assembly overhaul</li>
-                                    <li>Load simulation tests</li>
-                                    <li>OEM compliance</li>
-                                </ul> -->
-                                        <a href="landinggear.php" class="btn btn-custom_base">Get
-                                            Started</a>
-                                    </div>
+                        <div class="custom-card-section service_slide4">
+                            <a href="teeth_removal_treatment_in_bengaluru.php">
+                                <h1 class="display-5 card-heading">Painless Teeth Removal ​</h1>
+
+                                <div class="tags-container">
+                                    <span class="custom-tag">Comfort Extraction</span>
+                                    <span class="custom-tag">Quick Recovery</span>
+                                    <span class="custom-tag">No Discomfort</span>
+                                    <span class="custom-tag">Safe Procedure</span>
                                 </div>
 
+                                <div class="image-container">
+                                    <img src="./assets/images/painless-teeth-removal.png"
+                                        alt="Happy person with braces"
+                                        class="person-image">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
 
-                                <div class="custom-card custom_card_bg_three swiper-slide">
+
+                    <div class="custom-card custom_card_bg_three swiper-slide">
 
 
-                                    <div class="service-card">
-                                        <div class="service-icon"><i class="bi bi-cpu"></i></div>
-                                        <h3 class="service-title">Avionics Accessories Overhaul
-                                        </h3>
-                                        <p class="service-description">Precision restoration of aircraft
-                                            electronic systems.</p>
-                                        <!-- <ul class="service-list">
-                                    <li>LRU functional testing</li>
-                                    <li>Circuit-board repair</li>
-                                    <li>Communication & navigation modules</li>
-                                    <li>Automated test equipment</li>
-                                    <li>Calibration services</li>
-                                </ul> -->
+                        <div class="custom-card-section  service_slide5">
+                            <a href="tooth_colored_fillings_treatment_in_bengaluru.php">
+                                <h1 class="display-5 card-heading">Tooth Colored Fillings</h1>
 
-                                        <a href="avionicsaccessories.php" class="btn btn-custom_base">Get
-                                            Started</a>
-                                    </div>
+                                <div class="tags-container">
+                                    <span class="custom-tag">Natural Look</span>
+                                    <span class="custom-tag">Cavity Protection
+                                    </span>
+                                    <span class="custom-tag">Durable Filling</span>
+                                    <span class="custom-tag">Seamless Smile</span>
                                 </div>
 
+                                <div class="image-container">
+                                    <img src="./assets/images/Tooth-Colored-Filling.png"
+                                        alt="Happy person with braces"
+                                        class="person-image">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
 
 
 
-                                <div class="custom-card custom_card_bg_three swiper-slide">
+
+                    <div class="custom-card custom_card_bg_three swiper-slide  ">
 
 
-                                    <div class="service-card">
-                                        <div class="service-icon"><i class="bi bi-cpu"></i></div>
-                                        <h3 class="service-title">Corporate Sustainability
+                        <div class="custom-card-section service_slide6">
+                            <a href="jaw_fractures_treatment_in_bengaluru.php">
+                                <h1 class="display-5 card-heading">Fixing Jaw Fractures</h1>
 
-                                        </h3>
-                                        <p class="service-description">We are committed to responsible,
-                                            forward-thinking operations ..</p>
-                                        <!-- <ul class="service-list">
-                                    <li>LRU functional testing</li>
-                                    <li>Circuit-board repair</li>
-                                    <li>Communication & navigation modules</li>
-                                    <li>Automated test equipment</li>
-                                    <li>Calibration services</li>
-                                </ul> -->
-
-                                        <a href="corporatesustainability.php" class="btn btn-custom_base">Get
-                                            Started</a>
-                                    </div>
+                                <div class="tags-container">
+                                    <span class="custom-tag">Bone Realignment</span>
+                                    <span class="custom-tag">Stable Healing</span>
+                                    <span class="custom-tag">Pain-Free Recovery</span>
+                                    <span class="custom-tag">Restored Function</span>
                                 </div>
 
-
-
-
-
-
-                                <div class="custom-card custom_card_bg_three swiper-slide">
-
-
-                                    <div class="service-card">
-                                        <div class="service-icon"><i class="bi bi-tools"></i></div>
-                                        <h3 class="service-title">Specialized Services</h3>
-                                        <p class="service-description">High-precision solutions for complex
-                                            maintenance needs.</p>
-                                        <!-- <ul class="service-list">
-                                    <li>NDT Services (FPI, MPI, Ultrasonic)</li>
-                                    <li>Composite Repair</li>
-                                    <li>Hydraulic System Testing</li>
-                                    <li>Wheel & Brake Shop</li>
-                                    <li>Painting & Refinishing</li>
-                                </ul> -->
-                                        <a href="specializedservices.php" class="btn btn-custom_base">Get
-                                            Started</a>
-                                    </div>
+                                <div class="image-container">
+                                    <img src="./assets/images/Jaw-Fractures.png"
+                                        alt="Happy person with braces"
+                                        class="person-image">
                                 </div>
-                            </div>
+                            </a>
+                        </div>
+                    </div>
 
 
 
 
 
+
+                    <div class="custom-card custom_card_bg_three swiper-slide  ">
+
+
+                        <div class="custom-card-section service_slide7">
+                            <a href="basal_implants_treatment_in_bengaluru.php">
+                                <h1 class="display-5 card-heading">Basal Implants</h1>
+
+                                <div class="tags-container">
+                                    <!-- <span class="custom-tag">Immediate Teeth Replacement</span> -->
+                                    <span class="custom-tag">Strong Foundation</span>
+                                    <span class="custom-tag">Quick Healing</span>
+                                    <span class="custom-tag">Long-Lasting Support</span>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="./assets/images/basalimplant.png"
+                                        alt="Happy person with braces"
+                                        class="person-image">
+                                </div>
+                            </a>
                         </div>
                     </div>
 
@@ -867,9 +734,1297 @@
 
 
 
+                    <div class="custom-card custom_card_bg_three swiper-slide  ">
+
+
+                        <div class="custom-card-section service_slide8">
+                            <a href="teeth_whitening_treatment_in_bengaluru.php">
+                                <h1 class="display-5 card-heading">Teeth Whitening</h1>
+
+                                <div class="tags-container">
+                                    <span class="custom-tag">Brilliant Smile</span>
+                                    <span class="custom-tag">Stain Removal</span>
+                                    <span class="custom-tag">Safe Treatment</span>
+                                    <span class="custom-tag">Instant Brightening</span>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="./assets/images/teeth-whitening.png"
+                                        alt="Happy person with braces"
+                                        class="person-image">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="custom-card custom_card_bg_three swiper-slide  ">
+
+
+                        <div class="custom-card-section service_slide9">
+                            <a href="laser_dentistry_treatment_in_bengaluru.php">
+                                <h1 class="display-5 card-heading">Laser Dentistry</h1>
+
+                                <div class="tags-container">
+                                    <span class="custom-tag">Precise Treatment</span>
+                                    <span class="custom-tag">Minimal Pain</span>
+                                    <span class="custom-tag">Quick Recovery</span>
+                                    <span class="custom-tag">Advanced Care</span>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="./assets/images/laser_image.png"
+                                        alt="Happy person with braces"
+                                        class="person-image">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="custom-card custom_card_bg_three swiper-slide">
+
+                        <div class="custom-card-section service_slide9">
+                            <a href="invisalignaligners_clearaligners_treatment_in_bengaluru.php">
+                                <h1 class="display-5 card-heading">Clear Aligners</h1>
+
+                                <div class="tags-container">
+                                    <span class="custom-tag">Invisible braces </span>
+                                    <span class="custom-tag">Teeth Straightening</span>
+                                    <span class="custom-tag">Comfort Fit</span>
+                                    <span class="custom-tag">No Metal Braces</span>
+                                </div>
+
+                                <div class="image-container">
+                                    <img src="./assets/images/new_images/treatments 20.jpg"
+                                        alt="Happy person with braces"
+                                        class="person-image">
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- why choose us  -->
+<div class="container" style="padding: 10px;">
+    <div class="dental-why-choose-section">
+        <div class="dental-section-title">
+            <h2>Why Choose Us</h2>
+            <div class="dental-title-underline"></div>
+        </div>
+
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-6 dental-left-column">
+                <div class="dental-feature-item">
+                    <div class="dental-feature-icon-wrapper">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="dental-feature-text">Hygienic High Quality</div>
+                </div>
+
+                <div class="dental-feature-item">
+                    <div class="dental-feature-icon-wrapper">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="dental-feature-text">Laser Dentistry</div>
+                </div>
+
+                <div class="dental-feature-item">
+                    <div class="dental-feature-icon-wrapper">
+                        <i class="fas fa-syringe"></i>
+                    </div>
+                    <div class="dental-feature-text">Needle-Less Injection</div>
+                </div>
+
+                <div class="dental-feature-item">
+                    <div class="dental-feature-icon-wrapper">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <div class="dental-feature-text">Advanced Implants</div>
+                </div>
+
+                <div class="dental-feature-item">
+                    <div class="dental-feature-icon-wrapper">
+                        <i class="fas fa-align-justify"></i>
+                    </div>
+                    <div class="dental-feature-text">Best In Class Clear Aligners</div>
+                </div>
+
+                <div class="dental-feature-item">
+                    <div class="dental-feature-icon-wrapper">
+                        <i class="fas fa-grip-horizontal"></i>
+                    </div>
+                    <div class="dental-feature-text">Latest Generation Braces</div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-6 dental-right-column">
+                <div class="dental-feature-item">
+                    <div class="dental-feature-icon-wrapper">
+                        <i class="fas fa-x-ray"></i>
+                    </div>
+                    <div class="dental-feature-text">Digital OPG & RVG X-Rays</div>
+                </div>
+
+                <div class="dental-feature-item">
+                    <div class="dental-feature-icon-wrapper">
+                        <i class="fas fa-barcode"></i>
+                    </div>
+                    <div class="dental-feature-text">Digital Scanner</div>
+                </div>
+
+                <div class="dental-feature-item">
+                    <div class="dental-feature-icon-wrapper">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="dental-feature-text">Intra-Oral Camera</div>
+                </div>
+
+                <div class="dental-feature-item">
+                    <div class="dental-feature-icon-wrapper">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="dental-feature-text">Best Brand Materials</div>
+                </div>
+
+                <div class="dental-feature-item">
+                    <div class="dental-feature-icon-wrapper">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="dental-feature-text">Honest & Caring Services</div>
+                </div>
+
+                <div class="dental-feature-item">
+                    <div class="dental-feature-icon-wrapper">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <div class="dental-feature-text">Remove Fear Of Dental Treatments</div>
+                </div>
+
+                <!-- <div class="dental-feature-item">
+                    <div class="dental-feature-icon-wrapper">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <div class="dental-feature-text">EMI & Easy Payment Options</div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <section class="appointment_section">
+    <div class="container appointment_container">
+        <div class="appointment_content">
+            <h1>Book <span>Free Consultation</span></h1>
+            <a href="appointment.php" class="btn-book index_button_appointment index_button_section">BOOK Now</a>
+        </div>
+        <div class="appointment_image d-none d-md-block">
+            <img src="./assets/images/bg_remoive.png" alt="Consultation Image">
+        </div>
+    </div>
+</section> -->
+
+
+
+
+
+
+
+<section>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <h2 class="about_about">Our </h2>
+                <h1 class="about_dental_section">expert Team</h1>
+            </div>
+            <div class="col-md-6 col-12 mb-4 mb-md-0 ">
+
+
+                <div class=>
+                    <!-- <h2 class="about_mission">Our Mission</h2> -->
+                    <p>Care ‘n’ Concern Family Dental Clinic is not a name but an attitude inculcated in our daily service delivery.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<section>
+    <div class="container">
+        <div class="carousel-wrapper">
+            <div class="carousel-track" id="carouselTrack">
+
+
+
+
+
+
+
+
+                <div class="doctor-card-container">
+                    <div class="doctor-card">
+                        <div class="doctor-image-wrapper">
+                            <img src=".\assets\images\new_images\main_doctor.png" alt="Dr. Andru" class="doctor-image">
+                        </div>
+                        <h3 class="doctor-name">Dr Sunil Sathyanarayana</h3>
+                        <p class="doctor-specialty">Periodontist,Implantologist,Laser specialist</p>
+                    </div>
+                </div>
+
+                <div class="doctor-card-container">
+                    <div class="doctor-card">
+                        <div class="doctor-image-wrapper">
+                            <img src="./assets/images/new_images/kavya.png" alt="Dr. Andru" class="doctor-image">
+                        </div>
+                        <h3 class="doctor-name">Dr Kavya</h3>
+                        <p class="doctor-specialty">MDS-Associate Dentist </p>
+                    </div>
+                </div>
+
+                <div class="doctor-card-container">
+                    <div class="doctor-card">
+                        <div class="doctor-image-wrapper">
+                            <img src="./assets/images/new_images/2.png" alt="Dr. Andru" class="doctor-image">
+                        </div>
+                        <h3 class="doctor-name">Dr Deepashri</h3>
+                        <p class="doctor-specialty">MDS-Associate Dentist</p>
+                    </div>
+                </div>
+
+
+
+                <!-- Doctor 1 -->
+                <div class="doctor-card-container">
+                    <div class="doctor-card">
+                        <div class="doctor-image-wrapper">
+                            <img src=".\assets\images\new_images\Keerthi.png" alt="Dr. Andru" class="doctor-image">
+                        </div>
+                        <h3 class="doctor-name">Dr Keerthi Ramachandra</h3>
+                        <p class="doctor-specialty">Prosthodontist</p>
+                    </div>
+                </div>
+
+                <!-- Doctor 2 -->
+                <div class="doctor-card-container">
+                    <div class="doctor-card">
+                        <div class="doctor-image-wrapper">
+                            <img src=".\assets\images\new_images\Smitha.png" alt="Dr. Amily" class="doctor-image">
+                        </div>
+                        <h3 class="doctor-name">Dr Smitha Shetty</h3>
+                        <p class="doctor-specialty">Orthodontist</p>
+                    </div>
+                </div>
+
+                <!-- Doctor 3 -->
+                <div class="doctor-card-container">
+                    <div class="doctor-card">
+                        <div class="doctor-image-wrapper">
+                            <img src=".\assets\images\new_images\Saurabh.png" alt="Dr. Howard" class="doctor-image">
+                        </div>
+                        <h3 class="doctor-name">Dr Saurabh TJ</h3>
+                        <p class="doctor-specialty">Endodontist and Esthetic Dentist</p>
+                    </div>
+                </div>
+
+                <!-- Doctor 4 -->
+                <div class="doctor-card-container">
+                    <div class="doctor-card">
+                        <div class="doctor-image-wrapper">
+                            <img src=".\assets\images\new_images\Ranjith.png" alt="Dr. Mike" class="doctor-image">
+                        </div>
+                        <h3 class="doctor-name">Dr Ranjith</h3>
+                        <p class="doctor-specialty">Oral & Maxillofacial Surgeon</p>
+                    </div>
+                </div>
+
+                <!-- Doctor 5 -->
+                <!-- <div class="doctor-card-container">
+                    <div class="doctor-card">
+                        <div class="doctor-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=500&fit=crop" alt="Dr. Sarah" class="doctor-image">
+                        </div>
+                        <h3 class="doctor-name">Dr. Sarah</h3>
+                        <p class="doctor-specialty">Prosthodontist</p>
+                    </div>
+                </div> -->
+
+                <!-- Doctor 6 -->
+                <!-- <div class="doctor-card-container">
+                    <div class="doctor-card">
+                        <div class="doctor-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=500&fit=crop" alt="Dr. John" class="doctor-image">
+                        </div>
+                        <h3 class="doctor-name">Dr. John</h3>
+                        <p class="doctor-specialty">Oral Surgeon</p>
+                    </div>
+                </div> -->
+
+                <!-- Doctor 7 -->
+                <!-- <div class="doctor-card-container">
+                    <div class="doctor-card">
+                        <div class="doctor-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&h=500&fit=crop" alt="Dr. Emma" class="doctor-image">
+                        </div>
+                        <h3 class="doctor-name">Dr. Emma</h3>
+                        <p class="doctor-specialty">Pediatric Dentist</p>
+                    </div>
+                </div> -->
+
+                <!-- Doctor 8 -->
+                <!-- <div class="doctor-card-container">
+                    <div class="doctor-card">
+                        <div class="doctor-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1638202993928-7267aad84c31?w=400&h=500&fit=crop" alt="Dr. David" class="doctor-image">
+                        </div>
+                        <h3 class="doctor-name">Dr. David</h3>
+                        <p class="doctor-specialty">General Dentist</p>
+                    </div>
+                </div> -->
+
+                <!-- Doctor 9 -->
+                <!-- <div class="doctor-card-container">
+                    <div class="doctor-card">
+                        <div class="doctor-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1609557927087-f9cf8e88de18?w=400&h=500&fit=crop" alt="Dr. Lisa" class="doctor-image">
+                        </div>
+                        <h3 class="doctor-name">Dr. Lisa</h3>
+                        <p class="doctor-specialty">Cosmetic Dentist</p>
+                    </div>
+                </div> -->
+            </div>
+
+            <!-- Navigation controls -->
+            <div class="carousel-controls">
+                <button class="carousel-btn" id="prevBtn">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                    </svg>
+                </button>
+                <button class="carousel-btn" id="nextBtn">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+<style>
+    .reels-section {
+        padding: 40px 0;
+    }
+
+    .reel-box video {
+        width: 100%;
+        height: 380px;
+        /* 👈 HEIGHT REDUCED */
+        object-fit: contain;
+        /* ❌ CUT AVVADHU */
+        background: #000;
+        /* Black background for empty space */
+        border-radius: 12px;
+        border: 1px solid #222;
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+        .reel-box video {
+            height: 380px;
+        }
+    }
+
+    /* PDF Preview */
+    .pdf-preview {
+        width: 100%;
+        height: 380px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+
+    /* Popup Background */
+    .pdf-modal {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Popup Box */
+    .pdf-modal-content {
+        width: 90%;
+        height: 90%;
+        background: #fff;
+        margin: 3% auto;
+        border-radius: 10px;
+        padding: 10px;
+        position: relative;
+    }
+
+    /* Full PDF inside popup */
+    .pdf-full {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    /* Close Button */
+    .pdf-close {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        color: red;
+    }
+
+
+    .pdf-preview {
+        width: 100%;
+        height: 320px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+    }
+
+    .pdf-modal {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .pdf-modal-content {
+        background: #fff;
+        width: 90%;
+        height: 90%;
+        margin: 3% auto;
+        border-radius: 10px;
+        padding: 10px;
+        position: relative;
+    }
+
+    .pdf-close {
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        right: 15px;
+        top: 5px;
+    }
+
+    .pdf-full {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+</style>
+
+
+<section class="reels-section">
+    <div class="container">
+        <div class="row">
+
+            <!-- VIDEO -->
+            <div class="col-md-6 reel-box">
+                <h1 class="about_dental_section d-flex justify-content-center">Our Clinic Shot</h1>
+
+                <video src="./assets/images/new_images/clini_video.mp4"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    controls>
+                </video>
+            </div>
+
+            <!-- PDF SECTION -->
+            <div class="col-md-6 reel-box mt-2">
+                <h1 class="about_dental_section d-flex justify-content-center">Treatment Price List</h1>
+
+                <!-- PDF Preview (Mobile Fix) -->
+                <iframe
+                    src="./assets/CNC_Treatment_Price_list.pdf"
+                    class="pdf-preview">
+                </iframe>
+
+                <!-- Open PDF Button -->
+                <button class="btn btn-primary mt-2" onclick="openPDF()">Open PDF</button>
+            </div>
+
+            <!-- PDF MODAL -->
+            <div id="pdfModal" class="pdf-modal">
+                <div class="pdf-modal-content">
+                    <span class="pdf-close" onclick="closePDF()">&times;</span>
+
+                    <iframe
+                        src="./assets/CNC_Treatment_Price_list.pdf"
+                        class="pdf-full">
+                    </iframe>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+    function openPDF() {
+        document.getElementById("pdfModal").style.display = "block";
+    }
+
+    function closePDF() {
+        document.getElementById("pdfModal").style.display = "none";
+    }
+</script>
+
+
+
+<!-- <section class="advanced-facilities">
+    <div class="container">
+        <h2 class="section-title">Advanced Facilities</h2>
+
+        <div class="facilities-grid">
+            <div class="facility-card">
+                <i class="fas fa-tooth"></i>
+                <p>Itero Scanner</p>
+            </div>
+
+            <div class="facility-card">
+                <i class="fas fa-x-ray"></i>
+                <p>Italian OPG Machine</p>
+            </div>
+
+            <div class="facility-card">
+                <i class="fas fa-bolt"></i>
+                <p>Advanced Laser Machine</p>
+            </div>
+
+            <div class="facility-card">
+                <i class="fas fa-shield-virus"></i>
+                <p>B Class Autoclave</p>
+            </div>
+
+            <div class="facility-card">
+                <i class="fas fa-screwdriver"></i>
+                <p>Best Implant Systems</p>
+            </div>
+
+            <div class="facility-card">
+                <i class="fas fa-cogs"></i>
+                <p>Physiodispenser</p>
+            </div>
+
+            <div class="facility-card">
+                <i class="fas fa-sync-alt"></i>
+                <p>Endo Motor for Rotary Endo</p>
+            </div>
+
+            <div class="facility-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Apex Locator</p>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+
+<!-- Services Bottom Navigation -->
+<!-- <div class="services-bottom-nav">
+    <div class="container">
+        <ul>
+            <li><a href="#invisalign">Invisalign</a></li>
+            <li><a href="#teeth-cleaning">Teeth Cleaning</a></li>
+            <li><a href="#dentures-bottom">Dentures</a></li>
+        </ul>
+    </div>
+</div> -->
+<section>
+    <div class="container my-5">
+        <h2 class="section-title d-flex justify-content-center">Advanced Dental Facilities</h2>
+
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-3 col-md-6">
+                <div class="facility-card">
+                    <img src="./assets/images/new_images/Itero scanner.png" alt="Itero scanner">
+                    <div class="facility-name-overlay">
+                        <div class="facility-name">Itero scanner</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="facility-card">
+                    <!-- <img src="./assets/images/" alt="OPG Machine"> -->
+                    <img src="./assets/images/new_images/opg_mechanic.png" alt="OPG Machine">
+                    <div class="facility-name-overlay">
+                        <div class="facility-name">Italian OPG machine</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="facility-card">
+                    <img src="./assets/images/new_images/laser.png" alt="Laser Machine">
+                    <div class="facility-name-overlay">
+                        <div class="facility-name">Advanced laser machine</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="facility-card">
+                    <img src="./assets/images/new_images/B class autoclave.png" alt="Autoclave">
+                    <div class="facility-name-overlay">
+                        <div class="facility-name">B class autoclave</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="facility-card">
+                    <img src="./assets/images/new_images/Best implant systems.png" alt="Dental Implant">
+                    <div class="facility-name-overlay">
+                        <div class="facility-name">Best implant systems</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="facility-card">
+                    <img src="./assets/images/new_images/physio.png" alt="Physiodispenser">
+                    <div class="facility-name-overlay">
+                        <div class="facility-name">Physiodispenser</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="facility-card">
+                    <img src="./assets/images/new_images/Endo motor for rotary endo.png" alt="Endo motor">
+                    <div class="facility-name-overlay">
+                        <div class="facility-name">Endo motor for rotary endo</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="facility-card">
+                    <img src="./assets/images/new_images/apex.png" alt="Apex locator">
+                    <div class="facility-name-overlay">
+                        <div class="facility-name">Apex locator</div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Team Content Wrapper End -->
     </div>
-</div>
+</section>
+
+
+
+<marquee behavior="" direction="" class="second_marquee_section">Root Canal Treatment &nbsp; + &nbsp; Teeth Cleaning + &nbsp; Crowns & Bridges + &nbsp; Painless Teeth Removal + &nbsp; Tooth Colored Fillings + &nbsp; Fixing Jaw Fractures + &nbsp; Basal Implants + &nbsp; Teeth Whitening + &nbsp; Laser Dentistry</marquee>
+
+
+
+
+<!-- Appointment Section -->
+
+
+<section id="appointment" class="appointment-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="appointment-form py-3">
+                    <h3>Book <span>Appointment</span></h3>
+                    <p>Fill out the form below to schedule your dental appointment</p>
+
+                    <form action="appointmentform.php" method="post" role="form" class="php-email-form "
+                        data-aos-delay="100">
+                        <div class="row">
+                            <div class="col-md-6 form-group  mt-md-0  mb-4">
+                                <input type="text" name="name" class="form-control  " id="name"
+                                    style="border-radius: 23px; " placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6 form-group  mt-md-0 mb-4">
+                                <input type="email" class="form-control  " name="email" id="email"
+                                    style="border-radius: 23px;" placeholder="Your Email" required>
+                            </div>
+                            <div class="col-md-6 form-group  mt-md-0 mb-4">
+                                <input type="tel" class="form-control  " name="phone" id="phone"
+                                    style="border-radius: 23px;" placeholder="Your Phone" required>
+                            </div>
+                            <div class="col-md-6 form-group   mt-md-0">
+                                <input type="date" name="date" class="form-control datepicker  "
+                                    style="border-radius: 23px;" id="date" placeholder="Appointment Date" required>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="  form-group mt-4">
+                                <select name="department" id="department" style="border-radius: 23px;"
+                                    class="form-select" required>
+                                    <option value="">Select Service</option>
+                                    <option value="painless Root Canal">painless Root Canal</option>
+                                    <option value="Teeth Cleaning">Teeth Cleaning</option>
+                                    <option value="Crowns & Bridges">Crowns & Bridges</option>
+                                    <option value="Painless Teeth Removal">Painless Teeth Removal</option>
+                                    <option value="Tooth Colored Fillings">Tooth Colored Fillings</option>
+                                    <option value="Fixing Jaw Fractures">Fixing Jaw Fractures</option>
+                                    <option value="Basal Implants">Basal Implants</option>
+                                    <option value="Laser Dentistry">Laser Dentistry</option>
+                                    <option value="Teeth Whitening">Teeth Whitening</option>
+                                    <option value="Clear Aligners">Clear Aligners</option>
+
+
+
+
+
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group mt-4 mb-5">
+                            <textarea class="form-control" name="message" style="border-radius: 23px;" rows="5"
+                                placeholder="Message (Optional)"></textarea>
+                        </div>
+                        <button type="submit" class="btn-book submit_section w-100 justify-content-center">SUBMIT APPOINTMENT</button>
+
+
+                        <!-- <div class="text-center maker"><button type="submit" class="makee">Make an
+                                For Appointment</button></div> -->
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <!-- <div class="appointment-img-placeholder">
+                     <i class="fas fa-tooth"></i>
+                    <img src="./assets/images/appointment.png" alt="" style="width: 300px; height: 500px;">
+                </div> -->
+                <div class="map-container"
+                    style="border-radius: 15px; overflow: hidden; height: 100%; min-height: 450px;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.1794341972895!2d77.53775897454643!3d12.960367315125565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3e0b271d0cf5%3A0x6777a67f630670a4!2sCare%20n%20Concern%20Family%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1763552838013!5m2!1sen!2sin"
+                        width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<marquee class="footer-title">Care ‘n’ Concern Family Dental Clinic </marquee>
+
+
+
+
+
+<section class="py-5">
+    <div class="container">
+
+        <h3 class="text-center" style="font-weight: 900;">Frequently Ask Question (FAQ)</h3>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="accordion">
+                    <!-- Accordion 1 -->
+
+                    <div class="faq_section">
+
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h2 class="faq_heading_section">Will whitening damage my teeth?
+
+
+
+                            </h2>
+                            <h2 class="accordion-icon">+</h2>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                                No, it is safe and does not harm enamel when done professionally.
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="faq_section">
+
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h2 class="faq_heading_section">Are veneers permanent?
+
+
+                            </h2>
+                            <h2 class="accordion-icon">+</h2>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                                They are long lasting but not permanent. They usually last for 10 years & with good care for 15 years or more. Should not bite anything hard with the teeth having veneers.
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- Accordion 3 -->
+                    <div class="faq_section">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h2 class="faq_heading_section">How long do composite build-ups last?
+
+
+                            </h2>
+                            <h2 class="accordion-icon">+</h2>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                                They usually last 5–7 years, depending on habits and care.
+                        </div>
+                    </div>
+
+                    <!-- Accordion 4 -->
+
+
+
+
+
+                    <div class="faq_section">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h2 class="faq_heading_section">What is a digital smile makeover?
+
+                            </h2>
+                            <h2 class="accordion-icon">+</h2>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                                It uses digital tools to preview and plan your future smile before treatment begins.</p>
+                        </div>
+                    </div>
+                    <!-- Accordion 5 -->
+                    <div class="faq_section">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h2 class="faq_heading_section">Is the filling procedure painful?
+                            </h2>
+                            <h2 class="accordion-icon">+</h2>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                                Usually no. Local anesthesia may be used if the cavity is deep. </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-12 col-md-6">
+
+
+                <div class="accordion">
+                    <!-- Accordion 1 -->
+
+                    <!-- Accordion 2 -->
+
+
+
+                    <div class="faq_section">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h2 class="faq_heading_section">Is RCT painful?
+
+
+                            </h2>
+                            <h2 class="accordion-icon">+</h2>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                                Modern RCT is done under anesthesia and is mostly painless.</p>
+                        </div>
+                    </div>
+                    <!-- Accordion 2 -->
+
+
+
+                    <div class="faq_section">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h2 class="faq_heading_section">Will the extraction hurt?
+
+
+
+                            </h2>
+                            <h2 class="accordion-icon">+</h2>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                                No, it’s done under anesthesia. You may feel mild pressure, not pain.</p>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Accordion 3 -->
+                    <div class="faq_section">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h2 class="faq_heading_section">Is scaling harmful for teeth?
+
+
+                            </h2>
+                            <h2 class="accordion-icon">+</h2>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                                No. It only removes plaque and tartar; enamel remains safe.</p>
+                        </div>
+                    </div>
+                    <!-- Accordion 4 -->
+                    <div class="faq_section">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h2 class="faq_heading_section">How long do traditional implants take to heal?
+
+
+
+                            </h2>
+                            <h2 class="accordion-icon">+</h2>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                                Typically around 3 months, but depending on bone quality and healing can be a bit longer too. </p>
+                        </div>
+                    </div>
+                    <!-- Accordion 5 -->
+                    <div class="faq_section">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h2 class="faq_heading_section"> What is the main advantage of bi-cortical implants?
+                            </h2>
+                            <h2 class="accordion-icon">+</h2>
+                        </div>
+                        <div class="accordion-content">
+                            <p class="faq_section">
+                                They provide strong stability even in patients with less bone volume.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="footer bg-light pt-5">
+    <div class="container">
+
+        <!-- Footer Content -->
+        <div class="row footer-content">
+
+            <!-- Footer Info -->
+            <div class="col-lg-3 mb-4 footer-info">
+
+                <h4><span class="denta ">Care</span>&nbsp; 'n' &nbsp;Concern <br> Family Dental Clinic</h4>
+                <!-- <p><strong>Denta Care Health Ventures LLP</strong></p> -->
+                <p class="mt-5">2462/37, 7th B Main Road, Hampinagar, RPC Layout, Vijayanagar, Bengaluru, Karnataka 560104</p>
+                <p class="mt-3"><strong>Call us:</strong> +91 63638 00266 | 98458 02787</p>
+                <p class="mt-2"><strong>Email us:</strong> drsunil19@yahoo.com</p>
+                <p class="mt-2"><strong>Clinic Hours: <br></strong>Morning - 10.30am to 2.30pm <br> Evening - 4pm to 8.30pm <br> <span class=""> Sunday-Holiday</span></p>
+                <!-- <p class="mt-2"><strong>sunday close </p> -->
+            </div>
+
+            <!-- Available Treatments -->
+            <div class="col-lg-3 mb-4 d-none d-md-block col-md-6 footer-links">
+                <h5>General Dentistry</h5>
+                <ul class="list-unstyled mt-5">
+                    <li><a href="root_canal_treatment_in_bengaluru.php" class="text-decoration-none">Root Canal Treatment</a></li>
+                    <li><a href="teeth_cleaning_treatment_in_bengaluru.php" class="text-decoration-none">Teeth Cleaning</a></li>
+                    <li><a href="dentalcrown_bridge_treatment_in_bengaluru..php" class="text-decoration-none">Crowns & Bridges</a></li>
+                    <li><a href="teeth_removal_treatment_in_bengaluru.php" class="text-decoration-none">Painless Teeth Removal</a></li>
+                    <li><a href="tooth_colored_fillings_treatment_in_bengaluru.php" class="text-decoration-none">Tooth Colored Fillings</a></li>
+                    <li><a href="jaw_fractures_treatment_in_bengaluru.php" class="text-decoration-none">Fixing Jaw Fractures</a></li>
+
+
+                </ul>
+            </div>
+
+
+            <div class="col-lg-3 mb-4 d-none d-md-block col-md-6 footer-links">
+                <h5>Specialised Treatments</h5>
+                <ul class="list-unstyled mt-5">
+                    <li><a href="basal_implants_treatment_in_bengaluru.php" class="text-decoration-none"> Basal implants / Immediate loading implants</a></li>
+                    <li><a href="teeth_whitening_treatment_in_bengaluru.php" class="text-decoration-none">Teeth Whitening</a></li>
+                    <li><a href="laser_dentistry_treatment_in_bengaluru.php" class="text-decoration-none">Laser Dentistry</a></li>
+
+                    <li><a href="invisalignaligners_clearaligners_treatment_in_bengaluru.php" class="text-decoration-none">Clear aligners / Invisalign</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-3 mb-4  d-none d-md-block col-md-6 footer-links">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled mt-5">
+                    <li><a href="index.php" class="text-decoration-none">Home</a></li>
+                    <li><a href="about.php" class="text-decoration-none">About us</a></li>
+                    <li><a href="service.php" class="text-decoration-none">Our Services</a></li>
+                    <li><a href="clinic.php" class="text-decoration-none">Our Clinic</a></li>
+                    <li><a href="blog.php" class="text-decoration-none">Blogs</a></li>
+                    <li><a href="contact.php" class="text-decoration-none">Contact us</a></li>
+                    <li><a href="appointment.php" class="text-decoration-none">Book Appointment</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Footer Bottom -->
+        <div class="row footer-bottom align-items-center">
+            <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                <p class="mb-0 " style="color: white;">© 2026 <br>Care 'n' Concern Family Dental Clinic<br>Designed By
+                    <a href="https://bhavicreations.com/" target="_blank" class="text-decoration-none" style="color: grey;">Bhavi Creations Pvt Ltd</a>
+                </p>
+            </div>
+            <div class="col-md-6 text-center text-md-end d-none d-md-block">
+                <a href="https://www.facebook.com/hontistry" class="text-decoration-none social_media me-2" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://www.youtube.com/channel/UCmE0BrRzE5dzfljOoCx_PuQ" class="text-decoration-none  social_media me-2" target="_blank"><i class="fab fa-youtube"></i> Youtube</a>
+                <a href="https://www.instagram.com/care_n_concern/" class="text-decoration-none social_media me-2"><i class="fab fa-instagram" target="_blank"></i> Instagram</a>
+                <a href="https://www.linkedin.com/company/hontistry/" class="text-decoration-none social_media" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+
+<!-- footer link for  choose us  -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
+
+<a href="https://api.whatsapp.com/send?phone=919845802787" style="color: #fff;" class="whatsapp-link"
+    target="_blank">
+    <i class="fab fa-whatsapp"></i>
+
+</a>
+
+<?PHP include 'c2.php'; ?>
+
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+<script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Active navigation based on scroll
+    window.addEventListener('scroll', function() {
+        let current = '';
+        const sections = document.querySelectorAll('section[id]');
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= (sectionTop - 200)) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
+
+
+<!-- img slider code   -->
+<script>
+    var swiper = new Swiper(".custom-slide-content", {
+        slidesPerView: 3,
+        spaceBetween: 25,
+        loop: true,
+        centerslide: 'true',
+        fade: 'true',
+        grabCursor: 'true',
+        pagination: {
+            el: ".custom-swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+        },
+        autoplay: {
+            delay: 3000, // Time in milliseconds between automatic slides (3 seconds here)
+            disableOnInteraction: false, // Keeps autoplay active even after manual swiping
+        },
+        navigation: {
+            nextEl: ".swiper-button-next.custom-swiper-navBtn",
+            prevEl: ".swiper-button-prev.custom-swiper-navBtn",
+        },
+
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            520: {
+                slidesPerView: 2,
+            },
+            950: {
+                slidesPerView: 3,
+            },
+        },
+    });
+</script>
+
+
+<!-- slider code  for doctor  -->
+
+<script>
+    let currentIndex = 0;
+    const track = document.getElementById('carouselTrack');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const cards = document.querySelectorAll('.doctor-card-container');
+    const totalCards = cards.length;
+
+    // Determine cards per view based on screen size
+    function getCardsPerView() {
+        if (window.innerWidth >= 992) return 3;
+        if (window.innerWidth >= 768) return 2;
+        return 1;
+    }
+
+    function updateCarousel() {
+        const cardsPerView = getCardsPerView();
+        const cardWidth = 100 / cardsPerView;
+        const offset = -currentIndex * cardWidth;
+        track.style.transform = `translateX(${offset}%)`;
+
+        // Update button states
+        prevBtn.disabled = currentIndex === 0;
+        nextBtn.disabled = currentIndex >= totalCards - cardsPerView;
+    }
+
+    function nextSlide() {
+        const cardsPerView = getCardsPerView();
+        if (currentIndex < totalCards - cardsPerView) {
+            currentIndex++;
+            updateCarousel();
+        }
+    }
+
+    function prevSlide() {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+        }
+    }
+
+    prevBtn.addEventListener('click', prevSlide);
+    nextBtn.addEventListener('click', nextSlide);
+
+    // Handle window resize
+    window.addEventListener('resize', () => {
+        const cardsPerView = getCardsPerView();
+        if (currentIndex > totalCards - cardsPerView) {
+            currentIndex = Math.max(0, totalCards - cardsPerView);
+        }
+        updateCarousel();
+    });
+
+    // Initialize
+    updateCarousel();
+</script>
+
+<!-- faq open and close script -->
+<script>
+    function toggleAccordion(header) {
+        const content = header.nextElementSibling;
+        const icon = header.querySelector(".accordion-icon");
+
+        content.classList.toggle("open");
+        icon.classList.toggle("rotate");
+
+        icon.textContent = content.classList.contains("open") ? "−" : "+";
+    }
+</script>
+
+
+</body>
+
+</html>

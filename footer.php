@@ -23,7 +23,7 @@
                 <ul class="list-unstyled mt-5">
                     <li><a href="root_canal_treatment_in_bengaluru.php" class="text-decoration-none">Root Canal Treatment</a></li>
                     <li><a href="teeth_cleaning_treatment_in_bengaluru.php" class="text-decoration-none">Teeth Cleaning</a></li>
-                    <li><a href="dentalcrown_bridge_treatment_in_bengaluru..php" class="text-decoration-none">Crowns & Bridges</a></li>
+                    <li><a href="dentalcrown_bridge_treatment_in_bengaluru.php" class="text-decoration-none">Crowns & Bridges</a></li>
                     <li><a href="teeth_removal_treatment_in_bengaluru.php" class="text-decoration-none">Painless Teeth Removal</a></li>
                     <li><a href="tooth_colored_fillings_treatment_in_bengaluru.php" class="text-decoration-none">Tooth Colored Fillings</a></li>
                     <li><a href="jaw_fractures_treatment_in_bengaluru.php" class="text-decoration-none">Fixing Jaw Fractures</a></li>

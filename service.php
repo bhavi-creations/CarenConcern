@@ -192,7 +192,7 @@
                         Restores damaged teeth or replaces missing teeth for improved function and aesthetics.
                     </p>
 
-                    <a href="dentalcrown_bridge_treatment_in_bengaluru..php" class="btn-book-upgraded">Read More</a>
+                    <a href="dentalcrown_bridge_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
                 </div>
             </div>
 
