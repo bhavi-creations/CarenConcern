@@ -163,7 +163,7 @@ $count_stmt->close();
         } */
         .blogs_color {
             color: black !important;
-            margin-bottom: -150px !important;
+         
         }
 
         .fullblogs_section_1 {
