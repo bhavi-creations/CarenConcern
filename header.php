@@ -170,6 +170,16 @@
     <meta name="google-site-verification" content="Wehzpr13wXWtahW_gnYctm8cBXe0LxR7vAzMqhj3KJM" />
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18193024384"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18193024384');
+</script>
+
+
 </head>
 
 
