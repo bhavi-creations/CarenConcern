@@ -1,3 +1,21 @@
+<?php
+include './db.connection/db_connection.php';
+
+
+$selected_date = date('Y-m-d');
+$slots = [
+    "10:30 AM - 11:30 AM",
+    "11:30 AM - 12:30 PM",
+    "12:30 PM - 01:30 PM",
+    "01:30 PM - 02:30 PM",
+    "04:00 PM - 05:00 PM",
+    "05:00 PM - 06:00 PM",
+    "06:00 PM - 07:00 PM",
+    "07:00 PM - 08:00 PM",
+    "08:00 PM - 8:30 PM"
+];
+?>
+
 <?php include 'header.php' ?>
 
 <section id="appointment" class="appointment-section">
@@ -6,7 +24,7 @@
             <div class="col-lg-6 mb-4 mb-lg-0">
                 <div class="appointment-form">
                     <h3>Book <span>Appointment</span></h3>
-                    <form id="appointmentForm" method="POST" action="bookappointmentform.php" class="row">
+                    <form id="appointmentForm" method="POST" action="save_appointment.php" class="row">
                         <div class="mb-3 col-md-6">
                             <label>Name</label>
                             <input type="text" name="name" class="form-control" required placeholder="Enter Your Name">
@@ -26,12 +44,12 @@
                                 min="<?= date('Y-m-d') ?>" class="form-control" required>
                         </div>
 
-                        <!-- <div id="slotContainer" class="col-md-12 mb-3">
+                        <div id="slotContainer" class="col-md-12 mb-3">
                             <label>Select Time Slot</label>
                             <select id="time_slot" name="time_slot" class="form-control" required>
                                 <option value="">-- First Select Date --</option>
                             </select>
-                        </div> -->
+                        </div>
 
                         <div class="mb-3 col-md-12">
                             <label>Message</label>
@@ -57,7 +75,7 @@
 </div>
 
 
-<!-- <script>
+<script>
     document.getElementById('appointment_date').addEventListener('change', function() {
         const date = this.value;
         const slotSelect = document.getElementById('time_slot');
@@ -103,7 +121,7 @@
                 slotSelect.innerHTML = '<option value="">Error loading slots</option>';
             });
     });
-</script> -->
+</script>
 
 
 <?php include 'footer.php'; ?>
