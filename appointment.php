@@ -81,13 +81,17 @@ $slots = [
         const slotSelect = document.getElementById('time_slot');
         slotSelect.innerHTML = '<option>Loading...</option>';
 
-        fetch('get_slots.php?date=' + date)
+        fetch('get_slots.php?date=' + encodeURIComponent(date))
             .then(r => r.json())
             .then(data => {
+                if (data.error) {
+                    slotSelect.innerHTML = '<option value="">Unable to load slots</option>';
+                    return;
+                }
 
                 if (data.isHoliday && data.type == 'fullday') {
                     alert("Holiday: " + data.reason);
-                    slotSelect.innerHTML = '<option>No Slots Available</option>';
+                    slotSelect.innerHTML = '<option value="">No Slots Available</option>';
                     return;
                 }
 
@@ -96,6 +100,11 @@ $slots = [
                 }
 
                 let html = '<option value="">--Select Slot--</option>';
+
+                if (!data.slots || data.slots.length === 0) {
+                    slotSelect.innerHTML = '<option value="">No Slots Available</option>';
+                    return;
+                }
 
                 data.slots.forEach(s => {
                     let dis = s.available <= 0 ? 'disabled' : '';
@@ -109,7 +118,7 @@ $slots = [
                 slotSelect.innerHTML = html;
             })
             .catch(() => {
-                slotSelect.innerHTML = '<option>Error loading slots</option>';
+                slotSelect.innerHTML = '<option value="">Error loading slots</option>';
             });
     });
 </script>
