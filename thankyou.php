@@ -154,6 +154,16 @@
             'currency': 'INR'
         });
     </script>
+
+
+<!-- Event snippet for Submit lead form conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18193024384/TFJTCLH9rbUcEICLjuND',
+      'value': 1.0,
+      'currency': 'INR'
+  });
+</script>
 </head>
 
 <body>
