@@ -146,6 +146,20 @@
             font-weight: 600;
         }
     </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18193024384"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-18193024384');
+    </script>
+
+
     <!-- Event snippet for Submit lead form conversion page -->
     <script>
         gtag('event', 'conversion', {
@@ -154,41 +168,31 @@
             'currency': 'INR'
         });
     </script>
-
-
-<!-- Event snippet for Submit lead form conversion page -->
-<script>
-  gtag('event', 'conversion', {
-      'send_to': 'AW-18193024384/TFJTCLH9rbUcEICLjuND',
-      'value': 1.0,
-      'currency': 'INR'
-  });
-</script>
 </head>
 
 <body>
 
-<!-- MAIN -->
-<div class="main-content">
-    <div class="card-box">
-        <span class="tooth-icon">🦷</span>
-        <div class="hospital-name">Care 'n' Concern
-            Family Dental Clinic </div>
-        <div class="tagline">Bengaluru &nbsp;|&nbsp; Your Smile, Our Pride</div>
+    <!-- MAIN -->
+    <div class="main-content">
+        <div class="card-box">
+            <span class="tooth-icon">🦷</span>
+            <div class="hospital-name">Care 'n' Concern
+                Family Dental Clinic </div>
+            <div class="tagline">Bengaluru &nbsp;|&nbsp; Your Smile, Our Pride</div>
 
-        <div class="divider"></div>
+            <div class="divider"></div>
 
-        <h1 class="thank-heading">Thank You!</h1>
-        <p class="thank-message">
-            Thank you for consulting <strong>Care 'n' Concern
-                Family Dental Clinic</strong>, Bengaluru.<br />
-            Your appointment has been confirmed.<br />
-            Our team will get in touch with you shortly. 😊
-        </p>
+            <h1 class="thank-heading">Thank You!</h1>
+            <p class="thank-message">
+                Thank you for consulting <strong>Care 'n' Concern
+                    Family Dental Clinic</strong>, Bengaluru.<br />
+                Your appointment has been confirmed.<br />
+                Our team will get in touch with you shortly. 😊
+            </p>
 
-        <a href="index.php" class="btn-home">🏠 Back to Home</a>
+            <a href="index.php" class="btn-home">🏠 Back to Home</a>
+        </div>
     </div>
-</div>
 
 
 
