@@ -146,7 +146,9 @@
             font-weight: 600;
         }
     </style>
-    <!-- Google tag (gtag.js) -->
+    <!-- Event snippet for Submit lead form (1) conversion page -->
+
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18193024384"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -159,11 +161,9 @@
         gtag('config', 'AW-18193024384');
     </script>
 
-
-    <!-- Event snippet for Submit lead form conversion page -->
     <script>
         gtag('event', 'conversion', {
-            'send_to': 'AW-18193024384/TFJTCLH9rbUcEICLjuND',
+            'send_to': 'AW-18193024384/LztcCMio9bYcEICLjuND',
             'value': 1.0,
             'currency': 'INR'
         });
