@@ -147,7 +147,13 @@
         }
     </style>
     <!-- Event snippet for Submit lead form (1) conversion page -->
-
+    <script>
+        gtag('event', 'conversion', {
+            'send_to': 'AW-18193024384/LztcCMio9bYcEICLjuND',
+            'value': 1.0,
+            'currency': 'INR'
+        });
+    </script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18193024384"></script>
     <script>
@@ -161,13 +167,7 @@
         gtag('config', 'AW-18193024384');
     </script>
 
-    <script>
-        gtag('event', 'conversion', {
-            'send_to': 'AW-18193024384/LztcCMio9bYcEICLjuND',
-            'value': 1.0,
-            'currency': 'INR'
-        });
-    </script>
+
 </head>
 
 <body>
