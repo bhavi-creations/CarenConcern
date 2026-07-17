@@ -21,7 +21,7 @@
                         Invisible aligners to straighten teeth comfortably and effectively without traditional braces.
                     </p>
 
-                    <a href="invisalignaligners_clearaligners_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
+                    <a href="invisalignaligners-clearaligners-treatment-in-bengaluru.php" class="btn-book-upgraded">Read More</a>
                 </div>
             </div>
             <!-- Basal Implants -->
@@ -37,7 +37,7 @@
                         Modern implants for patients with low bone density, providing fast and stable teeth replacement.
                     </p>
 
-                    <a href="basal_implants_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
+                    <a href="basal-implants-treatment-in-bengaluru.php" class="btn-book-upgraded">Read More</a>
                 </div>
             </div>
 
@@ -58,7 +58,7 @@
                         Expert bone realignment and stabilization ensuring pain-free recovery and restored function.
                     </p>
 
-                    <a href="regular_implants_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
+                    <a href="regular-implants-treatment-in-bengaluru.php" class="btn-book-upgraded">Read More</a>
                 </div>
             </div>
 
@@ -78,7 +78,7 @@
                         Expert full mouth rehabilitation ensuring comfort, pain-free recovery, and restored function.
                     </p>
 
-                    <a href="full_mouth_rehabilitation_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
+                    <a href="full-mouth-rehabilitation-treatment-in-bengaluru.php" class="btn-book-upgraded">Read More</a>
                 </div>
             </div>
 
@@ -96,7 +96,7 @@
                         Precision dental veneer treatment ensuring comfort, natural appearance, and confident smiles
                     </p>
 
-                    <a href="veneers_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
+                    <a href="veneers-treatment-in-bengaluru.php" class="btn-book-upgraded">Read More</a>
                 </div>
             </div>
 
@@ -117,7 +117,7 @@
                         Advanced smile correction ensuring comfort, confidence, and aesthetic enhancement.
                     </p>
 
-                    <a href="smile_correction_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
+                    <a href="smile-correction-treatment-in-bengaluru.php" class="btn-book-upgraded">Read More</a>
                 </div>
             </div>
 
@@ -135,7 +135,7 @@
                         Modern digital dentistry delivering precision, comfort, and reliable results.
                     </p>
 
-                    <a href="digital_dentistry_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
+                    <a href="digital-dentistry-treatment-in-bengaluru.php" class="btn-book-upgraded">Read More</a>
                 </div>
             </div>
 
@@ -156,7 +156,7 @@
                         Treats tooth infection by removing pulp, cleaning canals, and sealing for long-lasting comfort.
                     </p>
 
-                    <a href="root_canal_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
+                    <a href="root-canal-treatment-in-bengaluru.php" class="btn-book-upgraded">Read More</a>
                 </div>
             </div>
 
@@ -174,7 +174,7 @@
                         Professional cleaning removes plaque and stains, keeping your teeth healthy and bright.
                     </p>
 
-                    <a href="teeth_cleaning_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
+                    <a href="teeth-cleaning-treatment-in-bengaluru.php" class="btn-book-upgraded">Read More</a>
                 </div>
             </div>
 
@@ -192,7 +192,7 @@
                         Restores damaged teeth or replaces missing teeth for improved function and aesthetics.
                     </p>
 
-                    <a href="dentalcrown_bridge_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
+                    <a href="dentalcrown-bridge-treatment-in-bengaluru.php" class="btn-book-upgraded">Read More</a>
                 </div>
             </div>
 
@@ -210,7 +210,7 @@
                         Gentle and pain-free extraction ensuring comfort and fast recovery.
                     </p>
 
-                    <a href="teeth_removal_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
+                    <a href="teeth-removal-treatment-in-bengaluru.php" class="btn-book-upgraded">Read More</a>
                 </div>
             </div>
 
@@ -228,7 +228,7 @@
                         Durable and natural-looking fillings to restore decayed teeth seamlessly.
                     </p>
 
-                    <a href="tooth_colored_fillings_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
+                    <a href="tooth-colored-fillings-treatment-in-bengaluru.php" class="btn-book-upgraded">Read More</a>
                 </div>
             </div>
 
@@ -247,7 +247,7 @@
                         Removes stains and discoloration to restore a bright, confident smile.
                     </p>
 
-                    <a href="teeth_whitening_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
+                    <a href="teeth-whitening-treatment-in-bengaluru.php" class="btn-book-upgraded">Read More</a>
                 </div>
             </div>
 
@@ -265,7 +265,7 @@
                         Advanced laser treatments for gum care, cavity treatment, and cosmetic procedures with minimal discomfort.
                     </p>
 
-                    <a href="laser_dentistry_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
+                    <a href="laser-dentistry-treatment-in-bengaluru.php" class="btn-book-upgraded">Read More</a>
                 </div>
             </div>
 
@@ -287,7 +287,7 @@
                         Expert bone realignment and stabilization ensuring pain-free recovery and restored function.
                     </p>
 
-                    <a href="jaw_fractures_treatment_in_bengaluru.php" class="btn-book-upgraded">Read More</a>
+                    <a href="jaw-fractures-treatment-in-bengaluru.php" class="btn-book-upgraded">Read More</a>
                 </div>
             </div>
 

@@ -196,7 +196,7 @@
 
                     <div class="custom-card custom_card_bg_three swiper-slide">
                         <div class="custom-card-section service_slide1">
-                            <a href="root_canal_treatment_in_bengaluru.php">
+                            <a href="root-canal-treatment-in-bengaluru.php">
                                 <h1 class="display-5 card-heading"> Root canal Treatment </h1>
 
                                 <div class="tags-container">
@@ -220,7 +220,7 @@
 
 
                         <div class="custom-card-section service_slide2">
-                            <a href="teeth_cleaning_treatment_in_bengaluru.php">
+                            <a href="teeth-cleaning-treatment-in-bengaluru.php">
                                 <h1 class="display-5 card-heading">Teeth Cleaning</h1>
 
                                 <div class="tags-container">
@@ -242,7 +242,7 @@
                     <div class="custom-card custom_card_bg_three swiper-slide  ">
 
                         <div class="custom-card-section service_slide3">
-                            <a href="dentalcrown_bridge_treatment_in_bengaluru..php">
+                            <a href="dentalcrown-bridge-treatment-in-bengaluru..php">
                                 <h1 class="display-5 card-heading">Crowns & Bridges</h1>
 
                                 <div class="tags-container">
@@ -265,7 +265,7 @@
 
 
                         <div class="custom-card-section service_slide4">
-                            <a href="teeth_removal_treatment_in_bengaluru.php">
+                            <a href="teeth-removal-treatment-in-bengaluru.php">
                                 <h1 class="display-5 card-heading">Painless Teeth Removal ​</h1>
 
                                 <div class="tags-container">
@@ -289,7 +289,7 @@
 
 
                         <div class="custom-card-section  service_slide5">
-                            <a href="tooth_colored_fillings_treatment_in_bengaluru.php">
+                            <a href="tooth-colored-fillings-treatment-in-bengaluru.php">
                                 <h1 class="display-5 card-heading">Tooth Colored Fillings</h1>
 
                                 <div class="tags-container">
@@ -316,7 +316,7 @@
 
 
                         <div class="custom-card-section service_slide6">
-                            <a href="jaw_fractures_treatment_in_bengaluru.php">
+                            <a href="jaw-fractures-treatment-in-bengaluru.php">
                                 <h1 class="display-5 card-heading">Fixing Jaw Fractures</h1>
 
                                 <div class="tags-container">
@@ -344,7 +344,7 @@
 
 
                         <div class="custom-card-section service_slide7">
-                            <a href="basal_implants_treatment_in_bengaluru.php">
+                            <a href="basal-implants-treatment-in-bengaluru.php">
                                 <h1 class="display-5 card-heading">Basal Implants</h1>
 
                                 <div class="tags-container">
@@ -376,7 +376,7 @@
 
 
                         <div class="custom-card-section service_slide8">
-                            <a href="teeth_whitening_treatment_in_bengaluru.php">
+                            <a href="teeth-whitening-treatment-in-bengaluru.php">
                                 <h1 class="display-5 card-heading">Teeth Whitening</h1>
 
                                 <div class="tags-container">
@@ -402,7 +402,7 @@
 
 
                         <div class="custom-card-section service_slide9">
-                            <a href="laser_dentistry_treatment_in_bengaluru.php">
+                            <a href="laser-dentistry-treatment-in-bengaluru.php">
                                 <h1 class="display-5 card-heading">Laser Dentistry</h1>
 
                                 <div class="tags-container">
@@ -431,7 +431,7 @@
                     <div class="custom-card custom_card_bg_three swiper-slide">
 
                         <div class="custom-card-section service_slide9">
-                            <a href="invisalignaligners_clearaligners_treatment_in_bengaluru.php">
+                            <a href="invisalignaligners-clearaligners-treatment-in-bengaluru.php">
                                 <h1 class="display-5 card-heading">Clear Aligners</h1>
 
                                 <div class="tags-container">

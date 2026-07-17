@@ -21,12 +21,12 @@
             <div class="col-lg-3 mb-4 d-none d-md-block col-md-6 footer-links">
                 <h5>General Dentistry</h5>
                 <ul class="list-unstyled mt-5">
-                    <li><a href="root_canal_treatment_in_bengaluru.php" class="text-decoration-none">Root Canal Treatment</a></li>
-                    <li><a href="teeth_cleaning_treatment_in_bengaluru.php" class="text-decoration-none">Teeth Cleaning</a></li>
-                    <li><a href="dentalcrown_bridge_treatment_in_bengaluru.php" class="text-decoration-none">Crowns & Bridges</a></li>
-                    <li><a href="teeth_removal_treatment_in_bengaluru.php" class="text-decoration-none">Painless Teeth Removal</a></li>
-                    <li><a href="tooth_colored_fillings_treatment_in_bengaluru.php" class="text-decoration-none">Tooth Colored Fillings</a></li>
-                    <li><a href="jaw_fractures_treatment_in_bengaluru.php" class="text-decoration-none">Fixing Jaw Fractures</a></li>
+                    <li><a href="root-canal-treatment-in-bengaluru.php" class="text-decoration-none">Root Canal Treatment</a></li>
+                    <li><a href="teeth-cleaning-treatment-in-bengaluru.php" class="text-decoration-none">Teeth Cleaning</a></li>
+                    <li><a href="dentalcrown-bridge-treatment-in-bengaluru.php" class="text-decoration-none">Crowns & Bridges</a></li>
+                    <li><a href="teeth-removal-treatment-in-bengaluru.php" class="text-decoration-none">Painless Teeth Removal</a></li>
+                    <li><a href="tooth-colored-fillings-treatment-in-bengaluru.php" class="text-decoration-none">Tooth Colored Fillings</a></li>
+                    <li><a href="jaw-fractures-treatment-in-bengaluru.php" class="text-decoration-none">Fixing Jaw Fractures</a></li>
 
 
                 </ul>
@@ -36,11 +36,11 @@
             <div class="col-lg-3 mb-4 d-none d-md-block col-md-6 footer-links">
                 <h5>Specialised Treatments</h5>
                 <ul class="list-unstyled mt-5">
-                    <li><a href="basal_implants_treatment_in_bengaluru.php" class="text-decoration-none"> Basal implants / Immediate loading implants</a></li>
-                    <li><a href="teeth_whitening_treatment_in_bengaluru.php" class="text-decoration-none">Teeth Whitening</a></li>
-                    <li><a href="laser_dentistry_treatment_in_bengaluru.php" class="text-decoration-none">Laser Dentistry</a></li>
+                    <li><a href="basal-implants-treatment-in-bengaluru.php" class="text-decoration-none"> Basal implants / Immediate loading implants</a></li>
+                    <li><a href="teeth-whitening-treatment-in-bengaluru.php" class="text-decoration-none">Teeth Whitening</a></li>
+                    <li><a href="laser-dentistry-treatment-in-bengaluru.php" class="text-decoration-none">Laser Dentistry</a></li>
 
-                    <li><a href="invisalignaligners_clearaligners_treatment_in_bengaluru.php" class="text-decoration-none">Clear aligners / Invisalign</a></li>
+                    <li><a href="invisalignaligners-clearaligners-treatment-in-bengaluru.php" class="text-decoration-none">Clear aligners / Invisalign</a></li>
                 </ul>
             </div>
 
@@ -48,7 +48,7 @@
             <div class="col-lg-3 mb-4  d-none d-md-block col-md-6 footer-links">
                 <h5>Quick Links</h5>
                 <ul class="list-unstyled mt-5">
-                    <li><a href="index.php" class="text-decoration-none">Home</a></li>
+                    <li><a href="home.php" class="text-decoration-none">Home</a></li>
                     <li><a href="about.php" class="text-decoration-none">About us</a></li>
                     <li><a href="service.php" class="text-decoration-none">Our Services</a></li>
                     <li><a href="clinic.php" class="text-decoration-none">Our Clinic</a></li>

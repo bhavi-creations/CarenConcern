@@ -205,7 +205,7 @@
                 <ul class="navbar-nav align-items-center">
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.php">Home</a>
+                        <a class="nav-link active" href="home.php">Home</a>
                     </li>
 
                     <li class="nav-item">
@@ -226,22 +226,22 @@
                             <li class="dropdown-submenu">
                                 <a class="dropdown-item dropdown-toggle" href="#">General Dentistry</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="root_canal_treatment_in_bengaluru.php">Painless Root Canal</a></li>
-                                    <li><a class="dropdown-item" href="teeth_cleaning_treatment_in_bengaluru.php">Teeth Cleaning</a></li>
-                                    <li><a class="dropdown-item" href="dentalcrown_bridge_treatment_in_bengaluru.php">Crowns & Bridges</a></li>
-                                    <li><a class="dropdown-item" href="teeth_removal_treatment_in_bengaluru.php">Painless Teeth Removal</a></li>
-                                    <li><a class="dropdown-item" href="tooth_colored_fillings_treatment_in_bengaluru.php">Tooth Colored Fillings</a></li>
-                                    <li><a class="dropdown-item" href="jaw_fractures_treatment_in_bengaluru.php">Fixing Jaw Fractures</a></li>
+                                    <li><a class="dropdown-item" href="root-canal-treatment-in-bengaluru.php">Painless Root Canal</a></li>
+                                    <li><a class="dropdown-item" href="teeth-cleaning-treatment-in-bengaluru.php">Teeth Cleaning</a></li>
+                                    <li><a class="dropdown-item" href="dentalcrown-bridge-treatment-in-bengaluru.php">Crowns & Bridges</a></li>
+                                    <li><a class="dropdown-item" href="teeth-removal-treatment-in-bengaluru.php">Painless Teeth Removal</a></li>
+                                    <li><a class="dropdown-item" href="tooth-colored-fillings-treatment-in-bengaluru.php">Tooth Colored Fillings</a></li>
+                                    <li><a class="dropdown-item" href="jaw-fractures-treatment-in-bengaluru.php">Fixing Jaw Fractures</a></li>
                                 </ul>
                             </li>
 
                             <li class="dropdown-submenu">
                                 <a class="dropdown-item dropdown-toggle" href="#">Specialised Treatment</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="basal_implants_treatment_in_bengaluru.php">Basal implants / Immediate loading implants </a></li>
-                                    <li><a class="dropdown-item" href="laser_dentistry_treatment_in_bengaluru.php">Laser Dentistry</a></li>
-                                    <li><a class="dropdown-item" href="teeth_whitening_treatment_in_bengaluru.php">Teeth Whitening</a></li>
-                                    <li><a class="dropdown-item" href="invisalignaligners_clearaligners_treatment_in_bengaluru.php">Clear aligners / Invisalign</a></li>
+                                    <li><a class="dropdown-item" href="basal-implants-treatment-in-bengaluru.php">Basal implants / Immediate loading implants </a></li>
+                                    <li><a class="dropdown-item" href="laser-dentistry-treatment-in-bengaluru.php">Laser Dentistry</a></li>
+                                    <li><a class="dropdown-item" href="teeth-whitening-treatment-in-bengaluru.php">Teeth Whitening</a></li>
+                                    <li><a class="dropdown-item" href="invisalignaligners-clearaligners-treatment-in-bengaluru.php">Clear aligners / Invisalign</a></li>
                                 </ul>
                             </li>
                         </ul>
